@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white"
+    tools:context=".ui.farmerMain.FarmerMainActivity">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_50sdp"
+        android:background="@color/colorPrimary">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layoutDirection="rtl"
+            android:orientation="horizontal"
+            android:textDirection="rtl">
+
+
+            <TextView
+                android:id="@+id/tv_tittle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:fontFamily="@font/tajawal_medium"
+                android:gravity="center"
+                android:text="@string/my_consultation"
+                android:textColor="@color/white"
+                android:textSize="@dimen/_16ssp" />
+
+            <ImageView
+                android:id="@+id/img_logout"
+                android:layout_width="@dimen/_24sdp"
+                android:layout_height="@dimen/_24sdp"
+                android:src="@drawable/ic_logout"
+                android:layout_marginLeft="@dimen/_16sdp"
+                android:padding="@dimen/_2sdp"
+                android:layout_alignParentLeft="true"
+                android:layout_centerInParent="true"
+                />
+
+        </RelativeLayout>
+
+    </androidx.appcompat.widget.Toolbar>
+
+    <FrameLayout
+        android:id="@+id/container"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="@color/white">
+
+
+        <com.cooltechworks.views.shimmer.ShimmerRecyclerView
+            android:id="@+id/rv_consults"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginStart="@dimen/_6sdp"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:layout_marginEnd="@dimen/_6sdp"
+            android:layout_marginBottom="@dimen/_6sdp"
+            app:layout_behavior="@string/appbar_scrolling_view_behavior"
+            app:shimmer_demo_angle="20"
+            app:shimmer_demo_child_count="8"
+            app:shimmer_demo_grid_child_count="1"
+            app:shimmer_demo_layout="@layout/shimmer_consult_item"
+            app:shimmer_demo_layout_manager_type="linear_vertical" />
+
+        <LinearLayout
+            android:id="@+id/ly_no_results"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+            <ImageView
+                android:layout_width="@dimen/_100sdp"
+                android:layout_height="@dimen/_100sdp"
+                android:adjustViewBounds="true"
+                android:scaleType="centerCrop"
+                android:src="@drawable/ic_no_item" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/_16sdp"
+                android:fontFamily="@font/tajawal_regular"
+                android:gravity="center"
+                android:text="@string/no_consultations"
+                android:textColor="@color/text_color"
+                android:textSize="@dimen/_14ssp" />
+        </LinearLayout>
+
+
+    </FrameLayout>
+
+    <Button
+        android:id="@+id/bt_add_consult"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bk_button"
+        android:text="@string/add_your_consultation"
+        android:textColor="@color/white"
+        android:fontFamily="@font/tajawal_medium"
+        android:textSize="@dimen/_14ssp"
+        android:layout_margin="@dimen/_6sdp"/>
+
+</LinearLayout>

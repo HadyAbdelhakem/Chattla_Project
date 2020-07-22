@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="@dimen/_6sdp"
+    android:layoutDirection="rtl"
+    android:textDirection="rtl">
+
+
+    <LinearLayout
+        android:id="@+id/ly_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/background_white"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_8sdp"
+            android:layout_marginTop="@dimen/_4sdp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tv_category"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/tajawal_medium"
+                android:text="نوع المحصول"
+                android:textColor="@color/text_color"
+                android:textSize="@dimen/_14ssp" />
+
+
+
+        </LinearLayout>
+
+
+        <TextView
+            android:id="@+id/tv_description"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_marginStart="@dimen/_8sdp"
+            android:layout_marginTop="@dimen/_4sdp"
+            android:layout_weight="1"
+            android:ellipsize="end"
+            android:fontFamily="@font/tajawal_regular"
+            android:gravity="center"
+            android:maxLines="2"
+            android:text="وصف المحصول.."
+            android:textColor="@color/text_color"
+            android:textSize="@dimen/_12ssp" />
+
+
+
+        <TextView
+            android:id="@+id/tv_status"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_8sdp"
+            android:layout_marginTop="@dimen/_4sdp"
+            android:layout_marginBottom="@dimen/_4sdp"
+            android:background="@drawable/background_dialog"
+            android:fontFamily="@font/tajawal_regular"
+            android:padding="@dimen/_4sdp"
+            android:text=" الحالة : "
+            android:textColor="@color/white"
+            android:textSize="@dimen/_12ssp" />
+
+        <TextView
+            android:id="@+id/tv_accept_status"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_8sdp"
+            android:layout_marginTop="@dimen/_4sdp"
+            android:layout_marginBottom="@dimen/_4sdp"
+            android:fontFamily="@font/tajawal_regular"
+            android:padding="@dimen/_4sdp"
+            android:textStyle="bold"
+            android:visibility="gone"
+            android:text="تم قبول الاستشارة من استشارى أخر"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="@dimen/_12ssp" />
+
+        <TextView
+            android:id="@+id/tv_accept_consult"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_8sdp"
+            android:layout_marginTop="@dimen/_4sdp"
+            android:layout_marginBottom="@dimen/_4sdp"
+            android:background="@drawable/background_dialog"
+            android:fontFamily="@font/tajawal_regular"
+            android:padding="@dimen/_4sdp"
+            android:text="قبول الاستشارة"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_12ssp"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/tv_time"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_gravity="end"
+            android:layout_marginTop="@dimen/_4sdp"
+            android:layout_marginEnd="@dimen/_8sdp"
+            android:layout_marginBottom="@dimen/_4sdp"
+            android:layout_weight="1"
+            android:fontFamily="@font/tajawal_regular"
+            android:textColor="@color/text_color"
+            android:textSize="@dimen/_12ssp" />
+
+
+    </LinearLayout>
+
+
+
+</RelativeLayout>

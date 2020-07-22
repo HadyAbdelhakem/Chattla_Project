@@ -1,0 +1,397 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="dof">
+        <item>- اخــــــــتر -</item>
+        <item>بدون مؤهل</item>
+        <item>مؤهل متوسط</item>
+        <item>فوق المتوسط</item>
+        <item>بكالوريوس/ليسانس</item>
+        <item>ماجستير</item>
+        <item>دكتوراه</item>
+    </string-array>
+
+    <string-array name="City">
+        <item>- المحافظة -</item>
+        <item>القاهرة</item>
+        <item>الأسكندريه</item>
+        <item>بورسعيد</item>
+        <item>السويس</item>
+        <item>دمياط</item>
+        <item>الدقهلية</item>
+        <item>الشرقية</item>
+        <item>القليوبيه</item>
+        <item>كفرالشيخ</item>
+        <item>الغربية</item>
+        <item>المنوفية</item>
+        <item>البحيرة</item>
+        <item>الإسماعيلية</item>
+        <item>الجيزه</item>
+        <item>بنى سويف</item>
+        <item>الفيوم</item>
+        <item>المنيا</item>
+        <item>أسيوط</item>
+        <item>سوهاج</item>
+        <item>قنا</item>
+        <item>أسوان</item>
+        <item>الأقصر</item>
+        <item>البحر الأحمر</item>
+        <item>الوادى الجديد</item>
+        <item>مطروح</item>
+        <item>شمال سيناء</item>
+        <item>جنوب سيناء</item>
+    </string-array>
+
+    <string-array name="Cairo_0">
+        <item>- الـمديـنة -</item>
+        <item>المنطقة الشمالية</item>
+        <item>المنطقة الجنوبية</item>
+        <item>المنطقة الشرقية</item>
+        <item>المنطقة الغربية</item>
+    </string-array>
+
+    <string-array name="Alex_1">
+        <item>- الـمديـنة -</item>
+        <item>منطقة المنتزة</item>
+        <item>منطقة شرق</item>
+        <item>منطقة وسط</item>
+        <item>منطقة غـرب</item>
+        <item>منطقة الجمرك</item>
+        <item>منطقة العـامرية</item>
+        <item>منطقة العجمى</item>
+        <item>برج العرب</item>
+        <item>برج العرب الجديدة</item>
+        <item>الساحل الشمالي</item>
+    </string-array>
+
+    <string-array name="P_S_2">
+        <item>- الـمديـنة -</item>
+        <item>مدينة بورسعيد</item>
+        <item>مدينة بورفؤاد</item>
+    </string-array>
+
+    <string-array name="S_C_3">
+        <item>- الـمديـنة -</item>
+        <item>مدينة السويس</item>
+    </string-array>
+
+    <string-array name="D_C_4">
+        <item>- الـمديـنة -</item>
+        <item>مــركز دمياط</item>
+        <item>فارسكور</item>
+        <item>الزرقا</item>
+        <item>كفر سعد</item>
+        <item>كفر البطيخ</item>
+        <item>ميناء دمياط الجديد</item>
+        <item>دمياط الجديدة</item>
+    </string-array>
+
+    <string-array name="DK_C_5">
+        <item>- الـمديـنة -</item>
+        <item>المنصورة</item>
+        <item>طلخا</item>
+        <item>نبروه</item>
+        <item>أجا</item>
+        <item>ميت غمر</item>
+        <item>السنبلاوين</item>
+        <item>بلقاس</item>
+        <item>تمى الأمديد</item>
+        <item>دكرنس</item>
+        <item>شربين</item>
+        <item>منية النصر</item>
+        <item>المنزلة</item>
+        <item>ميت سلسيل</item>
+        <item>المطرية</item>
+        <item>الجمالية</item>
+        <item>بنى عبيد</item>
+    </string-array>
+
+    <string-array name="SH_C_6">
+        <item>- الـمديـنة -</item>
+        <item>الزقازيق</item>
+        <item>القنايات</item>
+        <item>ههيا</item>
+        <item>الإبراهيمية</item>
+        <item>أبو كبير</item>
+        <item>كفر صقر</item>
+        <item>أولاد صقر</item>
+        <item>فاقوس</item>
+        <item>ديرب نجم</item>
+        <item>منيا القمح</item>
+        <item>مشتول السوق</item>
+        <item>بلبيس</item>
+        <item>أبو حماد</item>
+        <item>صان الحجر</item>
+        <item>منشأة أبو عمر</item>
+        <item>الصالحية الجديدة</item>
+        <item>العاشر من رمضان</item>
+    </string-array>
+
+    <string-array name="Q_C_7">
+        <item>- الـمديـنة -</item>
+        <item>شبرا الخيمة</item>
+        <item>بنها</item>
+        <item>طوخ</item>
+        <item>قليوب</item>
+        <item>شبين القناطر</item>
+        <item>كفر شكر</item>
+        <item>القناطر الخيرية</item>
+        <item>الخانكة</item>
+        <item>مدينة العبور</item>
+    </string-array>
+
+    <string-array name="K_SH_8">
+        <item>- الـمديـنة -</item>
+        <item>كفر الشيخ</item>
+        <item>مركز دسوق</item>
+        <item>مركز فوه</item>
+        <item>مركز مطوبس</item>
+        <item>مركز قلين</item>
+        <item>مركز بيلا</item>
+        <item>مركز الحامول</item>
+        <item>سيدي سالم</item>
+        <item>مركز البرلس</item>
+        <item>مركز الرياض</item>
+    </string-array>
+
+    <string-array name="G_C_9">
+        <item>- الـمديـنة -</item>
+        <item>مركز طنطا</item>
+        <item>المحلة الكبرى</item>
+        <item>كفر الزيات</item>
+        <item>مركز زفتى</item>
+        <item>مركز السنطة</item>
+        <item>مركز قطور</item>
+        <item>مركز بسيون</item>
+        <item>مركز سمنود</item>
+    </string-array>
+
+    <string-array name="MN_C_10">
+        <item>- الـمديـنة -</item>
+        <item>شبين الكوم</item>
+        <item>مركز منوف</item>
+        <item>بركة السبع</item>
+        <item>مركز قويسنا</item>
+        <item>مركز تلا</item>
+        <item>مركز الباجور</item>
+        <item>مركز أشمون</item>
+        <item>مركز الشهداء</item>
+        <item>مركز السادات</item>
+    </string-array>
+
+    <string-array name="B7_C_11">
+        <item>- الـمديـنة -</item>
+        <item>مركز دمنهور</item>
+        <item>حوش عيسى</item>
+        <item>أبو المطامير</item>
+        <item>كفر الدوار</item>
+        <item>مركز إدكو</item>
+        <item>مركز رشيد</item>
+        <item>أبو حمص</item>
+        <item>المحمودية</item>
+        <item>الرحمانية</item>
+        <item>شبراخيت</item>
+        <item>إيتاي البارود</item>
+        <item>كوم حمادة</item>
+        <item>مركز بـــدر</item>
+        <item>الدلنجات</item>
+        <item>وادي النطرون</item>
+        <item>النوبارية الجديدة</item>
+    </string-array>
+
+    <string-array name="IS_C_12">
+        <item>- الـمديـنة -</item>
+        <item>مركز الإسماعيلية</item>
+        <item>القنطرة غرب</item>
+        <item>القنطرة شرق</item>
+        <item>مركز فايد</item>
+        <item>أبو صوير</item>
+        <item>التل الكبير</item>
+        <item>القصاصين الجديدة</item>
+    </string-array>
+
+    <string-array name="G_C_13">
+        <item>- الـمديـنة -</item>
+        <item>أبو النمرس</item>
+        <item>مركز البدرشين</item>
+        <item>مركز العياط</item>
+        <item>مركز الصف</item>
+        <item>مركز اطفيح</item>
+        <item>مركز كرداسة</item>
+        <item>مركز أوسيم</item>
+        <item>منشأة القناطر</item>
+        <item>منطقة الوراق</item>
+        <item>الواحات البحرية</item>
+        <item>الشيخ زايد</item>
+    </string-array>
+
+    <string-array name="BS_C_14">
+        <item>- الـمديـنة -</item>
+        <item>مركز_بنى سويف</item>
+        <item>مركز اهناسـيا</item>
+        <item>مركز ببـــا</item>
+        <item>مركز سمسطا</item>
+        <item>مركز الفشن</item>
+        <item>مركز الواسطى</item>
+        <item>مركز ناصر</item>
+        <item>بني سويف الجديدة</item>
+    </string-array>
+
+    <string-array name="F_C_15">
+        <item>- الـمديـنة -</item>
+        <item>مــركز الفيوم</item>
+        <item>مركــز طامية</item>
+        <item>مركز سنورس</item>
+        <item>مركز ابشواي</item>
+        <item>مركز اطسا</item>
+        <item>يوسف الصديق</item>
+        <item>مركز الشواشنة</item>
+        <item>الفيوم الجديدة</item>
+    </string-array>
+
+    <string-array name="M_C_16">
+        <item>- الـمديـنة -</item>
+        <item>مركز المنيا</item>
+        <item>أبو قرقاص</item>
+        <item>مركز ملوي</item>
+        <item>ديرمواس</item>
+        <item>سمالوط شرق</item>
+        <item>سمالوط غرب</item>
+        <item>مركز مطاى</item>
+        <item>بنى مزار</item>
+        <item>مركز مغاغة</item>
+        <item>مركز العدوة</item>
+        <item>المنيا الجديدة</item>
+    </string-array>
+
+    <string-array name="AS_C_17">
+        <item>- الـمديـنة -</item>
+        <item>مركز أسيوط</item>
+        <item>مركز أبو تيج</item>
+        <item>مركز الغنايم</item>
+        <item>مركز صدفا</item>
+        <item>مركز منفلوط</item>
+        <item>مركز القوصية</item>
+        <item>مركز ديروط</item>
+        <item>مركز أبنوب</item>
+        <item>مركز الفتح</item>
+        <item>ساحل سليم</item>
+        <item>مركز البدارى</item>
+        <item>أسيوط الجديدة</item>
+    </string-array>
+
+    <string-array name="SO_C_18">
+        <item>- الـمديـنة -</item>
+        <item>مركز سوهاج</item>
+        <item>مركز المراغة</item>
+        <item>مركز جهينة</item>
+        <item>مركز طهطا</item>
+        <item>مركز طــما</item>
+        <item>مركز المنشأة</item>
+        <item>مركز العسيرات</item>
+        <item>مركز جــرجا</item>
+        <item>مركز البلينا</item>
+        <item>دار السلام</item>
+        <item>مركز اخميم</item>
+        <item>مركز ساقلتة</item>
+        <item>سوهاج الجديدة</item>
+        <item>أخميم الجديدة</item>
+    </string-array>
+
+    <string-array name="QN_C_19">
+        <item>- الـمديـنة -</item>
+        <item>مــركز قــــنا</item>
+        <item>مــركز دشـــنا</item>
+        <item>مــركز الـــوقـف</item>
+        <item>نـجع حــمادى</item>
+        <item>مركز فـــرشوط</item>
+        <item>مركز أبـــو تشت</item>
+        <item>مركز قـــفط</item>
+        <item>مركز قــــوص</item>
+        <item>مركز نـــقادة</item>
+        <item>قنا الجديدة</item>
+    </string-array>
+
+    <string-array name="AS_C_20">
+        <item>- الـمديـنة -</item>
+        <item>مركز أسوان</item>
+        <item>مركز أدفو</item>
+        <item>كوم أمبو</item>
+        <item>نصر النوبة</item>
+        <item>مركز دراو</item>
+        <item>أبو سمبل</item>
+    </string-array>
+
+    <string-array name="Lu_C_21">
+        <item>- الـمديـنة -</item>
+        <item>مركز الأقصر</item>
+        <item>مركز طـــيبة</item>
+        <item>مركز القـــرنة</item>
+        <item>مركز أرمـــنت</item>
+        <item>مركز أســــنا</item>
+    </string-array>
+
+
+    <string-array name="HG_C_22">
+        <item>- الـمديـنة -</item>
+        <item>مدينة الغردقة</item>
+        <item>رأس غارب</item>
+        <item>مدينة سفاجا</item>
+        <item>مدينة القصير</item>
+        <item>مرسى علم</item>
+        <item>مدينة الشلاتين</item>
+        <item>مدينة حلايب</item>
+    </string-array>
+
+    <string-array name="NW_C_23">
+        <item>- الـمديـنة -</item>
+        <item>مركز الخارجة</item>
+        <item>مركز باريس</item>
+        <item>مركــز بلاط</item>
+        <item>مركز الفرافرة</item>
+        <item>مركز الداخلة</item>
+        <item>شرق العوينات</item>
+    </string-array>
+
+    <string-array name="M_C_24">
+        <item>- الـمديـنة -</item>
+        <item>مركز مرسى مطروح</item>
+        <item>مركز النجيلة</item>
+        <item>سيدى برانى</item>
+        <item>مركز السلوم</item>
+        <item>مركز الضبعة</item>
+        <item>مركز العلمين</item>
+        <item>مركز الحمام</item>
+        <item>مركز سيوة</item>
+        <item>الساحل الشمالي</item>
+    </string-array>
+
+    <string-array name="NS_C_25">
+        <item>- الـمديـنة -</item>
+        <item>مركز العريش</item>
+        <item>بئر العبد</item>
+        <item>مركز رمانة</item>
+        <item>مركز الحسنة</item>
+        <item>مركز نخل</item>
+        <item>مركز القسيمة</item>
+        <item>الشيخ زويد</item>
+        <item>مركز رفح</item>
+    </string-array>
+
+    <string-array name="SS_C_26">
+        <item>- الـمديـنة -</item>
+        <item>مركز الطور</item>
+        <item>أبو رديس</item>
+        <item>رأس سدر</item>
+        <item>سانت كاترين</item>
+        <item>مركز نوبيع</item>
+        <item>مركز دهب</item>
+        <item>شرم الشيخ</item>
+        <item>أبو زنيمة</item>
+    </string-array>
+
+    <string-array name="A000">
+        <item>- الـمديـنة -</item>
+    </string-array>
+
+</resources>
+

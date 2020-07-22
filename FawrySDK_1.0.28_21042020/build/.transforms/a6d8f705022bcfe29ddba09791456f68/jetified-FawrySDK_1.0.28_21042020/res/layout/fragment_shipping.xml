@@ -1,0 +1,70 @@
+
+    <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/scroll_part"
+
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background_color"
+
+    android:scrollbars="none"
+    tools:context="com.emeint.android.fawryplugin.views.fragments.ShippingFragment">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        style="@style/screen_container_style"
+        android:paddingBottom="@dimen/unit_1x"
+        android:layout_height="match_parent">
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/shipping_info_layout_container"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/card_view_margin">
+
+                    <include
+                        android:id="@+id/stepper_view"
+                        layout="@layout/stepper_layout" />
+                </RelativeLayout>
+
+                <include layout="@layout/shipping_info_layout" />
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+
+            android:id="@+id/shipping_type_card_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/shipping_info_layout_container"
+            android:layout_marginTop="@dimen/margin_top_between_card_views">
+
+            <include
+                android:id="@+id/shipping_type_layout_id"
+                layout="@layout/shipping_type_layout" />
+
+        </androidx.cardview.widget.CardView>
+
+        <com.emeint.android.fawryplugin.views.cutomviews.FawryPluginCustomButton
+            android:id="@+id/continue_button"
+            style="@style/button_style"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/unit_2x"
+            android:layout_marginBottom="@dimen/unit_2x"
+            android:layout_below="@id/shipping_type_card_view"
+            android:text="@string/str_continue_button" />
+    </RelativeLayout>
+</ScrollView>
+
+

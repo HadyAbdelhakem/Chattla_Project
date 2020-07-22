@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#58826b</color>
+    <color name="colorPrimaryDark">#2e4f3e</color>
+    <color name="colorAccent">#88c641</color>
+
+    <color name="text_color_slider">#241F1F</color>
+
+</resources>

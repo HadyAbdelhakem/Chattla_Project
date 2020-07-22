@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/cardview_message"
+    app:cardElevation="0dp">
+
+    <FrameLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent">
+
+        <me.himanshusoni.chatmessageview.ChatMessageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="start"
+            android:layout_marginBottom="@dimen/_6sdp"
+            android:layout_marginLeft="@dimen/_6sdp"
+            android:layout_marginRight="@dimen/_40sdp"
+            android:layout_marginTop="@dimen/_2sdp"
+            android:animateLayoutChanges="true"
+            android:animationCache="true"
+            android:gravity="end"
+            android:orientation="vertical"
+            app:cmv_arrowGravity="start"
+            app:cmv_arrowPosition="left"
+            app:cmv_backgroundColor="@color/text_color"
+            app:cmv_backgroundColorPressed="@color/colorBlack"
+            app:cmv_contentPadding="0dp"
+            app:cmv_cornerRadius="12dp"
+            app:cmv_showArrow="false">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="end"
+                android:orientation="vertical"
+                >
+
+                <com.makeramen.roundedimageview.RoundedImageView
+                    android:id="@+id/iv_image"
+                    android:layout_width="@dimen/_120sdp"
+                    android:layout_height="@dimen/_120sdp"
+                    android:layout_margin="4dp"
+                    android:adjustViewBounds="true"
+                    android:background="@android:color/transparent"
+                    android:contentDescription="@string/app_name"
+                    android:scaleType="centerCrop"
+                    android:visibility="gone"
+                    app:riv_corner_radius="@dimen/_10sdp" />
+
+                <TextView
+                    android:id="@+id/tv_message"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:minWidth="@dimen/_50sdp"
+                    android:textSize="@dimen/_12ssp"
+                    android:gravity="end"
+                    android:layout_margin="@dimen/_5sdp"
+                    android:fontFamily="@font/tajawal_regular"
+                    android:layout_gravity="center"
+                    android:textColor="@color/white" />
+
+            </LinearLayout>
+
+        </me.himanshusoni.chatmessageview.ChatMessageView>
+
+
+
+        <com.makeramen.roundedimageview.RoundedImageView
+            android:id="@+id/img_profile"
+            android:layout_width="@dimen/_40sdp"
+            android:layout_height="@dimen/_40sdp"
+            android:layout_gravity="start"
+            android:layout_margin="@dimen/_2sdp"
+            android:visibility="gone"
+            app:civ_border_color="@color/white"
+            app:civ_border_width="2dp" />
+
+        <com.rygelouv.audiosensei.player.AudioSenseiPlayerView
+            android:id="@+id/audio_player"
+            android:layout_width="@dimen/_200sdp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/_6sdp"
+            android:visibility="gone"
+
+            />
+
+
+        <TextView
+            android:id="@+id/tv_time"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/_7sdp"
+            android:layout_gravity="bottom|start"
+            android:text="time"
+            android:layout_marginStart="@dimen/_18sdp"
+            android:fontFamily="@font/tajawal_regular"
+            android:textSize="@dimen/_6ssp"
+            android:maxLines="1"
+            android:textColor="@color/text_color"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/tv_seen"
+            android:textSize="@dimen/_10ssp"
+            android:layout_marginEnd="@dimen/_16sdp"
+            android:layout_marginTop="@dimen/_6sdp"
+            android:layout_gravity="bottom|end"
+            android:textColor="@color/colorPrimary"/>
+    </FrameLayout>
+</androidx.cardview.widget.CardView>

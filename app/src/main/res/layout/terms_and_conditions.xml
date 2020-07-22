@@ -1,0 +1,257 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layoutDirection="ltr"
+    android:textDirection="rtl"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <androidx.appcompat.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimary">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:fontFamily="@font/tajawal_bold"
+            android:text="الشروط والأحكام"
+            android:textColor="@color/colorWhite"
+            android:textSize="@dimen/_16ssp" />
+
+        <ImageView
+            android:id="@+id/imageview_back"
+            android:layout_width="@dimen/_24sdp"
+            android:layout_height="@dimen/_24sdp"
+            android:layout_alignParentLeft="true"
+            android:layout_centerInParent="true"
+            android:layout_marginLeft="@dimen/_16sdp"
+            android:padding="@dimen/_2sdp"
+            android:src="@drawable/ic_arrow" />
+
+    </androidx.appcompat.widget.Toolbar>
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_margin="@dimen/_8sdp"
+            android:background="@drawable/background_white_with_border_tac"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_margin="@dimen/_6sdp"
+                android:fontFamily="@font/tajawal_bold"
+                android:text="شروط استخدام التطبيق"
+                android:textColor="@color/colorBlack"
+                android:textSize="@dimen/_16ssp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_margin="@dimen/_6sdp"
+                android:fontFamily="@font/tajawal_bold"
+                android:text="إن المواد المنشورة على هذا التطبيق، بنسخة: إنترنت شتلة لأجهزة الكمبيوتر، شتلة موبايل وتطبيقات شتلة (والمشار إليها جميعا فيما يلي تحت اسم 'التطبيق')، والتي قد تتضمن نصوصا، وصورا، ومواد صوتية، ومرئية، وملفات للتحميل، وبرامج، ومنتجات للبيع، وغيرها من المواد (المشار إليها فيما يلي بـ 'المحتوى') تقدمها شركه الشتلة لأغراض إعلامية وتجارية، وحسب. إن دخولك إلى التطبيق، أو تحميلك، أو شراءك أيّا من محتوياته يعني موافقتك على الالتزام بشروط الاستخدام المنصوص عليها أدناه ('شروط استخدام التطبيق'). فإن لم توافق على هذه الشروط، فلا يحق لك الدخول إلى التطبيق ولا تحميل أي من محتوياته."
+                android:textSize="@dimen/_10ssp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_margin="@dimen/_6sdp"
+                android:fontFamily="@font/tajawal_bold"
+                android:text="١-  أنت مسئول مسئوليه كامله عن دقه وصحه البيانات التي تدخلها وتشاركها مع التطبيق والخبير والخبير غير مسئول عن تنفيذك الخطأ للتوصيات ولكنه مسئول بشكل مباشر عن تشخيصه في ضوء البيانات المعطاه له .."
+                android:textSize="@dimen/_10ssp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_margin="@dimen/_6sdp"
+                android:fontFamily="@font/tajawal_bold"
+                android:text="٢ - يلتزم الطرفين بآداب الحوار والحديث وعدم الخروج عن الهدف من إنشاء هذا التطبيق"
+                android:textSize="@dimen/_10ssp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_margin="@dimen/_6sdp"
+                android:fontFamily="@font/tajawal_bold"
+                android:text="٣ - الإبلاغ عن أي مخالفات تؤدي للتطرف أو التعصب"
+                android:textSize="@dimen/_10ssp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="@dimen/_18sdp"
+                android:layout_marginRight="@dimen/_8sdp"
+                android:layout_marginLeft="@dimen/_8sdp"
+                android:fontFamily="@font/tajawal_bold"
+                android:text="إخلاء المسئولية"
+                android:textColor="@color/colorBlack"
+                android:textSize="@dimen/_16ssp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_margin="@dimen/_6sdp"
+                android:fontFamily="@font/tajawal_bold"
+                android:text="تسعى شركه الشتلة للوساطه التجاريه لأن يكون محتوى الموقع دقيقا وموثوق، ، فإنها تقدمه لك كما هو متاح عندئذ. وتخلي الشركه مسئوليتها تجاهك أو تجاه أي طرف آخر عن أي خطأ أو حذف من أي نوع في المحتوى، وتنكر أية ضمانات و/أو شروط، صريحة أو ضمنية، فيما يتعلق بالمحتوى أو أي أمر مرتبط بالموقع، بما ذلك – كمثال لا للحصر – الضمانات الضمنية و/أو توافر شروط عدم الانتهاك، وصلاحية العرض في السوق، والملاءمة لغرض ما. إن الروابط المتاحة على التطبيق تسمح لك بالدخول إلى مواقع لا تدعمها شركه الشتلة ولا تتحكم فيها. توفر الشركه هذه الروابط لراحتك، وهي غير مسئولة عما تتضمنه هذه المواقع من محتوى أو أية تعاملات تجارية. تبذل شبكة بشاير الجهد المفترض للتأكد من دقة محتوى موقعها، لكنها لا تستطيع ضمان هذه الدقة، والشمول، وعدم الانتهاك، وصلاحية العرض في السوق، والملاءمة لغرض معين، فيما يخص أية معلومات أو تعاملات تجارية متاحة على هذه الروابط. إن المواقع التي قد تفضي إليها روابط على موقعنا لا تعني تمثيل شبكة بشاير ولا تأييدها لها. ومن ثم، فإنك المسئول عن التأكد من خلو أي موقع تختار دخوله من أي أشياء مدمرة من المحتمل وجودها كالفيروسات."
+                android:textSize="@dimen/_10ssp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="@dimen/_18sdp"
+                android:layout_marginRight="@dimen/_8sdp"
+                android:layout_marginLeft="@dimen/_8sdp"
+                android:fontFamily="@font/tajawal_bold"
+                android:text="استخدام الموقع"
+                android:textColor="@color/colorBlack"
+                android:textSize="@dimen/_16ssp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_margin="@dimen/_6sdp"
+                android:fontFamily="@font/tajawal_bold"
+                android:text="لا يحق لك إرسال، أو رفع، أو نشر، أو نقل، أو توزيع أي من المعلومات أو المواد الواردة على هذا الموقع، في حال: أ. استخدامها بما يتضمن القيام بأي تصرف يؤدي إلى إساءة جنائية أو مسئولية قانونية، أو التشجيع على ذلك؛ ب. تضمنها لحقوق نشر، أو أية حقوق ملكية فكرية أخرى، أو أعمال تخريبية مرتبطة بذلك، دون ترخيص من صاحب حق النشر؛ ج. استخدام هذا الموقع بصورة تخالف القانون أو أعراف الإنترنت، أو بصورة من شأنها التأثير سلبا على استخدام الآخرين للموقع أو الإنترنت، بما في ذلك إرسال أو نقل معلومات أو برامج تتضمن فيروسات أو أي مواد مدمرة."
+                android:textSize="@dimen/_10ssp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="@dimen/_18sdp"
+                android:layout_marginRight="@dimen/_8sdp"
+                android:layout_marginLeft="@dimen/_8sdp"
+                android:fontFamily="@font/tajawal_bold"
+                android:text="حقوق النشر"
+                android:textColor="@color/colorBlack"
+                android:textSize="@dimen/_16ssp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_margin="@dimen/_6sdp"
+                android:fontFamily="@font/tajawal_bold"
+                android:text="إن جميع المحتوى المنشور على الموقع محمي بحقوق نشر. وهذا المحتوى وحقوق النشر ملك لشركه الشتلة للوساطه التجاريه، وضمن سيطرتها. يسمح لك باستخدام المعلومات التي يتضمنها المحتوى أو إعادة إنتاجها، للاستخدام الشخصي، أو غير التجاري، أو التعليمي. ولا يسمح استخدام المحتوى، أو إعادة إنتاجه، أو إذاعته، أو نشره، أو نقله دون إذن كتابي مسبق من مالك حقوق النشر لأغراض أخرى بخلاف ذلك. ولابد من التزامك بكافة إشعارات حقوق النشر، والمعلومات، والضوابط التي يتضمنها أي من محتويات الموقع أو المحتويات التي يتم الوصول إليها من خلاله، والحفاظ على مثل هذه الإشعارات في المحتوى."
+                android:textSize="@dimen/_10ssp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="@dimen/_18sdp"
+                android:layout_marginRight="@dimen/_8sdp"
+                android:layout_marginLeft="@dimen/_8sdp"
+                android:fontFamily="@font/tajawal_bold"
+                android:text="الخصوصية والمعلومات السرية"
+                android:textColor="@color/colorBlack"
+                android:textSize="@dimen/_16ssp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_margin="@dimen/_6sdp"
+                android:fontFamily="@font/tajawal_bold"
+                android:text="تعد سياسة الخصوصية والأمن الخاصة بشركه الشتلة جزءا ملزما من هذه الشروط. ويمكن الاطلاع على سياسة الخصوصية والأمن على هذا الموقع."
+                android:textSize="@dimen/_10ssp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="@dimen/_18sdp"
+                android:layout_marginRight="@dimen/_8sdp"
+                android:layout_marginLeft="@dimen/_8sdp"
+                android:fontFamily="@font/tajawal_bold"
+                android:text="التعويض"
+                android:textColor="@color/colorBlack"
+                android:textSize="@dimen/_16ssp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_margin="@dimen/_6sdp"
+                android:fontFamily="@font/tajawal_bold"
+                android:text="إنك بموجب هذا، توافق على حماية، وتعويض شركه الشتلة وشركاتها ذات الصلة، وإعفائها من كافة المسئوليات والتكاليف والنفقات، بما في ذلك أتعاب المحاماة، فيما يخص أية انتهاكات لهذه الشروط، تقوم بها أو يقوم بها أي مستخدمين لحسابك، أو فيما يخص استخدامك لهذا التطبيق ، أو قيامك بنشر أو نقل أية معلومات أو مواد أخرى على هذا التطبيق، أو قيام أحد مستخدمي حسابك بأي من هذه الأمور."
+                android:textSize="@dimen/_10ssp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="@dimen/_18sdp"
+                android:layout_marginRight="@dimen/_8sdp"
+                android:layout_marginLeft="@dimen/_8sdp"
+                android:fontFamily="@font/tajawal_bold"
+                android:text="التعديلات"
+                android:textColor="@color/colorBlack"
+                android:textSize="@dimen/_16ssp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_margin="@dimen/_6sdp"
+                android:fontFamily="@font/tajawal_bold"
+                android:text="تحتفظ شركه الشتلة في حقها في تغيير أو إزالة أي من محتويات الموقع، كليا أو جزئيا، ولها كامل التصرف في ذلك، في أي وقت، دون إشعار مسبق. كما تحتفظ الشركه بحقها في تغيير أو تعديل في هذه الشروط وسياسة الخصوصية والأمن في أي وقت، دون إشعار مسبق، ويُعمل بهذه التغييرات فور نشرها على التطبيق ."
+                android:textSize="@dimen/_10ssp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="@dimen/_18sdp"
+                android:layout_marginRight="@dimen/_8sdp"
+                android:layout_marginLeft="@dimen/_8sdp"
+                android:fontFamily="@font/tajawal_bold"
+                android:text="متفرقات"
+                android:textColor="@color/colorBlack"
+                android:textSize="@dimen/_16ssp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_margin="@dimen/_6sdp"
+                android:fontFamily="@font/tajawal_bold"
+                android:text="إن شروط استخدام تطبيق شركه الشتلة، بما في ذلك سياسة الخصوصية والأمن، وجميع المستندات المشار إليها هنا، تشكل اتفاقا بين شركه الشتلة معك فيما يخص استخدامك للتطبيق. إن فشل الشركه في المطالبة الصارمة أو فرض تطبيق أي شرط من شروط هذه الاتفاقية يجب ألا يفسر على أنه تنازل عن أي شرط أو حق. في حال أصدرت إحدى المحاكم المختصة حكمها بإلغاء أحد الشروط أو إبطال العمل به، أو فرض تطبيقه، فإن ذلك لا يؤثر على باقي الشروط الواردة هنا. يعد هذا الاتفاق خاضعا للقوانين المصرية، ويفسر وفقا لها. وقد طلب أطراف هذه الشروط أن تصدر هي وجميع المستندات ذات الصلة باللغتين العربية والإنجليزية."
+                android:textSize="@dimen/_10ssp" />
+
+
+        </LinearLayout>
+
+
+    </androidx.core.widget.NestedScrollView>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="@dimen/_8sdp"
+        android:layout_marginRight="@dimen/_8sdp"
+        android:layout_marginLeft="@dimen/_8sdp"
+        android:fontFamily="@font/tajawal_bold"
+        android:text="شروط استخدام التطبيق"
+        android:textColor="@color/colorBlack"
+        android:textSize="@dimen/_16ssp" />
+
+</LinearLayout>

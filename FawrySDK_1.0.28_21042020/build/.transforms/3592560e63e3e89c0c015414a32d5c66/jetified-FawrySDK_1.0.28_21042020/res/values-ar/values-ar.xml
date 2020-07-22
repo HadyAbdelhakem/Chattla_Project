@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="add_your_card_title">أضف بطاقتك الائتمانية</string>
+    <string name="address__validation_error_message">من فضلك ادخل العنوان</string>
+    <string name="alert_loading_contents">جاري التحميل ...</string>
+    <string name="app_bar_cancel_button">الغاء</string>
+    <string name="app_bar_close_button">اخرج</string>
+    <string name="are_you_sure_you_want_to_exit">هل تريد الخروج ؟</string>
+    <string name="area_shipping">المنطقة *</string>
+    <string name="area_spinner_title">المنطقة</string>
+    <string name="area_validation_error_message">من فضلك اختر المنطقة</string>
+    <string name="cancel_button">الغاء</string>
+    <string name="card_details_card_view_header">تفاصيل بطاقة الائتمان</string>
+    <string name="card_number">رقم البطاقة الائتمانية *</string>
+    <string name="city__validation_error_message">من فضلك اختر المدينة</string>
+    <string name="city_shipping">المدينة *</string>
+    <string name="city_spinner_title">المدينة</string>
+    <string name="close_dilog_button">اغلاق</string>
+    <string name="confirmation_address">العنوان</string>
+    <string name="confirmation_courier">نوع الشحن</string>
+    <string name="confirmation_payment_method">طريقة الدفع</string>
+    <string name="confirmation_receiver">المستلم</string>
+    <string name="confirmation_screen_title">تأكيد</string>
+    <string name="cost_cod">مصاريف الدفع عند الاستلام</string>
+    <string name="cost_fixed_fees">المصاريف الثابتة</string>
+    <string name="cost_order_amount">إجمالي الطلب</string>
+    <string name="cost_shipping">مصاريف الشحن</string>
+    <string name="courier_spinner">شركة الشحن *</string>
+    <string name="courier_spinner_title">شركة الشحن</string>
+    <string name="courier_validation_error_message">من فضلك اختر شركة الشحن</string>
+    <string name="customer_data_email">البريد الالكتروني *</string>
+    <string name="customer_data_mobile_number">رقم الموبايل *</string>
+    <string name="customer_data_stepper_header">الدخول</string>
+    <string name="cvv_code">كود التحقق *</string>
+    <string name="delivery_type_spinner">طريقة الشحن*</string>
+    <string name="delivery_type_spinner_title">طريقة الشحن</string>
+    <string name="delivery_type_validation_error_message">من فضلك اختر طريقة الشحن</string>
+    <string name="exit_button">اخرج</string>
+    <string name="expiry_date">سنة/شهر *</string>
+    <string name="fawry_plugin_error_title">فوري</string>
+    <string name="governorate_spinner_title">المحافظة</string>
+    <string name="governorate_validation_error_message">من فضلك اختر المحافظة</string>
+    <string name="invalid_value_card_cvc">ادخل كود التحقيق</string>
+    <string name="invalid_value_card_exp_date">ادخل تاريخ إنتهاء صحيح</string>
+    <string name="invalid_value_card_number">من فضلك ادخل رقم بطاقة ائتمانية صحيح</string>
+    <string name="mail_validation_error_message">من فضلك ادخل بريد الكتروني صحيح</string>
+    <string name="mobile_number_validation_error_message">من فضلك ادخل رقم موبايل صحيح</string>
+    <string name="mobile_number_validation_message_hint">أمثلة لأرقام موبايل صحيحة:
+\n 012xxxx , 002011xxxx , +2010xxxx, 2015xxxx</string>
+    <string name="pay_at_delivery_hint">ادفع عند الاستلام</string>
+    <string name="pay_at_delivery_receipt_message">ادفع طلبك عند الاستلام</string>
+    <string name="pay_at_fawry_hint"> إدفع باستخدام رقم طلب @فوري بأي طريقة من طرق فوري (ماكينة الصرف الآلي - تجار التجزئة - محفظة الجوال - الموقع: myFawry.com)</string>
+    <string name="pay_using_cc_receipt_message">شكرا لك على الدفع بواسطة بطاقة الائتمان</string>
+    <string name="pay_using_credit_card_hint">ادفع باستخدم بطاقاتك الائتمانية</string>
+    <string name="pay_with_fawry_receipt_message"> إدفع طلبك باستخدام رقم طلب @فوري قبل يوم
+ %1$s \nلمعرفة أماكن الدفع,
+    &lt;a href=\"http://fawry.com/storelocator\"> اضغط هنا &lt;/a></string>
+    <string name="payment_method_card_view_h">طريقة الدفع</string>
+    <string name="payment_method_spinner">طريقة الدفع</string>
+    <string name="payment_method_spinner_title">طريقةالدفع</string>
+    <string name="payment_stepper_title">الدفع</string>
+    <string name="popups_title">فوري</string>
+    <string name="receipt_fawry_order_number">رقم الطلب</string>
+    <string name="receipt_fixed_fees">المصاريف الثابتة</string>
+    <string name="receipt_header">الايصال</string>
+    <string name="receipt_order_amount">إجمالي الطلب</string>
+    <string name="receipt_pay_at_delivery">ادفع @ الاستلام</string>
+    <string name="receipt_shipping_cost">مصاريف الشحن</string>
+    <string name="receipt_total">الاجمالي</string>
+    <string name="receiver_address">العنوان *</string>
+    <string name="receiver_edit_text_hint">المستلم *</string>
+    <string name="receiver_name_validation_error_message">من فضلك ادخل اسم المستلم</string>
+    <string name="saving_card_button">ارسال</string>
+    <string name="sdk_name">فوري</string>
+    <string name="select_payment_method">من فضلك اختر طريقة الدفع</string>
+    <string name="shipping_governorate">المحافظة *</string>
+    <string name="shipping_info_card_view_header">تفاصيل الشحن</string>
+    <string name="shipping_stepper_header">@string/payment_stepper_title
+    </string>
+    <string name="shipping_type">نوع الشحن</string>
+    <string name="str_confirm_button">تأكيد</string>
+    <string name="str_continue_button">استمر</string>
+    <string name="thank_you_for_choosing_fawry">شكراً لاختياركم فوري</string>
+    <string name="this_phone_number_will_be_used_to_send_you_notifications">سيتم ارسال اشعار لهذا الرقم </string>
+    <string name="total_cost">الإجمالي</string>
+    <string name="you_have_requested_to_make_a_payment_confirmation_header">أنت على وشك دفع</string>
+    <string name="your_card_has_been_added_successfully">تم إضافة بطاقتك الائتمانية بنجاح</string>
+    <style name="gravity_style">
+        <item name="android:gravity">right</item>
+    </style>
+    <style name="label_gravity_style">
+        <item name="android:gravity">left</item>
+    </style>
+    <style name="symmetric_image_view_style" parent="header_action_style">
+        <item name="android:rotation">180</item>
+    </style>
+</resources>

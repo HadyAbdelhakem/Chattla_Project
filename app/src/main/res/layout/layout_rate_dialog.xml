@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@android:color/transparent">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/_16sdp"
+        android:layout_marginEnd="@dimen/_16sdp"
+        app:cardCornerRadius="@dimen/_10sdp"
+        android:layout_marginTop="@dimen/_12sdp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginStart="@dimen/_16sdp"
+            android:layout_marginEnd="@dimen/_16sdp"
+            android:orientation="vertical">
+
+            <com.willy.ratingbar.ScaleRatingBar
+                android:id="@+id/rt_review"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_margin="@dimen/_16sdp"
+                app:srb_clearRatingEnabled="true"
+                app:srb_clickable="true"
+                app:srb_drawableEmpty="@drawable/ic_star_empty"
+                app:srb_drawableFilled="@drawable/ic_star_fill"
+                app:srb_isIndicator="false"
+                app:srb_minimumStars="1"
+                app:srb_starPadding="@dimen/_6sdp"
+                app:srb_numStars="5"
+                style="?android:attr/ratingBarStyleSmall"
+                app:srb_scrollable="false"
+                app:srb_rating="5"
+                app:srb_starHeight="@dimen/_18sdp"
+                app:srb_starWidth="@dimen/_18sdp"
+                app:srb_stepSize="1">
+
+            </com.willy.ratingbar.ScaleRatingBar>
+
+
+            <EditText
+                android:id="@+id/et_rate"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_80sdp"
+                android:hint="اكتب تقييمك عن الإستشارى ..."
+                android:gravity="start"
+                android:fontFamily="@font/tajawal_medium"
+                android:textSize="@dimen/_14ssp"
+                android:layout_marginBottom="@dimen/_8sdp"/>
+
+
+            <TextView
+                android:id="@+id/tv_add_rate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/_14ssp"
+                android:padding="@dimen/_4sdp"
+                android:fontFamily="@font/tajawal_bold"
+                android:text="إضافة التقييم"
+                android:layout_gravity="center"
+                android:layout_margin="@dimen/_4sdp"/>
+
+        </LinearLayout>
+
+
+    </androidx.cardview.widget.CardView>
+
+
+</RelativeLayout>

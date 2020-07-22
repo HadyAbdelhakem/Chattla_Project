@@ -1,0 +1,808 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AndroidLayouts">
+    <shared>
+      <config>
+        <device id="pixel_3_xl" />
+        <device id="pixel" />
+        <device id="pixel_xl" />
+        <device id="Nexus 6P" />
+        <device id="pixel_3a" />
+        <device id="pixel_3" />
+        <device id="Nexus 7 2013" />
+        <device id="Nexus 10" />
+        <device id="Nexus 5X" />
+        <device id="tv_1080p" />
+        <target>android-30</target>
+      </config>
+    </shared>
+  </component>
+  <component name="AndroidLogFilters">
+    <option name="TOOL_WINDOW_LOG_LEVEL" value="error" />
+    <option name="TOOL_WINDOW_CONFIGURED_FILTER" value="Show only selected application" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="145413bf-a126-4930-abfa-e16b2ff37a1f" name="Default Changelist" comment="New Payment Information">
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/develop/shatla/ui/Payment/PaymentActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/develop/shatla/ui/Payment/PaymentActivity.java" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ExecutionTargetManager" SELECTED_TARGET="6.0_Api_28" />
+  <component name="ExternalProjectsData">
+    <projectState path="$PROJECT_DIR$">
+      <ProjectState />
+    </projectState>
+  </component>
+  <component name="ExternalProjectsManager">
+    <system id="GRADLE">
+      <state>
+        <task path="$PROJECT_DIR$">
+          <activation />
+        </task>
+        <task path="$PROJECT_DIR$/app">
+          <activation />
+        </task>
+        <projects_view>
+          <tree_state>
+            <expand>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="Chattla_Project" type="f1a62948:ProjectNode" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="Chattla_Project" type="f1a62948:ProjectNode" />
+                <item name="Run Configurations" type="7b0102dc:RunConfigurationsNode" />
+              </path>
+            </expand>
+            <select />
+          </tree_state>
+        </projects_view>
+      </state>
+    </system>
+  </component>
+  <component name="FavoritesManager">
+    <favorites_list name="shatla" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Interface" />
+        <option value="resourceFile" />
+        <option value="layoutResourceFile" />
+        <option value="layoutResourceFile_vertical" />
+        <option value="valueResourceFile" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="GenerateSignedApkSettings">
+    <option name="KEY_STORE_PATH" value="D:\shatla\KeyStore.jks" />
+    <option name="KEY_ALIAS" value="key0" />
+    <option name="REMEMBER_PASSWORDS" value="true" />
+    <option name="BUILD_TARGET_KEY" value="apk" />
+  </component>
+  <component name="Git.Settings">
+    <option name="ADD_SUFFIX_TO_CHERRY_PICKS_OF_PUBLISHED_COMMITS" value="false" />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="WARN_ABOUT_CRLF" value="false" />
+    <option name="WARN_ABOUT_DETACHED_HEAD" value="false" />
+  </component>
+  <component name="ProjectId" id="1YWoFDySSpgMW67ZXl99zF5blua" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="1" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="ApkExportedModule" value="app" />
+    <property name="DeviceAndSnapshotComboBoxAction.selectedDevice" value="6.0_Api_28" />
+    <property name="DeviceAndSnapshotComboBoxAction.selectionTime" value="2020-07-21T03:23:59.301Z" />
+    <property name="ExportApk.ApkPath" value="D:\shatla" />
+    <property name="ExportApk.BuildVariants" value="release" />
+    <property name="ExportApk.SignV1" value="true" />
+    <property name="ExportApk.SignV2" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SelectDeploymentTargetsDialog.selectedDevices" value="Pixel_3a_API_30&#10;Pixel_3a_XL_API_28" />
+    <property name="android.sdk.path" value="$USER_HOME$/AppData/Local/Android/Sdk" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.proportion" value="0.17" />
+    <property name="project.structure.side.proportion" value="0.2" />
+    <property name="settings.editor.selected.configurable" value="settings.github" />
+  </component>
+  <component name="PsdUISettings">
+    <option name="MODULE_TAB" value="Signing Configs" />
+    <option name="BUILD_VARIANTS_TAB" value="Build Types" />
+    <option name="LAST_EDITED_SIGNING_CONFIG" value="debug" />
+    <option name="LAST_EDITED_BUILD_TYPE" value="release" />
+  </component>
+  <component name="RecentsManager">
+    <key name="android.template.-1402715762">
+      <recent name="com.develop.shatla.ui.register" />
+      <recent name="com.develop.shatla" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\shatla\app\src\main\res\raw" />
+      <recent name="C:\Users\Hady\AndroidStudioProjects\shatla\app\src\main\res\raw" />
+      <recent name="C:\Users\Hady\AndroidStudioProjects\shatla\app\src\main\res\drawable" />
+      <recent name="E:\Android\Projects\CloudMatrix\shatla\app\src\main\res\drawable" />
+      <recent name="E:\Android\Projects\CloudMatrix\shatla\app\src\main\res\drawable-xxhdpi" />
+    </key>
+    <key name="android.template.packageName">
+      <recent name="com.develop.shatla.ui" />
+      <recent name="com.develop.shatla.ui.Payment" />
+      <recent name="com.develop.shatla.ui.consultDetails" />
+      <recent name="com.develop.shatla.ui.expertMain" />
+      <recent name="com.develop.shatla.ui.map" />
+    </key>
+    <key name="android.template.723050363">
+      <recent name="com.develop.shatla" />
+    </key>
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="com.develop.hady" />
+      <recent name="com.example.hady.shatla" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.develop.shatla.ui.reviews" />
+      <recent name="com.develop.shatla.utils" />
+      <recent name="com.develop.shatla.custom" />
+      <recent name="com.develop.shatla.ui.expertMain" />
+      <recent name="com.develop.shatla.model" />
+    </key>
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="com.example.hady.shatla" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Android App.SplashScreen">
+    <configuration default="true" type="AndroidJUnit" factoryName="Android JUnit">
+      <option name="TEST_OBJECT" value="class" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <method v="2">
+        <option name="Android.Gradle.BeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ExpertMainActivity" type="AndroidRunConfigurationType" factoryName="Android App" temporary="true">
+      <module name="app" />
+      <option name="DEPLOY" value="true" />
+      <option name="DEPLOY_APK_FROM_BUNDLE" value="false" />
+      <option name="DEPLOY_AS_INSTANT" value="false" />
+      <option name="ARTIFACT_NAME" value="" />
+      <option name="PM_INSTALL_OPTIONS" value="" />
+      <option name="DYNAMIC_FEATURES_DISABLED_LIST" value="" />
+      <option name="ACTIVITY_EXTRA_FLAGS" value="" />
+      <option name="MODE" value="specific_activity" />
+      <option name="CLEAR_LOGCAT" value="false" />
+      <option name="SHOW_LOGCAT_AUTOMATICALLY" value="false" />
+      <option name="SKIP_NOOP_APK_INSTALLATIONS" value="true" />
+      <option name="FORCE_STOP_RUNNING_APP" value="true" />
+      <option name="TARGET_SELECTION_MODE" value="DEVICE_AND_SNAPSHOT_COMBO_BOX" />
+      <option name="SELECTED_CLOUD_MATRIX_CONFIGURATION_ID" value="-1" />
+      <option name="SELECTED_CLOUD_MATRIX_PROJECT_ID" value="" />
+      <option name="DEBUGGER_TYPE" value="Auto" />
+      <Auto>
+        <option name="USE_JAVA_AWARE_DEBUGGER" value="false" />
+        <option name="SHOW_STATIC_VARS" value="true" />
+        <option name="WORKING_DIR" value="" />
+        <option name="TARGET_LOGGING_CHANNELS" value="lldb process:gdb-remote packets" />
+        <option name="SHOW_OPTIMIZED_WARNING" value="true" />
+      </Auto>
+      <Hybrid>
+        <option name="USE_JAVA_AWARE_DEBUGGER" value="false" />
+        <option name="SHOW_STATIC_VARS" value="true" />
+        <option name="WORKING_DIR" value="" />
+        <option name="TARGET_LOGGING_CHANNELS" value="lldb process:gdb-remote packets" />
+        <option name="SHOW_OPTIMIZED_WARNING" value="true" />
+      </Hybrid>
+      <Java />
+      <Native>
+        <option name="USE_JAVA_AWARE_DEBUGGER" value="false" />
+        <option name="SHOW_STATIC_VARS" value="true" />
+        <option name="WORKING_DIR" value="" />
+        <option name="TARGET_LOGGING_CHANNELS" value="lldb process:gdb-remote packets" />
+        <option name="SHOW_OPTIMIZED_WARNING" value="true" />
+      </Native>
+      <Profilers>
+        <option name="ADVANCED_PROFILING_ENABLED" value="false" />
+        <option name="STARTUP_CPU_PROFILING_ENABLED" value="false" />
+        <option name="STARTUP_CPU_PROFILING_CONFIGURATION_NAME" value="Sample Java Methods" />
+      </Profilers>
+      <option name="DEEP_LINK" value="" />
+      <option name="ACTIVITY_CLASS" value="com.agri.chattla.ui.expertMain.ExpertMainActivity" />
+      <method v="2">
+        <option name="Android.Gradle.BeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="LoginActivity" type="AndroidRunConfigurationType" factoryName="Android App" activateToolWindowBeforeRun="false" temporary="true">
+      <module name="app" />
+      <option name="DEPLOY" value="true" />
+      <option name="DEPLOY_APK_FROM_BUNDLE" value="false" />
+      <option name="DEPLOY_AS_INSTANT" value="false" />
+      <option name="ARTIFACT_NAME" value="" />
+      <option name="PM_INSTALL_OPTIONS" value="" />
+      <option name="DYNAMIC_FEATURES_DISABLED_LIST" value="" />
+      <option name="ACTIVITY_EXTRA_FLAGS" value="" />
+      <option name="MODE" value="specific_activity" />
+      <option name="CLEAR_LOGCAT" value="false" />
+      <option name="SHOW_LOGCAT_AUTOMATICALLY" value="false" />
+      <option name="SKIP_NOOP_APK_INSTALLATIONS" value="true" />
+      <option name="FORCE_STOP_RUNNING_APP" value="true" />
+      <option name="TARGET_SELECTION_MODE" value="DEVICE_AND_SNAPSHOT_COMBO_BOX" />
+      <option name="SELECTED_CLOUD_MATRIX_CONFIGURATION_ID" value="-1" />
+      <option name="SELECTED_CLOUD_MATRIX_PROJECT_ID" value="" />
+      <option name="DEBUGGER_TYPE" value="Auto" />
+      <Auto>
+        <option name="USE_JAVA_AWARE_DEBUGGER" value="false" />
+        <option name="SHOW_STATIC_VARS" value="true" />
+        <option name="WORKING_DIR" value="" />
+        <option name="TARGET_LOGGING_CHANNELS" value="lldb process:gdb-remote packets" />
+        <option name="SHOW_OPTIMIZED_WARNING" value="true" />
+      </Auto>
+      <Hybrid>
+        <option name="USE_JAVA_AWARE_DEBUGGER" value="false" />
+        <option name="SHOW_STATIC_VARS" value="true" />
+        <option name="WORKING_DIR" value="" />
+        <option name="TARGET_LOGGING_CHANNELS" value="lldb process:gdb-remote packets" />
+        <option name="SHOW_OPTIMIZED_WARNING" value="true" />
+      </Hybrid>
+      <Java />
+      <Native>
+        <option name="USE_JAVA_AWARE_DEBUGGER" value="false" />
+        <option name="SHOW_STATIC_VARS" value="true" />
+        <option name="WORKING_DIR" value="" />
+        <option name="TARGET_LOGGING_CHANNELS" value="lldb process:gdb-remote packets" />
+        <option name="SHOW_OPTIMIZED_WARNING" value="true" />
+      </Native>
+      <Profilers>
+        <option name="ADVANCED_PROFILING_ENABLED" value="false" />
+        <option name="STARTUP_CPU_PROFILING_ENABLED" value="false" />
+        <option name="STARTUP_CPU_PROFILING_CONFIGURATION_NAME" value="Sample Java Methods" />
+      </Profilers>
+      <option name="DEEP_LINK" value="" />
+      <option name="ACTIVITY_CLASS" value="com.agri.chattla.ui.login.LoginActivity" />
+      <method v="2">
+        <option name="Android.Gradle.BeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="SplashScreen" type="AndroidRunConfigurationType" factoryName="Android App" activateToolWindowBeforeRun="false" temporary="true">
+      <module name="app" />
+      <option name="DEPLOY" value="true" />
+      <option name="DEPLOY_APK_FROM_BUNDLE" value="false" />
+      <option name="DEPLOY_AS_INSTANT" value="false" />
+      <option name="ARTIFACT_NAME" value="" />
+      <option name="PM_INSTALL_OPTIONS" value="" />
+      <option name="DYNAMIC_FEATURES_DISABLED_LIST" value="" />
+      <option name="ACTIVITY_EXTRA_FLAGS" value="" />
+      <option name="MODE" value="specific_activity" />
+      <option name="CLEAR_LOGCAT" value="false" />
+      <option name="SHOW_LOGCAT_AUTOMATICALLY" value="false" />
+      <option name="SKIP_NOOP_APK_INSTALLATIONS" value="true" />
+      <option name="FORCE_STOP_RUNNING_APP" value="true" />
+      <option name="TARGET_SELECTION_MODE" value="DEVICE_AND_SNAPSHOT_COMBO_BOX" />
+      <option name="SELECTED_CLOUD_MATRIX_CONFIGURATION_ID" value="-1" />
+      <option name="SELECTED_CLOUD_MATRIX_PROJECT_ID" value="" />
+      <option name="DEBUGGER_TYPE" value="Auto" />
+      <Auto>
+        <option name="USE_JAVA_AWARE_DEBUGGER" value="false" />
+        <option name="SHOW_STATIC_VARS" value="true" />
+        <option name="WORKING_DIR" value="" />
+        <option name="TARGET_LOGGING_CHANNELS" value="lldb process:gdb-remote packets" />
+        <option name="SHOW_OPTIMIZED_WARNING" value="true" />
+      </Auto>
+      <Hybrid>
+        <option name="USE_JAVA_AWARE_DEBUGGER" value="false" />
+        <option name="SHOW_STATIC_VARS" value="true" />
+        <option name="WORKING_DIR" value="" />
+        <option name="TARGET_LOGGING_CHANNELS" value="lldb process:gdb-remote packets" />
+        <option name="SHOW_OPTIMIZED_WARNING" value="true" />
+      </Hybrid>
+      <Java />
+      <Native>
+        <option name="USE_JAVA_AWARE_DEBUGGER" value="false" />
+        <option name="SHOW_STATIC_VARS" value="true" />
+        <option name="WORKING_DIR" value="" />
+        <option name="TARGET_LOGGING_CHANNELS" value="lldb process:gdb-remote packets" />
+        <option name="SHOW_OPTIMIZED_WARNING" value="true" />
+      </Native>
+      <Profilers>
+        <option name="ADVANCED_PROFILING_ENABLED" value="false" />
+        <option name="STARTUP_CPU_PROFILING_ENABLED" value="false" />
+        <option name="STARTUP_CPU_PROFILING_CONFIGURATION_NAME" value="Sample Java Methods" />
+      </Profilers>
+      <option name="DEEP_LINK" value="" />
+      <option name="ACTIVITY_CLASS" value="com.agri.chattla.ui.splash.SplashScreen" />
+      <method v="2">
+        <option name="Android.Gradle.BeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="SplashScreen" type="AndroidRunConfigurationType" factoryName="Android App" activateToolWindowBeforeRun="false" temporary="true">
+      <module name="app" />
+      <option name="DEPLOY" value="true" />
+      <option name="DEPLOY_APK_FROM_BUNDLE" value="false" />
+      <option name="DEPLOY_AS_INSTANT" value="false" />
+      <option name="ARTIFACT_NAME" value="" />
+      <option name="PM_INSTALL_OPTIONS" value="" />
+      <option name="DYNAMIC_FEATURES_DISABLED_LIST" value="" />
+      <option name="ACTIVITY_EXTRA_FLAGS" value="" />
+      <option name="MODE" value="specific_activity" />
+      <option name="CLEAR_LOGCAT" value="false" />
+      <option name="SHOW_LOGCAT_AUTOMATICALLY" value="false" />
+      <option name="SKIP_NOOP_APK_INSTALLATIONS" value="true" />
+      <option name="FORCE_STOP_RUNNING_APP" value="true" />
+      <option name="TARGET_SELECTION_MODE" value="SHOW_DIALOG" />
+      <option name="SELECTED_CLOUD_MATRIX_CONFIGURATION_ID" value="-1" />
+      <option name="SELECTED_CLOUD_MATRIX_PROJECT_ID" value="" />
+      <option name="DEBUGGER_TYPE" value="Auto" />
+      <Auto>
+        <option name="USE_JAVA_AWARE_DEBUGGER" value="false" />
+        <option name="SHOW_STATIC_VARS" value="true" />
+        <option name="WORKING_DIR" value="" />
+        <option name="TARGET_LOGGING_CHANNELS" value="lldb process:gdb-remote packets" />
+        <option name="SHOW_OPTIMIZED_WARNING" value="true" />
+      </Auto>
+      <Hybrid>
+        <option name="USE_JAVA_AWARE_DEBUGGER" value="false" />
+        <option name="SHOW_STATIC_VARS" value="true" />
+        <option name="WORKING_DIR" value="" />
+        <option name="TARGET_LOGGING_CHANNELS" value="lldb process:gdb-remote packets" />
+        <option name="SHOW_OPTIMIZED_WARNING" value="true" />
+      </Hybrid>
+      <Java />
+      <Native>
+        <option name="USE_JAVA_AWARE_DEBUGGER" value="false" />
+        <option name="SHOW_STATIC_VARS" value="true" />
+        <option name="WORKING_DIR" value="" />
+        <option name="TARGET_LOGGING_CHANNELS" value="lldb process:gdb-remote packets" />
+        <option name="SHOW_OPTIMIZED_WARNING" value="true" />
+      </Native>
+      <Profilers>
+        <option name="ADVANCED_PROFILING_ENABLED" value="false" />
+        <option name="STARTUP_CPU_PROFILING_ENABLED" value="false" />
+        <option name="STARTUP_CPU_PROFILING_CONFIGURATION_NAME" value="Sample Java Methods" />
+      </Profilers>
+      <option name="DEEP_LINK" value="" />
+      <option name="ACTIVITY_CLASS" value="com.develop.chattla.SplashScreen" />
+      <method v="2">
+        <option name="Android.Gradle.BeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="SplashScreen" type="AndroidRunConfigurationType" factoryName="Android App" activateToolWindowBeforeRun="false" temporary="true">
+      <module name="app" />
+      <option name="DEPLOY" value="true" />
+      <option name="DEPLOY_APK_FROM_BUNDLE" value="false" />
+      <option name="DEPLOY_AS_INSTANT" value="false" />
+      <option name="ARTIFACT_NAME" value="" />
+      <option name="PM_INSTALL_OPTIONS" value="" />
+      <option name="DYNAMIC_FEATURES_DISABLED_LIST" value="" />
+      <option name="ACTIVITY_EXTRA_FLAGS" value="" />
+      <option name="MODE" value="specific_activity" />
+      <option name="CLEAR_LOGCAT" value="false" />
+      <option name="SHOW_LOGCAT_AUTOMATICALLY" value="false" />
+      <option name="SKIP_NOOP_APK_INSTALLATIONS" value="true" />
+      <option name="FORCE_STOP_RUNNING_APP" value="true" />
+      <option name="TARGET_SELECTION_MODE" value="DEVICE_AND_SNAPSHOT_COMBO_BOX" />
+      <option name="SELECTED_CLOUD_MATRIX_CONFIGURATION_ID" value="-1" />
+      <option name="SELECTED_CLOUD_MATRIX_PROJECT_ID" value="" />
+      <option name="DEBUGGER_TYPE" value="Auto" />
+      <Auto>
+        <option name="USE_JAVA_AWARE_DEBUGGER" value="false" />
+        <option name="SHOW_STATIC_VARS" value="true" />
+        <option name="WORKING_DIR" value="" />
+        <option name="TARGET_LOGGING_CHANNELS" value="lldb process:gdb-remote packets" />
+        <option name="SHOW_OPTIMIZED_WARNING" value="true" />
+      </Auto>
+      <Hybrid>
+        <option name="USE_JAVA_AWARE_DEBUGGER" value="false" />
+        <option name="SHOW_STATIC_VARS" value="true" />
+        <option name="WORKING_DIR" value="" />
+        <option name="TARGET_LOGGING_CHANNELS" value="lldb process:gdb-remote packets" />
+        <option name="SHOW_OPTIMIZED_WARNING" value="true" />
+      </Hybrid>
+      <Java />
+      <Native>
+        <option name="USE_JAVA_AWARE_DEBUGGER" value="false" />
+        <option name="SHOW_STATIC_VARS" value="true" />
+        <option name="WORKING_DIR" value="" />
+        <option name="TARGET_LOGGING_CHANNELS" value="lldb process:gdb-remote packets" />
+        <option name="SHOW_OPTIMIZED_WARNING" value="true" />
+      </Native>
+      <Profilers>
+        <option name="ADVANCED_PROFILING_ENABLED" value="false" />
+        <option name="STARTUP_CPU_PROFILING_ENABLED" value="false" />
+        <option name="STARTUP_CPU_PROFILING_CONFIGURATION_NAME" value="Sample Java Methods" />
+      </Profilers>
+      <option name="DEEP_LINK" value="" />
+      <option name="ACTIVITY_CLASS" value="com.develop.shatla.ui.splash.SplashScreen" />
+      <method v="2">
+        <option name="Android.Gradle.BeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="SplashScreen" type="AndroidRunConfigurationType" factoryName="Android App" activateToolWindowBeforeRun="false" temporary="true">
+      <module name="app" />
+      <option name="DEPLOY" value="true" />
+      <option name="DEPLOY_APK_FROM_BUNDLE" value="false" />
+      <option name="DEPLOY_AS_INSTANT" value="false" />
+      <option name="ARTIFACT_NAME" value="" />
+      <option name="PM_INSTALL_OPTIONS" value="" />
+      <option name="DYNAMIC_FEATURES_DISABLED_LIST" value="" />
+      <option name="ACTIVITY_EXTRA_FLAGS" value="" />
+      <option name="MODE" value="specific_activity" />
+      <option name="CLEAR_LOGCAT" value="false" />
+      <option name="SHOW_LOGCAT_AUTOMATICALLY" value="false" />
+      <option name="SKIP_NOOP_APK_INSTALLATIONS" value="true" />
+      <option name="FORCE_STOP_RUNNING_APP" value="true" />
+      <option name="TARGET_SELECTION_MODE" value="DEVICE_AND_SNAPSHOT_COMBO_BOX" />
+      <option name="SELECTED_CLOUD_MATRIX_CONFIGURATION_ID" value="-1" />
+      <option name="SELECTED_CLOUD_MATRIX_PROJECT_ID" value="" />
+      <option name="DEBUGGER_TYPE" value="Auto" />
+      <Auto>
+        <option name="USE_JAVA_AWARE_DEBUGGER" value="false" />
+        <option name="SHOW_STATIC_VARS" value="true" />
+        <option name="WORKING_DIR" value="" />
+        <option name="TARGET_LOGGING_CHANNELS" value="lldb process:gdb-remote packets" />
+        <option name="SHOW_OPTIMIZED_WARNING" value="true" />
+      </Auto>
+      <Hybrid>
+        <option name="USE_JAVA_AWARE_DEBUGGER" value="false" />
+        <option name="SHOW_STATIC_VARS" value="true" />
+        <option name="WORKING_DIR" value="" />
+        <option name="TARGET_LOGGING_CHANNELS" value="lldb process:gdb-remote packets" />
+        <option name="SHOW_OPTIMIZED_WARNING" value="true" />
+      </Hybrid>
+      <Java />
+      <Native>
+        <option name="USE_JAVA_AWARE_DEBUGGER" value="false" />
+        <option name="SHOW_STATIC_VARS" value="true" />
+        <option name="WORKING_DIR" value="" />
+        <option name="TARGET_LOGGING_CHANNELS" value="lldb process:gdb-remote packets" />
+        <option name="SHOW_OPTIMIZED_WARNING" value="true" />
+      </Native>
+      <Profilers>
+        <option name="ADVANCED_PROFILING_ENABLED" value="false" />
+        <option name="STARTUP_CPU_PROFILING_ENABLED" value="false" />
+        <option name="STARTUP_CPU_PROFILING_CONFIGURATION_NAME" value="Sample Java Methods" />
+      </Profilers>
+      <option name="DEEP_LINK" value="" />
+      <option name="ACTIVITY_CLASS" value="com.develop.shatla.ui.splash.SplashScreen" />
+      <method v="2">
+        <option name="Android.Gradle.BeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="C:/Users/Hady/AndroidStudioProjects/Shatla/app [signingReport]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$/app" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value="signingReport" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <GradleScriptDebugEnabled>true</GradleScriptDebugEnabled>
+      <method v="2" />
+    </configuration>
+    <configuration name="Chatla [signingReport]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value="signingReport" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <GradleScriptDebugEnabled>true</GradleScriptDebugEnabled>
+      <method v="2" />
+    </configuration>
+    <list>
+      <item itemvalue="Android App.SplashScreen" />
+      <item itemvalue="Android App.LoginActivity" />
+      <item itemvalue="Android App.ExpertMainActivity" />
+      <item itemvalue="Gradle.C:/Users/Hady/AndroidStudioProjects/Shatla/app [signingReport]" />
+      <item itemvalue="Gradle.Chatla [signingReport]" />
+    </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Android App.SplashScreen" />
+        <item itemvalue="Gradle.Chatla [signingReport]" />
+        <item itemvalue="Android App.ExpertMainActivity" />
+        <item itemvalue="Android App.LoginActivity" />
+        <item itemvalue="Android App.SplashScreen" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration>C:\Users\Hady\AppData\Roaming\Subversion</configuration>
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="145413bf-a126-4930-abfa-e16b2ff37a1f" name="Default Changelist" comment="" />
+      <created>1566775407699</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1566775407699</updated>
+    </task>
+    <task id="LOCAL-00001" summary="start shatla">
+      <created>1589215452853</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1589215452853</updated>
+    </task>
+    <task id="LOCAL-00002" summary="finish payment">
+      <created>1591192630676</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1591192630676</updated>
+    </task>
+    <task id="LOCAL-00003" summary="finish payment status &amp; solve issues">
+      <created>1591625800011</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1591625800011</updated>
+    </task>
+    <task id="LOCAL-00004" summary="create payment activity &amp; edit register activity">
+      <created>1591821666071</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1591821666071</updated>
+    </task>
+    <task id="LOCAL-00005" summary="create edit chat">
+      <created>1592168375390</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1592168375390</updated>
+    </task>
+    <task id="LOCAL-00006" summary="finish multi field and rate">
+      <created>1592407943913</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1592407943913</updated>
+    </task>
+    <task id="LOCAL-00007" summary="edit design chat and consults&#10;add balance &#10;add expert info">
+      <created>1592928202882</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1592928202882</updated>
+    </task>
+    <task id="LOCAL-00008" summary="update farmer token in consults">
+      <created>1593036527637</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1593036527637</updated>
+    </task>
+    <task id="LOCAL-00009" summary="First Commit">
+      <created>1594069280227</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1594069280227</updated>
+    </task>
+    <task id="LOCAL-00010" summary="New Payment Information">
+      <created>1594072174754</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1594072174754</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
+    <servers />
+  </component>
+  <component name="Vcs.Log.History.Properties">
+    <option name="COLUMN_ORDER">
+      <list>
+        <option value="0" />
+        <option value="2" />
+        <option value="3" />
+        <option value="1" />
+      </list>
+    </option>
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="PERFORM_ROLLBACK_IN_BACKGROUND" value="true" />
+    <ignored-roots>
+      <path value="$USER_HOME$/Desktop" />
+      <path value="$PROJECT_DIR$/../GitHubProject" />
+      <path value="$PROJECT_DIR$" />
+    </ignored-roots>
+    <MESSAGE value="start shatla" />
+    <MESSAGE value="finish payment" />
+    <MESSAGE value="finish payment status &amp; solve issues" />
+    <MESSAGE value="create payment activity &amp; edit register activity" />
+    <MESSAGE value="create edit chat" />
+    <MESSAGE value="finish multi field and rate" />
+    <MESSAGE value="edit design chat and consults&#10;add balance &#10;add exper info" />
+    <MESSAGE value="edit design chat and consults&#10;add balance &#10;add expert info" />
+    <MESSAGE value="update farmer token in consults" />
+    <MESSAGE value="a" />
+    <MESSAGE value="A" />
+    <MESSAGE value="First Commit" />
+    <MESSAGE value="New Payment Information" />
+    <option name="LAST_COMMIT_MESSAGE" value="New Payment Information" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="560" y="247" key="#Notifications" timestamp="1594211947473">
+      <screen x="0" y="0" width="1920" height="1160" />
+    </state>
+    <state x="560" y="247" key="#Notifications/0.0.1920.1160@0.0.1920.1160" timestamp="1594211947473" />
+    <state x="477" y="312" key="#PSD" timestamp="1594658439499">
+      <screen x="0" y="0" width="1920" height="1160" />
+    </state>
+    <state x="477" y="312" key="#PSD/0.0.1920.1160@0.0.1920.1160" timestamp="1594658439499" />
+    <state x="552" y="239" key="#Updates" timestamp="1594946612496">
+      <screen x="0" y="0" width="1920" height="1160" />
+    </state>
+    <state x="552" y="239" key="#Updates/0.0.1920.1160@0.0.1920.1160" timestamp="1594946612496" />
+    <state x="690" y="335" key="#com.intellij.codeInsight.editorActions.RestoreReferencesDialog" timestamp="1595172820488">
+      <screen x="0" y="0" width="1920" height="1160" />
+    </state>
+    <state x="690" y="335" key="#com.intellij.codeInsight.editorActions.RestoreReferencesDialog/0.0.1920.1160@0.0.1920.1160" timestamp="1595172820488" />
+    <state x="414" y="235" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1594742041533">
+      <screen x="0" y="0" width="1920" height="1160" />
+    </state>
+    <state x="414" y="235" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1160@0.0.1920.1160" timestamp="1594742041533" />
+    <state x="714" y="383" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1594259477208">
+      <screen x="0" y="0" width="1920" height="1160" />
+    </state>
+    <state x="714" y="383" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1920.1160@0.0.1920.1160" timestamp="1594259477208" />
+    <state x="765" y="264" key="#com.intellij.ide.util.MemberChooser" timestamp="1594847244366">
+      <screen x="0" y="0" width="1920" height="1160" />
+    </state>
+    <state x="765" y="264" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1160@0.0.1920.1160" timestamp="1594847244366" />
+    <state x="659" y="505" key="#com.intellij.refactoring.move.MoveHandler.SelectRefactoringDialog" timestamp="1594823631077">
+      <screen x="0" y="0" width="1920" height="1160" />
+    </state>
+    <state x="659" y="505" key="#com.intellij.refactoring.move.MoveHandler.SelectRefactoringDialog/0.0.1920.1160@0.0.1920.1160" timestamp="1594823631077" />
+    <state x="690" y="327" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1594584854027">
+      <screen x="0" y="0" width="1920" height="1160" />
+    </state>
+    <state x="690" y="327" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1920.1160@0.0.1920.1160" timestamp="1594584854027" />
+    <state x="540" y="335" key="AndroidCreateResourceDirectoryDialog" timestamp="1593744029587">
+      <screen x="0" y="0" width="1920" height="1160" />
+    </state>
+    <state x="540" y="335" key="AndroidCreateResourceDirectoryDialog/0.0.1920.1160@0.0.1920.1160" timestamp="1593744029587" />
+    <state x="540" y="335" key="AndroidCreateResourceFileDialog" timestamp="1594253707097">
+      <screen x="0" y="0" width="1920" height="1160" />
+    </state>
+    <state x="540" y="335" key="AndroidCreateResourceFileDialog/0.0.1920.1160@0.0.1920.1160" timestamp="1594253707097" />
+    <state x="792" y="393" key="AndroidCreateXmlResourceDialog" timestamp="1594666958416">
+      <screen x="0" y="0" width="1920" height="1160" />
+    </state>
+    <state x="792" y="393" key="AndroidCreateXmlResourceDialog/0.0.1920.1160@0.0.1920.1160" timestamp="1594666958416" />
+    <state x="597" y="174" key="CommitChangelistDialog2" timestamp="1595387123563">
+      <screen x="0" y="0" width="1920" height="1160" />
+    </state>
+    <state x="597" y="174" key="CommitChangelistDialog2/0.0.1920.1160@0.0.1920.1160" timestamp="1595387123563" />
+    <state x="184" y="98" key="DiffContextDialog" timestamp="1594070751705">
+      <screen x="0" y="0" width="1920" height="1160" />
+    </state>
+    <state x="184" y="98" key="DiffContextDialog/0.0.1920.1160@0.0.1920.1160" timestamp="1594070751705" />
+    <state x="810" y="309" key="FileChooserDialogImpl" timestamp="1595389857782">
+      <screen x="0" y="0" width="1920" height="1160" />
+    </state>
+    <state x="810" y="309" key="FileChooserDialogImpl/0.0.1920.1160@0.0.1920.1160" timestamp="1595389857782" />
+    <state x="817" y="473" width="286" height="286" key="Github.ShareDialog" timestamp="1595389724983">
+      <screen x="0" y="0" width="1920" height="1160" />
+    </state>
+    <state x="817" y="473" width="286" height="286" key="Github.ShareDialog/0.0.1920.1160@0.0.1920.1160" timestamp="1595389724983" />
+    <state width="1877" height="320" key="GridCell.Tab.0.bottom" timestamp="1595301842955">
+      <screen x="0" y="0" width="1920" height="1160" />
+    </state>
+    <state width="1877" height="320" key="GridCell.Tab.0.bottom/0.0.1920.1160@0.0.1920.1160" timestamp="1595301842955" />
+    <state width="1877" height="320" key="GridCell.Tab.0.center" timestamp="1595301842954">
+      <screen x="0" y="0" width="1920" height="1160" />
+    </state>
+    <state width="1877" height="320" key="GridCell.Tab.0.center/0.0.1920.1160@0.0.1920.1160" timestamp="1595301842954" />
+    <state width="1877" height="320" key="GridCell.Tab.0.left" timestamp="1595301842954">
+      <screen x="0" y="0" width="1920" height="1160" />
+    </state>
+    <state width="1877" height="320" key="GridCell.Tab.0.left/0.0.1920.1160@0.0.1920.1160" timestamp="1595301842954" />
+    <state width="1877" height="320" key="GridCell.Tab.0.right" timestamp="1595301842954">
+      <screen x="0" y="0" width="1920" height="1160" />
+    </state>
+    <state width="1877" height="320" key="GridCell.Tab.0.right/0.0.1920.1160@0.0.1920.1160" timestamp="1595301842954" />
+    <state width="1877" height="395" key="GridCell.Tab.1.bottom" timestamp="1594931345900">
+      <screen x="0" y="0" width="1920" height="1160" />
+    </state>
+    <state width="1877" height="395" key="GridCell.Tab.1.bottom/0.0.1920.1160@0.0.1920.1160" timestamp="1594931345900" />
+    <state width="1877" height="395" key="GridCell.Tab.1.center" timestamp="1594931345900">
+      <screen x="0" y="0" width="1920" height="1160" />
+    </state>
+    <state width="1877" height="395" key="GridCell.Tab.1.center/0.0.1920.1160@0.0.1920.1160" timestamp="1594931345900" />
+    <state width="1877" height="395" key="GridCell.Tab.1.left" timestamp="1594931345900">
+      <screen x="0" y="0" width="1920" height="1160" />
+    </state>
+    <state width="1877" height="395" key="GridCell.Tab.1.left/0.0.1920.1160@0.0.1920.1160" timestamp="1594931345900" />
+    <state width="1877" height="395" key="GridCell.Tab.1.right" timestamp="1594931345900">
+      <screen x="0" y="0" width="1920" height="1160" />
+    </state>
+    <state width="1877" height="395" key="GridCell.Tab.1.right/0.0.1920.1160@0.0.1920.1160" timestamp="1594931345900" />
+    <state x="353" y="45" key="SettingsEditor" timestamp="1595391344552">
+      <screen x="0" y="0" width="1920" height="1160" />
+    </state>
+    <state x="353" y="45" key="SettingsEditor/0.0.1920.1160@0.0.1920.1160" timestamp="1595391344552" />
+    <state x="552" y="313" key="Vcs.Push.Dialog.v2" timestamp="1594134629800">
+      <screen x="0" y="0" width="1920" height="1160" />
+    </state>
+    <state x="552" y="313" key="Vcs.Push.Dialog.v2/0.0.1920.1160@0.0.1920.1160" timestamp="1594134629800" />
+    <state x="92" y="92" width="1736" height="976" key="com.android.tools.idea.avdmanager.AvdListDialog" timestamp="1595166443988">
+      <screen x="0" y="0" width="1920" height="1160" />
+    </state>
+    <state x="92" y="92" width="1736" height="976" key="com.android.tools.idea.avdmanager.AvdListDialog/0.0.1920.1160@0.0.1920.1160" timestamp="1595166443988" />
+    <state x="656" y="404" key="com.intellij.ide.util.TipDialog" timestamp="1593630187745">
+      <screen x="0" y="0" width="1920" height="1160" />
+    </state>
+    <state x="656" y="404" key="com.intellij.ide.util.TipDialog/0.0.1920.1160@0.0.1920.1160" timestamp="1593630187745" />
+    <state x="601" y="195" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser" timestamp="1594846264354">
+      <screen x="0" y="0" width="1920" height="1160" />
+    </state>
+    <state x="601" y="195" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser/0.0.1920.1160@0.0.1920.1160" timestamp="1594846264354" />
+    <state x="749" y="497" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1594066957632">
+      <screen x="0" y="0" width="1920" height="1160" />
+    </state>
+    <state x="749" y="497" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1920.1160@0.0.1920.1160" timestamp="1594066957632" />
+    <state x="626" y="370" key="git4idea.merge.GitPullDialog" timestamp="1594070820256">
+      <screen x="0" y="0" width="1920" height="1160" />
+    </state>
+    <state x="626" y="370" key="git4idea.merge.GitPullDialog/0.0.1920.1160@0.0.1920.1160" timestamp="1594070820256" />
+    <state width="622" height="115" key="javadoc.popup.new" timestamp="1593622801603">
+      <screen x="0" y="0" width="1920" height="1160" />
+    </state>
+    <state width="622" height="115" key="javadoc.popup.new/0.0.1920.1160@0.0.1920.1160" timestamp="1593622801603" />
+    <state x="616" y="270" key="run.anything.popup" timestamp="1594847739501">
+      <screen x="0" y="0" width="1920" height="1160" />
+    </state>
+    <state x="616" y="270" key="run.anything.popup/0.0.1920.1160@0.0.1920.1160" timestamp="1594847739501" />
+    <state x="623" y="255" width="672" height="678" key="search.everywhere.popup" timestamp="1594578306998">
+      <screen x="0" y="0" width="1920" height="1160" />
+    </state>
+    <state x="623" y="255" width="672" height="678" key="search.everywhere.popup/0.0.1920.1160@0.0.1920.1160" timestamp="1594578306998" />
+    <state x="790" y="371" key="svn.repositoryBrowser" timestamp="1594069148460">
+      <screen x="0" y="0" width="1920" height="1160" />
+    </state>
+    <state x="790" y="371" key="svn.repositoryBrowser/0.0.1920.1160@0.0.1920.1160" timestamp="1594069148460" />
+    <state x="780" y="355" key="svn4idea.import.options" timestamp="1594069143931">
+      <screen x="0" y="0" width="1920" height="1160" />
+    </state>
+    <state x="780" y="355" key="svn4idea.import.options/0.0.1920.1160@0.0.1920.1160" timestamp="1594069143931" />
+  </component>
+</project>

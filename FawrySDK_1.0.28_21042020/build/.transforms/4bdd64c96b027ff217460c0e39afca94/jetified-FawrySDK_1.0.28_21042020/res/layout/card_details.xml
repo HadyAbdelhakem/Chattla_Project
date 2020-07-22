@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="@dimen/card_view_margin"
+    android:orientation="vertical">
+
+
+    <com.emeint.android.fawryplugin.views.cutomviews.FawryPluginCustomTextView
+        android:id="@+id/card_details_header_text_view"
+        style="@style/card_view_header_style"
+        android:layout_height="wrap_content"
+        android:text="@string/card_details_card_view_header" />
+
+    <LinearLayout
+        android:layout_marginTop="@dimen/unit_2x"
+        android:id="@+id/card_number_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/card_details_header_text_view"
+        android:orientation="horizontal"
+        android:weightSum="10">
+
+        <com.emeint.android.fawryplugin.views.cutomviews.FawryPluginCustomTextInputLayout
+            android:id="@+id/card_number_text_input_layout"
+            android:layout_width="match_parent"
+            android:layout_marginEnd="@dimen/unit_1x"
+            android:layout_height="wrap_content"
+            android:layout_weight="4">
+
+            <com.emeint.android.fawryplugin.views.cutomviews.FawryPluginCustomEditText
+                android:id="@+id/card_number_edit_text"
+                style="@style/editTextStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/card_number"
+                android:maxLength="19"
+                android:inputType="phone"
+                />
+        </com.emeint.android.fawryplugin.views.cutomviews.FawryPluginCustomTextInputLayout>
+
+        <com.emeint.android.fawryplugin.views.cutomviews.FawryPluginCustomTextInputLayout
+            android:id="@+id/card_expiry_date_text_input_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="6">
+
+            <com.emeint.android.fawryplugin.views.cutomviews.FawryPluginCustomEditText
+                android:id="@+id/card_expiry_date_edit_text"
+                style="@style/editTextStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/expiry_date"
+                android:maxLength="5"
+                android:inputType="date"
+                android:maxLines="1"
+                android:minLines="1" />
+
+
+        </com.emeint.android.fawryplugin.views.cutomviews.FawryPluginCustomTextInputLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:layout_below="@id/card_number_container"
+        android:orientation="horizontal"
+        android:weightSum="10">
+
+        <RelativeLayout
+            android:id="@+id/cvv_container"
+            android:layout_width="match_parent"
+            android:layout_marginEnd="@dimen/unit_1x"
+            android:layout_height="wrap_content"
+            android:layout_weight="4">
+
+            <com.emeint.android.fawryplugin.views.cutomviews.FawryPluginCustomTextInputLayout
+                android:id="@+id/card_cvv_text_input_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <com.emeint.android.fawryplugin.views.cutomviews.FawryPluginCustomEditText
+                    android:id="@+id/card_cvv_edit_text"
+                    style="@style/editTextStyle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="number"
+                    android:hint="@string/cvv_code"
+                    android:maxLength="3" />
+            </com.emeint.android.fawryplugin.views.cutomviews.FawryPluginCustomTextInputLayout>
+
+            <ImageView
+                android:id="@+id/cvv_help_icon_image_view"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:src="@drawable/cvv_code" />
+        </RelativeLayout>
+
+        <ImageView
+            android:id="@+id/cvv_help_image_view"
+            android:visibility="invisible"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="6"
+            android:scaleType="centerInside"
+            android:src="@drawable/cvv" />
+    </LinearLayout>
+
+</RelativeLayout>

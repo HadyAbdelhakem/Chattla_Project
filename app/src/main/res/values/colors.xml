@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+
+    <color name="colorPrimary">#88c642</color>
+    <color name="colorPrimaryDark">#58826c</color>
+    <color name="colorAccent">#88c642</color>
+    <color name="colorOne">#f0572b</color>
+    <color name="colorTwo">#f4e754</color>
+    <color name="colorThree">#c7da56</color>
+    <color name="colorFour">#88c641</color>
+    <color name="text_color">#606060</color>
+    <color name="colorWhite">#FFFFFF</color>
+    <color name="colorBlack">#000000</color>
+    <color name="demo_dark_transparent">#3BA09C9C</color>
+    <color name="link_color">#2305a4</color>
+
+
+
+    <!-- dots inactive colors -->
+    <color name="dot_dark_screen1">#EFEEF2</color>
+    <color name="dot_dark_screen2">#EFEEF2</color>
+    <color name="dot_dark_screen3">#EFEEF2</color>
+
+<!--    <color name="text_color_unused">#660B0B0B</color>-->
+<!--    <color name="blue">#47397C</color>-->
+<!--    <color name="text_price">#029666</color>#-->
+<!--    <color name="text_price_old">#787878</color>#-->
+<!--    <color name="text_percentage">#FBA100</color>-->
+<!--    <color name="text_rate">#ED8A19</color>-->
+<!--    <color name="shadow_color">#6C648B59</color>-->
+<!--    <color name="underline_v_code">#C8C8C8</color>#-->
+
+
+    <!-- dots active colors -->
+    <color name="dot_light_screen1">#005E3F</color>
+    <color name="dot_light_screen2">#005E3F</color>
+    <color name="dot_light_screen3">#005E3F</color>
+
+
+    <array name="array_dot_active">
+        <item>@color/dot_light_screen1</item>
+        <item>@color/dot_light_screen2</item>
+        <item>@color/dot_light_screen3</item>
+    </array>
+
+    <array name="array_dot_inactive">
+        <item>@color/dot_dark_screen1</item>
+        <item>@color/dot_dark_screen2</item>
+        <item>@color/dot_dark_screen3</item>
+    </array>
+
+
+<!--    <color name="bk_startscreen">#9B9B9B</color>-->
+<!--    <color name="textSecondary">#017D4E</color>-->
+<!--    <color name="red">#063908</color>-->
+<!--    <color name="tac">#0E0E0E</color>-->
+<!--    <color name="transparent">#00FFFFFF</color>-->
+<!--    <color name="demo_dark_transparent">#3BA09C9C</color>-->
+<!--    -->
+
+</resources>

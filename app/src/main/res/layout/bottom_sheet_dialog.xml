@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:padding="30dp">
+
+    <TextView
+        android:id="@+id/textview2_0"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="برجاء ادخال رقم الهاتف"
+        android:textColor="@color/text_color"
+        android:textSize="@dimen/_16ssp"
+        android:fontFamily="@font/tajawal_medium"
+        android:layout_marginTop="@dimen/_16sdp"
+        />
+
+    <EditText
+        android:id="@+id/edittext2_0"
+        android:layout_width="@dimen/_120sdp"
+        android:layout_height="wrap_content"
+        android:hint="رقم الهاتف"
+        android:textSize="@dimen/_14ssp"
+        android:layout_gravity="center"
+        android:fontFamily="@font/tajawal_medium"
+        android:inputType="number"
+        android:maxLength="11"
+        android:maxLines="1"
+        android:padding="8dp"
+        android:background="@drawable/background_white_with_border"
+        android:gravity="center"
+        android:layout_marginTop="@dimen/_24sdp"
+        />
+
+    <Button
+        android:id="@+id/btn2_0"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_50sdp"
+        android:layout_marginEnd="@dimen/_16sdp"
+        android:layout_marginStart="@dimen/_16sdp"
+        android:background="@drawable/bk_button"
+        android:padding="8dp"
+        android:text="ارسال"
+        android:layout_gravity="center"
+        android:textColor="@color/white"
+        android:textSize="@dimen/_16ssp"
+        android:fontFamily="@font/tajawal_medium"/>
+
+</LinearLayout>

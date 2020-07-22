@@ -1,0 +1,85 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background_color"
+    android:scrollbars="none"
+    tools:context="com.emeint.android.fawryplugin.views.fragments.PaymentFragment">
+
+    <RelativeLayout
+        style="@style/screen_container_style"
+        android:layout_width="match_parent"
+        android:paddingBottom="@dimen/unit_2x"
+        android:layout_height="match_parent">
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/payment_method_container"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/card_view_margin"
+
+                android:orientation="vertical">
+
+                <include
+                    android:id="@+id/payment_header_layout_id"
+                    layout="@layout/stepper_layout" />
+
+
+                <include
+                    android:id="@+id/shipping_type_layout_id"
+                    layout="@layout/payment_method_layout" />
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/card_details_card_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/payment_method_container"
+            android:layout_marginTop="@dimen/margin_top_between_card_views"
+            android:visibility="visible">
+
+            <include layout="@layout/card_details" />
+
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/total_payments_card_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/card_details_card_view"
+            android:layout_marginTop="@dimen/margin_top_between_card_views">
+
+
+            <!--<fragment-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:id="@+id/cost_fragment"-->
+            <!--android:name="com.emeint.android.fawryplugin.views.fragments.CostFragment"-->
+            <!--android:layout_height="match_parent"/>-->
+
+            <!--<include-->
+            <!--android:id="@+id/shipping_type_layout_id"-->
+            <!--layout="@layout/total_costs_layout" />-->
+        </androidx.cardview.widget.CardView>
+
+
+        <com.emeint.android.fawryplugin.views.cutomviews.FawryPluginCustomButton
+            android:id="@+id/continue_button"
+            style="@style/button_style"
+            android:layout_below="@id/total_payments_card_view"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="@dimen/unit_1x"
+            android:layout_marginTop="@dimen/unit_1x"
+            android:text="@string/str_continue_button" />
+
+
+    </RelativeLayout>
+
+
+</ScrollView>

@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layoutDirection="rtl"
+    android:textDirection="rtl"
+    tools:context=".ui.expertMain.ExpertMainActivity">
+
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimary">
+
+      <RelativeLayout
+          android:layout_width="match_parent"
+          android:layout_height="match_parent">
+
+          <TextView
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:textColor="@color/white"
+              android:textSize="@dimen/_16ssp"
+              android:layout_centerInParent="true"
+              android:textStyle="bold"
+              android:fontFamily="@font/tajawal_regular"
+              android:text="@string/consultations"/>
+
+          <ImageView
+              android:id="@+id/img_logout"
+              android:layout_width="@dimen/_24sdp"
+              android:layout_height="@dimen/_24sdp"
+              android:src="@drawable/ic_logout"
+              android:layout_alignParentLeft="true"
+              android:layout_centerInParent="true"
+              android:padding="@dimen/_2sdp"
+              android:layout_marginLeft="@dimen/_16sdp"
+              />
+          <ImageView
+              android:id="@+id/img_info"
+              android:layout_width="@dimen/_24sdp"
+              android:layout_height="@dimen/_24sdp"
+              android:src="@drawable/ic_baseline_person_24"
+              android:layout_alignParentRight="true"
+              android:layout_centerInParent="true"
+              android:padding="@dimen/_2sdp"
+              android:visibility="gone"
+              android:layout_marginRight="@dimen/_6sdp"
+              />
+
+
+      </RelativeLayout>
+    </androidx.appcompat.widget.Toolbar>
+
+
+    <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+        android:id="@+id/refreshLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+        <LinearLayout
+            android:id="@+id/ly_no_results"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:visibility="gone"
+            android:layout_gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="@dimen/_100sdp"
+                android:layout_height="@dimen/_100sdp"
+                android:scaleType="centerCrop"
+                android:adjustViewBounds="true"
+                android:src="@drawable/ic_no_item"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:layout_margin="@dimen/_16sdp"
+                android:textSize="@dimen/_14ssp"
+                android:fontFamily="@font/tajawal_regular"
+                android:textColor="@color/text_color"
+                android:text="@string/no_consults_field"/>
+
+        </LinearLayout>
+
+        <com.cooltechworks.views.shimmer.ShimmerRecyclerView
+            android:id="@+id/rv_consults"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_8sdp"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:layout_marginEnd="@dimen/_8sdp"
+            android:layout_marginBottom="@dimen/_8sdp"
+            app:layout_behavior="@string/appbar_scrolling_view_behavior"
+            app:shimmer_demo_angle="20"
+            app:shimmer_demo_child_count="8"
+            app:shimmer_demo_grid_child_count="1"
+            app:shimmer_demo_layout="@layout/shimmer_consult_item"
+            app:shimmer_demo_layout_manager_type="linear_vertical" />
+
+        </LinearLayout>
+
+    </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+
+</LinearLayout>

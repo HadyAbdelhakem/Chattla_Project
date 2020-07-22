@@ -1,0 +1,169 @@
+apply plugin: 'com.android.application'
+apply plugin: 'com.google.gms.google-services'
+android {
+    compileSdkVersion 28
+    defaultConfig {
+        applicationId "com.agri.chattla"
+        minSdkVersion 21
+        targetSdkVersion 28
+        versionCode 1
+        versionName "1.0"
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+    }
+    signingConfigs {
+        config {
+            keyAlias 'key0'
+            keyPassword '66778899'
+            storeFile file('D:\\shatla\\KeyStore.jks')
+            storePassword '66778899'
+        }
+        debug {
+            storePassword '66778899'
+            keyAlias 'key0'
+            keyPassword '66778899'
+            storeFile file('D:\\shatla\\KeyStore.jks')
+        }
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+            debuggable = true
+            signingConfig signingConfigs.config
+        }
+    }
+    lintOptions {
+        checkReleaseBuilds false
+        // Or, if you prefer, you can continue to check for errors in release builds,
+        // but continue the build even when errors are found:
+        abortOnError false
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+    dataBinding {
+        enabled = false
+    }
+
+    packagingOptions {
+        exclude 'META-INF/DEPENDENCIES'
+        exclude 'META-INF/LICENSE'
+        exclude 'META-INF/LICENSE.txt'
+        exclude 'META-INF/license.txt'
+        exclude 'META-INF/NOTICE'
+        exclude 'META-INF/NOTICE.txt'
+        exclude 'META-INF/notice.txt'
+        exclude 'META-INF/ASL2.0'
+        exclude 'META-INF/androidx.legacy_legacy-support-core-utils.version'
+    }
+    repositories {
+        mavenCentral()
+        google()
+    }
+
+
+}
+
+
+dependencies {
+    implementation fileTree(dir: 'libs', include: ['*.jar, *.aar'])
+
+    implementation 'androidx.appcompat:appcompat:1.1.0'
+    implementation 'androidx.constraintlayout:constraintlayout:1.1.3'
+    implementation 'androidx.lifecycle:lifecycle-extensions:2.2.0'
+    implementation 'com.squareup.picasso:picasso:2.71828'
+    implementation 'androidx.legacy:legacy-support-v4:1.0.0'
+    implementation 'com.google.android.gms:play-services-maps:17.0.0'
+    implementation 'com.google.android.gms:play-services-location:17.0.0'
+    androidTestImplementation 'androidx.test.ext:junit:1.1.1'
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.2.0'
+    //noinspection GradleCompatible
+    implementation 'com.android.support:appcompat-v7:28.0.0'
+    //noinspection GradleCompatible
+    implementation 'com.android.support:design:28.0.0'
+
+
+
+    //materialedittext
+    implementation 'com.rengwuxian.materialedittext:library:2.1.4'
+
+    //sdp  && ssp
+    implementation 'com.intuit.sdp:sdp-android:1.0.6'
+    implementation 'com.intuit.ssp:ssp-android:1.0.6'
+
+    //Circle imageview
+    implementation 'de.hdodenhof:circleimageview:3.1.0'
+    implementation 'com.github.rygelouv:android-audio-sensei:0.1.2'
+    implementation 'com.mikhaellopez:circularimageview:4.2.0'
+
+    //Image Loaders
+    implementation 'com.github.bumptech.glide:glide:4.11.0'
+    implementation 'com.makeramen:roundedimageview:2.3.0'
+
+    //chatmessageview
+    implementation 'me.himanshusoni.chatmessageview:chat-message-view:1.0.7'
+
+    implementation 'com.github.sharish:ShimmerRecyclerView:v1.3'
+
+    implementation 'com.karumi:dexter:6.2.1'
+
+    //animatedbottombar
+    implementation 'nl.joery.animatedbottombar:library:1.0.8'
+
+    //LoadingDialog
+    implementation 'com.camnter.easyarcloading:easyarcloading:1.0'
+
+    implementation 'com.apkfuns.xprogressdialog:xprogressdialog:1.2.0'
+
+
+    implementation 'com.github.devlight:infinitecycleviewpager:1.0.2'
+
+    //firebase
+    implementation 'com.firebaseui:firebase-ui-auth:4.3.1'
+    implementation 'com.firebaseui:firebase-ui-database:4.3.1'
+    implementation 'com.google.firebase:firebase-storage:19.1.1'
+    implementation 'com.google.firebase:firebase-auth:19.3.2'
+    implementation 'com.google.firebase:firebase-database:19.3.1'
+    implementation 'com.google.firebase:firebase-messaging:17.0.0'
+    implementation 'com.google.firebase:firebase-core:17.4.4'
+    implementation 'com.google.firebase:firebase-iid:16.0.0'
+
+    //NetWorking
+    implementation 'com.amitshekhar.android:android-networking:1.0.2'
+
+    implementation 'com.google.android.gms:play-services-location:17.0.0'
+    implementation 'com.google.android.gms:play-services-places:17.0.0'
+    implementation 'com.google.android.libraries.places:places:2.3.0'
+    implementation 'com.github.rtchagas:pingplacepicker:2.0.6'
+
+    implementation 'com.github.GrenderG:Toasty:1.4.2'
+    implementation project(path: ':WhatsappMessengerView')
+
+    //materialish library
+    implementation 'com.pnikosis:materialish-progress:1.7'
+
+
+    implementation 'com.squareup.retrofit2:retrofit:2.9.0'
+    implementation 'com.squareup.retrofit2:converter-scalars:2.9.0'
+    implementation 'com.squareup.retrofit2:converter-gson:2.9.0'
+    implementation 'com.squareup.okhttp3:logging-interceptor:4.8.0'
+    implementation project(path: ':FawrySDK_1.0.28_21042020')
+
+    implementation 'com.github.siyamed:android-shape-imageview:0.9.3'
+
+    implementation 'com.google.code.gson:gson:2.8.6'
+    implementation 'com.android.volley:volley:1.1.1'
+//    implementation 'com.android.library:fawrypluginrelease:1.0.28@aar'
+    implementation 'com.github.checkout:frames-android:v2.1.1'
+
+    implementation 'com.github.ihimanshurawat:Hasher:1.2'
+    implementation 'com.iceteck.silicompressorr:silicompressor:2.2.3'
+
+    //rating library
+    implementation 'com.github.ome450901:SimpleRatingBar:1.5.0'
+
+
+}
+apply plugin: 'com.google.gms.google-services'

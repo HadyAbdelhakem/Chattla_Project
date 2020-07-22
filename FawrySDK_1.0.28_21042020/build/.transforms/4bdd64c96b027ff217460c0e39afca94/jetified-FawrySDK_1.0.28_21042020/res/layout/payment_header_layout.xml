@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/header_card_view"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+            <include
+                android:id="@+id/stepper_view"
+                layout="@layout/stepper_layout" />
+
+
+            <!--total amount view in case of no shipment -->
+            <RelativeLayout
+                android:id="@+id/total_cost_header_card_view"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/stepper_view"
+                android:layout_centerInParent="true"
+                android:layout_marginBottom="@dimen/unit_6x"
+                android:layout_marginTop="@dimen/unit_6x"
+                android:visibility="gone">
+
+                <include
+                    android:id="@+id/total_cost_layout"
+                    layout="@layout/total_cost_custom_view_layout" />
+            </RelativeLayout>
+            <!--end of total amount view in case of no shipment-->
+
+
+
+
+        </RelativeLayout>
+
+</androidx.cardview.widget.CardView>

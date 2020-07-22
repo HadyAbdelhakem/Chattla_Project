@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.emeint.android.fawryplugin"
+    android:versionCode="28"
+    android:versionName="1.0.28" >
+
+    <uses-sdk
+        android:minSdkVersion="18"
+        android:targetSdkVersion="28" />
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:name="com.emeint.android.fawryplugin.managers.FawryPluginAppClass"
+        android:allowBackup="true"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name="com.emeint.android.fawryplugin.views.activities.FawryPaymentActivity"
+            android:configChanges="orientation|screenSize|locale|keyboardHidden"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name="com.emeint.android.fawryplugin.views.activities.BaseActivity"
+            android:configChanges="orientation|screenSize|locale|keyboardHidden"
+            android:label="@string/title_activity_base"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme"
+            android:windowSoftInputMode="stateAlwaysVisible|adjustResize" />
+        <activity
+            android:name="com.emeint.android.fawryplugin.views.activities.MigsAuthenticationActivity"
+            android:configChanges="orientation|screenSize|locale|keyboardHidden"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name="com.emeint.android.fawryplugin.views.activities.CardTokenizationActivity"
+            android:configChanges="orientation|screenSize|locale|keyboardHidden"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme"
+            android:windowSoftInputMode="adjustPan" >
+        </activity>
+    </application>
+
+</manifest>

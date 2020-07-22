@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_margin="@dimen/card_view_margin">
+
+
+    <com.emeint.android.fawryplugin.views.cutomviews.FawryPluginCustomTextView
+        android:id="@+id/payment_method_header_label"
+        style="@style/card_view_header_style"
+        android:text="@string/payment_method_card_view_h" />
+
+
+    <com.emeint.android.fawryplugin.views.cutomviews.FawryPluginCustomTextInputLayout
+        android:id="@+id/payment_method_text_input_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/payment_method_header_label"
+        android:layout_marginTop="@dimen/card_view_views_margin_top">
+
+        <com.emeint.android.fawryplugin.views.cutomviews.FawryPluginCustomEditText
+            android:id="@+id/payment_method_edit_text"
+            style="@style/custom_spinner_text_input_layout"
+            android:hint="@string/payment_method_spinner" />
+    </com.emeint.android.fawryplugin.views.cutomviews.FawryPluginCustomTextInputLayout>
+
+    <FrameLayout
+        android:id="@+id/payment_method_hint_container"
+        android:layout_below="@id/payment_method_text_input_layout"
+        android:layout_width="match_parent"
+        android:layout_marginTop="@dimen/unit_1x"
+        android:visibility="visible"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:src="@drawable/payment_method"
+            android:layout_centerVertical="false"
+            android:layout_alignParentTop="true"
+            android:scaleType="center"
+
+            android:id="@+id/payment_method_hint_icon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <com.emeint.android.fawryplugin.views.cutomviews.FawryPluginCustomTextView
+            android:layout_width="match_parent"
+            android:id="@+id/payment_method_hint_text_view"
+            tools:text="      you select pay @ fawry"
+            android:layout_centerVertical="true"
+            android:lineSpacingExtra="@dimen/line_spacing"
+            style="@style/gravity_style"
+            android:layout_height="wrap_content" />
+
+
+    </FrameLayout>
+
+</RelativeLayout>

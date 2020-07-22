@@ -1,0 +1,14 @@
+<component name="libraryTable">
+  <library name="Gradle: me.himanshusoni.chatmessageview:chat-message-view:1.0.7@aar">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/106b05b6f1f34315af5fdb34da250e21/jetified-chat-message-view-1.0.7/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/106b05b6f1f34315af5fdb34da250e21/jetified-chat-message-view-1.0.7/res" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/me.himanshusoni.chatmessageview/chat-message-view/1.0.7/cbea01cca16f26c265b86925bf97084928c39cbd/chat-message-view-1.0.7-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/me.himanshusoni.chatmessageview/chat-message-view/1.0.7/faee8ad544addd3459cdb090c95eb1febbd17e94/chat-message-view-1.0.7-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

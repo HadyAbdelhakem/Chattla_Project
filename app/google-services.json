@@ -1,0 +1,101 @@
+{
+  "project_info": {
+    "project_number": "1068270738053",
+    "firebase_url": "https://chattlafirebase.firebaseio.com",
+    "project_id": "chattlafirebase",
+    "storage_bucket": "chattlafirebase.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1068270738053:android:7b815b3e405474b0ba27ec",
+        "android_client_info": {
+          "package_name": "com.agri.chattla"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1068270738053-q3e0cn8h9pe3qdrln3o9m532ehs58idi.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.agri.chattla",
+            "certificate_hash": "290fa1aa7d46cc894cc633b9d3ceea2d27f35f3f"
+          }
+        },
+        {
+          "client_id": "1068270738053-r87c62oqd6373gj67ejbothp9jp6jqep.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAFSvt1TP9xWiGsZMw9JiprT353g_HyyhE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1068270738053-r87c62oqd6373gj67ejbothp9jp6jqep.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1068270738053:android:329bdbb2b15e48a9ba27ec",
+        "android_client_info": {
+          "package_name": "com.develop.shatla"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1068270738053-2n75ecbdfb3k8uih4nthrdv3q77639k8.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.develop.shatla",
+            "certificate_hash": "9085c0a9259bce1c3894b880e8abdf47828ca5ad"
+          }
+        },
+        {
+          "client_id": "1068270738053-03s7m1ciu254gapc3og2dhrbiua55gbf.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.develop.shatla",
+            "certificate_hash": "de5bd3a1ad8e8d1c6e894ca6abfeb2770b568c9f"
+          }
+        },
+        {
+          "client_id": "1068270738053-91n8mc6usq27vlmtq9kjjge2i8r2thnv.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.develop.shatla",
+            "certificate_hash": "b7fc3d8a336641fd79fdff51b6b443c481e84fc2"
+          }
+        },
+        {
+          "client_id": "1068270738053-r87c62oqd6373gj67ejbothp9jp6jqep.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAFSvt1TP9xWiGsZMw9JiprT353g_HyyhE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1068270738053-r87c62oqd6373gj67ejbothp9jp6jqep.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

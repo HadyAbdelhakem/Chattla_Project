@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="editTextStyle" parent="gravity_style">
+        <item name="android:textSize">@dimen/edit_text_font_size</item>
+        <item name="android:textColorHint">@color/hint_text_color</item>
+        <item name="android:textColor">@color/edit_text_color</item>
+        <item name="android:background">@drawable/edt_bg_selector</item>
+        <item name="android:textDirection">locale</item>
+        <item name="android:layout_gravity">start|left</item>
+    </style>
+    <style name="header_action_style">
+        <item name="android:textColor">@color/app_bar_text_color</item>
+        <item name="android:background">@drawable/header_selector</item>
+    </style>
+</resources>

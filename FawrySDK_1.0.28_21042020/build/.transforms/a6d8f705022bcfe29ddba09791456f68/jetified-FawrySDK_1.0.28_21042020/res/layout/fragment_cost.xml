@@ -1,0 +1,61 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.emeint.android.fawryplugin.views.fragments.CostFragment">
+
+    <TableLayout
+        android:id="@+id/cost_table_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:showDividers="beginning"
+        android:shrinkColumns="*"
+        android:layout_margin="10dp"
+        android:layout_marginBottom="10dp"
+        android:stretchColumns="*">
+
+
+
+        <!--TODO remove the below layouts -->
+        <!--<TableRow android:layout_marginTop="@dimen/unit_1x"-->
+            <!--android:visibility="gone"-->
+            <!--&gt;-->
+            <!--&lt;!&ndash;<LinearLayout style="@style/cost_container_layout_style">&ndash;&gt;-->
+
+                <!--<include layout="@layout/cost_custom_view_layout" />-->
+            <!--&lt;!&ndash;</LinearLayout>&ndash;&gt;-->
+
+            <!--&lt;!&ndash;<LinearLayout style="@style/cost_container_layout_style">&ndash;&gt;-->
+
+                <!--<include layout="@layout/cost_custom_view_layout" />-->
+            <!--&lt;!&ndash;</LinearLayout>&ndash;&gt;-->
+        <!--</TableRow>-->
+
+
+        <!--<TableRow android:layout_marginTop="@dimen/unit_1x" android:visibility="gone">-->
+
+            <!--<LinearLayout style="@style/cost_container_layout_style">-->
+
+                <!--<include layout="@layout/cost_custom_view_layout" />-->
+            <!--</LinearLayout>-->
+
+            <!--<LinearLayout style="@style/cost_container_layout_style">-->
+
+                <!--<include layout="@layout/cost_custom_view_layout" />-->
+            <!--</LinearLayout>-->
+        <!--</TableRow>-->
+
+        <!--<TableRow android:layout_marginTop="@dimen/unit_1x" android:visibility="gone">-->
+
+            <!--<LinearLayout-->
+                <!--style="@style/total_cost_container_layout_style"-->
+                <!--android:layout_span="2">-->
+
+                <!--<include layout="@layout/total_cost_custom_view_layout" />-->
+            <!--</LinearLayout>-->
+
+        <!--</TableRow>-->
+
+
+    </TableLayout>
+</FrameLayout>

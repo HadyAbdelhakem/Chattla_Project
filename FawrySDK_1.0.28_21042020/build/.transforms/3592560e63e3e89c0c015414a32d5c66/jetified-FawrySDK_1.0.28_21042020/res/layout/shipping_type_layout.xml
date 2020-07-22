@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/shipping_type_card_view"
+    android:layout_width="match_parent"
+    android:layout_margin="@dimen/card_view_margin"
+    android:layout_height="wrap_content">
+
+
+    <com.emeint.android.fawryplugin.views.cutomviews.FawryPluginCustomTextView
+        android:id="@+id/shipping_type_header_label"
+        style="@style/card_view_header_style"
+        android:text="@string/shipping_type" />
+
+
+    <LinearLayout
+        android:layout_below="@id/shipping_type_header_label"
+        android:layout_width="match_parent"
+        android:layout_marginTop="@dimen/card_view_views_margin_top"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        >
+
+        <com.emeint.android.fawryplugin.views.cutomviews.FawryPluginCustomTextInputLayout
+            android:id="@+id/courier_text_input_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/card_view_views_margin_top">
+
+            <com.emeint.android.fawryplugin.views.cutomviews.FawryPluginCustomEditText
+                android:id="@+id/courier_edit_text"
+                style="@style/custom_spinner_text_input_layout"
+                android:ellipsize="end"
+                android:hint="@string/courier_spinner" />
+        </com.emeint.android.fawryplugin.views.cutomviews.FawryPluginCustomTextInputLayout>
+
+
+        <com.emeint.android.fawryplugin.views.cutomviews.FawryPluginCustomTextInputLayout
+            android:id="@+id/delivery_type_text_input_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/card_view_views_margin_top"
+          >
+
+            <com.emeint.android.fawryplugin.views.cutomviews.FawryPluginCustomEditText
+                android:id="@+id/delivery_type_edit_text"
+                style="@style/custom_spinner_text_input_layout"
+                android:ellipsize="end"
+                android:hint="@string/delivery_type_spinner" />
+        </com.emeint.android.fawryplugin.views.cutomviews.FawryPluginCustomTextInputLayout>
+
+
+    </LinearLayout>
+</RelativeLayout>

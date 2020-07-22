@@ -1,0 +1,26 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="@dimen/unit_2x"
+    tools:context="com.emeint.android.fawryplugin.views.fragments.TestNetworkLayerFragment">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/text_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/failure_text_view"
+            android:text="@string/hello_blank_fragment" />
+
+
+        <TextView
+            android:id="@+id/failure_text_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="failure_text_view" />
+    </RelativeLayout>
+</ScrollView>

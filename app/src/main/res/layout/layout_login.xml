@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/Login_Layout"
+    android:layoutDirection="rtl"
+    android:textDirection="rtl"
+    android:orientation="vertical"
+    tools:context=".ui.login.LoginActivity">
+
+    <androidx.appcompat.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimary">
+
+        <TextView
+            android:id="@+id/textview1_3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/tajawal_medium"
+            android:gravity="center"
+            android:text="@string/login"
+            android:textStyle="bold"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_16ssp" />
+
+    </androidx.appcompat.widget.Toolbar>
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginStart="@dimen/_16sdp"
+            android:layout_marginEnd="@dimen/_16sdp"
+            android:orientation="vertical">
+
+
+
+            <ImageView
+                android:id="@+id/imageview_logo"
+                android:layout_width="200dp"
+                android:layout_height="200dp"
+                android:layout_gravity="center"
+                android:transitionName="imageTransition"
+                android:layout_marginStart="8dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginRight="8dp"
+                android:src="@drawable/logo" />
+
+            <TextView
+                android:id="@+id/textview1_2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/tajawal_regular"
+                android:text="@string/phone_num"
+                android:textStyle="bold"
+                android:textColor="@color/text_color"
+                android:textSize="@dimen/_12ssp" />
+
+            <EditText
+                android:id="@+id/et_phone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_8sdp"
+                android:layout_marginTop="@dimen/_6sdp"
+                android:layout_marginEnd="@dimen/_8sdp"
+                android:background="@drawable/background_white_with_border"
+                android:hint="@string/phone_num"
+                android:inputType="number"
+                android:maxLength="11"
+                android:maxLines="1"
+                android:padding="8dp"
+                android:textAlignment="viewStart" />
+
+            <TextView
+                android:id="@+id/tv_password"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_8sdp"
+                android:fontFamily="@font/tajawal_regular"
+                android:text="@string/password"
+                android:textStyle="bold"
+                android:textColor="@color/text_color"
+                android:textSize="@dimen/_12ssp" />
+
+            <EditText
+                android:id="@+id/et_password"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_8sdp"
+                android:layout_marginTop="@dimen/_6sdp"
+                android:layout_marginEnd="@dimen/_8sdp"
+                android:background="@drawable/background_white_with_border"
+                android:gravity="start"
+                android:hint="@string/password"
+                android:inputType="numberPassword"
+                android:maxLength="6"
+                android:maxLines="1"
+                android:padding="8dp"
+                android:textAlignment="viewStart" />
+
+            <TextView
+                android:id="@+id/forgetpassword"
+                android:layout_width="wrap_content"
+                android:layout_marginTop="@dimen/_12sdp"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/tajawal_medium"
+                android:text="@string/forget_password"
+                android:textColor="@color/colorOne"
+                android:textStyle="bold"
+                android:textSize="@dimen/_14ssp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_24sdp"
+                android:layout_marginLeft="@dimen/_30sdp"
+                android:layout_marginRight="@dimen/_30sdp"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/bt_login_farmer"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/_6sdp"
+                    android:layout_marginEnd="@dimen/_6sdp"
+                    android:layout_weight="1"
+                    android:background="@drawable/bk_button"
+                    android:fontFamily="@font/tajawal_regular"
+                    android:text="@string/login"
+                    android:textColor="#ffffff"
+                    android:textSize="@dimen/_13ssp" />
+
+                <Button
+                    android:id="@+id/bt_login_expert"
+                    android:layout_width="0dp"
+                    android:visibility="gone"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/_6sdp"
+                    android:layout_marginEnd="@dimen/_6sdp"
+                    android:layout_weight="1"
+                    android:background="@drawable/bk_button"
+                    android:fontFamily="@font/tajawal_regular"
+                    android:text="@string/login"
+                    android:textColor="#ffffff"
+                    android:textSize="@dimen/_10ssp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/et_password" />
+
+            </LinearLayout>
+
+
+            <TextView
+                android:id="@+id/tv_not_have_account"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="@dimen/_25sdp"
+                android:fontFamily="@font/tajawal_medium"
+                android:text="@string/new_account"
+                android:textColor="@color/link_color"
+                android:textStyle="bold"
+                android:textSize="@dimen/_14ssp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_8sdp"
+                android:layout_marginBottom="@dimen/_20sdp"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:textAlignment="center"
+                    android:fontFamily="@font/tajawal_medium"
+                    android:text="@string/new_account_condition"
+                    android:textColor="@color/text_color"
+                    android:textSize="@dimen/_12ssp" />
+
+                <TextView
+                    android:id="@+id/tv_terms_and_conditions"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="@dimen/_2sdp"
+                    android:layout_gravity="center"
+                    android:textAlignment="center"
+                    android:textStyle="bold"
+                    android:fontFamily="@font/tajawal_medium"
+                    android:text="@string/terms_and_conditions"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:textSize="@dimen/_13ssp" />
+            </LinearLayout>
+
+
+
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+
+
+</LinearLayout>

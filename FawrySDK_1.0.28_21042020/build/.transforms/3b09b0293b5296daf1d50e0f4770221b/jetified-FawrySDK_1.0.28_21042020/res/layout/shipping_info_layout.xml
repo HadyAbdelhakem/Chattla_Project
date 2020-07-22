@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              android:layout_margin="@dimen/card_view_margin"
+              android:orientation="vertical">
+
+    <com.emeint.android.fawryplugin.views.cutomviews.FawryPluginCustomTextView
+        android:id="@+id/shipping_header_label"
+        style="@style/card_view_header_style"
+        android:text="@string/shipping_info_card_view_header" />
+
+
+    <com.emeint.android.fawryplugin.views.cutomviews.FawryPluginCustomTextInputLayout
+        android:id="@+id/receiver_text_input_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/card_view_views_margin_top">
+
+        <com.emeint.android.fawryplugin.views.cutomviews.FawryPluginCustomEditText
+            android:id="@+id/receiver_edit_text"
+            style="@style/editTextStyle"
+            android:layout_width="match_parent"
+            android:inputType="textPersonName"
+            android:layout_height="wrap_content"
+
+            android:hint="@string/receiver_edit_text_hint" />
+    </com.emeint.android.fawryplugin.views.cutomviews.FawryPluginCustomTextInputLayout>
+
+
+    <com.emeint.android.fawryplugin.views.cutomviews.FawryPluginCustomTextInputLayout
+        android:id="@+id/governorate_text_input_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/card_view_views_margin_top">
+
+        <com.emeint.android.fawryplugin.views.cutomviews.FawryPluginCustomEditText
+            android:id="@+id/governorate_edit_text"
+            style="@style/custom_spinner_text_input_layout"
+            android:hint="@string/shipping_governorate" />
+    </com.emeint.android.fawryplugin.views.cutomviews.FawryPluginCustomTextInputLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="2">
+
+        <com.emeint.android.fawryplugin.views.cutomviews.FawryPluginCustomTextInputLayout
+            android:id="@+id/city_text_input_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/unit_1x"
+            android:layout_marginTop="@dimen/card_view_views_margin_top"
+            android:layout_weight="1">
+
+            <com.emeint.android.fawryplugin.views.cutomviews.FawryPluginCustomEditText
+                android:id="@+id/city_edit_text"
+                style="@style/custom_spinner_text_input_layout"
+                android:hint="@string/city_shipping" />
+        </com.emeint.android.fawryplugin.views.cutomviews.FawryPluginCustomTextInputLayout>
+
+
+        <com.emeint.android.fawryplugin.views.cutomviews.FawryPluginCustomTextInputLayout
+            android:id="@+id/area_text_input_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/card_view_views_margin_top"
+            android:layout_marginStart="@dimen/unit_1x"
+            android:layout_weight="1">
+
+            <com.emeint.android.fawryplugin.views.cutomviews.FawryPluginCustomEditText
+                android:id="@+id/area_edit_text"
+                style="@style/custom_spinner_text_input_layout"
+                android:hint="@string/area_shipping" />
+        </com.emeint.android.fawryplugin.views.cutomviews.FawryPluginCustomTextInputLayout>
+
+
+    </LinearLayout>
+
+    <com.emeint.android.fawryplugin.views.cutomviews.FawryPluginCustomTextInputLayout
+        android:id="@+id/address_text_input_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/card_view_views_margin_top">
+
+        <com.emeint.android.fawryplugin.views.cutomviews.FawryPluginCustomEditText
+            android:id="@+id/address_edit_text"
+            style="@style/editTextStyle"
+            android:inputType="textPersonName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/receiver_address" />
+    </com.emeint.android.fawryplugin.views.cutomviews.FawryPluginCustomTextInputLayout>
+
+</LinearLayout>

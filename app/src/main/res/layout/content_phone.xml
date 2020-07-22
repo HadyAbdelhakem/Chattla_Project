@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layoutDirection="rtl"
+    android:textDirection="rtl"
+    android:orientation="vertical"
+    tools:context="com.agri.chattla.ui.phone.MobileNumActivity">
+
+
+<androidx.appcompat.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimary">
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:fontFamily="@font/tajawal_bold"
+            android:text="الهاتف"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_16ssp"
+            android:textStyle="bold" />
+
+
+        <ImageView
+            android:id="@+id/imageview2_0"
+            android:layout_width="@dimen/_20sdp"
+            android:layout_height="@dimen/_20sdp"
+            android:layout_gravity="end"
+            android:layout_marginEnd="@dimen/_16sdp"
+            android:background="@drawable/ic_arrow" />
+    </androidx.appcompat.widget.Toolbar>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/textview2_0"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="برجاء ادخال رقم الهاتف"
+            android:textColor="@color/text_color"
+            android:textSize="@dimen/_16ssp"
+            android:fontFamily="@font/tajawal_medium"
+            android:layout_marginTop="@dimen/_16sdp"
+          />
+
+        <EditText
+            android:id="@+id/edittext2_0"
+            android:layout_width="@dimen/_85sdp"
+            android:layout_height="wrap_content"
+            android:hint="رقم الهاتف"
+            android:textSize="@dimen/_14ssp"
+            android:layout_gravity="center"
+            android:fontFamily="@font/tajawal_medium"
+            android:inputType="number"
+            android:maxLength="11"
+            android:maxLines="1"
+            android:padding="8dp"
+            android:background="@drawable/background_white_with_border"
+            android:gravity="center"
+            android:layout_marginTop="@dimen/_24sdp"
+           />
+
+        <TextView
+            android:id="@+id/textview2_1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="سوف يتم ارسال كود فى رسالة نصية للتحقق من رقم هاتفك"
+            android:textColor="@color/text_color"
+            android:textSize="@dimen/_14ssp"
+            android:fontFamily="@font/tajawal_medium"
+            android:layout_margin="@dimen/_24sdp"
+           />
+
+        <Button
+            android:id="@+id/btn2_0"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_50sdp"
+            android:layout_marginEnd="@dimen/_16sdp"
+            android:layout_marginStart="@dimen/_16sdp"
+            android:background="@drawable/bk_button"
+            android:padding="8dp"
+            android:text="التحقق من رقم الهاتف"
+            android:layout_gravity="center"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_16ssp"
+            android:fontFamily="@font/tajawal_medium"/>
+
+    </LinearLayout>
+
+</LinearLayout>

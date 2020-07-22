@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layoutDirection="rtl"
+    android:orientation="vertical"
+    android:textDirection="rtl"
+    tools:context="com.agri.chattla.ui.verifactionCode.VerifactionCodeActivity">
+
+
+<androidx.appcompat.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimary">
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:fontFamily="@font/tajawal_bold"
+            android:text="التحقق"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_16ssp"
+            android:textStyle="bold" />
+
+
+        <ImageView
+            android:id="@+id/imageview3_0"
+            android:layout_width="@dimen/_20sdp"
+            android:layout_height="@dimen/_20sdp"
+            android:layout_gravity="end"
+            android:layout_marginEnd="@dimen/_16sdp"
+            android:background="@drawable/ic_arrow" />
+    </androidx.appcompat.widget.Toolbar>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/_16sdp"
+        android:layout_marginEnd="@dimen/_16sdp"
+        android:orientation="vertical">
+
+
+        <TextView
+            android:id="@+id/textview3_0"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/_40sdp"
+            android:fontFamily="@font/tajawal_medium"
+            android:gravity="center"
+            android:text="برجاء ادخال الكود المرسل اليك على الرقم"
+            android:textColor="@color/text_color"
+            android:textSize="@dimen/_14ssp" />
+
+        <TextView
+            android:id="@+id/textview3_2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text=""
+            android:layout_gravity="center"
+            android:textColor="@color/text_color"
+            android:textSize="@dimen/_14ssp"
+            android:gravity="center"
+            android:fontFamily="@font/tajawal_medium"
+           />
+
+        <TextView
+            android:id="@+id/textview3_3"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginTop="@dimen/_40sdp"
+            android:fontFamily="@font/tajawal_bold"
+            android:text="تغيير رقم الموبايل ؟"
+            android:textColor="@color/text_color"
+            android:textSize="@dimen/_14ssp" />
+
+
+        <EditText
+            android:id="@+id/et_code"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/_24sdp"
+            android:background="@drawable/background_white_with_border"
+            android:gravity="center"
+            android:hint="ادخل الكود"
+            android:inputType="number"
+            android:maxLength="6"
+            android:maxLines="1"
+            android:padding="8dp" />
+
+
+        <Button
+            android:id="@+id/btn3_0"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_16sdp"
+            android:layout_marginTop="80dp"
+            android:layout_marginEnd="@dimen/_16sdp"
+            android:background="@drawable/bk_button"
+            android:fontFamily="@font/tajawal_medium"
+            android:text="التالى"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_16ssp" />
+
+    </LinearLayout>
+
+</LinearLayout>
