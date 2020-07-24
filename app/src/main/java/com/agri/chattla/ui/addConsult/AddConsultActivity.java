@@ -137,7 +137,7 @@ public class AddConsultActivity extends BaseActivity implements View.OnClickList
 
         viewModel = new ViewModelProvider(this).get(WeatherViewModel.class);
 
-        dialog = new XProgressDialog(this, AddConsultActivity.this.getResources().getString(R.string.loading_login), XProgressDialog.THEME_HORIZONTAL_SPOT);
+        dialog = new XProgressDialog(this, /*AddConsultActivity.this.getResources().getString(R.string.loading_login)*/ "انتظر", XProgressDialog.THEME_HORIZONTAL_SPOT);
 
         price = (Price) getIntent().getExtras().get("price");
 
@@ -528,16 +528,13 @@ public class AddConsultActivity extends BaseActivity implements View.OnClickList
                         consult.setLng(lng);
                         locationLayout.setVisibility(View.GONE);
                         farmLocationLayout.setVisibility(View.VISIBLE);
-                        //getLocationManual();
                         farmLocation.setText(addresses.get(0).getAddressLine(0));
                         dialog.dismiss();
-//                        Toasty.info(AddConsultActivity.this , ""  , Toasty.LENGTH_LONG).show();
                     } catch (IOException e) {
                         e.printStackTrace();
                     }
                 }
                 else {
-                    //Toasty.error(AddConsultActivity.this , "نواجه مشكلة فى الحصول على الموقع الجغرافى" , Toasty.LENGTH_LONG).show();
                     getLocationManual();
                 }
             }
@@ -639,6 +636,7 @@ public class AddConsultActivity extends BaseActivity implements View.OnClickList
                     String gov = userFirbase.getGov();
                     String mLocation = cit + " , " + gov ;
                     locationLayout.setVisibility(View.GONE);
+                    farmLocationLayout.setVisibility(View.VISIBLE);
                     farmLocation.setText(mLocation);
                     dialog.dismiss();
                 }

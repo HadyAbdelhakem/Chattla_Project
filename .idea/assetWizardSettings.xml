@@ -96,7 +96,7 @@
                                             <option name="values">
                                               <map>
                                                 <entry key="color" value="000000" />
-                                                <entry key="imagePath" value="D:\shatla\app\src\main\res\drawable\icon_1.png" />
+                                                <entry key="imagePath" value="D:\Chattla\Chattla_Project\app\src\main\res\drawable\expert_icon.png" />
                                                 <entry key="scalingPercent" value="75" />
                                               </map>
                                             </option>
@@ -130,7 +130,7 @@
                                   <option name="values">
                                     <map>
                                       <entry key="backgroundAssetType" value="COLOR" />
-                                      <entry key="backgroundColor" value="ffffff" />
+                                      <entry key="outputName" value="ic_launcher_expert" />
                                     </map>
                                   </option>
                                 </PersistentState>

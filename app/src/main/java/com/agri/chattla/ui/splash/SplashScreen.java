@@ -20,7 +20,7 @@ public class SplashScreen extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.splash_screen);
 
-        //checkConnection();
+        checkConnection();
 
     }
 
@@ -40,7 +40,7 @@ public class SplashScreen extends AppCompatActivity {
                         startActivity(loginpage);
                         finish();
                     }
-                },1000);
+                },3000);
             }
 
             if (activeNetwork.getType() == ConnectivityManager.TYPE_MOBILE ){
@@ -51,7 +51,7 @@ public class SplashScreen extends AppCompatActivity {
                         startActivity(loginpage);
                         finish();
                     }
-                },1000);
+                },3000);
             }
         }
         else {

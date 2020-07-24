@@ -1,35 +1,36 @@
 apply plugin: 'com.android.application'
 apply plugin: 'com.google.gms.google-services'
 android {
-    compileSdkVersion 28
+    compileSdkVersion 29
     defaultConfig {
         applicationId "com.agri.chattla"
         minSdkVersion 21
-        targetSdkVersion 28
+        targetSdkVersion 29
         versionCode 1
-        versionName "1.0"
+        versionName "1.0.0"
         testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
     }
     signingConfigs {
         config {
             keyAlias 'key0'
             keyPassword '66778899'
-            storeFile file('D:\\shatla\\KeyStore.jks')
+            storeFile file('D:\\Chattla\\ChattlaAPK\\KeyStore.jks')
             storePassword '66778899'
         }
         debug {
             storePassword '66778899'
             keyAlias 'key0'
             keyPassword '66778899'
-            storeFile file('D:\\shatla\\KeyStore.jks')
+            storeFile file('D:\\Chattla\\ChattlaAPK\\KeyStore.jks')
         }
     }
 
     buildTypes {
         release {
-            minifyEnabled false
+            minifyEnabled true
+            shrinkResources true
+            debuggable false
             proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
-            debuggable = true
             signingConfig signingConfigs.config
         }
     }

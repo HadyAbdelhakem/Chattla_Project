@@ -1,6 +1,7 @@
 <resources>
 
     <string name="app_name">شتلة</string>
+<!--    <string name="app_name">Chattla</string>-->
     <string name="next">التالى</string>
     <string name="skip">تخطي</string>
 
