@@ -22,142 +22,14 @@
     <option name="TOOL_WINDOW_CONFIGURED_FILTER" value="Show only selected application" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="145413bf-a126-4930-abfa-e16b2ff37a1f" name="Default Changelist" comment="New Payment Information">
-      <change beforePath="$PROJECT_DIR$/.gradle/6.1.1/executionHistory/executionHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.1.1/executionHistory/executionHistory.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/6.1.1/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.1.1/executionHistory/executionHistory.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/6.1.1/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.1.1/fileHashes/fileHashes.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/6.1.1/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.1.1/fileHashes/fileHashes.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/6.1.1/fileHashes/resourceHashesCache.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.1.1/fileHashes/resourceHashesCache.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/6.1.1/javaCompile/classAnalysis.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.1.1/javaCompile/classAnalysis.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/6.1.1/javaCompile/jarAnalysis.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.1.1/javaCompile/jarAnalysis.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/6.1.1/javaCompile/javaCompile.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.1.1/javaCompile/javaCompile.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/6.1.1/javaCompile/taskHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.1.1/javaCompile/taskHistory.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/assetWizardSettings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/assetWizardSettings.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/caches/build_file_checksums.ser" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/caches/build_file_checksums.ser" afterDir="false" />
+    <list default="true" id="145413bf-a126-4930-abfa-e16b2ff37a1f" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/KeyStore.jks" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/WhatsappMessengerView/WhatsappMessengerView.iml" beforeDir="false" afterPath="$PROJECT_DIR$/WhatsappMessengerView/WhatsappMessengerView.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WhatsappMessengerView/build/.transforms/525da10c0eaef53884fc535a3f804901.bin" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/WhatsappMessengerView/build/.transforms/525da10c0eaef53884fc535a3f804901/classes/classes.dex" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/WhatsappMessengerView/build/generated/source/buildConfig/debug/com/varunjohn1990/audio_record_view/BuildConfig.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/WhatsappMessengerView/build/intermediates/aapt_friendly_merged_manifests/debug/aapt/AndroidManifest.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/WhatsappMessengerView/build/intermediates/aapt_friendly_merged_manifests/debug/aapt/output.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/WhatsappMessengerView/build/intermediates/aar_main_jar/debug/classes.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/WhatsappMessengerView/build/intermediates/annotation_processor_list/debug/annotationProcessors.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/WhatsappMessengerView/build/intermediates/annotations_typedef_file/debug/typedefs.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/WhatsappMessengerView/build/intermediates/compile_library_classes_jar/debug/classes.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/WhatsappMessengerView/build/intermediates/compile_only_not_namespaced_r_class_jar/debug/R.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/WhatsappMessengerView/build/intermediates/compile_symbol_list/debug/R.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/WhatsappMessengerView/build/intermediates/compiled_local_resources/debug/out/anim_blink.xml.flat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/WhatsappMessengerView/build/intermediates/compiled_local_resources/debug/out/anim_jump.xml.flat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/WhatsappMessengerView/build/intermediates/compiled_local_resources/debug/out/anim_jump_fast.xml.flat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/WhatsappMessengerView/build/intermediates/compiled_local_resources/debug/out/drawable-xhdpi-v4_mic_small.png.flat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/WhatsappMessengerView/build/intermediates/compiled_local_resources/debug/out/drawable-xxxhdpi-v4_arrow.png.flat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/WhatsappMessengerView/build/intermediates/compiled_local_resources/debug/out/drawable-xxxhdpi-v4_attachment_ic.png.flat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/WhatsappMessengerView/build/intermediates/compiled_local_resources/debug/out/drawable-xxxhdpi-v4_camera_ic.png.flat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/WhatsappMessengerView/build/intermediates/compiled_local_resources/debug/out/drawable-xxxhdpi-v4_dustbin_cover_ic.png.flat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/WhatsappMessengerView/build/intermediates/compiled_local_resources/debug/out/drawable-xxxhdpi-v4_dustbin_wheel_ic.png.flat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/WhatsappMessengerView/build/intermediates/compiled_local_resources/debug/out/drawable-xxxhdpi-v4_emoji_ic.png.flat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/WhatsappMessengerView/build/intermediates/compiled_local_resources/debug/out/drawable-xxxhdpi-v4_ic_attachment_audio.png.flat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/WhatsappMessengerView/build/intermediates/compiled_local_resources/debug/out/drawable-xxxhdpi-v4_ic_attachment_camera.png.flat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/WhatsappMessengerView/build/intermediates/compiled_local_resources/debug/out/drawable-xxxhdpi-v4_ic_attachment_contact.png.flat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/WhatsappMessengerView/build/intermediates/compiled_local_resources/debug/out/drawable-xxxhdpi-v4_ic_attachment_document.png.flat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/WhatsappMessengerView/build/intermediates/compiled_local_resources/debug/out/drawable-xxxhdpi-v4_ic_attachment_gallery.png.flat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/WhatsappMessengerView/build/intermediates/compiled_local_resources/debug/out/drawable-xxxhdpi-v4_ic_attachment_location.png.flat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/WhatsappMessengerView/build/intermediates/compiled_local_resources/debug/out/drawable-xxxhdpi-v4_ic_lock.png.flat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/WhatsappMessengerView/build/intermediates/compiled_local_resources/debug/out/drawable-xxxhdpi-v4_mic_ic.png.flat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/WhatsappMessengerView/build/intermediates/compiled_local_resources/debug/out/drawable-xxxhdpi-v4_record_audio_ic.png.flat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/WhatsappMessengerView/build/intermediates/compiled_local_resources/debug/out/drawable-xxxhdpi-v4_send_msg_ic.png.flat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/WhatsappMessengerView/build/intermediates/compiled_local_resources/debug/out/drawable-xxxhdpi-v4_stop_record_ic.png.flat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/WhatsappMessengerView/build/intermediates/compiled_local_resources/debug/out/drawable-xxxhdpi-v4_stop_record_red_ic.png.flat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/WhatsappMessengerView/build/intermediates/compiled_local_resources/debug/out/drawable_bg_chat.jpg.flat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/WhatsappMessengerView/build/intermediates/compiled_local_resources/debug/out/drawable_bg_chat_.jpg.flat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/WhatsappMessengerView/build/intermediates/compiled_local_resources/debug/out/drawable_shadow.xml.flat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/WhatsappMessengerView/build/intermediates/compiled_local_resources/debug/out/drawable_shadow_rtl.xml.flat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/WhatsappMessengerView/build/intermediates/compiled_local_resources/debug/out/layout-ldrtl-v17_record_view.xml.flat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/WhatsappMessengerView/build/intermediates/compiled_local_resources/debug/out/layout_record_view.xml.flat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/WhatsappMessengerView/build/intermediates/incremental/debug-mergeJavaRes/merge-state" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/WhatsappMessengerView/build/intermediates/incremental/debug-mergeNativeLibs/merge-state" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/WhatsappMessengerView/build/intermediates/incremental/mergeDebugJniLibFolders/merger.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/WhatsappMessengerView/build/intermediates/incremental/mergeDebugShaders/merger.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/WhatsappMessengerView/build/intermediates/incremental/packageDebugAssets/merger.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/WhatsappMessengerView/build/intermediates/incremental/packageDebugResources/compile-file-map.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/WhatsappMessengerView/build/intermediates/incremental/packageDebugResources/merged.dir/values-ldrtl-v17/values-ldrtl-v17.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/WhatsappMessengerView/build/intermediates/incremental/packageDebugResources/merged.dir/values/values.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/WhatsappMessengerView/build/intermediates/incremental/packageDebugResources/merger.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/WhatsappMessengerView/build/intermediates/javac/debug/classes/com/varunjohn1990/audio_record_view/AttachmentOption.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/WhatsappMessengerView/build/intermediates/javac/debug/classes/com/varunjohn1990/audio_record_view/AttachmentOptionsListener.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/WhatsappMessengerView/build/intermediates/javac/debug/classes/com/varunjohn1990/audio_record_view/AudioRecordView$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/WhatsappMessengerView/build/intermediates/javac/debug/classes/com/varunjohn1990/audio_record_view/AudioRecordView$2$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/WhatsappMessengerView/build/intermediates/javac/debug/classes/com/varunjohn1990/audio_record_view/AudioRecordView$2.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/WhatsappMessengerView/build/intermediates/javac/debug/classes/com/varunjohn1990/audio_record_view/AudioRecordView$3.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/WhatsappMessengerView/build/intermediates/javac/debug/classes/com/varunjohn1990/audio_record_view/AudioRecordView$4.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/WhatsappMessengerView/build/intermediates/javac/debug/classes/com/varunjohn1990/audio_record_view/AudioRecordView$5.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/WhatsappMessengerView/build/intermediates/javac/debug/classes/com/varunjohn1990/audio_record_view/AudioRecordView$6.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/WhatsappMessengerView/build/intermediates/javac/debug/classes/com/varunjohn1990/audio_record_view/AudioRecordView$7$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/WhatsappMessengerView/build/intermediates/javac/debug/classes/com/varunjohn1990/audio_record_view/AudioRecordView$7.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/WhatsappMessengerView/build/intermediates/javac/debug/classes/com/varunjohn1990/audio_record_view/AudioRecordView$8.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/WhatsappMessengerView/build/intermediates/javac/debug/classes/com/varunjohn1990/audio_record_view/AudioRecordView$9$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/WhatsappMessengerView/build/intermediates/javac/debug/classes/com/varunjohn1990/audio_record_view/AudioRecordView$9$2$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/WhatsappMessengerView/build/intermediates/javac/debug/classes/com/varunjohn1990/audio_record_view/AudioRecordView$9$2.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/WhatsappMessengerView/build/intermediates/javac/debug/classes/com/varunjohn1990/audio_record_view/AudioRecordView$9.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/WhatsappMessengerView/build/intermediates/javac/debug/classes/com/varunjohn1990/audio_record_view/AudioRecordView$RecordingBehaviour.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/WhatsappMessengerView/build/intermediates/javac/debug/classes/com/varunjohn1990/audio_record_view/AudioRecordView$RecordingListener.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/WhatsappMessengerView/build/intermediates/javac/debug/classes/com/varunjohn1990/audio_record_view/AudioRecordView$UserBehaviour.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/WhatsappMessengerView/build/intermediates/javac/debug/classes/com/varunjohn1990/audio_record_view/AudioRecordView.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/WhatsappMessengerView/build/intermediates/javac/debug/classes/com/varunjohn1990/audio_record_view/BuildConfig.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/WhatsappMessengerView/build/intermediates/library_manifest/debug/AndroidManifest.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/WhatsappMessengerView/build/intermediates/local_only_symbol_list/debug/R-def.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/WhatsappMessengerView/build/intermediates/manifest_merge_blame_file/debug/manifest-merger-blame-debug-report.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/WhatsappMessengerView/build/intermediates/merged_java_res/debug/out.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/WhatsappMessengerView/build/intermediates/merged_manifests/debug/output.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/WhatsappMessengerView/build/intermediates/navigation_json/debug/navigation.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/WhatsappMessengerView/build/intermediates/packaged_res/debug/anim/blink.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/WhatsappMessengerView/build/intermediates/packaged_res/debug/anim/jump.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/WhatsappMessengerView/build/intermediates/packaged_res/debug/anim/jump_fast.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/WhatsappMessengerView/build/intermediates/packaged_res/debug/drawable-xhdpi-v4/mic_small.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/WhatsappMessengerView/build/intermediates/packaged_res/debug/drawable-xxxhdpi-v4/arrow.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/WhatsappMessengerView/build/intermediates/packaged_res/debug/drawable-xxxhdpi-v4/attachment_ic.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/WhatsappMessengerView/build/intermediates/packaged_res/debug/drawable-xxxhdpi-v4/camera_ic.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/WhatsappMessengerView/build/intermediates/packaged_res/debug/drawable-xxxhdpi-v4/dustbin_cover_ic.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/WhatsappMessengerView/build/intermediates/packaged_res/debug/drawable-xxxhdpi-v4/dustbin_wheel_ic.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/WhatsappMessengerView/build/intermediates/packaged_res/debug/drawable-xxxhdpi-v4/emoji_ic.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/WhatsappMessengerView/build/intermediates/packaged_res/debug/drawable-xxxhdpi-v4/ic_attachment_audio.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/WhatsappMessengerView/build/intermediates/packaged_res/debug/drawable-xxxhdpi-v4/ic_attachment_camera.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/WhatsappMessengerView/build/intermediates/packaged_res/debug/drawable-xxxhdpi-v4/ic_attachment_contact.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/WhatsappMessengerView/build/intermediates/packaged_res/debug/drawable-xxxhdpi-v4/ic_attachment_document.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/WhatsappMessengerView/build/intermediates/packaged_res/debug/drawable-xxxhdpi-v4/ic_attachment_gallery.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/WhatsappMessengerView/build/intermediates/packaged_res/debug/drawable-xxxhdpi-v4/ic_attachment_location.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/WhatsappMessengerView/build/intermediates/packaged_res/debug/drawable-xxxhdpi-v4/ic_lock.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/WhatsappMessengerView/build/intermediates/packaged_res/debug/drawable-xxxhdpi-v4/mic_ic.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/WhatsappMessengerView/build/intermediates/packaged_res/debug/drawable-xxxhdpi-v4/record_audio_ic.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/WhatsappMessengerView/build/intermediates/packaged_res/debug/drawable-xxxhdpi-v4/send_msg_ic.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/WhatsappMessengerView/build/intermediates/packaged_res/debug/drawable-xxxhdpi-v4/stop_record_ic.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/WhatsappMessengerView/build/intermediates/packaged_res/debug/drawable-xxxhdpi-v4/stop_record_red_ic.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/WhatsappMessengerView/build/intermediates/packaged_res/debug/drawable/bg_chat.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/WhatsappMessengerView/build/intermediates/packaged_res/debug/drawable/bg_chat_.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/WhatsappMessengerView/build/intermediates/packaged_res/debug/drawable/shadow.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/WhatsappMessengerView/build/intermediates/packaged_res/debug/drawable/shadow_rtl.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/WhatsappMessengerView/build/intermediates/packaged_res/debug/layout-ldrtl-v17/record_view.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/WhatsappMessengerView/build/intermediates/packaged_res/debug/layout/record_view.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/WhatsappMessengerView/build/intermediates/packaged_res/debug/values-ldrtl-v17/values-ldrtl-v17.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/WhatsappMessengerView/build/intermediates/packaged_res/debug/values/values.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/WhatsappMessengerView/build/intermediates/runtime_library_classes_jar/debug/classes.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/WhatsappMessengerView/build/intermediates/symbol_list_with_package_name/debug/package-aware-r.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/WhatsappMessengerView/build/outputs/aar/WhatsappMessengerView-debug.aar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/WhatsappMessengerView/build/outputs/logs/manifest-merger-debug-report.txt" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/app/app.iml" beforeDir="false" afterPath="$PROJECT_DIR$/app/app.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/app/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/agri/chattla/ui/addConsult/AddConsultActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/agri/chattla/ui/addConsult/AddConsultActivity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/agri/chattla/ui/splash/SplashScreen.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/agri/chattla/ui/splash/SplashScreen.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable/chattla_tf.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable/chattla_tf1.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable/icon_1.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable/sh5.png" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/drawable/sh5.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/splash_screen.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/splash_screen.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/values/strings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/values/strings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/release/app-release.apk" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/release/output.json" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -249,11 +121,11 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SelectDeploymentTargetsDialog.selectedDevices" value="Pixel_3a_API_30&#10;Pixel_3a_XL_API_28" />
     <property name="android.sdk.path" value="$USER_HOME$/AppData/Local/Android/Sdk" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../ChattlaAPK/KeyStore.jks" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.17" />
     <property name="project.structure.side.proportion" value="0.2" />
-    <property name="settings.editor.selected.configurable" value="preferences.pathVariables" />
+    <property name="settings.editor.selected.configurable" value="configurable.group.tools" />
   </component>
   <component name="PsdUISettings">
     <option name="MODULE_TAB" value="Signing Configs" />
@@ -298,7 +170,7 @@
       <recent name="com.example.hady.shatla" />
     </key>
   </component>
-  <component name="RunManager" selected="Android App.SplashScreen">
+  <component name="RunManager" selected="Gradle.Chatla [signingReport]">
     <configuration default="true" type="AndroidJUnit" factoryName="Android JUnit">
       <option name="TEST_OBJECT" value="class" />
       <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
@@ -555,8 +427,8 @@
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Android App.SplashScreen" />
         <item itemvalue="Gradle.Chatla [signingReport]" />
+        <item itemvalue="Android App.SplashScreen" />
         <item itemvalue="Android App.SplashScreen" />
       </list>
     </recent_temporary>
@@ -643,7 +515,14 @@
       <option name="project" value="LOCAL" />
       <updated>1594072174754</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="Work on Android 11">
+      <created>1595549190597</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1595549190597</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="Vcs.Log.History.Properties">
@@ -689,7 +568,8 @@
     <MESSAGE value="A" />
     <MESSAGE value="First Commit" />
     <MESSAGE value="New Payment Information" />
-    <option name="LAST_COMMIT_MESSAGE" value="New Payment Information" />
+    <MESSAGE value="Work on Android 11" />
+    <option name="LAST_COMMIT_MESSAGE" value="Work on Android 11" />
   </component>
   <component name="WindowStateProjectService">
     <state x="560" y="247" key="#Notifications" timestamp="1594211947473">
@@ -740,18 +620,18 @@
       <screen x="0" y="0" width="1920" height="1160" />
     </state>
     <state x="792" y="393" key="AndroidCreateXmlResourceDialog/0.0.1920.1160@0.0.1920.1160" timestamp="1594666958416" />
-    <state x="597" y="174" key="CommitChangelistDialog2" timestamp="1595547935611">
+    <state x="597" y="174" key="CommitChangelistDialog2" timestamp="1595549185383">
       <screen x="0" y="0" width="1920" height="1160" />
     </state>
-    <state x="597" y="174" key="CommitChangelistDialog2/0.0.1920.1160@0.0.1920.1160" timestamp="1595547935611" />
+    <state x="597" y="174" key="CommitChangelistDialog2/0.0.1920.1160@0.0.1920.1160" timestamp="1595549185383" />
     <state x="184" y="98" key="DiffContextDialog" timestamp="1594070751705">
       <screen x="0" y="0" width="1920" height="1160" />
     </state>
     <state x="184" y="98" key="DiffContextDialog/0.0.1920.1160@0.0.1920.1160" timestamp="1594070751705" />
-    <state x="810" y="309" key="FileChooserDialogImpl" timestamp="1595527848867">
+    <state x="810" y="309" key="FileChooserDialogImpl" timestamp="1595598352104">
       <screen x="0" y="0" width="1920" height="1160" />
     </state>
-    <state x="810" y="309" key="FileChooserDialogImpl/0.0.1920.1160@0.0.1920.1160" timestamp="1595527848867" />
+    <state x="810" y="309" key="FileChooserDialogImpl/0.0.1920.1160@0.0.1920.1160" timestamp="1595598352104" />
     <state x="817" y="473" width="286" height="286" key="Github.ShareDialog" timestamp="1595391475986">
       <screen x="0" y="0" width="1920" height="1160" />
     </state>
@@ -760,22 +640,22 @@
       <screen x="0" y="0" width="1920" height="1160" />
     </state>
     <state x="622" y="285" key="Github.UntrackedFilesDialog/0.0.1920.1160@0.0.1920.1160" timestamp="1595391491510" />
-    <state width="1877" height="320" key="GridCell.Tab.0.bottom" timestamp="1595529775689">
+    <state width="1877" height="320" key="GridCell.Tab.0.bottom" timestamp="1595603237520">
       <screen x="0" y="0" width="1920" height="1160" />
     </state>
-    <state width="1877" height="320" key="GridCell.Tab.0.bottom/0.0.1920.1160@0.0.1920.1160" timestamp="1595529775689" />
-    <state width="1877" height="320" key="GridCell.Tab.0.center" timestamp="1595529775689">
+    <state width="1877" height="320" key="GridCell.Tab.0.bottom/0.0.1920.1160@0.0.1920.1160" timestamp="1595603237520" />
+    <state width="1877" height="320" key="GridCell.Tab.0.center" timestamp="1595603237520">
       <screen x="0" y="0" width="1920" height="1160" />
     </state>
-    <state width="1877" height="320" key="GridCell.Tab.0.center/0.0.1920.1160@0.0.1920.1160" timestamp="1595529775689" />
-    <state width="1877" height="320" key="GridCell.Tab.0.left" timestamp="1595529775689">
+    <state width="1877" height="320" key="GridCell.Tab.0.center/0.0.1920.1160@0.0.1920.1160" timestamp="1595603237520" />
+    <state width="1877" height="320" key="GridCell.Tab.0.left" timestamp="1595603237520">
       <screen x="0" y="0" width="1920" height="1160" />
     </state>
-    <state width="1877" height="320" key="GridCell.Tab.0.left/0.0.1920.1160@0.0.1920.1160" timestamp="1595529775689" />
-    <state width="1877" height="320" key="GridCell.Tab.0.right" timestamp="1595529775689">
+    <state width="1877" height="320" key="GridCell.Tab.0.left/0.0.1920.1160@0.0.1920.1160" timestamp="1595603237520" />
+    <state width="1877" height="320" key="GridCell.Tab.0.right" timestamp="1595603237520">
       <screen x="0" y="0" width="1920" height="1160" />
     </state>
-    <state width="1877" height="320" key="GridCell.Tab.0.right/0.0.1920.1160@0.0.1920.1160" timestamp="1595529775689" />
+    <state width="1877" height="320" key="GridCell.Tab.0.right/0.0.1920.1160@0.0.1920.1160" timestamp="1595603237520" />
     <state width="1877" height="395" key="GridCell.Tab.1.bottom" timestamp="1594931345900">
       <screen x="0" y="0" width="1920" height="1160" />
     </state>
@@ -800,14 +680,14 @@
       <screen x="0" y="0" width="1920" height="1160" />
     </state>
     <state x="731" y="300" key="RollbackChangesDialog/0.0.1920.1160@0.0.1920.1160" timestamp="1595422950527" />
-    <state x="353" y="45" key="SettingsEditor" timestamp="1595537408883">
+    <state x="353" y="45" key="SettingsEditor" timestamp="1595600355283">
       <screen x="0" y="0" width="1920" height="1160" />
     </state>
-    <state x="353" y="45" key="SettingsEditor/0.0.1920.1160@0.0.1920.1160" timestamp="1595537408883" />
-    <state x="552" y="313" key="Vcs.Push.Dialog.v2" timestamp="1595547754577">
+    <state x="353" y="45" key="SettingsEditor/0.0.1920.1160@0.0.1920.1160" timestamp="1595600355283" />
+    <state x="552" y="313" key="Vcs.Push.Dialog.v2" timestamp="1595549249048">
       <screen x="0" y="0" width="1920" height="1160" />
     </state>
-    <state x="552" y="313" key="Vcs.Push.Dialog.v2/0.0.1920.1160@0.0.1920.1160" timestamp="1595547754577" />
+    <state x="552" y="313" key="Vcs.Push.Dialog.v2/0.0.1920.1160@0.0.1920.1160" timestamp="1595549249048" />
     <state x="92" y="92" width="1736" height="976" key="com.android.tools.idea.avdmanager.AvdListDialog" timestamp="1595514651028">
       <screen x="0" y="0" width="1920" height="1160" />
     </state>
