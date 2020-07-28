@@ -94,13 +94,13 @@ public class LoginActivity extends AppCompatActivity {
             }
         });
 
-        findViewById(R.id.tv_terms_and_conditions).setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent i = new Intent(LoginActivity.this, Terms_and_Conditions.class);
-                startActivity(i);
-            }
-        });
+//        findViewById(R.id.tv_terms_and_conditions).setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View v) {
+//                Intent i = new Intent(LoginActivity.this, Terms_and_Conditions.class);
+//                startActivity(i);
+//            }
+//        });
 
         findViewById(R.id.tv_not_have_account).setOnClickListener(new View.OnClickListener() {
             @Override
@@ -135,6 +135,12 @@ public class LoginActivity extends AppCompatActivity {
                 bottomSheetDialog.show();
             }
         });
+    }
+
+    @Override
+    protected void onUserLeaveHint() {
+        //finishAffinity();
+        super.onUserLeaveHint();
     }
 
     private boolean validInput() {

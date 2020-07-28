@@ -44,11 +44,14 @@ public class ConsultStatusViewModel extends ViewModel {
 
             @Override
             public void onSuccess(String response) throws JSONException {
-                Log.e("response", response);
                 try {
                     JSONObject object = new JSONObject(response);
                     if (object.has("paymentStatus")){
+                        Log.e("response", response);
                         mutableLiveData.setValue(object.getString("paymentStatus"));
+
+                    }else{
+                        mutableLiveData.setValue("hasNoPaymentStatus");
                     }
 
                 } catch (JSONException e) {

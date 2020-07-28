@@ -324,7 +324,7 @@
                                 <PersistentState>
                                   <option name="values">
                                     <map>
-                                      <entry key="url" value="jar:file:/C:/Program%20Files/Android/Android%20Studio/plugins/android/lib/android.jar!/images/material/icons/materialicons/person/baseline_person_24.xml" />
+                                      <entry key="url" value="jar:file:/C:/Program%20Files/Android/Android%20Studio/plugins/android/lib/android.jar!/images/material/icons/materialicons/done/baseline_done_24.xml" />
                                     </map>
                                   </option>
                                 </PersistentState>
@@ -334,8 +334,8 @@
                         </option>
                         <option name="values">
                           <map>
-                            <entry key="color" value="ffffff" />
-                            <entry key="outputName" value="ic_baseline_person_24" />
+                            <entry key="color" value="3cff4f" />
+                            <entry key="outputName" value="ic_baseline_done_24" />
                             <entry key="sourceFile" value="C:\Users\anase\Downloads\info.svg" />
                           </map>
                         </option>

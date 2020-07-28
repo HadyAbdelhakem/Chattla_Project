@@ -3,6 +3,7 @@ package com.agri.chattla.ui.addConsult;
 import android.Manifest;
 import android.annotation.SuppressLint;
 import android.app.AlertDialog;
+import android.app.PendingIntent;
 import android.content.Context;
 import android.content.DialogInterface;
 import android.content.Intent;
@@ -19,6 +20,7 @@ import android.os.Bundle;
 import android.os.Environment;
 import android.os.SystemClock;
 import android.provider.MediaStore;
+import android.util.Log;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.AdapterView;
@@ -50,6 +52,7 @@ import com.agri.chattla.ui.base.BaseActivity;
 import com.agri.chattla.ui.farmerMain.FarmerMainActivity;
 import com.agri.chattla.utils.AppPreferences;
 import com.google.android.gms.location.FusedLocationProviderClient;
+import com.google.android.gms.location.LocationRequest;
 import com.google.android.gms.location.LocationServices;
 import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.OnFailureListener;
@@ -61,6 +64,12 @@ import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 import com.google.firebase.database.ValueEventListener;
 import com.iceteck.silicompressorr.SiliCompressor;
+import com.karumi.dexter.Dexter;
+import com.karumi.dexter.PermissionToken;
+import com.karumi.dexter.listener.PermissionDeniedResponse;
+import com.karumi.dexter.listener.PermissionGrantedResponse;
+import com.karumi.dexter.listener.PermissionRequest;
+import com.karumi.dexter.listener.single.PermissionListener;
 import com.makeramen.roundedimageview.RoundedImageView;
 import com.rtchagas.pingplacepicker.PingPlacePicker;
 
@@ -95,8 +104,8 @@ public class AddConsultActivity extends BaseActivity implements View.OnClickList
     private String selectedReason;
     private View farmLocationLayout;
     FusedLocationProviderClient fusedLocationProviderClient;
-    private FusedLocationProviderClient fusedLocationClient;
     private LinearLayout locationLayout;
+    private LinearLayout locationSelected;
 
     private XProgressDialog dialog;
     private Uri imageUri;
@@ -127,24 +136,30 @@ public class AddConsultActivity extends BaseActivity implements View.OnClickList
     private UserFirbase farmer;
     private WeatherViewModel viewModel;
 
+    static AddConsultActivity instance;
+
+    LocationRequest locationRequest;
+
+    public static AddConsultActivity getInstance() {
+        return instance;
+    }
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.layout_add_consult);
+
         toolbar = findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
         getSupportActionBar().setDisplayShowTitleEnabled(false);
-
         viewModel = new ViewModelProvider(this).get(WeatherViewModel.class);
-
         dialog = new XProgressDialog(this, /*AddConsultActivity.this.getResources().getString(R.string.loading_login)*/ "انتظر", XProgressDialog.THEME_HORIZONTAL_SPOT);
-
         price = (Price) getIntent().getExtras().get("price");
-
         fusedLocationProviderClient = LocationServices.getFusedLocationProviderClient(this);
-        fusedLocationClient = LocationServices.getFusedLocationProviderClient(this);
+        locationLayout = findViewById(R.id.location_layout);
+        locationSelected = findViewById(R.id.locationSelected);
 
-        locationLayout =findViewById(R.id.location_layout);
+        instance = this;
 
         refFarmer = FirebaseDatabase.getInstance().getReference("Farmers").child(AppPreferences.getUserPhone(this));
         refFarmer.addValueEventListener(new ValueEventListener() {
@@ -159,16 +174,58 @@ public class AddConsultActivity extends BaseActivity implements View.OnClickList
             }
         });
 
-        initialComponent();
 
+        initialComponent();
         setUpCategories();
         setUpReasons();
 
     }
 
+    private void updateLocation() {
+        buildLocationRequest();
+
+        fusedLocationProviderClient = LocationServices.getFusedLocationProviderClient(this);
+        if (ActivityCompat.checkSelfPermission(this, Manifest.permission.ACCESS_FINE_LOCATION) != PackageManager.PERMISSION_GRANTED && ActivityCompat.checkSelfPermission(this, Manifest.permission.ACCESS_COARSE_LOCATION) != PackageManager.PERMISSION_GRANTED) {
+            // TODO: Consider calling
+            //    ActivityCompat#requestPermissions
+            // here to request the missing permissions, and then overriding
+            //   public void onRequestPermissionsResult(int requestCode, String[] permissions,
+            //                                          int[] grantResults)
+            // to handle the case where the user grants the permission. See the documentation
+            // for ActivityCompat#requestPermissions for more details.
+            return;
+        }
+        fusedLocationProviderClient.requestLocationUpdates(locationRequest, getPendingIntent());
+
+    }
+
+    private PendingIntent getPendingIntent() {
+        Intent intent = new Intent(this , MyLocationService.class);
+        intent.setAction(MyLocationService.ACTION_PROCESS_UPDATE);
+        return PendingIntent.getBroadcast(this   ,  0 , intent , PendingIntent.FLAG_UPDATE_CURRENT);
+    }
+
+    private void buildLocationRequest() {
+        locationRequest = new LocationRequest();
+        locationRequest.setPriority(LocationRequest.PRIORITY_HIGH_ACCURACY);
+        locationRequest.setInterval(5000);
+        locationRequest.setFastestInterval(3000);
+        locationRequest.setSmallestDisplacement(10f);
+
+    }
+
+    public void setLocation(final String lat , final String lng ){
+        getWeatherInfo(lat,lng);
+        consult.setLat(lat);
+        consult.setLng(lng);
+        locationLayout.setVisibility(View.GONE);
+        locationSelected.setVisibility(View.VISIBLE);
+        dialog.dismiss();
+    }
+
     private void setUpReasons() {
         resonsList = new ArrayList<>();
-        resonsList.add("اختر سبب الاستشارة");
+        resonsList.add("-اختر سبب الاستشارة-");
         getAllReasons();
         reasonAdapter = new ArrayAdapter<String>(AddConsultActivity.this.getBaseContext(), R.layout.layout_custom_spinner, resonsList) {
             @Override
@@ -214,7 +271,7 @@ public class AddConsultActivity extends BaseActivity implements View.OnClickList
 
     private void setUpCategories() {
         categoryList = new ArrayList<>();
-        categoryList.add("اختر نوع المحصول");
+        categoryList.add("-اختر نوع المحصول-");
         getAllCategories();
         categoryAdapter = new ArrayAdapter<String>(AddConsultActivity.this.getBaseContext(), R.layout.layout_custom_spinner, categoryList) {
             @Override
@@ -338,7 +395,7 @@ public class AddConsultActivity extends BaseActivity implements View.OnClickList
                 if (hasPermissions(AddConsultActivity.this, new String[]{
                         Manifest.permission.ACCESS_FINE_LOCATION,
                         Manifest.permission.ACCESS_COARSE_LOCATION,
-                })) {
+                })){
                     //showPlacePicker();
                     //getLocation();
                     final LocationManager manager = (LocationManager) getSystemService( Context.LOCATION_SERVICE );
@@ -499,7 +556,7 @@ public class AddConsultActivity extends BaseActivity implements View.OnClickList
     }
 
     private void getLocation() {
-        if (ActivityCompat.checkSelfPermission(this, Manifest.permission.ACCESS_FINE_LOCATION) != PackageManager.PERMISSION_GRANTED && ActivityCompat.checkSelfPermission(this, Manifest.permission.ACCESS_COARSE_LOCATION) != PackageManager.PERMISSION_GRANTED) {
+        /*if (ActivityCompat.checkSelfPermission(this, Manifest.permission.ACCESS_FINE_LOCATION) != PackageManager.PERMISSION_GRANTED && ActivityCompat.checkSelfPermission(this, Manifest.permission.ACCESS_COARSE_LOCATION) != PackageManager.PERMISSION_GRANTED) {
             // TODO: Consider calling
             //    ActivityCompat#requestPermissions
             // here to request the missing permissions, and then overriding
@@ -542,7 +599,25 @@ public class AddConsultActivity extends BaseActivity implements View.OnClickList
             @Override
             public void onFailure(@NonNull Exception e) {
             }
-        });
+        });*/
+        Dexter.withActivity(this)
+                .withPermission(Manifest.permission.ACCESS_FINE_LOCATION)
+                .withListener(new PermissionListener() {
+                    @Override
+                    public void onPermissionGranted(PermissionGrantedResponse permissionGrantedResponse) {
+                        updateLocation();
+                    }
+
+                    @Override
+                    public void onPermissionDenied(PermissionDeniedResponse permissionDeniedResponse) {
+                        /*Toasty.info(AddConsultActivity.this , "برجاء السماح للتطبيق بالوصول للموقع" , Toasty.LENGTH_LONG).show();*/
+                    }
+
+                    @Override
+                    public void onPermissionRationaleShouldBeShown(PermissionRequest permissionRequest, PermissionToken permissionToken) {
+
+                    }
+                }).check();
     }
 
     public void OpenGallery() {
@@ -678,10 +753,10 @@ public class AddConsultActivity extends BaseActivity implements View.OnClickList
             Toasty.error(AddConsultActivity.this, "ادخل صورة للاستشارة", Toasty.LENGTH_SHORT).show();
             return false;
         }
-//        if (lat == null) {
-//            Toasty.error(AddConsultActivity.this, "حدد الموقع الجغرافي", Toasty.LENGTH_SHORT).show();
-//            return false;
-//        }
+        if (lat == null) {
+            Toasty.error(AddConsultActivity.this, "حدد الموقع الجغرافي", Toasty.LENGTH_SHORT).show();
+            return false;
+        }
 
 
         return true;

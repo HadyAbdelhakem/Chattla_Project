@@ -42,6 +42,8 @@ import org.json.JSONException;
 import java.util.ArrayList;
 import java.util.List;
 
+import es.dmoral.toasty.Toasty;
+
 import static com.agri.chattla.utils.AppConstants.merchantId;
 import static com.agri.chattla.utils.AppConstants.paymentKey;
 
@@ -184,6 +186,11 @@ public class FarmerMainActivity extends BaseActivity implements View.OnClickList
                         }
                         if (consult.getSender().equals(currentUser)) {
                             consultList.add(consult);
+                            if (consult.getPaymentStatus().equals("unPaid")){
+                                isConsultUnPaid = "true";
+                            }else {
+                                isConsultUnPaid = "false";
+                            }
                         }
                     }
                 }
@@ -214,15 +221,15 @@ public class FarmerMainActivity extends BaseActivity implements View.OnClickList
             case R.id.bt_add_consult:
 
 
-                startActivity(new Intent(FarmerMainActivity.this, AddConsultActivity.class)
-                        .putExtra("price", price));
+                /*startActivity(new Intent(FarmerMainActivity.this, AddConsultActivity.class)
+                        .putExtra("price", price));*/
 
-//                if (isConsultUnPaid.equals("true")) {
-//                    Toasty.info(this, "يرجى دفع الاستشارة السابقة لاضافة استشارة جديدة", Toasty.LENGTH_SHORT).show();
-//                } else {
-//                    startActivity(new Intent(FarmerMainActivity.this, AddConsultActivity.class)
-//                            .putExtra("price", price));
-//                }
+                if (isConsultUnPaid.equals("true")) {
+                    Toasty.error(this, "يرجى دفع الاستشارة السابقة لحجز استشارة جديدة", Toasty.LENGTH_SHORT).show();
+                } else {
+                    startActivity(new Intent(FarmerMainActivity.this, AddConsultActivity.class)
+                            .putExtra("price", price));
+                }
 
                 break;
 
@@ -254,6 +261,7 @@ public class FarmerMainActivity extends BaseActivity implements View.OnClickList
                         isConsultUnPaid = "true";
                         break;
 
+                    case "hasNoPaymentStatus":
                     case "REFUNDED":
                     case "EXPIRED":
                     case "CANCELLED":

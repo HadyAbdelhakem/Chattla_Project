@@ -12,6 +12,7 @@ import android.os.Environment;
 import android.provider.MediaStore;
 import android.util.Log;
 import android.view.View;
+import android.view.WindowManager;
 import android.webkit.MimeTypeMap;
 import android.widget.Button;
 import android.widget.EditText;
@@ -24,6 +25,8 @@ import androidx.core.content.FileProvider;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
+import com.agri.chattla.ui.Payment.PaymentActivity;
+import com.agri.chattla.ui.farmerMain.FarmerMainActivity;
 import com.bumptech.glide.Glide;
 import com.agri.chattla.R;
 import com.agri.chattla.custom.AddReviewDialog;
@@ -125,9 +128,7 @@ public class ChatActivity extends BaseActivity implements View.OnClickListener, 
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_message);
 
-        //getWindow().setSoftInputMode(WindowManager.LayoutParams.SOFT_INPUT_STATE_VISIBLE|WindowManager.LayoutParams.SOFT_INPUT_ADJUST_RESIZE);
-
-//        getWindow().setFlags(WindowManager.LayoutParams.FLAG_SECURE, WindowManager.LayoutParams.FLAG_SECURE);
+        getWindow().setFlags(WindowManager.LayoutParams.FLAG_SECURE, WindowManager.LayoutParams.FLAG_SECURE);
 
         audioRecordView = new AudioRecordView();
         audioRecordView.initView(findViewById(R.id.layoutMain));
@@ -614,7 +615,8 @@ public class ChatActivity extends BaseActivity implements View.OnClickListener, 
 
         switch (v.getId()) {
             case R.id.img_back:
-                finish();
+                finishAffinity();
+                startActivity(new Intent(ChatActivity.this, FarmerMainActivity.class));
                 break;
             case R.id.btn_end_col:
                 showDialogEndConsult();

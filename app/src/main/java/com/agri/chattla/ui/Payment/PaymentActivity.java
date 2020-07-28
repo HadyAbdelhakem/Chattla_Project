@@ -297,7 +297,7 @@ public class PaymentActivity extends BaseActivity implements FawrySdkCallback, V
 
     }
 
-    private void sendConsult() {
+    private void sendConsult(String paymentStatus ) {
 
         dialog = new XProgressDialog(PaymentActivity.this, "جاري الارسال..", XProgressDialog.THEME_CIRCLE_PROGRESS);
         dialog.show();
@@ -342,7 +342,7 @@ public class PaymentActivity extends BaseActivity implements FawrySdkCallback, V
                             map.put("lng", consult.getLng());
                             map.put("farmerToken", consult.getFarmerToken());
                             map.put("merchantRefNum", merchantRefNum);
-                            map.put("PaymentStatus", "unPaid");
+                            map.put("PaymentStatus", paymentStatus);
                             map.put("weather", consult.getWeather());
                             map.put("timestamp", ServerValue.TIMESTAMP);
 
@@ -433,12 +433,12 @@ public class PaymentActivity extends BaseActivity implements FawrySdkCallback, V
 
     @Override
     public void paymentOperationSuccess(String s, Object o) {
-        sendConsult();
+        sendConsult("unPaid");
     }
 
     @Override
     public void paymentOperationFailure(String s, Object o) {
-        Toasty.error(PaymentActivity.this, s, Toasty.LENGTH_SHORT);
+        Toasty.error(PaymentActivity.this,s, Toasty.LENGTH_SHORT);
     }
 
     private void sendNotification() {

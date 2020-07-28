@@ -23,13 +23,33 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="145413bf-a126-4930-abfa-e16b2ff37a1f" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.gradle/6.1.1/executionHistory/executionHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.1.1/executionHistory/executionHistory.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/6.1.1/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.1.1/executionHistory/executionHistory.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/6.1.1/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.1.1/fileHashes/fileHashes.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/6.1.1/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.1.1/fileHashes/fileHashes.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/6.1.1/fileHashes/resourceHashesCache.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.1.1/fileHashes/resourceHashesCache.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/6.1.1/javaCompile/classAnalysis.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.1.1/javaCompile/classAnalysis.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/6.1.1/javaCompile/jarAnalysis.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.1.1/javaCompile/jarAnalysis.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/6.1.1/javaCompile/javaCompile.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.1.1/javaCompile/javaCompile.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/6.1.1/javaCompile/taskHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.1.1/javaCompile/taskHistory.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/assetWizardSettings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/assetWizardSettings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/caches/build_file_checksums.ser" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/caches/build_file_checksums.ser" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/KeyStore.jks" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/WhatsappMessengerView/WhatsappMessengerView.iml" beforeDir="false" afterPath="$PROJECT_DIR$/WhatsappMessengerView/WhatsappMessengerView.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/app.iml" beforeDir="false" afterPath="$PROJECT_DIR$/app/app.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/splash_screen.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/splash_screen.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/release/app-release.apk" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/release/output.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/app/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/agri/chattla/ui/Payment/PaymentActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/agri/chattla/ui/Payment/PaymentActivity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/agri/chattla/ui/addConsult/AddConsultActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/agri/chattla/ui/addConsult/AddConsultActivity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/agri/chattla/ui/chat/ChatActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/agri/chattla/ui/chat/ChatActivity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/agri/chattla/ui/farmerMain/ConsultStatusViewModel.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/agri/chattla/ui/farmerMain/ConsultStatusViewModel.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/agri/chattla/ui/farmerMain/FarmerMainActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/agri/chattla/ui/farmerMain/FarmerMainActivity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/agri/chattla/ui/login/LoginActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/agri/chattla/ui/login/LoginActivity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_payment.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_payment.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/layout_add_consult.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/layout_add_consult.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/terms_and_conditions.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/terms_and_conditions.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -87,9 +107,10 @@
   </component>
   <component name="GenerateSignedApkSettings">
     <option name="EXPORT_PRIVATE_KEY" value="false" />
-    <option name="KEY_STORE_PATH" value="D:\Chattla\ChattlaAPK\KeyStore.jks" />
+    <option name="KEY_STORE_PATH" value="D:\Chattla\ChattlaFarmerAPK\KeyStore.jks" />
     <option name="KEY_ALIAS" value="key0" />
     <option name="REMEMBER_PASSWORDS" value="true" />
+    <option name="BUILD_TARGET_KEY" value="apk" />
   </component>
   <component name="Git.Settings">
     <option name="ADD_SUFFIX_TO_CHERRY_PICKS_OF_PUBLISHED_COMMITS" value="false" />
@@ -115,13 +136,15 @@
     <property name="ApkExportedModule" value="app" />
     <property name="BundleExportedModule" value="app" />
     <property name="DeviceAndSnapshotComboBoxAction.selectedDevice" value="6.0_Api_28" />
-    <property name="DeviceAndSnapshotComboBoxAction.selectionTime" value="2020-07-23T21:58:07.336Z" />
-    <property name="ExportApk.ApkPath" value="D:\Chattla\ChattlaAPK" />
-    <property name="ExportApk.BuildVariants" value="release" />
+    <property name="DeviceAndSnapshotComboBoxAction.selectionTime" value="2020-07-26T16:40:28.399Z" />
+    <property name="ExportApk.ApkPath" value="D:\Chattla\Chattla_Project\app" />
+    <property name="ExportApk.BuildVariants" value="debug" />
+    <property name="ExportApk.SignV1" value="true" />
+    <property name="ExportApk.SignV2" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SelectDeploymentTargetsDialog.selectedDevices" value="Pixel_3a_API_30&#10;Pixel_3a_XL_API_28" />
     <property name="android.sdk.path" value="$USER_HOME$/AppData/Local/Android/Sdk" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/app" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.17" />
     <property name="project.structure.side.proportion" value="0.2" />
@@ -170,7 +193,7 @@
       <recent name="com.example.hady.shatla" />
     </key>
   </component>
-  <component name="RunManager" selected="Gradle.Chatla [signingReport]">
+  <component name="RunManager" selected="Android App.SplashScreen">
     <configuration default="true" type="AndroidJUnit" factoryName="Android JUnit">
       <option name="TEST_OBJECT" value="class" />
       <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
@@ -427,8 +450,8 @@
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Gradle.Chatla [signingReport]" />
         <item itemvalue="Android App.SplashScreen" />
+        <item itemvalue="Gradle.Chatla [signingReport]" />
         <item itemvalue="Android App.SplashScreen" />
       </list>
     </recent_temporary>
@@ -522,7 +545,14 @@
       <option name="project" value="LOCAL" />
       <updated>1595549190597</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="Chattla Font is Changed">
+      <created>1595688085747</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1595688085747</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="Vcs.Log.History.Properties">
@@ -569,7 +599,8 @@
     <MESSAGE value="First Commit" />
     <MESSAGE value="New Payment Information" />
     <MESSAGE value="Work on Android 11" />
-    <option name="LAST_COMMIT_MESSAGE" value="Work on Android 11" />
+    <MESSAGE value="Chattla Font is Changed" />
+    <option name="LAST_COMMIT_MESSAGE" value="Chattla Font is Changed" />
   </component>
   <component name="WindowStateProjectService">
     <state x="560" y="247" key="#Notifications" timestamp="1594211947473">
@@ -596,10 +627,10 @@
       <screen x="0" y="0" width="1920" height="1160" />
     </state>
     <state x="714" y="383" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1920.1160@0.0.1920.1160" timestamp="1594259477208" />
-    <state x="765" y="264" key="#com.intellij.ide.util.MemberChooser" timestamp="1594847244366">
+    <state x="765" y="264" key="#com.intellij.ide.util.MemberChooser" timestamp="1595791291737">
       <screen x="0" y="0" width="1920" height="1160" />
     </state>
-    <state x="765" y="264" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1160@0.0.1920.1160" timestamp="1594847244366" />
+    <state x="765" y="264" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1160@0.0.1920.1160" timestamp="1595791291737" />
     <state x="659" y="505" key="#com.intellij.refactoring.move.MoveHandler.SelectRefactoringDialog" timestamp="1594823631077">
       <screen x="0" y="0" width="1920" height="1160" />
     </state>
@@ -620,18 +651,18 @@
       <screen x="0" y="0" width="1920" height="1160" />
     </state>
     <state x="792" y="393" key="AndroidCreateXmlResourceDialog/0.0.1920.1160@0.0.1920.1160" timestamp="1594666958416" />
-    <state x="597" y="174" key="CommitChangelistDialog2" timestamp="1595549185383">
+    <state x="597" y="174" key="CommitChangelistDialog2" timestamp="1595688084782">
       <screen x="0" y="0" width="1920" height="1160" />
     </state>
-    <state x="597" y="174" key="CommitChangelistDialog2/0.0.1920.1160@0.0.1920.1160" timestamp="1595549185383" />
+    <state x="597" y="174" key="CommitChangelistDialog2/0.0.1920.1160@0.0.1920.1160" timestamp="1595688084782" />
     <state x="184" y="98" key="DiffContextDialog" timestamp="1594070751705">
       <screen x="0" y="0" width="1920" height="1160" />
     </state>
     <state x="184" y="98" key="DiffContextDialog/0.0.1920.1160@0.0.1920.1160" timestamp="1594070751705" />
-    <state x="810" y="309" key="FileChooserDialogImpl" timestamp="1595598352104">
+    <state x="810" y="309" key="FileChooserDialogImpl" timestamp="1595781493268">
       <screen x="0" y="0" width="1920" height="1160" />
     </state>
-    <state x="810" y="309" key="FileChooserDialogImpl/0.0.1920.1160@0.0.1920.1160" timestamp="1595598352104" />
+    <state x="810" y="309" key="FileChooserDialogImpl/0.0.1920.1160@0.0.1920.1160" timestamp="1595781493268" />
     <state x="817" y="473" width="286" height="286" key="Github.ShareDialog" timestamp="1595391475986">
       <screen x="0" y="0" width="1920" height="1160" />
     </state>
@@ -640,22 +671,22 @@
       <screen x="0" y="0" width="1920" height="1160" />
     </state>
     <state x="622" y="285" key="Github.UntrackedFilesDialog/0.0.1920.1160@0.0.1920.1160" timestamp="1595391491510" />
-    <state width="1877" height="320" key="GridCell.Tab.0.bottom" timestamp="1595603237520">
+    <state width="1877" height="320" key="GridCell.Tab.0.bottom" timestamp="1595961490423">
       <screen x="0" y="0" width="1920" height="1160" />
     </state>
-    <state width="1877" height="320" key="GridCell.Tab.0.bottom/0.0.1920.1160@0.0.1920.1160" timestamp="1595603237520" />
-    <state width="1877" height="320" key="GridCell.Tab.0.center" timestamp="1595603237520">
+    <state width="1877" height="320" key="GridCell.Tab.0.bottom/0.0.1920.1160@0.0.1920.1160" timestamp="1595961490423" />
+    <state width="1877" height="320" key="GridCell.Tab.0.center" timestamp="1595961490423">
       <screen x="0" y="0" width="1920" height="1160" />
     </state>
-    <state width="1877" height="320" key="GridCell.Tab.0.center/0.0.1920.1160@0.0.1920.1160" timestamp="1595603237520" />
-    <state width="1877" height="320" key="GridCell.Tab.0.left" timestamp="1595603237520">
+    <state width="1877" height="320" key="GridCell.Tab.0.center/0.0.1920.1160@0.0.1920.1160" timestamp="1595961490423" />
+    <state width="1877" height="320" key="GridCell.Tab.0.left" timestamp="1595961490422">
       <screen x="0" y="0" width="1920" height="1160" />
     </state>
-    <state width="1877" height="320" key="GridCell.Tab.0.left/0.0.1920.1160@0.0.1920.1160" timestamp="1595603237520" />
-    <state width="1877" height="320" key="GridCell.Tab.0.right" timestamp="1595603237520">
+    <state width="1877" height="320" key="GridCell.Tab.0.left/0.0.1920.1160@0.0.1920.1160" timestamp="1595961490422" />
+    <state width="1877" height="320" key="GridCell.Tab.0.right" timestamp="1595961490423">
       <screen x="0" y="0" width="1920" height="1160" />
     </state>
-    <state width="1877" height="320" key="GridCell.Tab.0.right/0.0.1920.1160@0.0.1920.1160" timestamp="1595603237520" />
+    <state width="1877" height="320" key="GridCell.Tab.0.right/0.0.1920.1160@0.0.1920.1160" timestamp="1595961490423" />
     <state width="1877" height="395" key="GridCell.Tab.1.bottom" timestamp="1594931345900">
       <screen x="0" y="0" width="1920" height="1160" />
     </state>
@@ -684,14 +715,14 @@
       <screen x="0" y="0" width="1920" height="1160" />
     </state>
     <state x="353" y="45" key="SettingsEditor/0.0.1920.1160@0.0.1920.1160" timestamp="1595600355283" />
-    <state x="552" y="313" key="Vcs.Push.Dialog.v2" timestamp="1595549249048">
+    <state x="552" y="313" key="Vcs.Push.Dialog.v2" timestamp="1595787774665">
       <screen x="0" y="0" width="1920" height="1160" />
     </state>
-    <state x="552" y="313" key="Vcs.Push.Dialog.v2/0.0.1920.1160@0.0.1920.1160" timestamp="1595549249048" />
-    <state x="92" y="92" width="1736" height="976" key="com.android.tools.idea.avdmanager.AvdListDialog" timestamp="1595514651028">
+    <state x="552" y="313" key="Vcs.Push.Dialog.v2/0.0.1920.1160@0.0.1920.1160" timestamp="1595787774665" />
+    <state x="92" y="92" width="1736" height="976" key="com.android.tools.idea.avdmanager.AvdListDialog" timestamp="1595938330980">
       <screen x="0" y="0" width="1920" height="1160" />
     </state>
-    <state x="92" y="92" width="1736" height="976" key="com.android.tools.idea.avdmanager.AvdListDialog/0.0.1920.1160@0.0.1920.1160" timestamp="1595514651028" />
+    <state x="92" y="92" width="1736" height="976" key="com.android.tools.idea.avdmanager.AvdListDialog/0.0.1920.1160@0.0.1920.1160" timestamp="1595938330980" />
     <state x="656" y="404" key="com.intellij.ide.util.TipDialog" timestamp="1593630187745">
       <screen x="0" y="0" width="1920" height="1160" />
     </state>
