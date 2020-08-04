@@ -1,0 +1,13 @@
+<component name="libraryTable">
+  <library name="Gradle: com.github.checkout:frames-android:v2.1.1@aar">
+    <CLASSES>
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/6f3d4b6e79c7d86a13e130ee55508b3d/jetified-frames-android-v2.1.1/AndroidManifest.xml" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/6f3d4b6e79c7d86a13e130ee55508b3d/jetified-frames-android-v2.1.1/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/6f3d4b6e79c7d86a13e130ee55508b3d/jetified-frames-android-v2.1.1/res" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.github.checkout/frames-android/v2.1.1/b053168637e6d5d4cd4f12a9b5902fb8351839f1/frames-android-v2.1.1-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

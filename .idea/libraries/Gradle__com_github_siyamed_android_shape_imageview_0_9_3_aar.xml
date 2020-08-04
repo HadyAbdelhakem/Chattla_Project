@@ -1,0 +1,15 @@
+<component name="libraryTable">
+  <library name="Gradle: com.github.siyamed:android-shape-imageview:0.9.3@aar">
+    <CLASSES>
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/8958f34e13e7bb6889e7055630b149ba/jetified-android-shape-imageview-0.9.3/AndroidManifest.xml" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/8958f34e13e7bb6889e7055630b149ba/jetified-android-shape-imageview-0.9.3/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/8958f34e13e7bb6889e7055630b149ba/jetified-android-shape-imageview-0.9.3/res" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.github.siyamed/android-shape-imageview/0.9.3/c702a7ef9e31491ad683db4b6455ba6e35a82ead/android-shape-imageview-0.9.3-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.github.siyamed/android-shape-imageview/0.9.3/3465fc83d40261a84f78f5a74d4c7938c82d39f/android-shape-imageview-0.9.3-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

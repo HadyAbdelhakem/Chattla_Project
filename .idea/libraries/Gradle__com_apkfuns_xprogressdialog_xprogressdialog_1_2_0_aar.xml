@@ -1,0 +1,15 @@
+<component name="libraryTable">
+  <library name="Gradle: com.apkfuns.xprogressdialog:xprogressdialog:1.2.0@aar">
+    <CLASSES>
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/ce42435002b2c0724d305054c677955c/jetified-xprogressdialog-1.2.0/AndroidManifest.xml" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/ce42435002b2c0724d305054c677955c/jetified-xprogressdialog-1.2.0/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/ce42435002b2c0724d305054c677955c/jetified-xprogressdialog-1.2.0/res" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.apkfuns.xprogressdialog/xprogressdialog/1.2.0/169f7cb5c4e3a712113dfe4c17101c9f904a97cd/xprogressdialog-1.2.0-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.apkfuns.xprogressdialog/xprogressdialog/1.2.0/581531421bb04681467f3cc6834382c240efbeb9/xprogressdialog-1.2.0-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="?android:attr/listPreferredItemHeight"
+    android:layout_marginEnd="@dimen/unit_1x"
+    android:layout_marginStart="@dimen/unit_1x"
+    android:layout_marginLeft="@dimen/unit_1x"
+    android:layout_marginRight="@dimen/unit_1x"
+    android:orientation="horizontal">
+    <!--android:background="@drawable/list_selector"-->
+    <ImageView
+        android:id="@+id/list_item_icon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:visibility="gone"
+        android:layout_centerVertical="true"
+        android:layout_gravity="start|left|center_vertical"
+        android:contentDescription="ICON"
+        tools:src="@drawable/combobox_arrow" />
+
+    <com.emeint.android.fawryplugin.views.cutomviews.FawryPluginCustomTextView
+        android:id="@+id/list_item_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_gravity="start|center_vertical"
+        android:layout_marginEnd="@dimen/unit_1x"
+        android:layout_marginStart="@dimen/unit_1x"
+        android:layout_toEndOf="@+id/list_item_icon"
+        android:layout_toRightOf="@+id/list_item_icon"
+        android:layout_toStartOf="@+id/selected_icon"
+        android:layout_toLeftOf="@+id/selected_icon"
+        style="@style/gravity_style"
+        android:maxLines="2"
+        tools:text="@string/sdk_name" />
+
+    <ImageView
+        android:id="@+id/selected_icon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:visibility="visible"
+        tools:src="@drawable/combobox_arrow" />
+
+
+</RelativeLayout>

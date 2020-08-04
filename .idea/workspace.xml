@@ -22,28 +22,7 @@
     <option name="TOOL_WINDOW_CONFIGURED_FILTER" value="Show only selected application" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="145413bf-a126-4930-abfa-e16b2ff37a1f" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.gradle/6.1.1/executionHistory/executionHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.1.1/executionHistory/executionHistory.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/6.1.1/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.1.1/executionHistory/executionHistory.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/6.1.1/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.1.1/fileHashes/fileHashes.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/6.1.1/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.1.1/fileHashes/fileHashes.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/6.1.1/fileHashes/resourceHashesCache.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.1.1/fileHashes/resourceHashesCache.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/6.1.1/javaCompile/classAnalysis.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.1.1/javaCompile/classAnalysis.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/6.1.1/javaCompile/jarAnalysis.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.1.1/javaCompile/jarAnalysis.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/6.1.1/javaCompile/javaCompile.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.1.1/javaCompile/javaCompile.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/6.1.1/javaCompile/taskHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.1.1/javaCompile/taskHistory.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/caches/build_file_checksums.ser" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/caches/build_file_checksums.ser" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WhatsappMessengerView/WhatsappMessengerView.iml" beforeDir="false" afterPath="$PROJECT_DIR$/WhatsappMessengerView/WhatsappMessengerView.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WhatsappMessengerView/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/WhatsappMessengerView/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/app.iml" beforeDir="false" afterPath="$PROJECT_DIR$/app/app.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/app/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/google-services.json" beforeDir="false" afterPath="$PROJECT_DIR$/app/google-services.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/agri/chattla/ui/splash/SplashScreen.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/agri/chattla/ui/splash/SplashScreen.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/splash_screen.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/splash_screen.xml" afterDir="false" />
-    </list>
+    <list default="true" id="145413bf-a126-4930-abfa-e16b2ff37a1f" name="Default Changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -633,7 +612,14 @@
       <option name="project" value="LOCAL" />
       <updated>1596081274039</updated>
     </task>
-    <option name="localTasksCounter" value="15" />
+    <task id="LOCAL-00015" summary="Check Version">
+      <created>1596576558547</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1596576558547</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="Vcs.Log.History.Properties">
@@ -683,7 +669,8 @@
     <MESSAGE value="Chattla Font is Changed" />
     <MESSAGE value="Location &amp; Payment Working Good" />
     <MESSAGE value="debuggable false" />
-    <option name="LAST_COMMIT_MESSAGE" value="debuggable false" />
+    <MESSAGE value="Check Version" />
+    <option name="LAST_COMMIT_MESSAGE" value="Check Version" />
   </component>
   <component name="WindowStateProjectService">
     <state x="560" y="247" key="#Notifications" timestamp="1594211947473">
@@ -738,10 +725,10 @@
       <screen x="0" y="0" width="1920" height="1160" />
     </state>
     <state x="792" y="393" key="AndroidCreateXmlResourceDialog/0.0.1920.1160@0.0.1920.1160" timestamp="1594666958416" />
-    <state x="597" y="174" key="CommitChangelistDialog2" timestamp="1596081266537">
+    <state x="597" y="174" key="CommitChangelistDialog2" timestamp="1596576550853">
       <screen x="0" y="0" width="1920" height="1160" />
     </state>
-    <state x="597" y="174" key="CommitChangelistDialog2/0.0.1920.1160@0.0.1920.1160" timestamp="1596081266537" />
+    <state x="597" y="174" key="CommitChangelistDialog2/0.0.1920.1160@0.0.1920.1160" timestamp="1596576550853" />
     <state x="184" y="98" key="DiffContextDialog" timestamp="1594070751705">
       <screen x="0" y="0" width="1920" height="1160" />
     </state>
@@ -802,10 +789,10 @@
       <screen x="0" y="0" width="1920" height="1160" />
     </state>
     <state x="353" y="45" key="SettingsEditor/0.0.1920.1160@0.0.1920.1160" timestamp="1596471653124" />
-    <state x="552" y="313" key="Vcs.Push.Dialog.v2" timestamp="1596081752238">
+    <state x="552" y="313" key="Vcs.Push.Dialog.v2" timestamp="1596576593485">
       <screen x="0" y="0" width="1920" height="1160" />
     </state>
-    <state x="552" y="313" key="Vcs.Push.Dialog.v2/0.0.1920.1160@0.0.1920.1160" timestamp="1596081752238" />
+    <state x="552" y="313" key="Vcs.Push.Dialog.v2/0.0.1920.1160@0.0.1920.1160" timestamp="1596576593485" />
     <state x="92" y="92" width="1736" height="976" key="com.android.tools.idea.avdmanager.AvdListDialog" timestamp="1596466314201">
       <screen x="0" y="0" width="1920" height="1160" />
     </state>
