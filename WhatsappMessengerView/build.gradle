@@ -27,6 +27,14 @@ ext {
 }
 
 android {
+    signingConfigs {
+        debug {
+            storeFile file('D:\\Chattla\\ChattlaFarmerAPK\\KeyStore.jks')
+            storePassword '66778899'
+            keyAlias 'key0'
+            keyPassword '66778899'
+        }
+    }
     compileSdkVersion 29
     buildToolsVersion = '29.0.2'
 
