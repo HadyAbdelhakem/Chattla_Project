@@ -180,18 +180,11 @@ public class FarmerMainActivity extends BaseActivity implements View.OnClickList
 //                        }
 //                    }
 
-                    if (consult != null) {
+                    if (consult != null && consult.getSender().equals(currentUser)) {
                         if (consult.getPaymentStatus().equals("unPaid")) {
                             checkPaymentStatus(consult);
                         }
-                        if (consult.getSender().equals(currentUser)) {
-                            consultList.add(consult);
-                            if (consult.getPaymentStatus().equals("unPaid")){
-                                isConsultUnPaid = "true";
-                            }else {
-                                isConsultUnPaid = "false";
-                            }
-                        }
+                        consultList.add(consult);
                     }
                 }
                 if (consultList.size() == 0) {

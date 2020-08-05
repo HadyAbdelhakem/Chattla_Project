@@ -15,6 +15,7 @@ import android.widget.EditText;
 import android.widget.Spinner;
 import android.widget.TextView;
 
+import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
 import com.agri.chattla.R;
@@ -22,6 +23,9 @@ import com.agri.chattla.model.Farmar;
 import com.agri.chattla.model.UserFirbase;
 import com.agri.chattla.ui.login.LoginActivity;
 import com.agri.chattla.utils.AppPreferences;
+import com.apkfuns.xprogressdialog.XProgressDialog;
+import com.google.android.gms.tasks.OnCompleteListener;
+import com.google.android.gms.tasks.Task;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 
@@ -33,10 +37,10 @@ import es.dmoral.toasty.Toasty;
 
 public class RegisterActivity extends AppCompatActivity {
 
-    ProgressDialog dialog;
+    private XProgressDialog dialog;
     private Spinner spActivity, spCountry, spCity;
     private EditText etUserName, etPassword;
-    private String Username, Password, s, Date = "Empty", Gov, Cit;
+    private String Username, Password, s , Date = "Empty", Gov, Cit;
     private TextView textView;
     static final int DILOG_ID = 0;
     int year, month, day;
@@ -58,8 +62,7 @@ public class RegisterActivity extends AppCompatActivity {
 
         etExperience = findViewById(R.id.et_experience);
 
-        dialog = new ProgressDialog(RegisterActivity.this);
-        dialog.setMessage("انتظر");
+        dialog = new XProgressDialog(this, /*AddConsultActivity.this.getResources().getString(R.string.loading_login)*/ "انتظر", XProgressDialog.THEME_HORIZONTAL_SPOT);
 
         user = new UserFirbase();
         farmar = new Farmar();
@@ -654,19 +657,8 @@ public class RegisterActivity extends AppCompatActivity {
                                 .setPositiveButton("موافق", null);
                         AlertDialog alertDialog = builder.create();
                         alertDialog.show();
-                        break;
+                        return;
                 }
-
-//                switch (s){
-//                    case "- اخـــــــــــتر -":
-//
-//                        AlertDialog.Builder builder = new AlertDialog.Builder(RegisterActivity.this);
-//                        builder.setMessage("قم بتحديد النشاط")
-//                                .setPositiveButton("موافق", null );
-//
-//                        AlertDialog alertDialog = builder.create();
-//                        alertDialog.show();
-//                        break;
 
                 if (etExperience.getText().toString().isEmpty()) {
                     etExperience.setError("هذا الحقل مطلوب");
@@ -687,14 +679,17 @@ public class RegisterActivity extends AppCompatActivity {
                 user.setStatus("offline");
                 user.setInfo("Farmer");
                 user.setId(phoneNumber);
-                //refUsers.child("Users").child(phoneNumber).setValue(user);
-                refUsers.child("Farmers").child(phoneNumber).setValue(user);
-                Intent i = new Intent(RegisterActivity.this, LoginActivity.class);
-                AppPreferences.saveUserPhone(RegisterActivity.this, phoneNumber);
-                Toasty.success(RegisterActivity.this,"تم التسجيل بنجاح",Toasty.LENGTH_SHORT).show();
-
-                startActivity(i);
-                finish();
+                refUsers.child("Farmers").child(phoneNumber).setValue(user).addOnCompleteListener(new OnCompleteListener<Void>() {
+                    @Override
+                    public void onComplete(@NonNull Task<Void> task) {
+                        Intent i = new Intent(RegisterActivity.this, LoginActivity.class);
+                        AppPreferences.saveUserPhone(RegisterActivity.this, phoneNumber);
+                        Toasty.success(RegisterActivity.this,"تم التسجيل بنجاح",Toasty.LENGTH_SHORT).show();
+                        finish();
+                        dialog.dismiss();
+                        startActivity(i);
+                    }
+                });
             }
         });
 

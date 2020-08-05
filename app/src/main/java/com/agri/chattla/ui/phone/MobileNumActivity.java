@@ -8,6 +8,7 @@ import android.view.View;
 import android.widget.EditText;
 
 import com.agri.chattla.R;
+import com.agri.chattla.ui.splash.SplashScreen;
 import com.agri.chattla.ui.verifactionCode.VerifactionCodeActivity;
 import com.google.firebase.database.DataSnapshot;
 import com.google.firebase.database.DatabaseError;

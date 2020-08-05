@@ -16,7 +16,13 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import com.agri.chattla.R;
 import com.agri.chattla.model.FBDBV;
+import com.agri.chattla.ui.login.LoginActivity;
+import com.agri.chattla.ui.register.RegisterActivity;
 import com.agri.chattla.ui.welcome.WelcomeActivity;
+import com.google.android.gms.tasks.OnCompleteListener;
+import com.google.android.gms.tasks.Task;
+import com.google.firebase.auth.AuthResult;
+import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.database.DataSnapshot;
 import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.DatabaseReference;
@@ -26,48 +32,25 @@ import com.google.firebase.database.ValueEventListener;
 public class SplashScreen extends AppCompatActivity {
 
     private DatabaseReference DBVersion;
+    private FirebaseAuth firebaseAuth;
 
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.splash_screen);
+        firebaseAuth = FirebaseAuth.getInstance();
 
-        DBVersion = FirebaseDatabase.getInstance().getReference().child("FBDBV");
-        DBVersion.addListenerForSingleValueEvent(new ValueEventListener() {
-            @Override
-            public void onDataChange(@NonNull DataSnapshot snapshot) {
-                if (snapshot.getValue() != null){
-                    FBDBV dbv = snapshot.getValue(FBDBV.class);
-                    //Log.e("DBV //  " , dbv.getVersion());
-                    if (dbv.getVersion().equals("1")){
-                        checkConnection();
-                    }else {
-                        final AlertDialog.Builder builder = new AlertDialog.Builder(SplashScreen.this);
-                        builder.setMessage("لإستخدام التطبيق برجاء تحميل الاصدار الاخير")
-                                .setCancelable(false)
-                                .setPositiveButton("موافق", new DialogInterface.OnClickListener() {
-                                    public void onClick(@SuppressWarnings("unused") final DialogInterface dialog, @SuppressWarnings("unused") final int id) {
-                                        finishAffinity();
-                                        final String appPackageName = getPackageName(); // getPackageName() from Context or Activity object
-                                        try {
-                                            startActivity(new Intent(Intent.ACTION_VIEW, Uri.parse("market://details?id=" + appPackageName)));
-                                        } catch (android.content.ActivityNotFoundException anfe) {
-                                            startActivity(new Intent(Intent.ACTION_VIEW, Uri.parse("https://play.google.com/store/apps/details?id=" + appPackageName)));
-                                        }
-                                    }
-                                });
-                        final AlertDialog alert = builder.create();
-                        alert.show();
-                    }
-                }
-            }
+        if (FirebaseAuth.getInstance().getCurrentUser() != null){
+            check_Version();
+        }
+        else {
+            signInAnonymously();
+        }
 
-            @Override
-            public void onCancelled(@NonNull DatabaseError error) {
-
-            }
-        });
+//        Intent i = new Intent(SplashScreen.this, RegisterActivity.class);
+//        i.putExtra("pn" , "01234567890" );
+//        startActivity(i);
 
 
     }
@@ -116,6 +99,59 @@ public class SplashScreen extends AppCompatActivity {
             alertDialog.show();
         }
 
+    }
+
+    public void check_Version(){
+
+        DBVersion = FirebaseDatabase.getInstance().getReference().child("FBDBV");
+        DBVersion.addListenerForSingleValueEvent(new ValueEventListener() {
+            @Override
+            public void onDataChange(@NonNull DataSnapshot snapshot) {
+                if (snapshot.getValue() != null){
+                    FBDBV dbv = snapshot.getValue(FBDBV.class);
+                    //Log.e("DBV //  " , dbv.getVersion());
+                    if (dbv.getVersion().equals("1")){
+                        checkConnection();
+                    }else {
+                        final AlertDialog.Builder builder = new AlertDialog.Builder(SplashScreen.this);
+                        builder.setMessage("لإستخدام التطبيق برجاء تحميل الاصدار الاخير")
+                                .setCancelable(false)
+                                .setPositiveButton("موافق", new DialogInterface.OnClickListener() {
+                                    public void onClick(@SuppressWarnings("unused") final DialogInterface dialog, @SuppressWarnings("unused") final int id) {
+                                        finishAffinity();
+                                        final String appPackageName = getPackageName(); // getPackageName() from Context or Activity object
+                                        try {
+                                            startActivity(new Intent(Intent.ACTION_VIEW, Uri.parse("market://details?id=" + appPackageName)));
+                                        } catch (android.content.ActivityNotFoundException anfe) {
+                                            startActivity(new Intent(Intent.ACTION_VIEW, Uri.parse("https://play.google.com/store/apps/details?id=" + appPackageName)));
+                                        }
+                                    }
+                                });
+                        final AlertDialog alert = builder.create();
+                        alert.show();
+                    }
+                }
+            }
+
+            @Override
+            public void onCancelled(@NonNull DatabaseError error) {
+
+            }
+        });
+
+    }
+
+    public void signInAnonymously(){
+        firebaseAuth.signInAnonymously().addOnCompleteListener(this, new OnCompleteListener<AuthResult>() {
+            @Override
+            public void onComplete(@NonNull Task<AuthResult> task) {
+                if (!task.isSuccessful()){
+                    Log.e("Error ..... " , task.getException()+"");
+                }else {
+                    check_Version();
+                }
+            }
+        });
     }
 
 }

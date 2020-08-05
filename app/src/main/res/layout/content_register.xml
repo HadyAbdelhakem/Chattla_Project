@@ -69,8 +69,8 @@
             android:layout_marginEnd="@dimen/_8sdp"
             android:background="@drawable/background_white_with_border"
             android:hint="@string/username"
-            android:inputType="number"
-            android:maxLength="11"
+            android:inputType="text"
+            android:maxLength="20"
             android:maxLines="1"
             android:padding="8dp"
             android:textAlignment="viewStart" />
@@ -156,7 +156,7 @@
                 android:layout_width="@dimen/_90sdp"
                 android:layout_height="wrap_content"
                 android:fontFamily="@font/tajawal_medium"
-                android:text="موقع مزرعتك"
+                android:text="المحافظة"
                 android:textColor="@color/text_color"
                 android:textSize="@dimen/_14ssp" />
 
@@ -184,6 +184,7 @@
                 android:layout_height="wrap_content"
                 android:fontFamily="@font/tajawal_medium"
                 android:textColor="@color/text_color"
+                android:text="المدينة"
                 android:textSize="@dimen/_14ssp" />
 
             <Spinner

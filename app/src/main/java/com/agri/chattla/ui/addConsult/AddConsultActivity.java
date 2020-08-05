@@ -753,7 +753,7 @@ public class AddConsultActivity extends BaseActivity implements View.OnClickList
             Toasty.error(AddConsultActivity.this, "ادخل صورة للاستشارة", Toasty.LENGTH_SHORT).show();
             return false;
         }
-        if (lat == null) {
+        if (consult.getLat() == null) {
             Toasty.error(AddConsultActivity.this, "حدد الموقع الجغرافي", Toasty.LENGTH_SHORT).show();
             return false;
         }

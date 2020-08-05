@@ -22,7 +22,25 @@
     <option name="TOOL_WINDOW_CONFIGURED_FILTER" value="Show only selected application" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="145413bf-a126-4930-abfa-e16b2ff37a1f" name="Default Changelist" comment="" />
+    <list default="true" id="145413bf-a126-4930-abfa-e16b2ff37a1f" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.gradle/6.1.1/executionHistory/executionHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.1.1/executionHistory/executionHistory.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/6.1.1/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.1.1/executionHistory/executionHistory.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/6.1.1/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.1.1/fileHashes/fileHashes.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/6.1.1/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.1.1/fileHashes/fileHashes.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/6.1.1/javaCompile/classAnalysis.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.1.1/javaCompile/classAnalysis.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/6.1.1/javaCompile/javaCompile.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.1.1/javaCompile/javaCompile.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/caches/build_file_checksums.ser" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/caches/build_file_checksums.ser" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/agri/chattla/ui/addConsult/AddConsultActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/agri/chattla/ui/addConsult/AddConsultActivity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/agri/chattla/ui/farmerMain/FarmerMainActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/agri/chattla/ui/farmerMain/FarmerMainActivity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/agri/chattla/ui/phone/MobileNumActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/agri/chattla/ui/phone/MobileNumActivity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/agri/chattla/ui/register/RegisterActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/agri/chattla/ui/register/RegisterActivity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/agri/chattla/ui/splash/SplashScreen.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/agri/chattla/ui/splash/SplashScreen.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/agri/chattla/ui/verifactionCode/VerifactionCodeActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/agri/chattla/ui/verifactionCode/VerifactionCodeActivity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/content_register.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/content_register.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -110,8 +128,8 @@
     <property name="AnalyzeApkAction.lastApkPath" value="$PROJECT_DIR$/app/build/outputs/apk/debug/app-debug.apk" />
     <property name="ApkExportedModule" value="app" />
     <property name="BundleExportedModule" value="app" />
-    <property name="DeviceAndSnapshotComboBoxAction.selectedDevice" value="6.0_Api_28" />
-    <property name="DeviceAndSnapshotComboBoxAction.selectionTime" value="2020-07-29T00:20:42.476Z" />
+    <property name="DeviceAndSnapshotComboBoxAction.selectedDevice" value="API_30" />
+    <property name="DeviceAndSnapshotComboBoxAction.selectionTime" value="2020-08-05T00:07:19.758Z" />
     <property name="ExportApk.ApkPath" value="D:\Chattla\ChattlaFarmerAPK" />
     <property name="ExportApk.BuildVariants" value="release" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
@@ -121,7 +139,7 @@
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.17" />
     <property name="project.structure.side.proportion" value="0.2" />
-    <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
+    <property name="settings.editor.selected.configurable" value="file.status.colors" />
   </component>
   <component name="PsdUISettings">
     <option name="MODULE_TAB" value="Signing Configs" />
@@ -619,7 +637,14 @@
       <option name="project" value="LOCAL" />
       <updated>1596576558547</updated>
     </task>
-    <option name="localTasksCounter" value="16" />
+    <task id="LOCAL-00016" summary="Check Version_1">
+      <created>1596576728253</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1596576728253</updated>
+    </task>
+    <option name="localTasksCounter" value="17" />
     <servers />
   </component>
   <component name="Vcs.Log.History.Properties">
@@ -670,7 +695,8 @@
     <MESSAGE value="Location &amp; Payment Working Good" />
     <MESSAGE value="debuggable false" />
     <MESSAGE value="Check Version" />
-    <option name="LAST_COMMIT_MESSAGE" value="Check Version" />
+    <MESSAGE value="Check Version_1" />
+    <option name="LAST_COMMIT_MESSAGE" value="Check Version_1" />
   </component>
   <component name="WindowStateProjectService">
     <state x="560" y="247" key="#Notifications" timestamp="1594211947473">
@@ -725,18 +751,18 @@
       <screen x="0" y="0" width="1920" height="1160" />
     </state>
     <state x="792" y="393" key="AndroidCreateXmlResourceDialog/0.0.1920.1160@0.0.1920.1160" timestamp="1594666958416" />
-    <state x="597" y="174" key="CommitChangelistDialog2" timestamp="1596576550853">
+    <state x="597" y="174" key="CommitChangelistDialog2" timestamp="1596576724148">
       <screen x="0" y="0" width="1920" height="1160" />
     </state>
-    <state x="597" y="174" key="CommitChangelistDialog2/0.0.1920.1160@0.0.1920.1160" timestamp="1596576550853" />
+    <state x="597" y="174" key="CommitChangelistDialog2/0.0.1920.1160@0.0.1920.1160" timestamp="1596576724148" />
     <state x="184" y="98" key="DiffContextDialog" timestamp="1594070751705">
       <screen x="0" y="0" width="1920" height="1160" />
     </state>
     <state x="184" y="98" key="DiffContextDialog/0.0.1920.1160@0.0.1920.1160" timestamp="1594070751705" />
-    <state x="810" y="309" key="FileChooserDialogImpl" timestamp="1596466420102">
+    <state x="810" y="309" key="FileChooserDialogImpl" timestamp="1596670009264">
       <screen x="0" y="0" width="1920" height="1160" />
     </state>
-    <state x="810" y="309" key="FileChooserDialogImpl/0.0.1920.1160@0.0.1920.1160" timestamp="1596466420102" />
+    <state x="810" y="309" key="FileChooserDialogImpl/0.0.1920.1160@0.0.1920.1160" timestamp="1596670009264" />
     <state x="817" y="473" width="286" height="286" key="Github.ShareDialog" timestamp="1595391475986">
       <screen x="0" y="0" width="1920" height="1160" />
     </state>
@@ -745,22 +771,22 @@
       <screen x="0" y="0" width="1920" height="1160" />
     </state>
     <state x="622" y="285" key="Github.UntrackedFilesDialog/0.0.1920.1160@0.0.1920.1160" timestamp="1595391491510" />
-    <state width="1877" height="320" key="GridCell.Tab.0.bottom" timestamp="1596576108779">
+    <state width="1877" height="223" key="GridCell.Tab.0.bottom" timestamp="1596670107314">
       <screen x="0" y="0" width="1920" height="1160" />
     </state>
-    <state width="1877" height="320" key="GridCell.Tab.0.bottom/0.0.1920.1160@0.0.1920.1160" timestamp="1596576108779" />
-    <state width="1877" height="320" key="GridCell.Tab.0.center" timestamp="1596576108779">
+    <state width="1877" height="223" key="GridCell.Tab.0.bottom/0.0.1920.1160@0.0.1920.1160" timestamp="1596670107314" />
+    <state width="1877" height="223" key="GridCell.Tab.0.center" timestamp="1596670107314">
       <screen x="0" y="0" width="1920" height="1160" />
     </state>
-    <state width="1877" height="320" key="GridCell.Tab.0.center/0.0.1920.1160@0.0.1920.1160" timestamp="1596576108779" />
-    <state width="1877" height="320" key="GridCell.Tab.0.left" timestamp="1596576108778">
+    <state width="1877" height="223" key="GridCell.Tab.0.center/0.0.1920.1160@0.0.1920.1160" timestamp="1596670107314" />
+    <state width="1877" height="223" key="GridCell.Tab.0.left" timestamp="1596670107314">
       <screen x="0" y="0" width="1920" height="1160" />
     </state>
-    <state width="1877" height="320" key="GridCell.Tab.0.left/0.0.1920.1160@0.0.1920.1160" timestamp="1596576108778" />
-    <state width="1877" height="320" key="GridCell.Tab.0.right" timestamp="1596576108779">
+    <state width="1877" height="223" key="GridCell.Tab.0.left/0.0.1920.1160@0.0.1920.1160" timestamp="1596670107314" />
+    <state width="1877" height="223" key="GridCell.Tab.0.right" timestamp="1596670107314">
       <screen x="0" y="0" width="1920" height="1160" />
     </state>
-    <state width="1877" height="320" key="GridCell.Tab.0.right/0.0.1920.1160@0.0.1920.1160" timestamp="1596576108779" />
+    <state width="1877" height="223" key="GridCell.Tab.0.right/0.0.1920.1160@0.0.1920.1160" timestamp="1596670107314" />
     <state width="1877" height="395" key="GridCell.Tab.1.bottom" timestamp="1594931345900">
       <screen x="0" y="0" width="1920" height="1160" />
     </state>
@@ -785,14 +811,14 @@
       <screen x="0" y="0" width="1920" height="1160" />
     </state>
     <state x="731" y="300" key="RollbackChangesDialog/0.0.1920.1160@0.0.1920.1160" timestamp="1595422950527" />
-    <state x="353" y="45" key="SettingsEditor" timestamp="1596471653124">
+    <state x="353" y="45" key="SettingsEditor" timestamp="1596576760943">
       <screen x="0" y="0" width="1920" height="1160" />
     </state>
-    <state x="353" y="45" key="SettingsEditor/0.0.1920.1160@0.0.1920.1160" timestamp="1596471653124" />
-    <state x="552" y="313" key="Vcs.Push.Dialog.v2" timestamp="1596576593485">
+    <state x="353" y="45" key="SettingsEditor/0.0.1920.1160@0.0.1920.1160" timestamp="1596576760943" />
+    <state x="552" y="313" key="Vcs.Push.Dialog.v2" timestamp="1596576817742">
       <screen x="0" y="0" width="1920" height="1160" />
     </state>
-    <state x="552" y="313" key="Vcs.Push.Dialog.v2/0.0.1920.1160@0.0.1920.1160" timestamp="1596576593485" />
+    <state x="552" y="313" key="Vcs.Push.Dialog.v2/0.0.1920.1160@0.0.1920.1160" timestamp="1596576817742" />
     <state x="92" y="92" width="1736" height="976" key="com.android.tools.idea.avdmanager.AvdListDialog" timestamp="1596466314201">
       <screen x="0" y="0" width="1920" height="1160" />
     </state>
