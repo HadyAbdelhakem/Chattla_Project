@@ -38,7 +38,7 @@
                 android:layout_width="@dimen/_24sdp"
                 android:layout_height="@dimen/_24sdp"
                 android:src="@drawable/ic_logout"
-                android:layout_marginLeft="@dimen/_16sdp"
+                android:layout_marginLeft="@dimen/_10sdp"
                 android:padding="@dimen/_2sdp"
                 android:layout_alignParentLeft="true"
                 android:layout_centerInParent="true"
@@ -54,6 +54,11 @@
         android:layout_height="0dp"
         android:layout_weight="1"
         android:background="@color/white">
+
+        <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+            android:id="@+id/refreshLayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
 
 
         <com.cooltechworks.views.shimmer.ShimmerRecyclerView
@@ -71,14 +76,16 @@
             app:shimmer_demo_layout="@layout/shimmer_consult_item"
             app:shimmer_demo_layout_manager_type="linear_vertical" />
 
+        </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+
         <LinearLayout
             android:id="@+id/ly_no_results"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
             android:gravity="center"
-            android:orientation="vertical"
-            android:visibility="gone">
+            android:visibility="gone"
+            android:orientation="vertical">
 
             <ImageView
                 android:layout_width="@dimen/_100sdp"
@@ -110,6 +117,7 @@
         android:textColor="@color/white"
         android:fontFamily="@font/tajawal_medium"
         android:textSize="@dimen/_14ssp"
+        android:visibility="gone"
         android:layout_margin="@dimen/_6sdp"/>
 
 </LinearLayout>

@@ -16,8 +16,6 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import com.agri.chattla.R;
 import com.agri.chattla.model.FBDBV;
-import com.agri.chattla.ui.login.LoginActivity;
-import com.agri.chattla.ui.register.RegisterActivity;
 import com.agri.chattla.ui.welcome.WelcomeActivity;
 import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.Task;
@@ -41,17 +39,7 @@ public class SplashScreen extends AppCompatActivity {
         setContentView(R.layout.splash_screen);
         firebaseAuth = FirebaseAuth.getInstance();
 
-        if (FirebaseAuth.getInstance().getCurrentUser() != null){
-            check_Version();
-        }
-        else {
-            signInAnonymously();
-        }
-
-//        Intent i = new Intent(SplashScreen.this, RegisterActivity.class);
-//        i.putExtra("pn" , "01234567890" );
-//        startActivity(i);
-
+        checkConnection();
 
     }
 
@@ -62,27 +50,18 @@ public class SplashScreen extends AppCompatActivity {
 
 
         if (null != activeNetwork) {
-            if (activeNetwork.getType() == ConnectivityManager.TYPE_WIFI ){
+            if (activeNetwork.getType() == ConnectivityManager.TYPE_WIFI || activeNetwork.getType() == ConnectivityManager.TYPE_MOBILE){
                 new Handler().postDelayed(new Runnable(){
                     @Override
                     public void run() {
-
-                        Intent loginpage = new Intent(SplashScreen.this, WelcomeActivity.class);
-                        startActivity(loginpage);
-                        finish();
+                        if (FirebaseAuth.getInstance().getCurrentUser() != null){
+                            check_Version();
+                        }
+                        else {
+                            signInAnonymously();
+                        }
                     }
-                },3000);
-            }
-
-            if (activeNetwork.getType() == ConnectivityManager.TYPE_MOBILE ){
-                new Handler().postDelayed(new Runnable(){
-                    @Override
-                    public void run() {
-                        Intent loginpage = new Intent(SplashScreen.this, WelcomeActivity.class);
-                        startActivity(loginpage);
-                        finish();
-                    }
-                },3000);
+                },100);
             }
         }
         else {
@@ -111,7 +90,9 @@ public class SplashScreen extends AppCompatActivity {
                     FBDBV dbv = snapshot.getValue(FBDBV.class);
                     //Log.e("DBV //  " , dbv.getVersion());
                     if (dbv.getVersion().equals("1")){
-                        checkConnection();
+                        Intent loginpage = new Intent(SplashScreen.this, WelcomeActivity.class);
+                        startActivity(loginpage);
+                        finish();
                     }else {
                         final AlertDialog.Builder builder = new AlertDialog.Builder(SplashScreen.this);
                         builder.setMessage("لإستخدام التطبيق برجاء تحميل الاصدار الاخير")

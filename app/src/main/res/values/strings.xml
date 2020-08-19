@@ -43,7 +43,12 @@
 
     <!-- ADD CONSULTATION PAGE -->
     <string name="fill_consultation_info">أملئ بيانات الإستشارة</string>
-    <string name="crop_type">نوع المحصول</string>
+    <string name="crop_type">المحصول المزروع / المراد زراعتة</string>
+    <string name="crop_variety">الصنف المزروع</string>
+    <string name="agri_type">نوع الزراعة</string>
+    <string name="irr_type">نوع الرى</string>
+    <string name="land_type">نوع التربة</string>
+    <string name="water_drainage">هل يوجد قنوات صرف ؟</string>
     <string name="choose_crop_type">إختر نوع المحصول</string>
     <string name="consultation_reason">سبب حجز الإستشارة</string>
     <string name="for_more_info">للتوضيح أكثر أرسل لنا :</string>

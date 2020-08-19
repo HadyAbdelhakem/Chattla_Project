@@ -4,6 +4,7 @@ import android.app.Activity;
 import android.content.Context;
 import android.content.Intent;
 import android.content.SharedPreferences;
+import android.util.Log;
 
 import com.agri.chattla.ui.login.LoginActivity;
 
@@ -12,7 +13,7 @@ public class AppPreferences {
 
     public static void logout(Context context) {
         clearUserDetails(context);
-        Intent i = new Intent(context.getApplicationContext(), LoginActivity.class) ;
+        Intent i = new Intent(context.getApplicationContext(), LoginActivity.class);
         i.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK | Intent.FLAG_ACTIVITY_CLEAR_TASK);
         i.addFlags(Intent.FLAG_ACTIVITY_NO_HISTORY);
 

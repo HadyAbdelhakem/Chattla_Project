@@ -21,7 +21,6 @@ import android.widget.TextView;
 
 import com.agri.chattla.R;
 import com.agri.chattla.model.Consult;
-import com.agri.chattla.ui.expertMain.ExpertMainActivity;
 import com.agri.chattla.ui.login.LoginActivity;
 import com.agri.chattla.ui.base.BaseActivity;
 import com.agri.chattla.ui.farmerMain.FarmerMainActivity;
@@ -140,10 +139,8 @@ public class WelcomeActivity extends BaseActivity {
             if (AppPreferences.getUserType(WelcomeActivity.this).equals("Farmer")) {
                 startActivity(new Intent(WelcomeActivity.this, FarmerMainActivity.class));
 
-            } else if (AppPreferences.getUserType(WelcomeActivity.this).equals("Expert")) {
-
-                startActivity(new Intent(WelcomeActivity.this, ExpertMainActivity.class));
-
+            }else {
+                finishAffinity();
             }
 
         } else {

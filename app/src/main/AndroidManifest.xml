@@ -19,7 +19,7 @@
     <uses-permission android:name="android.permission.CAMERA" />
     <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
-    <uses-permission android:name="ACTION_MANAGE_ALL_FILES_ACCESS_PERMISSION" />
+    <uses-permission android:name="ACTION_MANAGE_ALL_FILES_ACCESS_PERMISSION"/>
     <uses-permission android:name="android.permission.RECORD_AUDIO" />
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
     <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
@@ -28,6 +28,7 @@
     <uses-permission android:name="android.permission.ACCESS_BACKGROUND_LOCATION" />
     <uses-permission android:name="android.permission.ACTIVITY_RECOGNITION" />
     <uses-permission android:name="android.permission.ACCESS_MEDIA_LOCATION" />
+
 
     <application
         android:allowBackup="true"
@@ -43,15 +44,15 @@
         android:requestLegacyExternalStorage="true"
         tools:replace="android:icon,android:roundIcon"
         tools:ignore="HardcodedDebugMode">
+
         <receiver
             android:name=".ui.addConsult.MyLocationService"/>
 
         <activity android:name=".ui.reviews.ReviewsActivity" />
         <activity android:name=".ui.Payment.PaymentActivity" />
-        <activity android:name=".ui.consultDetails.ConsultDetailsActivity" />
-        <activity android:name=".ui.expertMain.ExpertMainActivity" />
         <activity android:name=".ui.welcome.WelcomeActivity" />
-        <activity android:name=".ui.addConsult.AddConsultActivity" />
+        <activity android:name=".ui.addConsult.AddConsultActivity"
+            android:windowSoftInputMode="stateVisible|adjustResize"/>
         <activity android:name=".ui.chat.ChatActivity" />
         <activity android:name=".ui.register.Terms_and_Conditions" />
 

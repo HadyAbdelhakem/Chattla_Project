@@ -68,7 +68,7 @@ public class ApiRequest {
 
                     @Override
                     public void onError(ANError anError) {
-                        Log.e("notificationResponse",anError.getErrorBody());
+                        Log.e("notificationErrResponse",anError.getErrorBody());
 
                         try {
                             callback.onFail(anError);

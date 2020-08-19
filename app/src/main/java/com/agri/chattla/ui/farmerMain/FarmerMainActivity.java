@@ -1,5 +1,6 @@
 package com.agri.chattla.ui.farmerMain;
 
+import android.app.NotificationManager;
 import android.content.Intent;
 import android.os.Bundle;
 import android.util.Log;
@@ -14,6 +15,7 @@ import androidx.appcompat.widget.Toolbar;
 import androidx.lifecycle.Observer;
 import androidx.lifecycle.ViewModelProvider;
 import androidx.recyclerview.widget.LinearLayoutManager;
+import androidx.swiperefreshlayout.widget.SwipeRefreshLayout;
 
 import com.androidnetworking.error.ANError;
 import com.cooltechworks.views.shimmer.ShimmerRecyclerView;
@@ -64,12 +66,22 @@ public class FarmerMainActivity extends BaseActivity implements View.OnClickList
     private Price price;
     private ConsultStatusViewModel viewModel;
     private String isConsultUnPaid = "false";
-
+    private NotificationManager mNotificationManager;
+    private SwipeRefreshLayout swipeRefreshLayout ;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
+        swipeRefreshLayout = findViewById(R.id.refreshLayout);
+        swipeRefreshLayout.setOnRefreshListener(new SwipeRefreshLayout.OnRefreshListener() {
+            @Override
+            public void onRefresh() {
+                recreate();
+                swipeRefreshLayout.setRefreshing(false);
+            }
+        });
 
         toolbar = findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
@@ -78,6 +90,8 @@ public class FarmerMainActivity extends BaseActivity implements View.OnClickList
         viewModel = new ViewModelProvider(this).get(ConsultStatusViewModel.class);
 
         initialViews();
+
+        /*mNotificationManager = (NotificationManager) getSystemService(NOTIFICATION_SERVICE);*/
 
         currentUser = AppPreferences.getUserPhone(this);
 
@@ -173,13 +187,6 @@ public class FarmerMainActivity extends BaseActivity implements View.OnClickList
                 for (DataSnapshot snapshot : dataSnapshot.getChildren()) {
                     Consult consult = snapshot.getValue(Consult.class);
 
-//                    if (consult != null && consult.getSender().equals(currentUser)) {
-//                        consultList.add(consult);
-//                        if (consult.getPaymentStatus().equals("unPaid")) {
-//                            checkPaymentStatus(consult);
-//                        }
-//                    }
-
                     if (consult != null && consult.getSender().equals(currentUser)) {
                         if (consult.getPaymentStatus().equals("unPaid")) {
                             checkPaymentStatus(consult);
@@ -196,6 +203,7 @@ public class FarmerMainActivity extends BaseActivity implements View.OnClickList
                 }
                 myConsultsAdapter.setConsults(consultList);
                 rvConsults.hideShimmerAdapter();
+                btAddConsult.setVisibility(View.VISIBLE);
             }
 
             @Override
@@ -276,6 +284,7 @@ public class FarmerMainActivity extends BaseActivity implements View.OnClickList
     }
 
     private void sendNotification(Consult consult) {
+        /*mNotificationManager.cancelAll();*/
         Notification notification = new Notification();
         notification.setTo("/topics/" + consult.getTopic());
         notification.setData(new Notification.Data("استشارة جديدة"));
@@ -286,13 +295,11 @@ public class FarmerMainActivity extends BaseActivity implements View.OnClickList
             @Override
             public void onSuccess(Object response) throws JSONException {
                 Log.e("response", response.toString());
-//                Toasty.success(PaymentActivity.this.getBaseContext(), "Done").show();
             }
 
             @Override
             public void onFail(ANError error) throws JSONException {
                 Log.e("responseError", error.getErrorBody());
-
             }
         });
 

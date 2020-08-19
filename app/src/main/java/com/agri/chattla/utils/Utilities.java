@@ -3,22 +3,30 @@ package com.agri.chattla.utils;
 import android.content.Context;
 import android.content.DialogInterface;
 import android.graphics.Typeface;
+import android.util.Log;
 import android.util.Patterns;
 import android.util.TypedValue;
 import android.view.View;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import androidx.appcompat.app.AlertDialog;
 import androidx.core.content.ContextCompat;
 import androidx.core.content.res.ResourcesCompat;
 
 import com.agri.chattla.R;
+import com.google.android.gms.tasks.Task;
 import com.google.android.material.snackbar.Snackbar;
+import com.google.firebase.database.DatabaseReference;
+import com.google.firebase.database.FirebaseDatabase;
 
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
 public class Utilities {
+
+    private static Task<Void> reference;
+
 
     public static boolean isValidPassword(final String password) {
         Pattern pattern;
@@ -102,6 +110,8 @@ public class Utilities {
                 })
                 .setNegativeButton(R.string.yes, new DialogInterface.OnClickListener() {
                     public void onClick(DialogInterface dialog, int which) {
+                        String string = AppPreferences.getUserPhone(context);
+                        reference = FirebaseDatabase.getInstance().getReference("Farmers").child(string).child("FcmToken").removeValue();
                         AppPreferences.logout(context);
                     }
                 });

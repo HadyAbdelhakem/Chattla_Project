@@ -31,5 +31,5 @@ public interface AppConstants {
 
     public static final String MAPVIEW_BUNDLE_KEY="AIzaSyBib2cVM7tdINxSmhSj2QwPDyHJgXWtP9o";
     String PREFERENCE_FCM = "preference_fcm";
-    String serverKey = "AAAA-Lnl2oU:APA91bFm-PUdGTDp5Po51UJ11H9epanjRb66WdJ-Fa8EVHOn9pqXfCCNBCkMKxAa82poA_QKExEme07HKzUrwc_vlZ9NRRavtBcS9CuTcRsg5qOJxUxNrni1Cxew2uk_ouO1bd6TtOkA";
+    String serverKey = "AAAAOSLcX-Q:APA91bE3wRlhm5OAL3iUH5eQQ1t7AOrgEOkndpOyORLPPlPkA6DfDGp0S3wbD-CUYsyXWkIgcGpRgKjvu2Mibj-fgHEGtJcyEquo3Uem2S-5F03H6ZDFhAapN8t_uVT7athfoM-1KmVE";
 }

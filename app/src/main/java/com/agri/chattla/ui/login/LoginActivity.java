@@ -12,14 +12,13 @@ import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
 
+import com.agri.chattla.ui.register.Terms_and_Conditions;
 import com.apkfuns.xprogressdialog.XProgressDialog;
 import com.agri.chattla.R;
 import com.agri.chattla.model.Consult;
 import com.agri.chattla.model.UserFirbase;
-import com.agri.chattla.ui.expertMain.ExpertMainActivity;
 import com.agri.chattla.ui.farmerMain.FarmerMainActivity;
 import com.agri.chattla.ui.phone.MobileNumActivity;
-import com.agri.chattla.ui.register.Terms_and_Conditions;
 import com.agri.chattla.utils.AppPreferences;
 import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.Task;
@@ -29,6 +28,7 @@ import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 import com.google.firebase.database.ValueEventListener;
+import com.google.firebase.iid.FirebaseInstanceId;
 import com.google.firebase.messaging.FirebaseMessaging;
 
 import org.jetbrains.annotations.NotNull;
@@ -58,9 +58,6 @@ public class LoginActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.layout_login);
 
-//        ChangeBounds bounds = new ChangeBounds();
-//        bounds.setDuration(700);
-//        getWindow().setSharedElementEnterTransition(bounds);
 
         refConsults = FirebaseDatabase.getInstance().getReference().child("Consults");
         refFarmer = FirebaseDatabase.getInstance().getReference().child("Farmers");
@@ -70,7 +67,6 @@ public class LoginActivity extends AppCompatActivity {
 
         etPhone = findViewById(R.id.et_phone);
         etPassword = findViewById(R.id.et_password);
-
 
 
         findViewById(R.id.bt_login_farmer).setOnClickListener(new View.OnClickListener() {
@@ -94,13 +90,13 @@ public class LoginActivity extends AppCompatActivity {
             }
         });
 
-//        findViewById(R.id.tv_terms_and_conditions).setOnClickListener(new View.OnClickListener() {
-//            @Override
-//            public void onClick(View v) {
-//                Intent i = new Intent(LoginActivity.this, Terms_and_Conditions.class);
-//                startActivity(i);
-//            }
-//        });
+        findViewById(R.id.tv_terms_and_conditions).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent i = new Intent(LoginActivity.this, Terms_and_Conditions.class);
+                startActivity(i);
+            }
+        });
 
         findViewById(R.id.tv_not_have_account).setOnClickListener(new View.OnClickListener() {
             @Override
@@ -222,62 +218,9 @@ public class LoginActivity extends AppCompatActivity {
 
                         currentUser = user;
                         AppPreferences.saveUserPhone(LoginActivity.this, txtPhone);
+                        AppPreferences.saveFcmToken(LoginActivity.this, FirebaseInstanceId.getInstance().getToken());
 
-                        if (type.equals("expert")) {
-
-                            if (AppPreferences.getFcmToken(LoginActivity.this) != null) {
-                                refExpert.child(currentUser.getPhoneNumber()).child("FcmToken").setValue(AppPreferences.getFcmToken(LoginActivity.this), null);
-                                AppPreferences.saveFcmToken(LoginActivity.this, null);
-                            }
-
-                            AppPreferences.saveMyProfile(LoginActivity.this, currentUser.getProfile());
-                            FirebaseMessaging.getInstance().subscribeToTopic(currentUser.getTopic())
-                                    .addOnCompleteListener(new OnCompleteListener<Void>() {
-                                        @Override
-                                        public void onComplete(@NonNull Task<Void> task) {
-                                            Log.e("subscribeToTopic", "subscribeToTopic_one done");
-                                            if (currentUser.getTopic_two() != null) {
-                                                FirebaseMessaging.getInstance().subscribeToTopic(currentUser.getTopic_two()).addOnCompleteListener(new OnCompleteListener<Void>() {
-                                                    @Override
-                                                    public void onComplete(@NonNull Task<Void> task) {
-                                                        Log.e("subscribeToTopic", "subscribeToTopic_two done");
-                                                        if (currentUser.getTopic_three() != null) {
-                                                            FirebaseMessaging.getInstance().subscribeToTopic(currentUser.getTopic_three()).addOnCompleteListener(new OnCompleteListener<Void>() {
-                                                                @Override
-                                                                public void onComplete(@NonNull Task<Void> task) {
-                                                                    AppPreferences.saveUserType(LoginActivity.this, "Expert");
-                                                                    i = new Intent(LoginActivity.this, ExpertMainActivity.class);
-                                                                    dialog.dismiss();
-                                                                    startActivity(i);
-                                                                    finish();
-
-                                                                }
-                                                            });
-
-                                                        } else {
-                                                            AppPreferences.saveUserType(LoginActivity.this, "Expert");
-                                                            i = new Intent(LoginActivity.this, ExpertMainActivity.class);
-                                                            dialog.dismiss();
-                                                            startActivity(i);
-                                                            finish();
-                                                        }
-
-                                                    }
-                                                });
-
-                                            } else {
-                                                AppPreferences.saveUserType(LoginActivity.this, "Expert");
-                                                i = new Intent(LoginActivity.this, ExpertMainActivity.class);
-                                                dialog.dismiss();
-                                                startActivity(i);
-                                                finish();
-                                            }
-
-                                        }
-                                    });
-
-
-                        } else if (type.equals("farmer")) {
+                        if (type.equals("farmer")) {
 
                             if (AppPreferences.getFcmToken(LoginActivity.this) != null) {
 
@@ -296,11 +239,8 @@ public class LoginActivity extends AppCompatActivity {
                                                         HashMap<String,Object> map=new HashMap<>();
                                                         map.put("farmerToken",AppPreferences.getFcmToken(LoginActivity.this));
                                                         ref.child(snapshot.getKey()).updateChildren(map);
-
                                                     }
                                                 }
-
-                                                AppPreferences.saveFcmToken(LoginActivity.this, null);
 
                                                 i = new Intent(LoginActivity.this, FarmerMainActivity.class);
                                                 AppPreferences.saveUserType(LoginActivity.this, "Farmer");
@@ -326,7 +266,9 @@ public class LoginActivity extends AppCompatActivity {
                             dialog.dismiss();
                             startActivity(i);
                             finish();
-                        }
+                            }
+                        }else {
+                            finishAffinity();
                         }
 
 

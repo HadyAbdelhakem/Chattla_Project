@@ -61,6 +61,24 @@
             android:focusableInTouchMode="true"
             android:orientation="vertical">
 
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_16sdp"
+                android:fontFamily="@font/tajawal_regular"
+                android:text="@string/consultation_reason"
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="@dimen/_12ssp" />
+
+            <Spinner
+                android:id="@+id/sp_Reasons"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_16sdp"
+                android:layout_marginTop="@dimen/_8sdp"
+                android:layout_marginEnd="@dimen/_16sdp"
+                android:background="@color/white" />
+
 
             <TextView
                 android:layout_width="wrap_content"
@@ -85,12 +103,36 @@
                 android:layout_height="wrap_content"
                 android:layout_marginTop="@dimen/_16sdp"
                 android:fontFamily="@font/tajawal_regular"
-                android:text="@string/consultation_reason"
+                android:text="@string/crop_variety"
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="@dimen/_12ssp" />
+
+            <EditText
+                android:id="@+id/cropItem"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_16sdp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="@dimen/_16sdp"
+                android:background="@drawable/background_white_with_border"
+                android:hint="مثال (طماطم) : شيرى"
+                android:inputType="text"
+                android:maxLength="20"
+                android:maxLines="1"
+                android:padding="8dp"
+                android:textAlignment="viewStart" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_16sdp"
+                android:fontFamily="@font/tajawal_regular"
+                android:text="@string/agri_type"
                 android:textColor="@color/colorPrimaryDark"
                 android:textSize="@dimen/_12ssp" />
 
             <Spinner
-                android:id="@+id/sp_Reasons"
+                android:id="@+id/spAgriType"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="@dimen/_16sdp"
@@ -101,58 +143,130 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="@dimen/_25sdp"
+                android:layout_marginTop="@dimen/_16sdp"
                 android:fontFamily="@font/tajawal_regular"
-                android:text="@string/for_more_info"
+                android:text="المساحة المزروعة (الأفدنة)"
                 android:textColor="@color/colorPrimaryDark"
                 android:textSize="@dimen/_12ssp" />
 
+            <EditText
+                android:id="@+id/area"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_16sdp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="@dimen/_16sdp"
+                android:background="@drawable/background_white_with_border"
+                android:hint="مثال : 10 أفدنة"
+                android:inputType="number"
+                android:maxLength="4"
+                android:maxLines="1"
+                android:padding="8dp"
+                android:textAlignment="viewStart" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_16sdp"
+                android:fontFamily="@font/tajawal_regular"
+                android:text="المحاصيل المجاورة"
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="@dimen/_12ssp" />
+
+            <EditText
+                android:id="@+id/nearCrops"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_16sdp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="@dimen/_16sdp"
+                android:background="@drawable/background_white_with_border"
+                android:hint="مثال : زيتون , مانجو / لا يوجد"
+                android:inputType="text"
+                android:maxLength="80"
+                android:maxLines="1"
+                android:padding="8dp"
+                android:textAlignment="viewStart" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_16sdp"
+                android:fontFamily="@font/tajawal_regular"
+                android:text="@string/irr_type"
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="@dimen/_12ssp" />
+
+            <Spinner
+                android:id="@+id/irrType"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_16sdp"
+                android:layout_marginTop="@dimen/_8sdp"
+                android:layout_marginEnd="@dimen/_16sdp"
+                android:background="@color/white" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_16sdp"
+                android:fontFamily="@font/tajawal_regular"
+                android:text="@string/land_type"
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="@dimen/_12ssp" />
+
+            <Spinner
+                android:id="@+id/landType"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_16sdp"
+                android:layout_marginTop="@dimen/_8sdp"
+                android:layout_marginEnd="@dimen/_16sdp"
+                android:background="@color/white" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_16sdp"
+                android:fontFamily="@font/tajawal_regular"
+                android:text="@string/water_drainage"
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="@dimen/_12ssp" />
+
+            <Spinner
+                android:id="@+id/water_channel"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_16sdp"
+                android:layout_marginTop="@dimen/_8sdp"
+                android:layout_marginEnd="@dimen/_16sdp"
+                android:background="@color/white" />
+
+            <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_25sdp"
+            android:fontFamily="@font/tajawal_regular"
+            android:text="@string/for_more_info"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="@dimen/_12ssp" />
+
+            <CheckBox
+                android:id="@+id/soilAnalysis"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_20sdp"
+                android:text="صورة لتحليل التربة"
+                android:onClick="soilAnalysisImg"/>
+
             <LinearLayout
+                android:id="@+id/imageLayoutSA"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_margin="@dimen/_16sdp"
                 android:background="@drawable/background_white_with_border"
                 android:gravity="center"
-                android:orientation="horizontal"
-                android:padding="@dimen/_4sdp">
-
-
-                <TextView
-                    android:layout_width="0dp"
-                    android:layout_height="wrap_content"
-                    android:layout_marginStart="@dimen/_4sdp"
-                    android:layout_marginEnd="@dimen/_14sdp"
-                    android:layout_weight="2"
-                    android:fontFamily="@font/tajawal_medium"
-                    android:text="@string/voice_message"
-                    android:textColor="@color/colorPrimaryDark" />
-
-                <ImageView
-                    android:id="@+id/record_btn"
-                    android:layout_width="@dimen/_40sdp"
-                    android:layout_height="@dimen/_40sdp"
-                    android:adjustViewBounds="true"
-                    android:src="@drawable/record_btn_stopped" />
-
-                <Chronometer
-                    android:id="@+id/record_timer"
-                    android:layout_width="0dp"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center"
-                    android:layout_marginStart="@dimen/_24sdp"
-                    android:layout_weight="1"
-                    android:fontFamily="@font/tajawal_medium"
-                    android:gravity="center"
-                    android:textSize="@dimen/_14ssp" />
-
-            </LinearLayout>
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_margin="@dimen/_16sdp"
-                android:background="@drawable/background_white_with_border"
-                android:gravity="center"
+                android:visibility="gone"
                 android:orientation="horizontal"
                 android:padding="@dimen/_4sdp">
 
@@ -163,7 +277,157 @@
                     android:layout_marginStart="@dimen/_4sdp"
                     android:layout_marginEnd="@dimen/_14sdp"
                     android:fontFamily="@font/tajawal_medium"
-                    android:text="@string/image"
+                    android:text="تحليل التربة"
+                    android:textColor="@color/colorPrimaryDark" />
+
+                <ImageView
+                    android:id="@+id/img_cameraSA"
+                    android:layout_width="@dimen/_40sdp"
+                    android:layout_height="@dimen/_40sdp"
+                    android:layout_marginEnd="@dimen/_16sdp"
+                    android:adjustViewBounds="true"
+                    android:src="@drawable/ic_attachment_camera" />
+
+                <ImageView
+                    android:id="@+id/img_gallerySA"
+                    android:layout_width="@dimen/_40sdp"
+                    android:layout_height="@dimen/_40sdp"
+                    android:layout_marginStart="@dimen/_16sdp"
+                    android:adjustViewBounds="true"
+                    android:src="@drawable/ic_attachment_gallery" />
+
+            </LinearLayout>
+
+            <com.makeramen.roundedimageview.RoundedImageView
+                android:id="@+id/img_SA"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="@dimen/_16sdp"
+                android:adjustViewBounds="true"
+                android:visibility="gone"
+                app:riv_corner_radius="@dimen/_16sdp" />
+
+            <Button
+                android:id="@+id/deleteSAPic"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/_20sdp"
+                android:layout_gravity="center"
+                android:layout_marginStart="@dimen/_16sdp"
+                android:layout_marginTop="@dimen/_6sdp"
+                android:layout_marginEnd="@dimen/_16sdp"
+                android:layout_marginBottom="@dimen/_8sdp"
+                android:paddingRight="@dimen/_20sdp"
+                android:paddingLeft="@dimen/_20sdp"
+                android:background="@color/colorOne"
+                android:fontFamily="@font/tajawal_regular"
+                android:text="حذف الصورة"
+                android:visibility="gone"
+                android:textColor="@color/white"
+                android:textSize="@dimen/_10sdp" />
+
+            <CheckBox
+                android:id="@+id/waterAnalysis"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_20sdp"
+                android:text="صورة لتحليل المياة"
+                android:onClick="waterAnalysisImg"/>
+
+            <LinearLayout
+                android:id="@+id/imageLayoutWA"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/_16sdp"
+                android:background="@drawable/background_white_with_border"
+                android:gravity="center"
+                android:visibility="gone"
+                android:orientation="horizontal"
+                android:padding="@dimen/_4sdp">
+
+
+                <TextView
+                    android:layout_width="@dimen/_100sdp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/_4sdp"
+                    android:layout_marginEnd="@dimen/_14sdp"
+                    android:fontFamily="@font/tajawal_medium"
+                    android:text="تحليل المياة"
+                    android:textColor="@color/colorPrimaryDark" />
+
+                <ImageView
+                    android:id="@+id/img_cameraWA"
+                    android:layout_width="@dimen/_40sdp"
+                    android:layout_height="@dimen/_40sdp"
+                    android:layout_marginEnd="@dimen/_16sdp"
+                    android:adjustViewBounds="true"
+                    android:src="@drawable/ic_attachment_camera" />
+
+                <ImageView
+                    android:id="@+id/img_galleryWA"
+                    android:layout_width="@dimen/_40sdp"
+                    android:layout_height="@dimen/_40sdp"
+                    android:layout_marginStart="@dimen/_16sdp"
+                    android:adjustViewBounds="true"
+                    android:src="@drawable/ic_attachment_gallery" />
+
+            </LinearLayout>
+
+            <com.makeramen.roundedimageview.RoundedImageView
+                android:id="@+id/img_WA"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="@dimen/_16sdp"
+                android:adjustViewBounds="true"
+                android:visibility="gone"
+                app:riv_corner_radius="@dimen/_16sdp" />
+
+            <Button
+                android:id="@+id/deleteWAPic"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/_20sdp"
+                android:layout_gravity="center"
+                android:layout_marginStart="@dimen/_16sdp"
+                android:layout_marginTop="@dimen/_6sdp"
+                android:layout_marginEnd="@dimen/_16sdp"
+                android:layout_marginBottom="@dimen/_8sdp"
+                android:paddingRight="@dimen/_20sdp"
+                android:paddingLeft="@dimen/_20sdp"
+                android:background="@color/colorOne"
+                android:fontFamily="@font/tajawal_regular"
+                android:text="حذف الصورة"
+                android:visibility="gone"
+                android:textColor="@color/white"
+                android:textSize="@dimen/_10sdp" />
+
+            <CheckBox
+                android:id="@+id/problemImg"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_20sdp"
+                android:text="صورة للمشكلة ان وجد"
+                android:onClick="problemImg"/>
+
+            <LinearLayout
+                android:id="@+id/imageLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/_16sdp"
+                android:background="@drawable/background_white_with_border"
+                android:gravity="center"
+                android:visibility="gone"
+                android:orientation="horizontal"
+                android:padding="@dimen/_4sdp">
+
+
+                <TextView
+                    android:layout_width="@dimen/_100sdp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/_4sdp"
+                    android:layout_marginEnd="@dimen/_14sdp"
+                    android:fontFamily="@font/tajawal_medium"
+                    android:text="صورة للمشكلة"
                     android:textColor="@color/colorPrimaryDark" />
 
                 <ImageView
@@ -191,9 +455,154 @@
                 android:layout_gravity="center"
                 android:layout_marginTop="@dimen/_16sdp"
                 android:adjustViewBounds="true"
-                android:scaleType="centerCrop"
                 android:visibility="gone"
                 app:riv_corner_radius="@dimen/_16sdp" />
+
+            <Button
+                android:id="@+id/deletePic"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/_20sdp"
+                android:layout_gravity="center"
+                android:layout_marginStart="@dimen/_16sdp"
+                android:layout_marginTop="@dimen/_6sdp"
+                android:layout_marginEnd="@dimen/_16sdp"
+                android:layout_marginBottom="@dimen/_8sdp"
+                android:paddingRight="@dimen/_20sdp"
+                android:paddingLeft="@dimen/_20sdp"
+                android:background="@color/colorOne"
+                android:fontFamily="@font/tajawal_regular"
+                android:text="حذف الصورة"
+                android:visibility="gone"
+                android:textColor="@color/white"
+                android:textSize="@dimen/_10sdp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_25sdp"
+                android:fontFamily="@font/tajawal_regular"
+                android:text="لتوضيح سبب حجز الاستشارة :"
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="@dimen/_12ssp" />
+
+            <CheckBox
+                android:id="@+id/problemVoice"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_20sdp"
+                android:text="تسجيل صوتى"
+                android:onClick="problemVoice"/>
+
+            <LinearLayout
+                android:id="@+id/recorderLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/_16sdp"
+                android:background="@drawable/background_white_with_border"
+                android:gravity="center"
+                android:visibility="gone"
+                android:orientation="horizontal"
+                android:padding="@dimen/_4sdp">
+
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/_4sdp"
+                    android:layout_marginEnd="@dimen/_14sdp"
+                    android:layout_weight="2"
+                    android:fontFamily="@font/tajawal_medium"
+                    android:text="تسجيل صوتى"
+                    android:textColor="@color/colorPrimaryDark" />
+
+                <ImageView
+                    android:id="@+id/record_btn"
+                    android:layout_width="@dimen/_40sdp"
+                    android:layout_height="@dimen/_40sdp"
+                    android:adjustViewBounds="true"
+                    android:src="@drawable/record_btn_stopped" />
+
+                <Chronometer
+                    android:id="@+id/record_timer"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginStart="@dimen/_24sdp"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/tajawal_medium"
+                    android:gravity="center"
+                    android:textSize="@dimen/_14ssp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/audioLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:layout_marginEnd="@dimen/_16sdp"
+                android:layout_marginStart="@dimen/_16sdp"
+                android:padding="@dimen/_4sdp"
+                android:visibility="gone"
+                android:background="@drawable/background_white_with_border"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="التسجيل الصوتى"
+                    android:layout_marginEnd="@dimen/_8sdp"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:textStyle="bold"
+                    android:fontFamily="@font/tajawal_regular"/>
+
+                <com.rygelouv.audiosensei.player.AudioSenseiPlayerView
+                    android:id="@+id/audio_player"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:visibility="visible" />
+
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/deleteVoice"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/_20sdp"
+                android:layout_gravity="center"
+                android:layout_marginStart="@dimen/_16sdp"
+                android:layout_marginTop="@dimen/_6sdp"
+                android:layout_marginEnd="@dimen/_16sdp"
+                android:layout_marginBottom="@dimen/_8sdp"
+                android:paddingRight="@dimen/_20sdp"
+                android:paddingLeft="@dimen/_20sdp"
+                android:background="@color/colorOne"
+                android:visibility="gone"
+                android:fontFamily="@font/tajawal_regular"
+                android:text="حذف التسجيل الصوتى"
+                android:textColor="@color/white"
+                android:textSize="@dimen/_10sdp" />
+
+            <CheckBox
+                android:id="@+id/problemText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_20sdp"
+                android:text="رسالة نصية"
+                android:onClick="problemText"/>
+
+            <EditText
+                android:id="@+id/problemTextBox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_16sdp"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="@dimen/_16sdp"
+                android:background="@drawable/background_white_with_border"
+                android:hint="توضيح سبب حجز الاستشارة"
+                android:visibility="gone"
+                android:maxLines="6"
+                android:padding="8dp"/>
 
             <LinearLayout
                 android:id="@+id/location_layout"

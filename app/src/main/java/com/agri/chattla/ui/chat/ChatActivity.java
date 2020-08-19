@@ -190,8 +190,8 @@ public class ChatActivity extends BaseActivity implements View.OnClickListener, 
         audioRecordView.getMessageView().requestFocus();
 
         List<AttachmentOption> attachmentOptions = new ArrayList<>();
-        attachmentOptions.add(new AttachmentOption(CAMERA_ID, "Camera", R.drawable.ic_attachment_camera));
-        attachmentOptions.add(new AttachmentOption(GALLERY_ID, "Gallery", R.drawable.ic_attachment_gallery));
+        attachmentOptions.add(new AttachmentOption(CAMERA_ID, "كاميرا", R.drawable.ic_attachment_camera));
+        attachmentOptions.add(new AttachmentOption(GALLERY_ID, "الاستديو", R.drawable.ic_attachment_gallery));
         audioRecordView.setAttachmentOptions(attachmentOptions, this);
 
         audioRecordView.removeAttachmentOptionAnimation(true);

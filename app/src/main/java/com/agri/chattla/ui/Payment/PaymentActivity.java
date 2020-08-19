@@ -103,6 +103,8 @@ public class PaymentActivity extends BaseActivity implements FawrySdkCallback, V
     private Uri uriVoice;
     private File audiofile;
     private Uri imageUri;
+    private Uri SAimageUri;
+    private Uri WAimageUri;
     private String paymentStatus;
     private String code ;
 
@@ -110,21 +112,22 @@ public class PaymentActivity extends BaseActivity implements FawrySdkCallback, V
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_payment);
+
         toolbar = findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
         getSupportActionBar().setDisplayShowTitleEnabled(false);
 
         consult = (Consult) getIntent().getExtras().getSerializable("consult");
-        price = (Price) getIntent().getExtras().get("price");
         topic = getIntent().getExtras().getString("topic");
+        price = (Price) getIntent().getExtras().get("price");
+        imageUri = (Uri) getIntent().getExtras().get("problemimageUri");
+        SAimageUri = (Uri) getIntent().getExtras().get("SAimageUri");
+        WAimageUri = (Uri) getIntent().getExtras().get("WAimageUri");
         audiofile = (File) getIntent().getExtras().get("audiofile");
-        imageUri = (Uri) getIntent().getExtras().get("imageUri");
+
         refDiscountCodes = FirebaseDatabase.getInstance().getReference().child("Discount");
 
         Log.e("Consultation_Details ",new Gson().toJson(consult));
-        //Toasty.info(PaymentActivity.this , consult.getWeather() , Toasty.LENGTH_LONG).show();
-
-        uriVoice = Uri.fromFile(new File(audiofile.getAbsolutePath()));
 
         database = FirebaseDatabase.getInstance();
         reference = database.getReference();
@@ -162,12 +165,10 @@ public class PaymentActivity extends BaseActivity implements FawrySdkCallback, V
                 checkCode(refDiscountCodes , discountCode.getText().toString());
             }
         });
-
-
     }
 
     public void checkCode(DatabaseReference reference , String string){
-        dialog = new XProgressDialog(this, PaymentActivity.this.getResources().getString(R.string.loading_login), XProgressDialog.THEME_HORIZONTAL_SPOT);
+        dialog = new XProgressDialog(this, "انتظر", XProgressDialog.THEME_HORIZONTAL_SPOT);
         dialog.show();
 
         reference.addListenerForSingleValueEvent(new ValueEventListener() {
@@ -256,14 +257,6 @@ public class PaymentActivity extends BaseActivity implements FawrySdkCallback, V
 
 
     private void initialFawryPayment() {
-
-//        FawrySdk.initializeCardTokenizer(this,serverUrl,this,merchantId,merchantRefNum,"01004996690",
-//                "anaselshawaf134@gmail.com",FawrySdk.Language.AR,PAYMENT_PLUGIN_REQUEST, null, new UUID(1, 2));
-//        ClipboardManager clipboardManager = (ClipboardManager) getSystemService(CLIPBOARD_SERVICE);
-//        ClipData clipData = ClipData.newPlainText("Pay Email" , "pay@chattla.com" );
-//        clipboardManager.setPrimaryClip(clipData);
-        //Toast.makeText(this , "تم نسخ النص" , Toast.LENGTH_LONG).show();
-
         FawrySdk.initialize(this, serverUrl, this, merchantId, merchantRefNum,
                 getUserCart(), FawrySdk.Language.AR, PAYMENT_PLUGIN_REQUEST /*for activity Result*/, null, new UUID(1, 2));
 
@@ -288,7 +281,6 @@ public class PaymentActivity extends BaseActivity implements FawrySdkCallback, V
                 break;
 
             case R.id.bt_payment:
-//                sendConsult();
                 initialFawryPayment();
                 fawryButton.performClick();
                 break;
@@ -299,15 +291,46 @@ public class PaymentActivity extends BaseActivity implements FawrySdkCallback, V
 
     private void sendConsult(String paymentStatus ) {
 
+        final String time = new SimpleDateFormat("dd-M-yyyy hh:mm a", Locale.getDefault()).format(Calendar.getInstance().getTime()).toLowerCase();
+
+        refId = reference.child("Consults").push().getKey();
+        map.put("desc", consult.getDesc());
+        map.put("category", consult.getCategory());
+        map.put("Cropitem" , consult.getCropitem());
+        map.put("AgriType" , consult.getAgriType());
+        map.put("area" , consult.getArea());
+        map.put("nearCrops" , consult.getNearCrops());
+        map.put("IrrType" , consult.getIrrType());
+        map.put("landType" , consult.getLandType());
+        map.put("waterChannel" , consult.getWaterChannel());
+        map.put("ProblemText" , consult.getProblemText());
+        map.put("weather", consult.getWeather());
+        map.put("topic", topic);
+        map.put("status", "pending");
+        map.put("sender", consult.getSender());
+        map.put("id", refId);
+        map.put("time", time);
+        map.put("lat", consult.getLat());
+        map.put("lng", consult.getLng());
+        map.put("farmerToken", consult.getFarmerToken());
+        map.put("merchantRefNum", merchantRefNum);
+        map.put("PaymentStatus", paymentStatus);
+        map.put("timestamp", ServerValue.TIMESTAMP);
+        sendVoice();
+    }
+
+    private void addImages(){
+
         dialog = new XProgressDialog(PaymentActivity.this, "جاري الارسال..", XProgressDialog.THEME_CIRCLE_PROGRESS);
         dialog.show();
 
-        final String time = new SimpleDateFormat("dd-M-yyyy hh:mm a", Locale.getDefault()).format(Calendar.getInstance().getTime()).toLowerCase();
         storageReference = FirebaseStorage.getInstance().getReference("uploads");
 
         if (imageUri != null) {
-            final StorageReference fileReference = storageReference
+
+            StorageReference fileReference = storageReference
                     .child(System.currentTimeMillis() + "." + getFileExtention(imageUri));
+
 
             Task<Uri> urlTask = fileReference.putFile(imageUri).continueWithTask(new Continuation<UploadTask.TaskSnapshot, Task<Uri>>() {
                 @Override
@@ -327,38 +350,214 @@ public class PaymentActivity extends BaseActivity implements FawrySdkCallback, V
                         if (downloadUri == null)
                             return;
                         else {
-
-                            refId = reference.child("Consults").push().getKey();
-
                             map.put("image", downloadUri.toString());
-                            map.put("category", consult.getCategory());
-                            map.put("desc", consult.getDesc());
-                            map.put("topic", topic);
-                            map.put("status", "pending");
-                            map.put("sender", consult.getSender());
-                            map.put("id", refId);
-                            map.put("time", time);
-                            map.put("lat", consult.getLat());
-                            map.put("lng", consult.getLng());
-                            map.put("farmerToken", consult.getFarmerToken());
-                            map.put("merchantRefNum", merchantRefNum);
-                            map.put("PaymentStatus", paymentStatus);
-                            map.put("weather", consult.getWeather());
-                            map.put("timestamp", ServerValue.TIMESTAMP);
+                            if (SAimageUri != null){
 
-                            sendVoice();
+                                StorageReference fileReference = storageReference
+                                        .child(System.currentTimeMillis() + "." + getFileExtention(SAimageUri));
 
+                                Task<Uri> uriTask = fileReference.putFile(SAimageUri).continueWithTask(new Continuation<UploadTask.TaskSnapshot, Task<Uri>>() {
+                                    @Override
+                                    public Task<Uri> then(@NonNull Task<UploadTask.TaskSnapshot> task) throws Exception {
+                                        if (!task.isSuccessful()){
+                                            throw task.getException();
+                                        }
+
+                                        return fileReference.getDownloadUrl();
+                                    }
+                                }).addOnCompleteListener(new OnCompleteListener<Uri>() {
+                                    @Override
+                                    public void onComplete(@NonNull Task<Uri> task) {
+                                        if (task.isSuccessful()){
+                                            Uri downloadUri = task.getResult();
+                                            if (downloadUri == null)
+                                                return;
+                                            else {
+                                                map.put("SAimage" , downloadUri.toString());
+                                                if (WAimageUri != null){
+
+                                                    StorageReference fileReference = storageReference
+                                                            .child(System.currentTimeMillis() + "." + getFileExtention(WAimageUri));
+
+                                                    Task<Uri> uriTask1 = fileReference.putFile(WAimageUri).continueWithTask(new Continuation<UploadTask.TaskSnapshot, Task<Uri>>() {
+                                                        @Override
+                                                        public Task<Uri> then(@NonNull Task<UploadTask.TaskSnapshot> task) throws Exception {
+                                                            if (!task.isSuccessful()){
+                                                                throw task.getException();
+                                                            }
+
+                                                            return fileReference.getDownloadUrl();
+                                                        }
+                                                    }).addOnCompleteListener(new OnCompleteListener<Uri>() {
+                                                        @Override
+                                                        public void onComplete(@NonNull Task<Uri> task) {
+                                                            if (task.isSuccessful()){
+                                                                Uri downloadUri = task.getResult();
+                                                                if (downloadUri == null)
+                                                                    return;
+                                                                else {
+                                                                    map.put("WAimage" , downloadUri.toString());
+                                                                    sendConsult("unPaid");
+                                                                }
+                                                            }
+                                                        }
+                                                    });
+
+                                                }else {
+                                                    map.put("WAimage" , "e");
+                                                    sendConsult("unPaid");
+                                                }
+                                            }
+                                        }
+                                    }
+                                });
+
+                            }else {
+                                map.put("SAimage" , "e");
+                                if (WAimageUri != null){
+
+                                    StorageReference fileReference = storageReference
+                                            .child(System.currentTimeMillis() + "." + getFileExtention(WAimageUri));
+
+                                    Task<Uri> uriTask1 = fileReference.putFile(WAimageUri).continueWithTask(new Continuation<UploadTask.TaskSnapshot, Task<Uri>>() {
+                                        @Override
+                                        public Task<Uri> then(@NonNull Task<UploadTask.TaskSnapshot> task) throws Exception {
+                                            if (!task.isSuccessful()){
+                                                throw task.getException();
+                                            }
+
+                                            return fileReference.getDownloadUrl();
+                                        }
+                                    }).addOnCompleteListener(new OnCompleteListener<Uri>() {
+                                        @Override
+                                        public void onComplete(@NonNull Task<Uri> task) {
+                                            if (task.isSuccessful()){
+                                                Uri downloadUri = task.getResult();
+                                                if (downloadUri == null)
+                                                    return;
+                                                else {
+                                                    map.put("WAimage" , downloadUri.toString());
+                                                    sendConsult("unPaid");
+                                                }
+                                            }
+                                        }
+                                    });
+
+                                }else {
+                                    map.put("WAimage" , "e");
+                                    sendConsult("unPaid");
+                                }
+                            }
                         }
                     }
                 }
             });
-        }
+        }else {
+            map.put("image", "e");
+            if (SAimageUri != null){
 
+                StorageReference fileReference = storageReference
+                        .child(System.currentTimeMillis() + "." + getFileExtention(SAimageUri));
+
+                Task<Uri> uriTask = fileReference.putFile(SAimageUri).continueWithTask(new Continuation<UploadTask.TaskSnapshot, Task<Uri>>() {
+                    @Override
+                    public Task<Uri> then(@NonNull Task<UploadTask.TaskSnapshot> task) throws Exception {
+                        if (!task.isSuccessful()){
+                            throw task.getException();
+                        }
+
+                        return fileReference.getDownloadUrl();
+                    }
+                }).addOnCompleteListener(new OnCompleteListener<Uri>() {
+                    @Override
+                    public void onComplete(@NonNull Task<Uri> task) {
+                        if (task.isSuccessful()){
+                            Uri downloadUri = task.getResult();
+                            if (downloadUri == null)
+                                return;
+                            else {
+                                map.put("SAimage" , downloadUri.toString());
+                                if (WAimageUri != null){
+
+                                    StorageReference fileReference = storageReference
+                                            .child(System.currentTimeMillis() + "." + getFileExtention(WAimageUri));
+
+                                    Task<Uri> uriTask1 = fileReference.putFile(WAimageUri).continueWithTask(new Continuation<UploadTask.TaskSnapshot, Task<Uri>>() {
+                                        @Override
+                                        public Task<Uri> then(@NonNull Task<UploadTask.TaskSnapshot> task) throws Exception {
+                                            if (!task.isSuccessful()){
+                                                throw task.getException();
+                                            }
+
+                                            return fileReference.getDownloadUrl();
+                                        }
+                                    }).addOnCompleteListener(new OnCompleteListener<Uri>() {
+                                        @Override
+                                        public void onComplete(@NonNull Task<Uri> task) {
+                                            if (task.isSuccessful()){
+                                                Uri downloadUri = task.getResult();
+                                                if (downloadUri == null)
+                                                    return;
+                                                else {
+                                                    map.put("WAimage" , downloadUri.toString());
+                                                    sendConsult("unPaid");
+                                                }
+                                            }
+                                        }
+                                    });
+
+                                }else {
+                                    map.put("WAimage" , "e");
+                                    sendConsult("unPaid");
+                                }
+                            }
+                        }
+                    }
+                });
+
+            }else {
+                map.put("SAimage" , "e");
+                if (WAimageUri != null){
+
+                    StorageReference fileReference = storageReference
+                            .child(System.currentTimeMillis() + "." + getFileExtention(WAimageUri));
+
+                    Task<Uri> uriTask1 = fileReference.putFile(WAimageUri).continueWithTask(new Continuation<UploadTask.TaskSnapshot, Task<Uri>>() {
+                        @Override
+                        public Task<Uri> then(@NonNull Task<UploadTask.TaskSnapshot> task) throws Exception {
+                            if (!task.isSuccessful()){
+                                throw task.getException();
+                            }
+
+                            return fileReference.getDownloadUrl();
+                        }
+                    }).addOnCompleteListener(new OnCompleteListener<Uri>() {
+                        @Override
+                        public void onComplete(@NonNull Task<Uri> task) {
+                            if (task.isSuccessful()){
+                                Uri downloadUri = task.getResult();
+                                if (downloadUri == null)
+                                    return;
+                                else {
+                                    map.put("WAimage" , downloadUri.toString());
+                                    sendConsult("unPaid");
+                                }
+                            }
+                        }
+                    });
+
+                }else {
+                    map.put("WAimage" , "e");
+                    sendConsult("unPaid");
+                }
+            }
+        }
     }
 
     private void sendVoice() {
         storageReference = FirebaseStorage.getInstance().getReference("Audio");
-        if (uriVoice != null) {
+        if (audiofile != null) {
+            uriVoice = Uri.fromFile(new File(audiofile.getAbsolutePath()));
             final StorageReference fileReference = storageReference.child(audiofile.getAbsolutePath());
 
             Task<Uri> urlTask = fileReference.putFile(uriVoice).continueWithTask(new Continuation<UploadTask.TaskSnapshot, Task<Uri>>() {
@@ -386,7 +585,7 @@ public class PaymentActivity extends BaseActivity implements FawrySdkCallback, V
                                     if (databaseError != null) {
                                         Log.e("databaseError", databaseError.getMessage());
                                     } else {
-                                        checkPaymentStatus();
+                                        //checkPaymentStatus();
                                         dialog.dismiss();
                                         Toasty.success(PaymentActivity.this, "تم إضافة إستشارة جديدة", Toasty.LENGTH_SHORT).show();
                                         startActivity(new Intent(PaymentActivity.this, FarmerMainActivity.class)
@@ -401,9 +600,10 @@ public class PaymentActivity extends BaseActivity implements FawrySdkCallback, V
             });
 
         } else {
+            map.put("voice", "e");
             reference.child("Consults").child(refId).setValue(map);
-            checkPaymentStatus();
-            Toasty.success(PaymentActivity.this, "تم استكمال البيانات سيتم مراجعة الاستشارة", Toasty.LENGTH_SHORT).show();
+            //checkPaymentStatus();
+            Toasty.success(PaymentActivity.this, "تم حجز الاستشارة", Toasty.LENGTH_SHORT).show();
             dialog.dismiss();
             startActivity(new Intent(PaymentActivity.this, FarmerMainActivity.class)
                     .addFlags(Intent.FLAG_ACTIVITY_CLEAR_TASK).addFlags(Intent.FLAG_ACTIVITY_NEW_TASK));
@@ -433,7 +633,7 @@ public class PaymentActivity extends BaseActivity implements FawrySdkCallback, V
 
     @Override
     public void paymentOperationSuccess(String s, Object o) {
-        sendConsult("unPaid");
+        addImages();
     }
 
     @Override

@@ -8,8 +8,18 @@ import java.io.Serializable;
 public class Consult implements Serializable, PayableItem {
 
     private String image;
+    private String SAimage;
+    private String WAimage;
     private String category;
     private String desc;
+    private String AgriType;
+    private String Cropitem;
+    private String nearCrops;
+    private String area;
+    private String landType;
+    private String IrrType;
+    private String waterChannel;
+    private String ProblemText;
     private String lat;
     private String lng;
     private String voice;
@@ -161,6 +171,22 @@ public class Consult implements Serializable, PayableItem {
         this.image = image;
     }
 
+    public String getSAimage() {
+        return SAimage;
+    }
+
+    public void setSAimage(String SAimage) {
+        this.SAimage = SAimage;
+    }
+
+    public String getWAimage() {
+        return WAimage;
+    }
+
+    public void setWAimage(String WAimage) {
+        this.WAimage = WAimage;
+    }
+
     public String getCategory() {
         return category;
     }
@@ -199,6 +225,70 @@ public class Consult implements Serializable, PayableItem {
 
     public void setVoice(String voice) {
         this.voice = voice;
+    }
+
+    public String getAgriType() {
+        return AgriType;
+    }
+
+    public void setAgriType(String agriType) {
+        AgriType = agriType;
+    }
+
+    public String getCropitem() {
+        return Cropitem;
+    }
+
+    public void setCropitem(String cropitem) {
+        Cropitem = cropitem;
+    }
+
+    public String getArea() {
+        return area;
+    }
+
+    public void setArea(String area) {
+        this.area = area;
+    }
+
+    public String getNearCrops() {
+        return nearCrops;
+    }
+
+    public void setNearCrops(String nearCrops) {
+        this.nearCrops = nearCrops;
+    }
+
+    public String getIrrType() {
+        return IrrType;
+    }
+
+    public void setIrrType(String irrType) {
+        IrrType = irrType;
+    }
+
+    public String getLandType() {
+        return landType;
+    }
+
+    public void setLandType(String landType) {
+        this.landType = landType;
+    }
+
+    public String getWaterChannel() {
+        return waterChannel;
+    }
+
+    public void setWaterChannel(String waterChannel) {
+        this.waterChannel = waterChannel;
+    }
+
+    public String getProblemText() {
+        return ProblemText;
+    }
+
+    public void setProblemText(String problemText) {
+        ProblemText = problemText;
     }
 
     @Override

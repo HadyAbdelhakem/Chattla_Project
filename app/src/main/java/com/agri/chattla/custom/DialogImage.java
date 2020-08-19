@@ -41,7 +41,7 @@ public class DialogImage extends Dialog implements View.OnClickListener {
         btCancle = findViewById(R.id.bt_cancle);
         //btSave = findViewById(R.id.bt_save);
 
-        Glide.with(getContext()).load(imageUrl).apply(new RequestOptions().error(R.drawable.logo))
+        Glide.with(getContext()).load(imageUrl).apply(new RequestOptions().error(R.drawable.loading))
                 .into(imageView);
 
         //btSave.setOnClickListener(this);

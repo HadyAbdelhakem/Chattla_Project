@@ -39,7 +39,6 @@ public class FcmNotifier {
                     String finalResponse = response.body().string();
                     Log.e("finalResponse", finalResponse);
                 } catch (Exception e) {
-
                     Log.i("finalResponse", e.getMessage());
                 }
                 return null;

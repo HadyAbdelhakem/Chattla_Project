@@ -146,7 +146,7 @@ public class ChatAdapter extends RecyclerView.Adapter<ChatAdapter.ViewHolder> {
                 ivImage.setVisibility(View.VISIBLE);
                 Glide.with(mContext)
                         .load(chatMessage.getMessage())
-                        .apply(new RequestOptions().placeholder(R.drawable.logo))
+                        .apply(new RequestOptions().placeholder(R.drawable.loading))
                         .into(ivImage);
 
             } else if (chatMessage.getType().equals("voice")) {

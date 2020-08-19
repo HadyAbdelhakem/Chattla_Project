@@ -25,6 +25,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:fontFamily="@font/arbfontreg"
+        android:layout_marginTop="@dimen/_2sdp"
         android:text="شتلة"
         android:textColor="#fff"
         android:textSize="@dimen/_24sdp"
@@ -131,11 +132,5 @@
         android:layout_marginBottom="@dimen/_10sdp"
         app:layout_constraintBottom_toTopOf="@+id/pattern_1"
         app:layout_constraintEnd_toEndOf="parent"></ImageView>
-
-
-
-
-
-
 
 </androidx.constraintlayout.widget.ConstraintLayout>
