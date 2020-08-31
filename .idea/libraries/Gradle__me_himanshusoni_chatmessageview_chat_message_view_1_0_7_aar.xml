@@ -1,9 +1,9 @@
 <component name="libraryTable">
   <library name="Gradle: me.himanshusoni.chatmessageview:chat-message-view:1.0.7@aar">
     <CLASSES>
-      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/b3873a55be971eef9abec83fd1165074/jetified-chat-message-view-1.0.7/AndroidManifest.xml" />
-      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/b3873a55be971eef9abec83fd1165074/jetified-chat-message-view-1.0.7/jars/classes.jar!/" />
-      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/b3873a55be971eef9abec83fd1165074/jetified-chat-message-view-1.0.7/res" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/6c53d8cb115575410185e080700da0ac/jetified-chat-message-view-1.0.7/AndroidManifest.xml" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/6c53d8cb115575410185e080700da0ac/jetified-chat-message-view-1.0.7/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/6c53d8cb115575410185e080700da0ac/jetified-chat-message-view-1.0.7/res" />
     </CLASSES>
     <JAVADOC>
       <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/me.himanshusoni.chatmessageview/chat-message-view/1.0.7/cbea01cca16f26c265b86925bf97084928c39cbd/chat-message-view-1.0.7-javadoc.jar!/" />

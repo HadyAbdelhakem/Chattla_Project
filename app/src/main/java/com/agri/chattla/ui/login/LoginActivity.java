@@ -41,14 +41,13 @@ public class LoginActivity extends AppCompatActivity {
 
 
     EditText etPhone, etPassword;
-    private DatabaseReference refFarmer, refExpert;
     private String txtPhone;
     private String txtPassword;
     private String loadLogin ;
 
     private XProgressDialog dialog;
     private UserFirbase currentUser;
-    private DatabaseReference refConsults;
+    private Task<Void> refForgetPass;
     private Consult mConsult;
     private Intent i = null;
 
@@ -58,10 +57,8 @@ public class LoginActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.layout_login);
 
-
-        refConsults = FirebaseDatabase.getInstance().getReference().child("Consults");
-        refFarmer = FirebaseDatabase.getInstance().getReference().child("Farmers");
-        refExpert = FirebaseDatabase.getInstance().getReference().child("Expert");
+        /*refFarmer = FirebaseDatabase.getInstance().getReference().child("Farmers");
+        refExpert = FirebaseDatabase.getInstance().getReference().child("Expert");*/
 
         dialog = new XProgressDialog(this, LoginActivity.this.getResources().getString(R.string.loading_login), XProgressDialog.THEME_HORIZONTAL_SPOT);
 
@@ -74,12 +71,12 @@ public class LoginActivity extends AppCompatActivity {
             public void onClick(View v) {
 
                 if (validInput()){
-                    checkUser(refFarmer, "farmer");
+                    checkUser(FirebaseDatabase.getInstance().getReference().child("Farmers"), "farmer");
                 }
             }
         });
 
-        findViewById(R.id.bt_login_expert).setOnClickListener(new View.OnClickListener() {
+        /*findViewById(R.id.bt_login_expert).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
 
@@ -88,7 +85,7 @@ public class LoginActivity extends AppCompatActivity {
                 }
 
             }
-        });
+        });*/
 
         findViewById(R.id.tv_terms_and_conditions).setOnClickListener(new View.OnClickListener() {
             @Override
@@ -112,20 +109,28 @@ public class LoginActivity extends AppCompatActivity {
             public void onClick(View v) {
                 BottomSheetDialog bottomSheetDialog = new BottomSheetDialog(LoginActivity.this);
                 bottomSheetDialog.setContentView(R.layout.bottom_sheet_dialog);
-//                bottomSheetDialog.setCanceledOnTouchOutside(false);
+                /*bottomSheetDialog.setCanceledOnTouchOutside(false);*/
 
                 EditText phone_num = bottomSheetDialog.findViewById(R.id.edittext2_0);
-                String stringPhoneNum = phone_num.getText().toString();
                 Button button = bottomSheetDialog.findViewById(R.id.btn2_0);
 
 
                 button.setOnClickListener(new View.OnClickListener() {
                     @Override
                     public void onClick(View v) {
-
-                        Toasty.success(LoginActivity.this, "تم إرسال الطلب", Toasty.LENGTH_SHORT).show();
-
-                        bottomSheetDialog.dismiss();
+                        String stringPhoneNum = phone_num.getText().toString();
+                        if (stringPhoneNum.length() == 11){
+                            dialog = new XProgressDialog(LoginActivity.this, "", XProgressDialog.THEME_HORIZONTAL_SPOT);
+                            dialog.show();
+                            refForgetPass = FirebaseDatabase.getInstance().getReference().child("ForgetPass").child(stringPhoneNum).setValue("Forget his password");
+                            bottomSheetDialog.dismiss();
+                            dialog.dismiss();
+                            Toasty.success(LoginActivity.this, "تم إرسال الطلب", Toasty.LENGTH_SHORT).show();
+                            recreate();
+                        }
+                        else {
+                            Toasty.error(LoginActivity.this, "رقم الهاتف غير صحيح", Toasty.LENGTH_SHORT).show();
+                        }
                     }
                 });
                 bottomSheetDialog.show();
@@ -224,7 +229,7 @@ public class LoginActivity extends AppCompatActivity {
 
                             if (AppPreferences.getFcmToken(LoginActivity.this) != null) {
 
-                                refFarmer.child(currentUser.getPhoneNumber()).child("FcmToken").setValue(AppPreferences.getFcmToken(LoginActivity.this), new DatabaseReference.CompletionListener() {
+                                FirebaseDatabase.getInstance().getReference().child("Farmers").child(currentUser.getPhoneNumber()).child("FcmToken").setValue(AppPreferences.getFcmToken(LoginActivity.this), new DatabaseReference.CompletionListener() {
                                     @Override
                                     public void onComplete(@Nullable DatabaseError databaseError, @NonNull DatabaseReference databaseReference) {
                                         DatabaseReference ref = FirebaseDatabase.getInstance().getReference("Consults");

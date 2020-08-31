@@ -43,13 +43,17 @@ import androidx.annotation.RequiresApi;
 import androidx.appcompat.widget.Toolbar;
 import androidx.core.app.ActivityCompat;
 import androidx.core.content.FileProvider;
+import androidx.core.widget.NestedScrollView;
 import androidx.lifecycle.Observer;
 import androidx.lifecycle.ViewModelProvider;
 
 import com.agri.chattla.model.AgriTypes;
+import com.agri.chattla.model.AnotherCrop;
+import com.agri.chattla.model.GPSTracker;
 import com.agri.chattla.model.IrrTypes;
 import com.agri.chattla.model.LandTypes;
 import com.agri.chattla.model.WaterChannel;
+import com.agri.chattla.ui.welcome.WelcomeActivity;
 import com.apkfuns.xprogressdialog.XProgressDialog;
 import com.agri.chattla.R;
 import com.agri.chattla.model.Consult;
@@ -146,6 +150,7 @@ public class AddConsultActivity extends BaseActivity implements View.OnClickList
     private String recordPermission = Manifest.permission.RECORD_AUDIO;
     private int PERMISSION_CODE = 21;
     private Consult consult;
+    private AnotherCrop anotherCrop ;
     private Uri uriVoice;
     private File audiofile;
     private String topic;
@@ -158,6 +163,7 @@ public class AddConsultActivity extends BaseActivity implements View.OnClickList
     private Toolbar toolbar;
     private Price price;
     private DatabaseReference refFarmer;
+    private Task<Void> refAnotherCrop;
     private UserFirbase farmer;
     private WeatherViewModel viewModel;
     static AddConsultActivity instance;
@@ -192,6 +198,14 @@ public class AddConsultActivity extends BaseActivity implements View.OnClickList
     private LinearLayout audioLayout;
     private Button deleteVoice;
     private CheckBox checkBox;
+    private NestedScrollView nestedScrollView ;
+    private LinearLayout another_Crop_Layout ;
+    private LinearLayout btn_another_corp_Layout;
+    private Button btnAnotherCorp ;
+    private Button cancel_another_crop ;
+    private EditText anothercropName ;
+    private EditText anothercropItemName ;
+    private EditText numOfAcre ;
 
 
 
@@ -224,10 +238,12 @@ public class AddConsultActivity extends BaseActivity implements View.OnClickList
         areaBox = findViewById(R.id.area);
         nearCropsBox = findViewById(R.id.nearCrops);
         problemTextBox = findViewById(R.id.problemTextBox);
-
-
-        SimpleDateFormat sdf = new SimpleDateFormat("yyyyMMdd_HHmmss", Locale.getDefault());
-        String currentDateandTime = sdf.format(new Date());
+        nestedScrollView = findViewById(R.id.add_Consult_Layout);
+        another_Crop_Layout = findViewById(R.id.another_Crop_Layout);
+        btn_another_corp_Layout = findViewById(R.id.btn_another_corp_Layout);
+        anothercropName = findViewById(R.id.anothercropName);
+        anothercropItemName = findViewById(R.id.anothercropItemName);
+        numOfAcre = findViewById(R.id.numOfAcre);
 
         instance = this;
 
@@ -250,6 +266,11 @@ public class AddConsultActivity extends BaseActivity implements View.OnClickList
         setUpIrrTypes();
         setUpLandTypes();
         setUpWaterChannel();
+
+        /*GPSTracker gpsTracker = new GPSTracker(AddConsultActivity.this);
+        double lat = gpsTracker.getLatitude();
+        double lan = gpsTracker.getLongitude();
+        Log.e("" , lat + " // " + lan);*/
     }
 
     public void soilAnalysisImg(View v) {
@@ -338,15 +359,19 @@ public class AddConsultActivity extends BaseActivity implements View.OnClickList
         locationRequest.setInterval(5000);
         locationRequest.setFastestInterval(3000);
         locationRequest.setSmallestDisplacement(10f);
-
     }
 
-    public void setLocation(final String lat , final String lng ){
-        getWeatherInfo(lat,lng);
-        consult.setLat(lat);
-        consult.setLng(lng);
+    public void setLocation(final String lat , final String lng , final String time){
+        if (!lat.equals("Error")) {
+            getWeatherInfo(lat, lng);
+            consult.setLat(lat);
+            consult.setLng(lng);
+            consult.setTime(time);
+        }
         locationLayout.setVisibility(View.GONE);
         locationSelected.setVisibility(View.VISIBLE);
+        /*Toasty.success(AddConsultActivity.this , "Location .. "+ "// " +lat + " // " + lng  , Toasty.LENGTH_LONG).show();*/
+        fusedLocationProviderClient.removeLocationUpdates(getPendingIntent());
         dialog.dismiss();
     }
 
@@ -610,7 +635,14 @@ public class AddConsultActivity extends BaseActivity implements View.OnClickList
             public void onItemSelected(AdapterView<?> adapterView, View view, int position, long l) {
                 if (position > 0) {
                     topic = "field_" + position;
-                    selectedCategory = categoryList.get(position);
+                    if (categoryList.get(position) == "محصول أخر"){
+                        nestedScrollView.setVisibility(View.GONE);
+                        another_Crop_Layout.setVisibility(View.VISIBLE);
+                        btn_another_corp_Layout.setVisibility(View.VISIBLE);
+                    }else {
+                        selectedCategory = categoryList.get(position);
+                        /*Toasty.info(AddConsultActivity.this , selectedCategory , Toasty.LENGTH_SHORT).show();*/
+                    }
                 }
             }
 
@@ -633,6 +665,7 @@ public class AddConsultActivity extends BaseActivity implements View.OnClickList
                         categoryList.add(mField.getName());
                     }
                 }
+                categoryList.add("محصول أخر");
             }
 
             @Override
@@ -778,6 +811,8 @@ public class AddConsultActivity extends BaseActivity implements View.OnClickList
         farmLocationLayout = findViewById(R.id.farm_Location_layout);
         audioPlayer = findViewById(R.id.audio_player);
         checkBox = findViewById(R.id.problemVoice);
+        btnAnotherCorp = findViewById(R.id.btn_another_corp);
+        cancel_another_crop = findViewById(R.id.cancel_another_crop);
 
         if (Build.VERSION.SDK_INT == 30){
             checkBox.setVisibility(View.GONE);
@@ -797,7 +832,12 @@ public class AddConsultActivity extends BaseActivity implements View.OnClickList
         img_gallerySA.setOnClickListener(this);
         img_cameraWA.setOnClickListener(this);
         img_galleryWA.setOnClickListener(this);
+        btnAnotherCorp.setOnClickListener(this);
+        cancel_another_crop.setOnClickListener(this);
+
         consult = new Consult();
+        anotherCrop = new AnotherCrop();
+
     }
 
     @Override
@@ -956,6 +996,38 @@ public class AddConsultActivity extends BaseActivity implements View.OnClickList
                 }
                 break;
 
+            case R.id.btn_another_corp:
+
+                dialog.show();
+                anotherCrop.setAnothercropName(anothercropName.getText().toString());
+                anotherCrop.setAnothercropItemName(anothercropItemName.getText().toString());
+                anotherCrop.setNumOfAcre(numOfAcre.getText().toString());
+
+                refAnotherCrop = FirebaseDatabase.getInstance().getReference("AnoutherCrops").child(AppPreferences.getUserPhone(this)).setValue(anotherCrop).addOnCompleteListener(new OnCompleteListener<Void>() {
+                    @Override
+                    public void onComplete(@NonNull Task<Void> task) {
+                        if (!task.isSuccessful()){
+                            finishAffinity();
+                            startActivity(new Intent(AddConsultActivity.this , WelcomeActivity.class));
+                            dialog.dismiss();
+                            Toasty.error(AddConsultActivity.this ,  "حدث خطأ" , Toasty.LENGTH_LONG).show();
+                        }else {
+                            finishAffinity();
+                            startActivity(new Intent(AddConsultActivity.this , WelcomeActivity.class));
+                            dialog.dismiss();
+                            Toasty.success(AddConsultActivity.this ,  "تم ارسال طلبك" , Toasty.LENGTH_LONG).show();
+                        }
+                    }
+                });
+                break;
+            case R.id.cancel_another_crop:
+                btn_another_corp_Layout.setVisibility(View.GONE);
+                another_Crop_Layout.setVisibility(View.GONE);
+                nestedScrollView.setVisibility(View.VISIBLE);
+                spCategory.setAdapter(categoryAdapter);
+                break;
+
+
         }
 
     }
@@ -979,11 +1051,16 @@ public class AddConsultActivity extends BaseActivity implements View.OnClickList
         final AlertDialog.Builder builder = new AlertDialog.Builder(this);
         builder.setMessage("برجاء تفعيل استخدام الموقع الجغرافى")
                 .setCancelable(false)
-                .setPositiveButton("موافق", new DialogInterface.OnClickListener() {
+                .setPositiveButton("الإعدادات", new DialogInterface.OnClickListener() {
                     public void onClick(@SuppressWarnings("unused") final DialogInterface dialog, @SuppressWarnings("unused") final int id) {
                         startActivity(new Intent(android.provider.Settings.ACTION_LOCATION_SOURCE_SETTINGS));
                     }
-                });
+                }).setNegativeButton("ألغاء", new DialogInterface.OnClickListener() {
+            @Override
+            public void onClick(DialogInterface dialog, int which) {
+                dialog.dismiss();
+            }
+        });
         final AlertDialog alert = builder.create();
         alert.show();
     }

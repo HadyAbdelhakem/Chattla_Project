@@ -65,7 +65,7 @@ public class MyConsultsAdapter extends RecyclerView.Adapter<MyConsultsAdapter.Vi
         private TextView tvDescription;
         private TextView tvStatus;
         private TextView tvTime;
-        private TextView tvAcceptConsult;
+        private LinearLayout tvRemoveConsult;
         private LinearLayout lyContainer;
         private TextView tvDetails;
 
@@ -77,11 +77,11 @@ public class MyConsultsAdapter extends RecyclerView.Adapter<MyConsultsAdapter.Vi
             tvDescription = itemView.findViewById(R.id.tv_description);
             tvStatus = itemView.findViewById(R.id.tv_status);
             tvTime = itemView.findViewById(R.id.tv_time);
-            tvAcceptConsult = itemView.findViewById(R.id.tv_accept_consult);
+            tvRemoveConsult = itemView.findViewById(R.id.tv_remove_consult);
             lyContainer = itemView.findViewById(R.id.ly_container);
             tvDetails = itemView.findViewById(R.id.tv_details);
 
-            tvAcceptConsult.setVisibility(View.GONE);
+            /*tvRemoveConsult.setVisibility(View.GONE);*/
             tvStatus.setVisibility(View.VISIBLE);
             tvDetails.setVisibility(View.GONE);
 
@@ -117,6 +117,13 @@ public class MyConsultsAdapter extends RecyclerView.Adapter<MyConsultsAdapter.Vi
                 @Override
                 public void onClick(View v) {
                     onItemClick.onItemClick(consult, lyContainer);
+                }
+            });
+
+            tvRemoveConsult.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View v) {
+                    onItemClick.onItemClick(consult , tvRemoveConsult);
                 }
             });
 

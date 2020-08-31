@@ -4,6 +4,7 @@ package com.agri.chattla.model;
 import com.emeint.android.fawryplugin.Plugininterfacing.PayableItem;
 
 import java.io.Serializable;
+import java.io.StringReader;
 
 public class Consult implements Serializable, PayableItem {
 
@@ -35,8 +36,10 @@ public class Consult implements Serializable, PayableItem {
     private String farmerToken;
     private String merchantRefNum;
     private String PaymentStatus;
-    private  String weather;
-    private  String topic;
+    private String weather;
+    private String topic;
+    private String addValue;
+    private String codeExpertId;
     private  long timestamp;
 
     public long getTimestamp() {
@@ -289,6 +292,22 @@ public class Consult implements Serializable, PayableItem {
 
     public void setProblemText(String problemText) {
         ProblemText = problemText;
+    }
+
+    public String getAddValue() {
+        return addValue;
+    }
+
+    public void setAddValue(String addValue) {
+        this.addValue = addValue;
+    }
+
+    public String getCodeExpertId() {
+        return codeExpertId;
+    }
+
+    public void setCodeExpertId(String codeExpertId) {
+        this.codeExpertId = codeExpertId;
     }
 
     @Override

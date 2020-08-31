@@ -47,9 +47,9 @@
     </androidx.appcompat.widget.Toolbar>
 
     <androidx.core.widget.NestedScrollView
+        android:id="@+id/add_Consult_Layout"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        >
+        android:layout_height="match_parent">
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -243,13 +243,13 @@
                 android:background="@color/white" />
 
             <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="@dimen/_25sdp"
-            android:fontFamily="@font/tajawal_regular"
-            android:text="@string/for_more_info"
-            android:textColor="@color/colorPrimaryDark"
-            android:textSize="@dimen/_12ssp" />
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_25sdp"
+                android:fontFamily="@font/tajawal_regular"
+                android:text="@string/for_more_info"
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="@dimen/_12ssp" />
 
             <CheckBox
                 android:id="@+id/soilAnalysis"
@@ -716,4 +716,128 @@
         </LinearLayout>
 
     </androidx.core.widget.NestedScrollView>
+
+    <LinearLayout
+        android:id="@+id/another_Crop_Layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingRight="@dimen/_16sdp"
+        android:paddingLeft="@dimen/_16sdp"
+        android:visibility="gone"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_16sdp"
+            android:fontFamily="@font/tajawal_regular"
+            android:text="المحصول الأخر"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="@dimen/_12ssp" />
+
+        <EditText
+            android:id="@+id/anothercropName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_16sdp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="@dimen/_16sdp"
+            android:background="@drawable/background_white_with_border"
+            android:hint="اسم المحصول الأخر"
+            android:inputType="text"
+            android:maxLength="20"
+            android:maxLines="1"
+            android:padding="8dp"
+            android:textAlignment="viewStart" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_16sdp"
+            android:fontFamily="@font/tajawal_regular"
+            android:text="الصنف ان وجد"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="@dimen/_12ssp" />
+
+        <EditText
+            android:id="@+id/anothercropItemName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_16sdp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="@dimen/_16sdp"
+            android:background="@drawable/background_white_with_border"
+            android:hint="الصنف"
+            android:inputType="text"
+            android:maxLength="20"
+            android:maxLines="1"
+            android:padding="8dp"
+            android:textAlignment="viewStart" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_16sdp"
+            android:fontFamily="@font/tajawal_regular"
+            android:text="عدد الأفدنة"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="@dimen/_12ssp" />
+
+        <EditText
+            android:id="@+id/numOfAcre"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_16sdp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="@dimen/_16sdp"
+            android:background="@drawable/background_white_with_border"
+            android:hint="عدد الأفدنة"
+            android:inputType="text"
+            android:maxLength="20"
+            android:maxLines="1"
+            android:padding="8dp"
+            android:textAlignment="viewStart" />
+
+        <Button
+            android:id="@+id/cancel_another_crop"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/_20sdp"
+            android:layout_gravity="center"
+            android:layout_marginStart="@dimen/_16sdp"
+            android:layout_marginTop="@dimen/_16sdp"
+            android:layout_marginEnd="@dimen/_16sdp"
+            android:layout_marginBottom="@dimen/_8sdp"
+            android:paddingRight="@dimen/_20sdp"
+            android:paddingLeft="@dimen/_20sdp"
+            android:background="@color/colorOne"
+            android:fontFamily="@font/tajawal_regular"
+            android:text="إلغاء"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_12sdp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/btn_another_corp_Layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        android:layout_marginBottom="@dimen/_10sdp"
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/btn_another_corp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_16sdp"
+            android:layout_marginEnd="@dimen/_16sdp"
+            android:background="@drawable/bk_button"
+            android:fontFamily="@font/tajawal_regular"
+            android:text="قدم طلب"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_14ssp" />
+
+    </LinearLayout>
+
 </LinearLayout>

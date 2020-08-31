@@ -69,11 +69,15 @@ public class PaymentActivity extends BaseActivity implements FawrySdkCallback, V
 
     private ImageView imageviewBack;
     private Button btPayment;
+    private Button bt_payment_free;
     private FawryButton fawryButton;
     private LinearLayout lyCost;
     private TextView tvSaveCost;
     private TextView tvDiscount;
     private LinearLayout discountBox;
+    private LinearLayout ly_cost;
+    private LinearLayout costFree_box;
+
 
     private StorageReference storageReference;
     private DatabaseReference reference;
@@ -106,7 +110,7 @@ public class PaymentActivity extends BaseActivity implements FawrySdkCallback, V
     private Uri SAimageUri;
     private Uri WAimageUri;
     private String paymentStatus;
-    private String code ;
+    private String code , addValue , expertId;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -162,7 +166,8 @@ public class PaymentActivity extends BaseActivity implements FawrySdkCallback, V
         btnApplyDiscount.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                checkCode(refDiscountCodes , discountCode.getText().toString());
+                checkCode(refDiscountCodes , discountCode.getText().toString().toLowerCase());
+                /*Toasty.success(PaymentActivity.this , discountCode.getText().toString().toLowerCase() ,Toasty.LENGTH_LONG).show();*/
             }
         });
     }
@@ -175,26 +180,36 @@ public class PaymentActivity extends BaseActivity implements FawrySdkCallback, V
             @Override
             public void onDataChange(@NonNull DataSnapshot snapshot) {
                 if (snapshot.hasChild(string)){
-//                    Log.e("Code is : ",string);
-//                    Toasty.info(PaymentActivity.this , string , Toasty.LENGTH_LONG).show();
                     reference.child(string).addListenerForSingleValueEvent(new ValueEventListener() {
                         @Override
                         public void onDataChange(@NonNull DataSnapshot snapshot) {
                             if (snapshot.getValue() != null){
                                 Discount d = snapshot.getValue(Discount.class);
                                 code = d.getValue();
+                                if (d.getAddValue() != null){
+                                    consult.setAddValue(d.getAddValue());
+                                    consult.setCodeExpertId(d.getExpertID());
+                                }
                                 String newPrice = String.valueOf(Integer.parseInt(price.getNewPrice()) - Integer.parseInt(code));
                                 price.setNewPrice(newPrice);
-                                Log.e("Amount is ",price.getNewPrice());
 
-                                tvNewPrice.setText(String.format("%s جنيه", price.getNewPrice()));
-                                tvLastPrice.setText(String.format("%s جنيه", price.getLastPrice()));
-                                tvLastPrice.setPaintFlags(tvLastPrice.getPaintFlags() | Paint.STRIKE_THRU_TEXT_FLAG);
-                                tvSaveCost.setText(String.format("%s جنيه", Double.parseDouble(price.getLastPrice()) - Double.parseDouble(price.getNewPrice())));
-                                //tvDiscount.setText(new StringBuilder().append("%").append(new DecimalFormat("##.##").format(getPercent(Double.parseDouble(price.getLastPrice()), Double.parseDouble(price.getNewPrice())))).append("خصم").toString());
-
-                                discountBox.setVisibility(View.GONE);
-                                tvCodeNotExist.setVisibility(View.GONE);
+                                if (Integer.parseInt(newPrice) == 0){
+                                    ly_cost.setVisibility(View.GONE);
+                                    discountBox.setVisibility(View.GONE);
+                                    tvCodeNotExist.setVisibility(View.GONE);
+                                    btPayment.setVisibility(View.GONE);
+                                    costFree_box.setVisibility(View.VISIBLE);
+                                    bt_payment_free.setVisibility(View.VISIBLE);
+                                    /*Log.e("Amount is ",price.getNewPrice());*/
+                                }else {
+                                    tvNewPrice.setText(String.format("%s جنيه", price.getNewPrice()));
+                                    tvLastPrice.setText(String.format("%s جنيه", price.getLastPrice()));
+                                    tvLastPrice.setPaintFlags(tvLastPrice.getPaintFlags() | Paint.STRIKE_THRU_TEXT_FLAG);
+                                    tvSaveCost.setText(String.format("%s جنيه", Double.parseDouble(price.getLastPrice()) - Double.parseDouble(price.getNewPrice())));
+                                    discountBox.setVisibility(View.GONE);
+                                    tvCodeNotExist.setVisibility(View.GONE);
+                                    /*Log.e("Amount is ",price.getNewPrice());*/
+                                }
                                 dialog.dismiss();
                             }
                         }
@@ -228,11 +243,14 @@ public class PaymentActivity extends BaseActivity implements FawrySdkCallback, V
         tvNewPrice = findViewById(R.id.tv_new_price);
         tvLastPrice = findViewById(R.id.tv_last_price);
         btPayment = findViewById(R.id.bt_payment);
+        bt_payment_free = findViewById(R.id.bt_payment_free);
         tvCodeExpired = findViewById(R.id.tv_code_expired);
         tvCodeNotExist = findViewById(R.id.tv_code_not_exist);
         discountCode = findViewById(R.id.discount_code);
         btnApplyDiscount = findViewById(R.id.btn_apply_discount);
         discountBox = findViewById(R.id.discount_box);
+        ly_cost = findViewById(R.id.ly_cost);
+        costFree_box = findViewById(R.id.costFree_box);
 
 
         lyCost = findViewById(R.id.ly_cost);
@@ -242,6 +260,7 @@ public class PaymentActivity extends BaseActivity implements FawrySdkCallback, V
 
         imageviewBack.setOnClickListener(this);
         btPayment.setOnClickListener(this);
+        bt_payment_free.setOnClickListener(this);
 
         map = new HashMap<>();
 
@@ -285,6 +304,10 @@ public class PaymentActivity extends BaseActivity implements FawrySdkCallback, V
                 fawryButton.performClick();
                 break;
 
+            case R.id.bt_payment_free:
+                addImages("paid");
+                break;
+
         }
 
     }
@@ -292,6 +315,9 @@ public class PaymentActivity extends BaseActivity implements FawrySdkCallback, V
     private void sendConsult(String paymentStatus ) {
 
         final String time = new SimpleDateFormat("dd-M-yyyy hh:mm a", Locale.getDefault()).format(Calendar.getInstance().getTime()).toLowerCase();
+        if (consult.getTime() == null){
+            consult.setTime(time);
+        }
 
         refId = reference.child("Consults").push().getKey();
         map.put("desc", consult.getDesc());
@@ -309,7 +335,7 @@ public class PaymentActivity extends BaseActivity implements FawrySdkCallback, V
         map.put("status", "pending");
         map.put("sender", consult.getSender());
         map.put("id", refId);
-        map.put("time", time);
+        map.put("time", consult.getTime());
         map.put("lat", consult.getLat());
         map.put("lng", consult.getLng());
         map.put("farmerToken", consult.getFarmerToken());
@@ -319,7 +345,7 @@ public class PaymentActivity extends BaseActivity implements FawrySdkCallback, V
         sendVoice();
     }
 
-    private void addImages(){
+    private void addImages(String PaymentStatus){
 
         dialog = new XProgressDialog(PaymentActivity.this, "جاري الارسال..", XProgressDialog.THEME_CIRCLE_PROGRESS);
         dialog.show();
@@ -397,7 +423,7 @@ public class PaymentActivity extends BaseActivity implements FawrySdkCallback, V
                                                                     return;
                                                                 else {
                                                                     map.put("WAimage" , downloadUri.toString());
-                                                                    sendConsult("unPaid");
+                                                                    sendConsult(PaymentStatus);
                                                                 }
                                                             }
                                                         }
@@ -405,7 +431,7 @@ public class PaymentActivity extends BaseActivity implements FawrySdkCallback, V
 
                                                 }else {
                                                     map.put("WAimage" , "e");
-                                                    sendConsult("unPaid");
+                                                    sendConsult(PaymentStatus);
                                                 }
                                             }
                                         }
@@ -437,7 +463,7 @@ public class PaymentActivity extends BaseActivity implements FawrySdkCallback, V
                                                     return;
                                                 else {
                                                     map.put("WAimage" , downloadUri.toString());
-                                                    sendConsult("unPaid");
+                                                    sendConsult(PaymentStatus);
                                                 }
                                             }
                                         }
@@ -445,7 +471,7 @@ public class PaymentActivity extends BaseActivity implements FawrySdkCallback, V
 
                                 }else {
                                     map.put("WAimage" , "e");
-                                    sendConsult("unPaid");
+                                    sendConsult(PaymentStatus);
                                 }
                             }
                         }
@@ -500,7 +526,7 @@ public class PaymentActivity extends BaseActivity implements FawrySdkCallback, V
                                                     return;
                                                 else {
                                                     map.put("WAimage" , downloadUri.toString());
-                                                    sendConsult("unPaid");
+                                                    sendConsult(PaymentStatus);
                                                 }
                                             }
                                         }
@@ -508,7 +534,7 @@ public class PaymentActivity extends BaseActivity implements FawrySdkCallback, V
 
                                 }else {
                                     map.put("WAimage" , "e");
-                                    sendConsult("unPaid");
+                                    sendConsult(PaymentStatus);
                                 }
                             }
                         }
@@ -540,7 +566,7 @@ public class PaymentActivity extends BaseActivity implements FawrySdkCallback, V
                                     return;
                                 else {
                                     map.put("WAimage" , downloadUri.toString());
-                                    sendConsult("unPaid");
+                                    sendConsult(PaymentStatus);
                                 }
                             }
                         }
@@ -548,7 +574,7 @@ public class PaymentActivity extends BaseActivity implements FawrySdkCallback, V
 
                 }else {
                     map.put("WAimage" , "e");
-                    sendConsult("unPaid");
+                    sendConsult(PaymentStatus);
                 }
             }
         }
@@ -633,7 +659,7 @@ public class PaymentActivity extends BaseActivity implements FawrySdkCallback, V
 
     @Override
     public void paymentOperationSuccess(String s, Object o) {
-        addImages();
+        addImages("unPaid");
     }
 
     @Override
@@ -677,7 +703,7 @@ public class PaymentActivity extends BaseActivity implements FawrySdkCallback, V
                 if (dataSnapshot.getValue()!=null){
                     paymentStatus=dataSnapshot.getValue().toString();
                     if (paymentStatus.equals("paid")){
-                        sendNotification();
+
                     }
                 }
             }

@@ -1,9 +1,9 @@
 <component name="libraryTable">
   <library name="Gradle: artifacts:FawrySDK_1.0.28_21042020:unspecified@jar">
     <CLASSES>
-      <root url="file://$PROJECT_DIR$/FawrySDK_1.0.28_21042020/build/.transforms/980160e1102418abad55662a32032690/jetified-FawrySDK_1.0.28_21042020/AndroidManifest.xml" />
-      <root url="jar://$PROJECT_DIR$/FawrySDK_1.0.28_21042020/build/.transforms/980160e1102418abad55662a32032690/jetified-FawrySDK_1.0.28_21042020/jars/classes.jar!/" />
-      <root url="file://$PROJECT_DIR$/FawrySDK_1.0.28_21042020/build/.transforms/980160e1102418abad55662a32032690/jetified-FawrySDK_1.0.28_21042020/res" />
+      <root url="file://$PROJECT_DIR$/FawrySDK_1.0.28_21042020/build/.transforms/59a6f47cdccb64c26c99c4cbb666cf0b/jetified-FawrySDK_1.0.28_21042020/AndroidManifest.xml" />
+      <root url="jar://$PROJECT_DIR$/FawrySDK_1.0.28_21042020/build/.transforms/59a6f47cdccb64c26c99c4cbb666cf0b/jetified-FawrySDK_1.0.28_21042020/jars/classes.jar!/" />
+      <root url="file://$PROJECT_DIR$/FawrySDK_1.0.28_21042020/build/.transforms/59a6f47cdccb64c26c99c4cbb666cf0b/jetified-FawrySDK_1.0.28_21042020/res" />
     </CLASSES>
     <JAVADOC />
     <SOURCES />

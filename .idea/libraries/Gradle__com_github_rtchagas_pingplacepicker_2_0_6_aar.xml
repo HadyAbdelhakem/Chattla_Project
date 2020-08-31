@@ -1,9 +1,9 @@
 <component name="libraryTable">
   <library name="Gradle: com.github.rtchagas:pingplacepicker:2.0.6@aar">
     <CLASSES>
-      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/cbf57b0fef6710e3a261ae3bd723def4/jetified-pingplacepicker-2.0.6/AndroidManifest.xml" />
-      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/cbf57b0fef6710e3a261ae3bd723def4/jetified-pingplacepicker-2.0.6/jars/classes.jar!/" />
-      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/cbf57b0fef6710e3a261ae3bd723def4/jetified-pingplacepicker-2.0.6/res" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/3c049ce8fa8f4f5727de8bc0f1c3fa78/jetified-pingplacepicker-2.0.6/AndroidManifest.xml" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/3c049ce8fa8f4f5727de8bc0f1c3fa78/jetified-pingplacepicker-2.0.6/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/3c049ce8fa8f4f5727de8bc0f1c3fa78/jetified-pingplacepicker-2.0.6/res" />
     </CLASSES>
     <JAVADOC />
     <SOURCES>

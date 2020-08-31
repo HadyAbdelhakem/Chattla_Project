@@ -1,6 +1,7 @@
 package com.agri.chattla.ui.farmerMain;
 
 import android.app.NotificationManager;
+import android.content.DialogInterface;
 import android.content.Intent;
 import android.os.Bundle;
 import android.util.Log;
@@ -11,6 +12,7 @@ import android.widget.LinearLayout;
 import android.widget.TextView;
 
 import androidx.annotation.NonNull;
+import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.widget.Toolbar;
 import androidx.lifecycle.Observer;
 import androidx.lifecycle.ViewModelProvider;
@@ -30,6 +32,8 @@ import com.agri.chattla.ui.chat.ChatActivity;
 import com.agri.chattla.utils.ApiRequest;
 import com.agri.chattla.utils.AppPreferences;
 import com.agri.chattla.utils.Utilities;
+import com.google.android.gms.tasks.OnCompleteListener;
+import com.google.android.gms.tasks.Task;
 import com.google.firebase.database.DataSnapshot;
 import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.DatabaseReference;
@@ -135,11 +139,33 @@ public class FarmerMainActivity extends BaseActivity implements View.OnClickList
     private void setupRecyclerConsult() {
 
         myConsultsAdapter = new MyConsultsAdapter(FarmerMainActivity.this, new MyConsultsAdapter.onItemClick() {
-
             @Override
             public void onItemClick(Consult consult, LinearLayout layout) {
-                if (consult.getStatus().equals("accepted") || consult.getStatus().equals("finished")) {
-                    getExpertInfo(consult);
+                if (layout.getId() == R.id.tv_remove_consult){
+                    AlertDialog.Builder builder = new AlertDialog.Builder(FarmerMainActivity.this);
+                    builder.setMessage("برجاء تأكيد حذف الإستشارة").setPositiveButton("إلغاء", new DialogInterface.OnClickListener() {
+                        @Override
+                        public void onClick(DialogInterface dialog, int which) {
+                            dialog.cancel();
+                        }
+                    }).setNegativeButton("تأكيد", new DialogInterface.OnClickListener() {
+                        @Override
+                        public void onClick(DialogInterface dialog, int which) {
+                            FirebaseDatabase.getInstance().getReference().child("Consults").child(consult.getId()).removeValue().addOnCompleteListener(new OnCompleteListener<Void>() {
+                                @Override
+                                public void onComplete(@NonNull Task<Void> task) {
+                                    Toasty.error(FarmerMainActivity.this , "تم حذف الإستشارة" , Toasty.LENGTH_LONG).show();
+                                }
+                            });
+                        }
+                    });
+                    AlertDialog alertDialog = builder.create();
+                    alertDialog.show();
+
+                }else {
+                    if (consult.getStatus().equals("accepted") || consult.getStatus().equals("finished")) {
+                        getExpertInfo(consult);
+                    }
                 }
             }
         });

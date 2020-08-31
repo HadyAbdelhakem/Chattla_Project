@@ -1,6 +1,7 @@
 package com.agri.chattla.ui.chat;
 
 import android.Manifest;
+import android.app.Dialog;
 import android.content.ContentResolver;
 import android.content.DialogInterface;
 import android.content.Intent;
@@ -12,6 +13,7 @@ import android.os.Environment;
 import android.provider.MediaStore;
 import android.util.Log;
 import android.view.View;
+import android.view.Window;
 import android.view.WindowManager;
 import android.webkit.MimeTypeMap;
 import android.widget.Button;
@@ -27,6 +29,7 @@ import androidx.recyclerview.widget.RecyclerView;
 
 import com.agri.chattla.ui.Payment.PaymentActivity;
 import com.agri.chattla.ui.farmerMain.FarmerMainActivity;
+import com.apkfuns.xprogressdialog.XProgressDialog;
 import com.bumptech.glide.Glide;
 import com.agri.chattla.R;
 import com.agri.chattla.custom.AddReviewDialog;
@@ -50,6 +53,7 @@ import com.google.firebase.storage.FirebaseStorage;
 import com.google.firebase.storage.StorageReference;
 import com.google.firebase.storage.UploadTask;
 import com.iceteck.silicompressorr.SiliCompressor;
+import com.makeramen.roundedimageview.RoundedImageView;
 import com.mikhaellopez.circularimageview.CircularImageView;
 import com.varunjohn1990.audio_record_view.AttachmentOption;
 import com.varunjohn1990.audio_record_view.AttachmentOptionsListener;
@@ -81,11 +85,12 @@ public class ChatActivity extends BaseActivity implements View.OnClickListener, 
     private TextView tvEndChat;
     private CircularImageView imgProfile;
     private MediaPlayer mediaPlayer;
+    private XProgressDialog dialog;
 
     private Uri imageUri;
     private String imagePath;
 
-    private UserFirbase otherUser;
+    private UserFirbase otherUser ;
 
     private ChatAdapter messageAdapter;
     private List<Chat> mChat;
@@ -595,18 +600,41 @@ public class ChatActivity extends BaseActivity implements View.OnClickListener, 
             imageUri = data.getData();
             if (imageUri != null) {
 
-//                imagePath = getActualPath(ChatActivity.this, imageUri);
-//                String filePath = SiliCompressor.with(ChatActivity.this).compress(imagePath, new File(Environment.getExternalStoragePublicDirectory(Environment.DIRECTORY_PICTURES) + "/compress/images"));
+                final Dialog sendImg = new Dialog(ChatActivity.this);
+                sendImg.requestWindowFeature(Window.FEATURE_NO_TITLE);
+                sendImg.setContentView(R.layout.image_message_dialog);
 
+                RoundedImageView imageMessage = sendImg.findViewById(R.id.imageMessage);
+                imageMessage.setImageURI(imageUri);
 
-                sendMessage(myId, userId, null, imageUri);
+                Button send = sendImg.findViewById(R.id.imageMessageConfirm);
+                Button cancel = sendImg.findViewById(R.id.imageMessageCancel);
+
+                send.setEnabled(true);
+                cancel.setEnabled(true);
+
+                send.setOnClickListener(new View.OnClickListener() {
+                    @Override
+                    public void onClick(View v) {
+                        sendMessage(myId, userId, null, imageUri);
+                        sendImg.cancel();
+                    }
+                });
+
+                cancel.setOnClickListener(new View.OnClickListener() {
+                    @Override
+                    public void onClick(View v) {
+                        sendImg.cancel();
+                    }
+                });
+
+                sendImg.show();
+
             }
         } else if (requestCode == PICK_Camera_IMAGE && resultCode == RESULT_OK) {
 
-//            imagePath = getActualPath(ChatActivity.this, fileUri);
-            String filePath = SiliCompressor.with(ChatActivity.this).compress(imageFilePath, photoFile);
-
             sendMessage(myId, userId, null, fileUri);
+
         }
     }
 
@@ -620,11 +648,6 @@ public class ChatActivity extends BaseActivity implements View.OnClickListener, 
                 break;
             case R.id.btn_end_col:
                 showDialogEndConsult();
-                break;
-
-            case R.id.tv_username:
-//                startActivity(new Intent(ChatActivity.this, ReviewsActivity.class)
-//                        .putExtra("expertID", userId));
                 break;
         }
     }
@@ -680,20 +703,41 @@ public class ChatActivity extends BaseActivity implements View.OnClickListener, 
     }
 
     private void endConsult() {
+
+        dialog = new XProgressDialog(this, "انتظر", XProgressDialog.THEME_HORIZONTAL_SPOT);
+        dialog.show();
+
         FirebaseDatabase.getInstance().getReference("Consults").child(consult.getId())
                 .child("status").setValue("finished");
         FirebaseDatabase.getInstance().getReference("Expert").child(userId)
                 .child("consultId").setValue(null);
-//        Toasty.info(ChatActivity.this, "", Toasty.LENGTH_SHORT).show();
         audioRecordView.endChat();
         tvEndChat.setVisibility(View.VISIBLE);
 
         refExpert = FirebaseDatabase.getInstance().getReference().child("Expert").child(userId);
         refExpert.child("balance").setValue(otherUser.getBalance() + bounce);
 
+        if (consult.getAddValue() != null){
+            FirebaseDatabase.getInstance().getReference().child("Expert").child(consult.getCodeExpertId()).addListenerForSingleValueEvent(new ValueEventListener() {
+                @Override
+                public void onDataChange(@NonNull DataSnapshot snapshot) {
+                    if (snapshot.getValue() != null){
+                        UserFirbase expertUser = snapshot.getValue(UserFirbase.class);
+                        FirebaseDatabase.getInstance().getReference().child("Expert").child(consult.getCodeExpertId()).child("balance").setValue(expertUser.getBalance() + Double.parseDouble(consult.getAddValue()));
+                    }
+                }
+
+                @Override
+                public void onCancelled(@NonNull DatabaseError error) {
+
+                }
+            });
+        }
+
         imgProfile.setVisibility(View.GONE);
         userName.setVisibility(View.GONE);
         userName_.setVisibility(View.VISIBLE);
+        dialog.dismiss();
         new AddReviewDialog(ChatActivity.this, userId, myId, otherUser.getRate()).show();
     }
 

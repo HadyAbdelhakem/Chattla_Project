@@ -184,7 +184,7 @@
                 android:layout_marginLeft="@dimen/_8sdp"
                 android:hint="كود الخصم"
                 android:maxLines="1"
-                android:maxLength="8"
+                android:maxLength="20"
                 android:layout_gravity="center"
                 android:layout_height="wrap_content"></EditText>
 
@@ -200,6 +200,45 @@
 
 
         </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/costFree_box"
+            android:layout_marginTop="@dimen/_20sdp"
+            android:layout_marginRight="@dimen/_16sdp"
+            android:layout_marginLeft="@dimen/_16sdp"
+            android:orientation="horizontal"
+            android:background="@drawable/background_white_with_border"
+            android:layout_width="match_parent"
+            android:gravity="center"
+            android:visibility="gone"
+            android:layout_height="@dimen/_40sdp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:layout_gravity="center"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:textSize="@dimen/_12ssp"
+                    android:text="لديك خصم 100 % على الإستشارة"></TextView>
+
+                <ImageView
+                    android:layout_width="@dimen/_30sdp"
+                    android:layout_height="@dimen/_30sdp"
+                    android:adjustViewBounds="true"
+                    android:src="@drawable/ic_baseline_done_24" />
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
 
         <TextView
             android:id="@+id/tv_code_expired"
@@ -223,36 +262,6 @@
             android:textColor="@color/colorOne"
             android:textSize="@dimen/_10ssp" />
 
-        <TextView
-            android:id="@+id/tv_pay_email"
-            android:layout_marginTop="@dimen/_24sdp"
-            android:layout_marginStart="@dimen/_24sdp"
-            android:layout_marginEnd="@dimen/_24sdp"
-            android:layout_width="match_parent"
-            android:gravity="center"
-            android:visibility="gone"
-            android:layout_height="wrap_content"
-            android:fontFamily="@font/tajawal_regular"
-            android:text="برجاء كتابة البريد الالكترونى التالى فى خانة البريد الالكترونى بصفحة الدفع."
-            android:textColor="@color/text_color"
-            android:textSize="@dimen/_16ssp" />
-
-        <EditText
-            android:id="@+id/et_phone"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_margin="@dimen/_16sdp"
-            android:background="@drawable/background_white_with_border"
-            android:text="pay@chattla.com"
-            android:visibility="gone"
-            android:inputType="number"
-            android:maxLines="1"
-            android:textColor="@color/text_color"
-            android:padding="8dp"
-            android:enabled="false"
-            android:textAlignment="center" />
-
-
         <Button
             android:id="@+id/bt_payment"
             android:layout_width="match_parent"
@@ -262,8 +271,19 @@
             android:fontFamily="@font/tajawal_medium"
             android:text="الدفع عن طريق فورى"
             android:textColor="@color/colorWhite"
-            android:textSize="@dimen/_14ssp"
-            />
+            android:textSize="@dimen/_14ssp"/>
+
+        <Button
+            android:id="@+id/bt_payment_free"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/_16sdp"
+            android:background="@drawable/bk_button"
+            android:fontFamily="@font/tajawal_medium"
+            android:text="حجز الأستشارة الأن"
+            android:visibility="gone"
+            android:textColor="@color/colorWhite"
+            android:textSize="@dimen/_14ssp"/>
 
         <com.emeint.android.fawryplugin.views.cutomviews.FawryButton
             android:id="@+id/fawry_button"

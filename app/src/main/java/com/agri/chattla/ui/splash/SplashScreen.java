@@ -39,6 +39,7 @@ public class SplashScreen extends AppCompatActivity {
         setContentView(R.layout.splash_screen);
         firebaseAuth = FirebaseAuth.getInstance();
 
+        /*throw new RuntimeException("Test Crash");*/
         checkConnection();
 
     }
