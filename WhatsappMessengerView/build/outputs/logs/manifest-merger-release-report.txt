@@ -1,0 +1,33 @@
+-- Merging decision tree log ---
+manifest
+ADDED from D:\Chattla\Chattla_Project\WhatsappMessengerView\src\main\AndroidManifest.xml:2:1-10:12
+INJECTED from D:\Chattla\Chattla_Project\WhatsappMessengerView\src\main\AndroidManifest.xml:2:1-10:12
+INJECTED from D:\Chattla\Chattla_Project\WhatsappMessengerView\src\main\AndroidManifest.xml:2:1-10:12
+	package
+		ADDED from D:\Chattla\Chattla_Project\WhatsappMessengerView\src\main\AndroidManifest.xml:3:5-50
+		INJECTED from D:\Chattla\Chattla_Project\WhatsappMessengerView\src\main\AndroidManifest.xml
+		INJECTED from D:\Chattla\Chattla_Project\WhatsappMessengerView\src\main\AndroidManifest.xml
+	xmlns:android
+		ADDED from D:\Chattla\Chattla_Project\WhatsappMessengerView\src\main\AndroidManifest.xml:2:11-69
+application
+ADDED from D:\Chattla\Chattla_Project\WhatsappMessengerView\src\main\AndroidManifest.xml:5:3-8:40
+	android:supportsRtl
+		ADDED from D:\Chattla\Chattla_Project\WhatsappMessengerView\src\main\AndroidManifest.xml:7:7-33
+	android:allowBackup
+		ADDED from D:\Chattla\Chattla_Project\WhatsappMessengerView\src\main\AndroidManifest.xml:6:7-33
+	android:theme
+		ADDED from D:\Chattla\Chattla_Project\WhatsappMessengerView\src\main\AndroidManifest.xml:8:7-38
+uses-sdk
+INJECTED from D:\Chattla\Chattla_Project\WhatsappMessengerView\src\main\AndroidManifest.xml reason: use-sdk injection requested
+INJECTED from D:\Chattla\Chattla_Project\WhatsappMessengerView\src\main\AndroidManifest.xml
+INJECTED from D:\Chattla\Chattla_Project\WhatsappMessengerView\src\main\AndroidManifest.xml
+INJECTED from D:\Chattla\Chattla_Project\WhatsappMessengerView\src\main\AndroidManifest.xml
+INJECTED from D:\Chattla\Chattla_Project\WhatsappMessengerView\src\main\AndroidManifest.xml
+	android:targetSdkVersion
+		INJECTED from D:\Chattla\Chattla_Project\WhatsappMessengerView\src\main\AndroidManifest.xml
+		ADDED from D:\Chattla\Chattla_Project\WhatsappMessengerView\src\main\AndroidManifest.xml
+		INJECTED from D:\Chattla\Chattla_Project\WhatsappMessengerView\src\main\AndroidManifest.xml
+	android:minSdkVersion
+		INJECTED from D:\Chattla\Chattla_Project\WhatsappMessengerView\src\main\AndroidManifest.xml
+		ADDED from D:\Chattla\Chattla_Project\WhatsappMessengerView\src\main\AndroidManifest.xml
+		INJECTED from D:\Chattla\Chattla_Project\WhatsappMessengerView\src\main\AndroidManifest.xml

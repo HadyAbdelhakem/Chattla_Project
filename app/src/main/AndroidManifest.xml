@@ -18,6 +18,7 @@
     <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.CAMERA" />
     <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
     <uses-permission android:name="ACTION_MANAGE_ALL_FILES_ACCESS_PERMISSION"/>
     <uses-permission android:name="android.permission.RECORD_AUDIO" />
@@ -64,6 +65,27 @@
             android:name="com.google.android.geo.API_KEY"
             android:value="AIzaSyBib2cVM7tdINxSmhSj2QwPDyHJgXWtP9o" />
 
+        <meta-data
+            android:name="com.facebook.sdk.ApplicationId"
+            tools:replace="android:value"
+            android:value="@string/facebook_app_id"/>
+
+        <activity android:name="com.facebook.FacebookActivity"
+            android:configChanges=
+                "keyboard|keyboardHidden|screenLayout|screenSize|orientation"
+            android:label="@string/app_name" />
+        <activity
+            android:name="com.facebook.CustomTabActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+                <data android:scheme="@string/fb_login_protocol_scheme" />
+            </intent-filter>
+        </activity>
+
+
         <activity
             android:name=".ui.map.MapsActivity"
             android:label="map" />
@@ -77,6 +99,7 @@
                 android:name="android.support.FILE_PROVIDER_PATHS"
                 android:resource="@xml/file_paths" />
         </provider>
+
 
         <activity
             android:name=".ui.usersList.UsersListFragment"
@@ -95,6 +118,7 @@
         <activity android:name=".ui.register.RegisterActivity" />
         <activity android:name=".ui.verifactionCode.VerifactionCodeActivity" />
         <activity android:name=".ui.farmerMain.FarmerMainActivity" />
+        <activity android:name=".ui.getPhoneNum.GetPhoneNum" />
 
         <service
             android:name=".utils.MyFirebaseMessagingService"

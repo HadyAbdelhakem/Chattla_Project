@@ -26,21 +26,32 @@ import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 import com.google.firebase.database.ValueEventListener;
+import com.google.firebase.analytics.FirebaseAnalytics;
+
+import com.facebook.FacebookSdk;
+import com.facebook.appevents.AppEventsLogger;
 
 public class SplashScreen extends AppCompatActivity {
 
     private DatabaseReference DBVersion;
     private FirebaseAuth firebaseAuth;
+    private FirebaseAnalytics firebaseAnalytics;
+
+    /*private ProgressBar progressBar;*/
 
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.splash_screen);
+
         firebaseAuth = FirebaseAuth.getInstance();
 
+        firebaseAnalytics = FirebaseAnalytics.getInstance(this);
         /*throw new RuntimeException("Test Crash");*/
         checkConnection();
+
+
 
     }
 
@@ -90,7 +101,7 @@ public class SplashScreen extends AppCompatActivity {
                 if (snapshot.getValue() != null){
                     FBDBV dbv = snapshot.getValue(FBDBV.class);
                     //Log.e("DBV //  " , dbv.getVersion());
-                    if (dbv.getVersion().equals("1")){
+                    if (dbv.getVersion().equals("2")){
                         Intent loginpage = new Intent(SplashScreen.this, WelcomeActivity.class);
                         startActivity(loginpage);
                         finish();
@@ -135,5 +146,4 @@ public class SplashScreen extends AppCompatActivity {
             }
         });
     }
-
 }

@@ -232,7 +232,7 @@ public class ChatActivity extends BaseActivity implements View.OnClickListener, 
 
     private void setupRecyclerview() {
 
-        messageAdapter = new ChatAdapter(ChatActivity.this, myId, new ChatAdapter.onItemClick() {
+        messageAdapter = new ChatAdapter(ChatActivity.this, userId ,myId, new ChatAdapter.onItemClick() {
             @Override
             public void onItemClick(Chat conversation, ImageView imageView) {
                 new DialogImage(ChatActivity.this, conversation.getMessage()).show();
@@ -264,16 +264,22 @@ public class ChatActivity extends BaseActivity implements View.OnClickListener, 
 
         if (consult.getStatus().equals("finished")) {
             btnEndConsult.setVisibility(View.GONE);
-            imgProfile.setVisibility(View.GONE);
+            /*imgProfile.setVisibility(View.GONE);*/
             userName.setVisibility(View.GONE);
             userName_.setVisibility(View.VISIBLE);
         }
 
         if (otherUser.getInfo().equals("Expert")) {
-            Glide.with(ChatActivity.this).load(otherUser.getProfile()).error(R.drawable.ic_expert).into(imgProfile);
-        } else {
-//            Glide.with(ChatActivity.this).load(AppPreferences.getMyProfile(ChatActivity.this)).error(R.drawable.ic_expert).into(imgProfile);
-            imgProfile.setVisibility(View.GONE);
+            /*imgProfile.setVisibility(View.VISIBLE);
+            Glide.with(ChatActivity.this).load(otherUser.getProfile()).error(R.drawable.ic_expert).into(imgProfile);*/
+            if (consult.getOpenSubscription() != null){
+                if (consult.getOpenSubscription().equals("YES")){
+                    btnEndConsult.setVisibility(View.GONE);
+                }
+            }
+            if (!AppPreferences.getUserPhone(ChatActivity.this).equals(consult.getSender())){
+                audioRecordView.endChat();
+            }
         }
 
         userName.setText(userNameTxt);

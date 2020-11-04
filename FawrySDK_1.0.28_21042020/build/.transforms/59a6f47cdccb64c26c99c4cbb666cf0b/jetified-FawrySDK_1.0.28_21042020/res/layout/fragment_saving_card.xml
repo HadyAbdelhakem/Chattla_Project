@@ -1,0 +1,39 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="@dimen/fragment_margin"
+                android:background="@color/background_color"
+
+
+                tools:context="com.emeint.android.fawryplugin.views.fragments.SavingCardFragment">
+
+    <com.emeint.android.fawryplugin.views.cutomviews.FawryPluginCustomTextView
+        android:id="@+id/screen_title_text_view"
+        style="@style/stepper_header_text_view"
+        android:text="@string/add_your_card_title"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true" />
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/card_details_card_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/screen_title_text_view"
+        android:layout_marginTop="@dimen/margin_top_between_card_views"
+        android:visibility="visible">
+        <include layout="@layout/card_details"/>
+    </androidx.cardview.widget.CardView>
+    <com.emeint.android.fawryplugin.views.cutomviews.FawryPluginCustomButton
+        android:id="@+id/submit_button"
+        style="@style/button_style"
+        android:layout_alignParentBottom="true"
+        android:layout_below="@id/total_payments_card_view"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="@dimen/unit_1x"
+        android:layout_marginTop="@dimen/unit_1x"
+        android:text="@string/saving_card_button" />
+
+    </RelativeLayout>
+
+

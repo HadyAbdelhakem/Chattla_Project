@@ -11,6 +11,7 @@
     <androidx.appcompat.widget.Toolbar
         android:id="@+id/toolbar"
         android:layout_width="match_parent"
+        android:paddingRight="@dimen/_15sdp"
         android:layout_height="@dimen/_50sdp"
         android:background="@color/colorPrimary">
 
@@ -20,7 +21,6 @@
             android:layoutDirection="rtl"
             android:orientation="horizontal"
             android:textDirection="rtl">
-
 
             <TextView
                 android:id="@+id/tv_tittle"
@@ -40,6 +40,7 @@
                 android:src="@drawable/ic_logout"
                 android:layout_marginLeft="@dimen/_10sdp"
                 android:padding="@dimen/_2sdp"
+                android:visibility="gone"
                 android:layout_alignParentLeft="true"
                 android:layout_centerInParent="true"
                 />

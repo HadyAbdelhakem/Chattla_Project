@@ -5,14 +5,16 @@ public class Discount {
     String value ;
     String addValue ;
     String expertID ;
+    String numOfUses ;
 
     public Discount() {
     }
 
-    public Discount(String value, String addValue, String expertID) {
+    public Discount(String value, String addValue, String expertID, String numOfUses) {
         this.value = value;
         this.addValue = addValue;
         this.expertID = expertID;
+        this.numOfUses = numOfUses;
     }
 
     public String getValue() {
@@ -37,5 +39,13 @@ public class Discount {
 
     public void setExpertID(String expertID) {
         this.expertID = expertID;
+    }
+
+    public String getNumOfUses() {
+        return numOfUses;
+    }
+
+    public void setNumOfUses(String numOfUses) {
+        this.numOfUses = numOfUses;
     }
 }

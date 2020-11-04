@@ -1,0 +1,182 @@
+<ScrollView
+    android:background="@color/background_color"
+    android:layout_width="match_parent"
+    android:scrollbars="none"
+    android:layout_marginBottom="@dimen/unit_1x"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        style="@style/screen_container_style"
+        android:layout_height="match_parent"
+        android:background="@color/background_color"
+        tools:context="com.emeint.android.fawryplugin.views.fragments.ConfirmationFragment">
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/confirmation_card_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/card_view_margin">
+
+
+                <include
+                    android:id="@+id/stepper_view_id"
+                    layout="@layout/stepper_layout" />
+
+
+                <RelativeLayout
+                    android:id="@+id/confirmation_container"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/stepper_view_id"
+                    android:layout_marginTop="@dimen/card_view_margin"
+                    android:layout_marginBottom="@dimen/card_view_margin">
+
+                    <com.emeint.android.fawryplugin.views.cutomviews.FawryPluginCustomTextView
+                        android:id="@+id/confirmation_header_text_view"
+                        style="@style/card_view_header_style"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:lineSpacingExtra="@dimen/line_spacing"
+                        android:text="@string/you_have_requested_to_make_a_payment_confirmation_header" />
+
+
+                    <RelativeLayout
+                        android:id="@+id/courier_row"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/confirmation_header_text_view">
+
+                        <com.emeint.android.fawryplugin.views.cutomviews.FawryPluginCustomTextView
+                            android:id="@+id/courier_label_text_view"
+                            style="@style/confirmation_label"
+                            android:text="@string/confirmation_courier" />
+
+                        <com.emeint.android.fawryplugin.views.cutomviews.FawryPluginCustomTextView
+                            android:id="@+id/courier_value_text_view"
+                            style="@style/confirmation_value"
+                            android:maxLines="2"
+                            android:ellipsize="end"
+                            android:layout_toEndOf="@id/courier_label_text_view"
+                            tools:text="Aramex - Aramex Express" />
+
+                        <View
+                            style="@style/confirmation_rows_separator"
+                            android:layout_below="@id/courier_label_text_view" />
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/payment_method_row"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/courier_row">
+
+                        <com.emeint.android.fawryplugin.views.cutomviews.FawryPluginCustomTextView
+                            android:id="@+id/payment_method_label_text_view"
+                            style="@style/confirmation_label"
+                            android:text="@string/confirmation_payment_method" />
+
+                        <com.emeint.android.fawryplugin.views.cutomviews.FawryPluginCustomTextView
+                            android:id="@+id/payment_method_value_text_view"
+                            style="@style/confirmation_value"
+
+                            android:layout_toEndOf="@id/payment_method_label_text_view"
+                            tools:text="Pay @ Delivery" />
+
+                        <View
+                            style="@style/confirmation_rows_separator"
+                            android:layout_below="@id/payment_method_label_text_view" />
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/address_row"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/payment_method_row">
+
+                        <com.emeint.android.fawryplugin.views.cutomviews.FawryPluginCustomTextView
+                            android:id="@+id/address_label_text_view"
+                            style="@style/confirmation_label"
+                            android:text="@string/confirmation_address" />
+
+                        <com.emeint.android.fawryplugin.views.cutomviews.FawryPluginCustomTextView
+                            android:id="@+id/address_value_text_view"
+                            style="@style/confirmation_value"
+
+                            android:layout_toEndOf="@id/address_label_text_view"
+                            tools:text="206 st, Maadi" />
+
+                        <View
+                            style="@style/confirmation_rows_separator"
+                            android:layout_below="@id/address_label_text_view" />
+                    </RelativeLayout>
+
+
+                    <RelativeLayout
+                        android:id="@+id/receiver_row"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/address_row">
+
+                        <com.emeint.android.fawryplugin.views.cutomviews.FawryPluginCustomTextView
+                            android:id="@+id/receiver_label_text_view"
+                            style="@style/confirmation_label"
+                            android:text="@string/confirmation_receiver" />
+
+                        <com.emeint.android.fawryplugin.views.cutomviews.FawryPluginCustomTextView
+                            android:id="@+id/receiver_value_text_view"
+                            style="@style/confirmation_value"
+                            android:layout_toEndOf="@id/receiver_label_text_view"
+                            tools:text="المعادي" />
+
+                        <View
+                            style="@style/confirmation_rows_separator"
+                            android:layout_below="@id/receiver_label_text_view"
+                            android:visibility="invisible" />
+                    </RelativeLayout>
+
+
+                </RelativeLayout>
+
+            </RelativeLayout>
+        </androidx.cardview.widget.CardView>
+
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/total_payments_card_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/confirmation_card_view"
+            android:layout_marginTop="@dimen/margin_top_between_card_views">
+
+
+            <!--<fragment-->
+                <!--android:id="@+id/cost_fragment__"-->
+                <!--android:name="com.emeint.android.fawryplugin.views.fragments.CostFragment"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="match_parent">-->
+
+            <!--</fragment>-->
+
+            <!--<include-->
+            <!--android:id="@+id/shipping_type_layout_id"-->
+            <!--layout="@layout/total_costs_layout" />-->
+        </androidx.cardview.widget.CardView>
+
+        <com.emeint.android.fawryplugin.views.cutomviews.FawryPluginCustomButton
+            android:id="@+id/confirm_button"
+            style="@style/button_style"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/total_payments_card_view"
+            android:layout_marginBottom="@dimen/unit_3x"
+            android:layout_marginTop="@dimen/unit_2x"
+            android:text="@string/str_confirm_button" />
+
+    </RelativeLayout>
+</ScrollView>

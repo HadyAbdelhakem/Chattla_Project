@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:background="@color/white"
+    android:padding="10dp">
+
+    <requestFocus
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/custom_dialog_title_id"
+            style="@style/dialog_title_style"
+            android:layout_width="match_parent"
+            android:gravity="start"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical|center_horizontal"
+            android:padding="10dp"
+            tools:text="exceptionTitle" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/custom_dialog_body_linear_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <com.emeint.android.fawryplugin.views.cutomviews.FawryPluginCustomTextView
+            android:id="@+id/custom_dialog_message_id"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:gravity="start"
+            android:singleLine="false"
+            android:text="Medium Text"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:textColor="@color/custom_dialog_body_text" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="end"
+        android:orientation="horizontal">
+
+        <com.emeint.android.fawryplugin.views.cutomviews.FawryPluginCustomButton
+            android:id="@+id/custom_dialog_cancelBtn_id"
+            style="@style/popup_button_style"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAllCaps="true"
+            tools:text="cancel" />
+
+        <com.emeint.android.fawryplugin.views.cutomviews.FawryPluginCustomButton
+            android:id="@+id/custom_dialog_okBtn_id"
+            style="@style/popup_button_style"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAllCaps="true"
+            tools:text="ok" />
+    </LinearLayout>
+
+</LinearLayout>

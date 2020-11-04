@@ -190,6 +190,7 @@ public class PaymentActivity extends BaseActivity implements FawrySdkCallback, V
                                     consult.setAddValue(d.getAddValue());
                                     consult.setCodeExpertId(d.getExpertID());
                                 }
+                                reference.child(string).child("numOfUses").setValue(String.valueOf(Integer.parseInt(d.getNumOfUses()) - 1));
                                 String newPrice = String.valueOf(Integer.parseInt(price.getNewPrice()) - Integer.parseInt(code));
                                 price.setNewPrice(newPrice);
 
@@ -200,7 +201,6 @@ public class PaymentActivity extends BaseActivity implements FawrySdkCallback, V
                                     btPayment.setVisibility(View.GONE);
                                     costFree_box.setVisibility(View.VISIBLE);
                                     bt_payment_free.setVisibility(View.VISIBLE);
-                                    /*Log.e("Amount is ",price.getNewPrice());*/
                                 }else {
                                     tvNewPrice.setText(String.format("%s جنيه", price.getNewPrice()));
                                     tvLastPrice.setText(String.format("%s جنيه", price.getLastPrice()));
@@ -208,8 +208,8 @@ public class PaymentActivity extends BaseActivity implements FawrySdkCallback, V
                                     tvSaveCost.setText(String.format("%s جنيه", Double.parseDouble(price.getLastPrice()) - Double.parseDouble(price.getNewPrice())));
                                     discountBox.setVisibility(View.GONE);
                                     tvCodeNotExist.setVisibility(View.GONE);
-                                    /*Log.e("Amount is ",price.getNewPrice());*/
                                 }
+                                Log.e("Amount is ",price.getNewPrice());
                                 dialog.dismiss();
                             }
                         }
@@ -342,6 +342,13 @@ public class PaymentActivity extends BaseActivity implements FawrySdkCallback, V
         map.put("merchantRefNum", merchantRefNum);
         map.put("PaymentStatus", paymentStatus);
         map.put("timestamp", ServerValue.TIMESTAMP);
+        map.put("addressLine" , consult.getAddressLine());
+        map.put("addValue" , consult.getAddValue());
+        map.put("codeExpertId" , consult.getCodeExpertId());
+        map.put("openSubscription" , "NO");
+        map.put("Subscriber1" , "NO");
+        map.put("Subscriber2" , "NO");
+        map.put("Subscriber3" , "NO");
         sendVoice();
     }
 

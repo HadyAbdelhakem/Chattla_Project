@@ -1,0 +1,102 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background_color"
+    tools:context="com.emeint.android.fawryplugin.views.fragments.CustomerDataFragment">
+
+    <RelativeLayout
+        style="@style/screen_container_style"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/customer_data_card_view"
+            android:layout_width="match_parent"
+
+            android:layout_height="wrap_content">
+
+
+            <RelativeLayout
+                android:id="@+id/customer_data_screen_container"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="100dp"
+                android:layout_margin="@dimen/card_view_margin">
+
+                <include
+                    android:id="@+id/stepper_view_id"
+                    layout="@layout/stepper_layout" />
+
+                <com.emeint.android.fawryplugin.views.cutomviews.FawryPluginCustomTextInputLayout
+                    android:id="@+id/email_text_input_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/stepper_view_id"
+                    android:layout_marginTop="@dimen/unit_2x">
+
+                    <com.emeint.android.fawryplugin.views.cutomviews.FawryPluginCustomEditText
+                        android:id="@+id/email_edit_text"
+                        style="@style/editTextStyle"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="@string/customer_data_email"
+                        android:inputType="textEmailAddress"
+                        tools:text="Fawry" />
+
+                </com.emeint.android.fawryplugin.views.cutomviews.FawryPluginCustomTextInputLayout>
+
+                <com.emeint.android.fawryplugin.views.cutomviews.FawryPluginCustomTextInputLayout
+                    android:id="@+id/phone_text_input_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/email_text_input_layout">
+
+                    <com.emeint.android.fawryplugin.views.cutomviews.FawryPluginCustomEditText
+                        android:id="@+id/phone_edit_text"
+                        style="@style/editTextStyle"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="@string/customer_data_mobile_number"
+                        android:inputType="phone"
+
+                        tools:text="01013413044" />
+
+                </com.emeint.android.fawryplugin.views.cutomviews.FawryPluginCustomTextInputLayout>
+
+
+            </RelativeLayout>
+        </androidx.cardview.widget.CardView>
+
+        <com.emeint.android.fawryplugin.views.cutomviews.FawryPluginCustomTextView
+            android:id="@+id/customer_data_hint"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/customer_data_card_view"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="16dp"
+            android:lineSpacingExtra="@dimen/line_spacing"
+            android:text="@string/this_phone_number_will_be_used_to_send_you_notifications"
+            android:textColor="@color/black"/>
+        <com.emeint.android.fawryplugin.views.cutomviews.FawryPluginCustomTextView
+            android:id="@+id/customer_mobile_number_hint_text_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/customer_data_hint"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="16dp"
+            android:lineSpacingExtra="@dimen/line_spacing"
+            android:text="@string/mobile_number_validation_message_hint"
+            android:textColor="@color/black"/>
+
+
+        <com.emeint.android.fawryplugin.views.cutomviews.FawryPluginCustomButton
+            android:id="@+id/continue_button"
+            style="@style/button_style"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="@dimen/unit_2x"
+            android:text="@string/str_continue_button" />
+    </RelativeLayout>
+</RelativeLayout>
+

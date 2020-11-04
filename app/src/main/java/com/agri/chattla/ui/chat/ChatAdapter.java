@@ -31,13 +31,15 @@ public class ChatAdapter extends RecyclerView.Adapter<ChatAdapter.ViewHolder> {
 
 
     private String myId;
+    private String expertId;
     FirebaseUser firebaseUser;
     private final onItemClick onItemClick;
 
 
 
-    public ChatAdapter(Context context, String myId, onItemClick onItemClick) {
+    public ChatAdapter(Context context,String expertId , String myId, onItemClick onItemClick) {
         this.mContext = context;
+        this.expertId = expertId;
         this.myId = myId;
         this.onItemClick = onItemClick;
 
@@ -171,11 +173,10 @@ public class ChatAdapter extends RecyclerView.Adapter<ChatAdapter.ViewHolder> {
     @Override
     public int getItemViewType(int position) {
 
-        if (mChats.get(position).getSender().equals(myId)) {
-            return MSG_TYPE_RIGHT;
+        if (mChats.get(position).getSender().equals(expertId)) {
+            return MSG_TYPE_LEFT ;
         } else {
-            return MSG_TYPE_LEFT;
-
+            return MSG_TYPE_RIGHT ;
         }
 
     }

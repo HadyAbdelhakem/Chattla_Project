@@ -2,11 +2,13 @@ package com.agri.chattla.ui.login;
 
 import android.app.AlertDialog;
 import android.content.Intent;
+import android.net.Uri;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.Toast;
 
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
@@ -34,6 +36,8 @@ import com.google.firebase.messaging.FirebaseMessaging;
 import org.jetbrains.annotations.NotNull;
 
 import java.util.HashMap;
+import java.util.Timer;
+import java.util.TimerTask;
 
 import es.dmoral.toasty.Toasty;
 
@@ -44,12 +48,15 @@ public class LoginActivity extends AppCompatActivity {
     private String txtPhone;
     private String txtPassword;
     private String loadLogin ;
+    private String phoneNum ;
 
     private XProgressDialog dialog;
     private UserFirbase currentUser;
     private Task<Void> refForgetPass;
     private Consult mConsult;
     private Intent i = null;
+    private Timer timer;
+    private Uri uri ;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -61,9 +68,15 @@ public class LoginActivity extends AppCompatActivity {
         refExpert = FirebaseDatabase.getInstance().getReference().child("Expert");*/
 
         dialog = new XProgressDialog(this, LoginActivity.this.getResources().getString(R.string.loading_login), XProgressDialog.THEME_HORIZONTAL_SPOT);
+        Toast t = Toasty.error(LoginActivity.this , "نفذ الوقت ، برجاء المحاولة مرة أخرى"  , Toast.LENGTH_LONG);
+
+        phoneNum = getIntent().getStringExtra("phNum");
+
 
         etPhone = findViewById(R.id.et_phone);
         etPassword = findViewById(R.id.et_password);
+
+        etPhone.setText(phoneNum);
 
 
         findViewById(R.id.bt_login_farmer).setOnClickListener(new View.OnClickListener() {
@@ -72,6 +85,16 @@ public class LoginActivity extends AppCompatActivity {
 
                 if (validInput()){
                     checkUser(FirebaseDatabase.getInstance().getReference().child("Farmers"), "farmer");
+                    timer = new Timer();
+                    timer.schedule(new TimerTask() {
+                        @Override
+                        public void run() {
+                            dialog.dismiss();
+                            t.show();
+                            AppPreferences.logout(LoginActivity.this);
+                        }
+                    }, 10000);
+                    /*AppPreferences.logout(LoginActivity.this);*/
                 }
             }
         });
@@ -90,8 +113,13 @@ public class LoginActivity extends AppCompatActivity {
         findViewById(R.id.tv_terms_and_conditions).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent i = new Intent(LoginActivity.this, Terms_and_Conditions.class);
-                startActivity(i);
+                /*https://sites.google.com/view/chattla-terms-and-conditions/home*/
+                /*Intent i = new Intent(LoginActivity.this, Terms_and_Conditions.class);
+                startActivity(i);*/
+
+                uri = Uri.parse("https://sites.google.com/view/chattla-terms-and-conditions/home");
+                Intent intent = new Intent(Intent.ACTION_VIEW, uri);
+                startActivity(intent);
             }
         });
 
@@ -194,12 +222,14 @@ public class LoginActivity extends AppCompatActivity {
 
                 } else {
                     dialog.dismiss();
-                    AlertDialog.Builder builder = new AlertDialog.Builder(LoginActivity.this);
+                    /*AlertDialog.Builder builder = new AlertDialog.Builder(LoginActivity.this);
                     builder.setMessage("هذا المستخدم غير موجود .!")
                             .setPositiveButton("موافق", null);
 
                     AlertDialog alertDialog = builder.create();
-                    alertDialog.show();
+                    alertDialog.show();*/
+                    Toasty.info(LoginActivity.this , "برجاء التأكد من رقم الهاتف" , Toasty.LENGTH_LONG).show();
+                    timer.cancel();
                 }
 
             }
@@ -251,6 +281,7 @@ public class LoginActivity extends AppCompatActivity {
                                                 AppPreferences.saveUserType(LoginActivity.this, "Farmer");
                                                 dialog.dismiss();
                                                 startActivity(i);
+                                                timer.cancel();
                                                 finish();
                                             }
 
@@ -270,6 +301,7 @@ public class LoginActivity extends AppCompatActivity {
                             AppPreferences.saveUserType(LoginActivity.this, "Farmer");
                             dialog.dismiss();
                             startActivity(i);
+                            timer.cancel();
                             finish();
                             }
                         }else {
@@ -279,12 +311,14 @@ public class LoginActivity extends AppCompatActivity {
 
                     } else {
                         dialog.dismiss();
-                        AlertDialog.Builder builder = new AlertDialog.Builder(LoginActivity.this);
+                        /*AlertDialog.Builder builder = new AlertDialog.Builder(LoginActivity.this);
                         builder.setMessage("كلمة المرور غير صحيحة .!")
                                 .setPositiveButton("موافق", null);
 
                         AlertDialog alertDialog = builder.create();
-                        alertDialog.show();
+                        alertDialog.show();*/
+                        Toasty.info(LoginActivity.this , "برجاء التأكد من كلمة المرور" , Toasty.LENGTH_LONG).show();
+                        timer.cancel();
                     }
 
                 }

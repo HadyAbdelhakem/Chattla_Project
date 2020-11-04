@@ -1,0 +1,213 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@color/background_color"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.emeint.android.fawryplugin.views.fragments.ReceiptFragment">
+
+
+    <RelativeLayout
+        style="@style/screen_container_style"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/receipt_card_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/card_view_margin">
+
+                <com.emeint.android.fawryplugin.views.cutomviews.FawryPluginCustomTextView
+                    android:id="@+id/receipt_header_text_view"
+                    style="@style/stepper_header_text_view"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/receipt_header" />
+
+                <com.emeint.android.fawryplugin.views.cutomviews.FawryPluginCustomTextView
+                    android:id="@+id/receipt_status_text_view"
+                    style="@style/receipt_status_text_view"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/receipt_header_text_view"
+                    android:text="@string/thank_you_for_choosing_fawry" />
+
+
+                <RelativeLayout
+
+                    android:id="@+id/order_amount_row"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/receipt_status_text_view"
+                    android:layout_marginTop="@dimen/unit_3x">
+
+                    <com.emeint.android.fawryplugin.views.cutomviews.FawryPluginCustomTextView
+                        android:id="@+id/order_amount_label_text_view"
+                        style="@style/receipt_label"
+                        android:text="@string/receipt_order_amount" />
+
+                    <com.emeint.android.fawryplugin.views.cutomviews.FawryPluginCustomTextView
+                        android:id="@+id/order_amount_value_text_view"
+                        style="@style/receipt_value"
+
+                        android:layout_toEndOf="@id/order_amount_label_text_view"
+                        tools:text="1000 EGP" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/shipping_cost_row"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/order_amount_row"
+                    android:layout_marginTop="@dimen/unit_1x">
+
+                    <com.emeint.android.fawryplugin.views.cutomviews.FawryPluginCustomTextView
+                        android:id="@+id/shipping_cost_label_text_view"
+                        style="@style/receipt_label"
+                        android:text="@string/receipt_shipping_cost" />
+
+                    <com.emeint.android.fawryplugin.views.cutomviews.FawryPluginCustomTextView
+                        android:id="@+id/shipping_cost_value_text_view"
+                        style="@style/receipt_value"
+
+                        android:layout_toEndOf="@id/shipping_cost_label_text_view"
+                        tools:text="250 EGP" />
+
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/fixed_fees_row"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/shipping_cost_row"
+                    android:layout_marginTop="@dimen/unit_1x">
+
+                    <com.emeint.android.fawryplugin.views.cutomviews.FawryPluginCustomTextView
+                        android:id="@+id/fixed_fees_label_text_view"
+                        style="@style/receipt_label"
+                        android:text="@string/receipt_fixed_fees" />
+
+                    <com.emeint.android.fawryplugin.views.cutomviews.FawryPluginCustomTextView
+                        android:id="@+id/fixed_fees_value_text_view"
+                        style="@style/receipt_value"
+
+                        android:layout_toEndOf="@id/fixed_fees_label_text_view"
+                        tools:text="5 EGP" />
+
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/pay_at_delivery_fees_row"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/fixed_fees_row"
+                    android:layout_marginTop="@dimen/unit_1x">
+
+                    <com.emeint.android.fawryplugin.views.cutomviews.FawryPluginCustomTextView
+                        android:id="@+id/pay_at_delivery_label_text_view"
+                        style="@style/receipt_label"
+                        android:text="@string/receipt_pay_at_delivery" />
+
+                    <com.emeint.android.fawryplugin.views.cutomviews.FawryPluginCustomTextView
+                        android:id="@+id/pay_at_delivery_value_text_view"
+                        style="@style/receipt_value"
+
+                        android:layout_toEndOf="@id/pay_at_delivery_label_text_view"
+                        tools:text="10 EGP" />
+
+
+                </RelativeLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/pay_at_delivery_fees_row"
+                    android:orientation="vertical">
+
+                    <View
+                        android:id="@+id/total_row_separator"
+                        style="@style/receipt_separator" />
+
+                    <RelativeLayout
+                        android:id="@+id/total_cost_row"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        >
+
+
+                        <com.emeint.android.fawryplugin.views.cutomviews.FawryPluginCustomTextView
+                            android:id="@+id/cost_label_text_view"
+                            style="@style/receipt_label"
+                            android:text="@string/receipt_total"
+                            android:textStyle="bold" />
+
+                        <com.emeint.android.fawryplugin.views.cutomviews.FawryPluginCustomTextView
+                            android:id="@+id/cost_value_text_view"
+                            style="@style/receipt_value"
+                            android:layout_below="@id/total_row_separator"
+                            android:layout_toEndOf="@id/courier_label_text_view"
+                            tools:text="1265 EGP" />
+
+
+                    </RelativeLayout>
+
+                </LinearLayout>
+
+
+            </RelativeLayout>
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/fawry_order_number_card_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/receipt_card_view"
+            android:layout_marginTop="@dimen/margin_top_between_card_views">
+
+            <RelativeLayout
+                android:id="@+id/order_number_row"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/pay_at_delivery_fees_row"
+                android:layout_margin="@dimen/card_view_margin">
+
+
+                <com.emeint.android.fawryplugin.views.cutomviews.FawryPluginCustomTextView
+                    android:id="@+id/order_number_label_text_view"
+                    style="@style/receipt_label"
+                    android:text="@string/receipt_fawry_order_number" />
+
+                <com.emeint.android.fawryplugin.views.cutomviews.FawryPluginCustomTextView
+                    android:id="@+id/order_number_value_text_view"
+                    style="@style/receipt_value"
+                    android:layout_toEndOf="@id/courier_label_text_view"
+                    tools:text="123213213" />
+            </RelativeLayout>
+
+        </androidx.cardview.widget.CardView>
+
+
+        <com.emeint.android.fawryplugin.views.cutomviews.FawryPluginCustomTextView
+            android:id="@+id/receipt_user_message_text_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/fawry_order_number_card_view"
+            android:layout_margin="@dimen/card_view_margin"
+            android:layout_marginTop="@dimen/card_view_views_margin_top"
+            android:clickable="false"
+            android:lineSpacingExtra="@dimen/line_spacing"
+            android:textColor="@color/black"
+            tools:text="Pay your order using @Fawry order number before 19/08/2017" />
+
+    </RelativeLayout>
+
+</ScrollView>

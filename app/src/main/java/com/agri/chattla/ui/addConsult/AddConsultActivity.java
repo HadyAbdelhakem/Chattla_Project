@@ -367,6 +367,15 @@ public class AddConsultActivity extends BaseActivity implements View.OnClickList
             consult.setLat(lat);
             consult.setLng(lng);
             consult.setTime(time);
+            try {
+                Geocoder geocoder = new Geocoder(AddConsultActivity.this , Locale.getDefault());
+                List<Address> addresses = geocoder.getFromLocation( Double.parseDouble(lat) , Double.parseDouble(lng) , 1);
+                consult.setAddressLine(addresses.get(0).getAddressLine(0));
+                /*Toasty.success(AddConsultActivity.this , addresses.get(0).getAddressLine(0)  , Toasty.LENGTH_LONG).show();*/
+            }catch (Exception e){
+                Log.e("Location Error " , e.toString());
+            }
+
         }
         locationLayout.setVisibility(View.GONE);
         locationSelected.setVisibility(View.VISIBLE);
@@ -1256,7 +1265,7 @@ public class AddConsultActivity extends BaseActivity implements View.OnClickList
             Toasty.error(AddConsultActivity.this, "برجاء كتابة المساحة المزروعة", Toasty.LENGTH_SHORT).show();
             return false;
         }
-        if (nearCropsBox .getText().toString().length() == 0 ){
+        if (nearCropsBox.getText().toString().length() == 0 ){
             Toasty.error(AddConsultActivity.this, "برجاء كتابة المحاصيل المجاورة", Toasty.LENGTH_SHORT).show();
             return false;
         }

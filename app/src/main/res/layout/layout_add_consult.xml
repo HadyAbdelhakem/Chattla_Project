@@ -67,7 +67,8 @@
                 android:layout_marginTop="@dimen/_16sdp"
                 android:fontFamily="@font/tajawal_regular"
                 android:text="@string/consultation_reason"
-                android:textColor="@color/colorPrimaryDark"
+                android:textColor="@color/black"
+                android:textStyle="bold"
                 android:textSize="@dimen/_12ssp" />
 
             <Spinner
@@ -86,7 +87,8 @@
                 android:layout_marginTop="@dimen/_16sdp"
                 android:fontFamily="@font/tajawal_regular"
                 android:text="@string/crop_type"
-                android:textColor="@color/colorPrimaryDark"
+                android:textColor="@color/black"
+                android:textStyle="bold"
                 android:textSize="@dimen/_12ssp" />
 
             <Spinner
@@ -104,7 +106,8 @@
                 android:layout_marginTop="@dimen/_16sdp"
                 android:fontFamily="@font/tajawal_regular"
                 android:text="@string/crop_variety"
-                android:textColor="@color/colorPrimaryDark"
+                android:textColor="@color/black"
+                android:textStyle="bold"
                 android:textSize="@dimen/_12ssp" />
 
             <EditText
@@ -128,7 +131,8 @@
                 android:layout_marginTop="@dimen/_16sdp"
                 android:fontFamily="@font/tajawal_regular"
                 android:text="@string/agri_type"
-                android:textColor="@color/colorPrimaryDark"
+                android:textColor="@color/black"
+                android:textStyle="bold"
                 android:textSize="@dimen/_12ssp" />
 
             <Spinner
@@ -146,7 +150,8 @@
                 android:layout_marginTop="@dimen/_16sdp"
                 android:fontFamily="@font/tajawal_regular"
                 android:text="المساحة المزروعة (الأفدنة)"
-                android:textColor="@color/colorPrimaryDark"
+                android:textColor="@color/black"
+                android:textStyle="bold"
                 android:textSize="@dimen/_12ssp" />
 
             <EditText
@@ -170,7 +175,8 @@
                 android:layout_marginTop="@dimen/_16sdp"
                 android:fontFamily="@font/tajawal_regular"
                 android:text="المحاصيل المجاورة"
-                android:textColor="@color/colorPrimaryDark"
+                android:textColor="@color/black"
+                android:textStyle="bold"
                 android:textSize="@dimen/_12ssp" />
 
             <EditText
@@ -194,7 +200,8 @@
                 android:layout_marginTop="@dimen/_16sdp"
                 android:fontFamily="@font/tajawal_regular"
                 android:text="@string/irr_type"
-                android:textColor="@color/colorPrimaryDark"
+                android:textColor="@color/black"
+                android:textStyle="bold"
                 android:textSize="@dimen/_12ssp" />
 
             <Spinner
@@ -212,7 +219,8 @@
                 android:layout_marginTop="@dimen/_16sdp"
                 android:fontFamily="@font/tajawal_regular"
                 android:text="@string/land_type"
-                android:textColor="@color/colorPrimaryDark"
+                android:textColor="@color/black"
+                android:textStyle="bold"
                 android:textSize="@dimen/_12ssp" />
 
             <Spinner
@@ -230,7 +238,8 @@
                 android:layout_marginTop="@dimen/_16sdp"
                 android:fontFamily="@font/tajawal_regular"
                 android:text="@string/water_drainage"
-                android:textColor="@color/colorPrimaryDark"
+                android:textColor="@color/black"
+                android:textStyle="bold"
                 android:textSize="@dimen/_12ssp" />
 
             <Spinner
@@ -248,7 +257,8 @@
                 android:layout_marginTop="@dimen/_25sdp"
                 android:fontFamily="@font/tajawal_regular"
                 android:text="@string/for_more_info"
-                android:textColor="@color/colorPrimaryDark"
+                android:textColor="@color/black"
+                android:textStyle="bold"
                 android:textSize="@dimen/_12ssp" />
 
             <CheckBox
@@ -482,7 +492,8 @@
                 android:layout_marginTop="@dimen/_25sdp"
                 android:fontFamily="@font/tajawal_regular"
                 android:text="لتوضيح سبب حجز الاستشارة :"
-                android:textColor="@color/colorPrimaryDark"
+                android:textColor="@color/black"
+                android:textStyle="bold"
                 android:textSize="@dimen/_12ssp" />
 
             <CheckBox
@@ -620,7 +631,8 @@
                     android:layout_marginRight="@dimen/_4sdp"
                     android:fontFamily="@font/tajawal_medium"
                     android:text="@string/press"
-                    android:textColor="@color/colorPrimaryDark" />
+                    android:textColor="@color/black"
+                    android:textStyle="bold" />
 
                 <ImageView
                     android:id="@+id/img_location"
@@ -634,7 +646,8 @@
                     android:layout_height="wrap_content"
                     android:fontFamily="@font/tajawal_medium"
                     android:text="@string/pick_location"
-                    android:textColor="@color/colorPrimaryDark" />
+                    android:textColor="@color/black"
+                    android:textStyle="bold" />
 
 
             </LinearLayout>

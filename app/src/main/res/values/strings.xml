@@ -5,6 +5,10 @@
     <string name="next">التالى</string>
     <string name="skip">تخطي</string>
 
+    <string name="facebook_app_id">646680582921772</string>
+    <string name="fb_login_protocol_scheme">fb646680582921772</string>
+
+
     <!-- SPLASH -->
     <string name="no_internet">أنت غير متصل بالإنترنت</string>
     <string name="exit">خروج</string>
@@ -18,7 +22,7 @@
     <string name="expert_login">دخول استشارى</string>
     <string name="new_account">إنشاء حساب جديد ؟</string>
     <string name="new_account_condition">بإنشاء حساب جديد توافق على</string>
-    <string name="terms_and_conditions">الشروط و الأحكام</string>
+    <string name="terms_and_conditions"><u> الشروط و الأحكام </u></string>
     <string name="loading_login">تسجيل الدخول..</string>
 
     <!-- REGISTRATION -->
@@ -83,5 +87,7 @@
     <string name="consultation_finished">تم إنهاء الإستشارة</string>
     <string name="message_enter_review">من فضلك أضف تقييم</string>
     <string name="review_added">تم اضافة تقييمك</string>
+
+
 
 </resources>

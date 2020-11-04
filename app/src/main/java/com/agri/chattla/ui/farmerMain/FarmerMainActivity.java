@@ -151,10 +151,11 @@ public class FarmerMainActivity extends BaseActivity implements View.OnClickList
                     }).setNegativeButton("تأكيد", new DialogInterface.OnClickListener() {
                         @Override
                         public void onClick(DialogInterface dialog, int which) {
-                            FirebaseDatabase.getInstance().getReference().child("Consults").child(consult.getId()).removeValue().addOnCompleteListener(new OnCompleteListener<Void>() {
+                            FirebaseDatabase.getInstance().getReference().child("Consults").child(consult.getId()).child("status").setValue("deleted").addOnCompleteListener(new OnCompleteListener<Void>() {
                                 @Override
                                 public void onComplete(@NonNull Task<Void> task) {
                                     Toasty.error(FarmerMainActivity.this , "تم حذف الإستشارة" , Toasty.LENGTH_LONG).show();
+                                    /*recreate();*/
                                 }
                             });
                         }
@@ -213,12 +214,14 @@ public class FarmerMainActivity extends BaseActivity implements View.OnClickList
                 for (DataSnapshot snapshot : dataSnapshot.getChildren()) {
                     Consult consult = snapshot.getValue(Consult.class);
 
-                    if (consult != null && consult.getSender().equals(currentUser)) {
+                    if (consult != null && (consult.getSender().equals(currentUser) || consult.getSubscriber1().equals(currentUser) || consult.getSubscriber2().equals(currentUser) || consult.getSubscriber3().equals(currentUser) ) && !consult.getStatus().equals("deleted")) {
                         if (consult.getPaymentStatus().equals("unPaid")) {
                             checkPaymentStatus(consult);
                         }
                         consultList.add(consult);
                     }
+                    /*Toasty.info(FarmerMainActivity.this , consult.getSender() ,Toasty.LENGTH_LONG).show();*/
+
                 }
                 if (consultList.size() == 0) {
                     rvConsults.setVisibility(View.GONE);
@@ -294,7 +297,7 @@ public class FarmerMainActivity extends BaseActivity implements View.OnClickList
                     case "CANCELLED":
                     case "FAILED":
                         FirebaseDatabase.getInstance().getReference("Consults").child(consult.getId())
-                                .removeValue();
+                                .child("status").setValue("deleted");
                         break;
 
                 }

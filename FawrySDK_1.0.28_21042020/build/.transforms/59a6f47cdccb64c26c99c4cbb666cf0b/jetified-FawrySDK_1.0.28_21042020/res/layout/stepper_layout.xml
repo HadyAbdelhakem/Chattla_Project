@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="20dp"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <com.emeint.android.fawryplugin.views.cutomviews.FawryPluginCustomTextView
+        android:id="@+id/stepper_header_text_view"
+        style="@style/stepper_header_text_view"
+        tools:text="header"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/stepper_header_text_view"
+        android:layout_marginTop="@dimen/unit_3x"
+        android:gravity="center">
+
+        <ImageView
+            android:id="@+id/step_one_view"
+            android:layout_alignParentStart="true"
+            style="@style/stepper_step_image_view"
+            android:src="@drawable/step1_selected" />
+
+        <View
+            android:id="@+id/separator_one"
+            style="@style/stepper_separator_style"
+            android:layout_toEndOf="@+id/step_one_view" />
+
+        <ImageView
+            android:id="@+id/step_two_view"
+            style="@style/stepper_step_image_view"
+            android:layout_toEndOf="@id/separator_one"
+            android:src="@drawable/step2" />
+        <View
+            android:id="@+id/separator_two"
+            style="@style/stepper_separator_style"
+            android:layout_toEndOf="@+id/step_two_view" />
+
+        <ImageView
+            android:id="@+id/step_three_view"
+            style="@style/stepper_step_image_view"
+            android:layout_toEndOf="@id/separator_two"
+            android:src="@drawable/step3" />
+        <View
+            android:id="@+id/separator_three"
+            style="@style/stepper_separator_style"
+            android:layout_toEndOf="@+id/step_three_view" />
+        <ImageView
+            android:id="@+id/step_four_view"
+            style="@style/stepper_step_image_view"
+            android:layout_toEndOf="@id/separator_three"
+            android:src="@drawable/step4" />
+    </RelativeLayout>
+</RelativeLayout>

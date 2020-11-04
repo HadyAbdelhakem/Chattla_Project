@@ -74,6 +74,7 @@ public class RegisterActivity extends AppCompatActivity {
         final int random = new Random().nextInt(999) + 101;
         final String phoneNumber = getIntent().getStringExtra("pn");
         final String U_Code = c + String.valueOf(random) + phoneNumber.substring(8);
+        Toasty.info(RegisterActivity.this , phoneNumber , Toasty.LENGTH_LONG).show();
 
 
 //        final String[] n = getResources().getStringArray(R.array.nashat);

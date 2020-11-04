@@ -40,6 +40,11 @@ public class Consult implements Serializable, PayableItem {
     private String topic;
     private String addValue;
     private String codeExpertId;
+    private String addressLine;
+    private String openSubscription;
+    private String Subscriber1;
+    private String Subscriber2;
+    private String Subscriber3;
     private  long timestamp;
 
     public long getTimestamp() {
@@ -308,6 +313,46 @@ public class Consult implements Serializable, PayableItem {
 
     public void setCodeExpertId(String codeExpertId) {
         this.codeExpertId = codeExpertId;
+    }
+
+    public String getAddressLine() {
+        return addressLine;
+    }
+
+    public void setAddressLine(String addressLine) {
+        this.addressLine = addressLine;
+    }
+
+    public String getOpenSubscription() {
+        return openSubscription;
+    }
+
+    public void setOpenSubscription(String openSubscription) {
+        this.openSubscription = openSubscription;
+    }
+
+    public String getSubscriber1() {
+        return Subscriber1;
+    }
+
+    public void setSubscriber1(String subscriber1) {
+        this.Subscriber1 = subscriber1;
+    }
+
+    public String getSubscriber2() {
+        return Subscriber2;
+    }
+
+    public void setSubscriber2(String subscriber2) {
+        this.Subscriber2 = subscriber2;
+    }
+
+    public String getSubscriber3() {
+        return Subscriber3;
+    }
+
+    public void setSubscriber3(String subscriber3) {
+        this.Subscriber3 = subscriber3;
     }
 
     @Override

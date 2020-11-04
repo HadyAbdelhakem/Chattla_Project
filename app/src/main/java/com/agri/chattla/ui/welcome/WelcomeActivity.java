@@ -5,6 +5,7 @@ import androidx.viewpager.widget.ViewPager;
 
 import android.content.Context;
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.graphics.Color;
 import android.os.Build;
 import android.os.Bundle;
@@ -21,9 +22,11 @@ import android.widget.TextView;
 
 import com.agri.chattla.R;
 import com.agri.chattla.model.Consult;
+import com.agri.chattla.ui.getPhoneNum.GetPhoneNum;
 import com.agri.chattla.ui.login.LoginActivity;
 import com.agri.chattla.ui.base.BaseActivity;
 import com.agri.chattla.ui.farmerMain.FarmerMainActivity;
+import com.agri.chattla.utils.AppConstants;
 import com.agri.chattla.utils.AppPreferences;
 import com.agri.chattla.utils.PrefManager;
 import com.google.firebase.database.DatabaseReference;
@@ -109,6 +112,10 @@ public class WelcomeActivity extends BaseActivity {
         });
     }
 
+    private static void clearUser(Context context) {
+        context.getSharedPreferences(AppConstants.PREFERENCE_USER, Context.MODE_PRIVATE).edit().clear().apply();
+    }
+
     private void addBottomDots(int currentPage) {
         dots = new TextView[layouts.length];
 
@@ -134,17 +141,20 @@ public class WelcomeActivity extends BaseActivity {
 
     private void launchHomeScreen() {
         prefManager.setFirstTimeLaunch(false);
-        if (AppPreferences.getUserPhone(WelcomeActivity.this) != null) {
+        if (AppPreferences.getUserPhone(WelcomeActivity.this) != null && AppPreferences.getUserType(WelcomeActivity.this) != null) {
 
-            if (AppPreferences.getUserType(WelcomeActivity.this).equals("Farmer")) {
-                startActivity(new Intent(WelcomeActivity.this, FarmerMainActivity.class));
+                if (AppPreferences.getUserType(WelcomeActivity.this).equals("Farmer")) {
 
-            }else {
-                finishAffinity();
-            }
+                    startActivity(new Intent(WelcomeActivity.this, FarmerMainActivity.class));
 
+                } else {
+                    AppPreferences.logout(WelcomeActivity.this);
+                    finishAffinity();
+
+                }
         } else {
-            startActivity(new Intent(WelcomeActivity.this, LoginActivity.class));
+            /*startActivity(new Intent(WelcomeActivity.this, LoginActivity.class));*/
+            startActivity(new Intent(WelcomeActivity.this , GetPhoneNum.class));
         }
         finish();
     }

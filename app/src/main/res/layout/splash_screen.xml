@@ -123,6 +123,17 @@
 
     </LinearLayout>
 
+    <ProgressBar
+        android:id="@+id/ProgressBar"
+        android:layout_width="44dp"
+        android:layout_height="44dp"
+        android:theme="@style/progressBarWhite"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView2">
+
+    </ProgressBar>
+
     <ImageView
         android:id="@+id/imageView7"
         android:layout_width="100dp"
