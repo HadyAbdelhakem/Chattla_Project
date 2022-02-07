@@ -94,6 +94,7 @@ import java.io.File;
 import java.io.IOException;
 import java.text.SimpleDateFormat;
 import java.util.ArrayList;
+import java.util.Calendar;
 import java.util.Date;
 import java.util.List;
 import java.util.Locale;
@@ -336,7 +337,7 @@ public class AddConsultActivity extends BaseActivity implements View.OnClickList
         }
     }
 
-    private void updateLocation() {
+    /*private void updateLocation() {
 
         buildLocationRequest();
         fusedLocationProviderClient = LocationServices.getFusedLocationProviderClient(this);
@@ -371,7 +372,7 @@ public class AddConsultActivity extends BaseActivity implements View.OnClickList
                 Geocoder geocoder = new Geocoder(AddConsultActivity.this , Locale.getDefault());
                 List<Address> addresses = geocoder.getFromLocation( Double.parseDouble(lat) , Double.parseDouble(lng) , 1);
                 consult.setAddressLine(addresses.get(0).getAddressLine(0));
-                /*Toasty.success(AddConsultActivity.this , addresses.get(0).getAddressLine(0)  , Toasty.LENGTH_LONG).show();*/
+                *//*Toasty.success(AddConsultActivity.this , addresses.get(0).getAddressLine(0)  , Toasty.LENGTH_LONG).show();*//*
             }catch (Exception e){
                 Log.e("Location Error " , e.toString());
             }
@@ -379,10 +380,10 @@ public class AddConsultActivity extends BaseActivity implements View.OnClickList
         }
         locationLayout.setVisibility(View.GONE);
         locationSelected.setVisibility(View.VISIBLE);
-        /*Toasty.success(AddConsultActivity.this , "Location .. "+ "// " +lat + " // " + lng  , Toasty.LENGTH_LONG).show();*/
+        *//*Toasty.success(AddConsultActivity.this , "Location .. "+ "// " +lat + " // " + lng  , Toasty.LENGTH_LONG).show();*//*
         fusedLocationProviderClient.removeLocationUpdates(getPendingIntent());
         dialog.dismiss();
-    }
+    }*/
 
     private void setUpReasons() {
         resonsList = new ArrayList<>();
@@ -856,20 +857,13 @@ public class AddConsultActivity extends BaseActivity implements View.OnClickList
 
             case R.id.img_location:
 
-                if (hasPermissions(AddConsultActivity.this, new String[]{
-                        Manifest.permission.ACCESS_FINE_LOCATION,
-                        Manifest.permission.ACCESS_COARSE_LOCATION,
-                })){
-                    final LocationManager manager = (LocationManager) getSystemService( Context.LOCATION_SERVICE );
-                    if ( !manager.isProviderEnabled( LocationManager.GPS_PROVIDER ) ) {
-                        buildAlertMessageNoGps();
-                    }
-                    else {
-                        dialog.show();
-                        getLocation();
-                    }
-                } else {
-                    BaseActivity.requestAllPermissions(AddConsultActivity.this);
+                final LocationManager manager = (LocationManager) getSystemService( Context.LOCATION_SERVICE );
+                if ( !manager.isProviderEnabled( LocationManager.GPS_PROVIDER ) ) {
+                    buildAlertMessageNoGps();
+                }
+                else {
+                    dialog.show();
+                    getLocation();
                 }
                 break;
 
@@ -1109,7 +1103,7 @@ public class AddConsultActivity extends BaseActivity implements View.OnClickList
     }
 
     private void getLocation() {
-        Dexter.withActivity(this)
+        /*Dexter.withActivity(this)
                 .withPermission(Manifest.permission.ACCESS_FINE_LOCATION)
                 .withListener(new PermissionListener() {
                     @Override
@@ -1124,7 +1118,22 @@ public class AddConsultActivity extends BaseActivity implements View.OnClickList
                     @Override
                     public void onPermissionRationaleShouldBeShown(PermissionRequest permissionRequest, PermissionToken permissionToken) {
                     }
-                }).check();
+                }).check();*/
+
+        lat = "30.033333" ;
+        lng = "31.233334" ;
+        SimpleDateFormat sdf = new SimpleDateFormat("MMdd_HHmm", Locale.getDefault());
+        String currentDateandTime = sdf.format(new Date());
+        getWeatherInfo(lat, lng);
+        consult.setLat(lat);
+        consult.setLng(lng);
+        consult.setTime(currentDateandTime);
+        consult.setAddressLine("  ....   ");
+        locationLayout.setVisibility(View.GONE);
+        locationSelected.setVisibility(View.VISIBLE);
+        dialog.dismiss();
+
+
     }
 
     public void OpenGallery(int Integer) {

@@ -1,9 +1,9 @@
 <component name="libraryTable">
   <library name="Gradle: com.camnter.easyarcloading:easyarcloading:1.0@aar">
     <CLASSES>
-      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/7f47bf3d086dd410035c081f30a75bbf/jetified-easyarcloading-1.0/AndroidManifest.xml" />
-      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/7f47bf3d086dd410035c081f30a75bbf/jetified-easyarcloading-1.0/jars/classes.jar!/" />
-      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/7f47bf3d086dd410035c081f30a75bbf/jetified-easyarcloading-1.0/res" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/12780b5856890318ec1b9f3cd103bcd6/jetified-easyarcloading-1.0/AndroidManifest.xml" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/12780b5856890318ec1b9f3cd103bcd6/jetified-easyarcloading-1.0/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/12780b5856890318ec1b9f3cd103bcd6/jetified-easyarcloading-1.0/res" />
     </CLASSES>
     <JAVADOC>
       <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.camnter.easyarcloading/easyarcloading/1.0/f2ef7bb1061918e36bc0ec90df8dd300360713e6/easyarcloading-1.0-javadoc.jar!/" />

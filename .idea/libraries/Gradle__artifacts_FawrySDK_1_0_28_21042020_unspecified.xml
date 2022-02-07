@@ -1,0 +1,11 @@
+<component name="libraryTable">
+  <library name="Gradle: artifacts:FawrySDK_1.0.28_21042020:unspecified">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/FawrySDK_1.0.28_21042020/build/.transforms/2933791058f166b173ed1afb70685269/jetified-FawrySDK_1.0.28_21042020/jars/classes.jar!/" />
+      <root url="file://$PROJECT_DIR$/FawrySDK_1.0.28_21042020/build/.transforms/2933791058f166b173ed1afb70685269/jetified-FawrySDK_1.0.28_21042020/AndroidManifest.xml" />
+      <root url="file://$PROJECT_DIR$/FawrySDK_1.0.28_21042020/build/.transforms/2933791058f166b173ed1afb70685269/jetified-FawrySDK_1.0.28_21042020/res" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

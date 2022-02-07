@@ -15,86 +15,574 @@
   <component name="AndroidLogFilters">
     <option name="TOOL_WINDOW_CONFIGURED_FILTER" value="Show only selected application" />
   </component>
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="NONE" />
+  </component>
   <component name="ChangeListManager">
-    <list default="true" id="3d6b133a-bab6-4f17-ab6f-56c0642f6163" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_browser_browser_1_0_0_aar.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_android_installreferrer_installreferrer_1_0_aar.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_facebook_android_facebook_android_sdk_5_15_3_aar.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_facebook_android_facebook_applinks_5_15_3_aar.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_facebook_android_facebook_common_5_15_3_aar.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_facebook_android_facebook_core_5_15_3_aar.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_facebook_android_facebook_login_5_15_3_aar.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_facebook_android_facebook_messenger_5_15_3_aar.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_facebook_android_facebook_places_5_15_3_aar.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_facebook_android_facebook_share_5_15_3_aar.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_google_zxing_core_3_3_3_jar.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_parse_bolts_bolts_android_1_4_0_jar.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_parse_bolts_bolts_applinks_1_4_0_jar.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_parse_bolts_bolts_tasks_1_4_0_jar.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/agri/chattla/ui/getPhoneNum/GetPhoneNum.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/agri/chattla/ui/splash/FBAnalytic.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable/expert_icon.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable/ic_password.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable/ic_phone.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable/ic_wave.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable/ic_wave_1.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable/ic_wave_un.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/res/layout/get_phone_num.xml" afterDir="false" />
+    <list default="true" id="3d6b133a-bab6-4f17-ab6f-56c0642f6163" name="Default Changelist" comment="04/11/2020">
+      <change afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules/FawrySDK_1.0.28_21042020/Chattla_Project.FawrySDK_1.0.28_21042020.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules/WhatsappMessengerView/Chattla_Project.WhatsappMessengerView.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules/app/Chattla_Project.app.iml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/facebook-android-sdk-4.18.0/build.gradle" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/facebook-android-sdk-4.18.0/build/.transforms/0101e49b97934469233298f81ef527de.bin" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/facebook-android-sdk-4.18.0/build/.transforms/06f7d44f6869964d5faca4d9589afcc3.bin" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/facebook-android-sdk-4.18.0/build/.transforms/3c941bff9d54874a17c9a49ffc1c2fd4.bin" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/facebook-android-sdk-4.18.0/build/.transforms/4591ea987a9aa54926c54286b92ec401.bin" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/facebook-android-sdk-4.18.0/build/.transforms/48e354be05a1fa7754c6e8ea6b6c38ce.bin" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/facebook-android-sdk-4.18.0/build/.transforms/48e354be05a1fa7754c6e8ea6b6c38ce/jetified-facebook-android-sdk-4.18.0/AndroidManifest.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/facebook-android-sdk-4.18.0/build/.transforms/48e354be05a1fa7754c6e8ea6b6c38ce/jetified-facebook-android-sdk-4.18.0/R.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/facebook-android-sdk-4.18.0/build/.transforms/48e354be05a1fa7754c6e8ea6b6c38ce/jetified-facebook-android-sdk-4.18.0/aapt/AndroidManifest.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/facebook-android-sdk-4.18.0/build/.transforms/48e354be05a1fa7754c6e8ea6b6c38ce/jetified-facebook-android-sdk-4.18.0/jars/classes.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/facebook-android-sdk-4.18.0/build/.transforms/48e354be05a1fa7754c6e8ea6b6c38ce/jetified-facebook-android-sdk-4.18.0/proguard.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/facebook-android-sdk-4.18.0/build/.transforms/48e354be05a1fa7754c6e8ea6b6c38ce/jetified-facebook-android-sdk-4.18.0/res/color/com_facebook_button_text_color.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/facebook-android-sdk-4.18.0/build/.transforms/48e354be05a1fa7754c6e8ea6b6c38ce/jetified-facebook-android-sdk-4.18.0/res/color/com_facebook_send_button_text_color.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/facebook-android-sdk-4.18.0/build/.transforms/48e354be05a1fa7754c6e8ea6b6c38ce/jetified-facebook-android-sdk-4.18.0/res/drawable-hdpi-v4/com_facebook_button_icon_blue.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/facebook-android-sdk-4.18.0/build/.transforms/48e354be05a1fa7754c6e8ea6b6c38ce/jetified-facebook-android-sdk-4.18.0/res/drawable-hdpi-v4/com_facebook_button_icon_white.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/facebook-android-sdk-4.18.0/build/.transforms/48e354be05a1fa7754c6e8ea6b6c38ce/jetified-facebook-android-sdk-4.18.0/res/drawable-hdpi-v4/com_facebook_button_like_icon_selected.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/facebook-android-sdk-4.18.0/build/.transforms/48e354be05a1fa7754c6e8ea6b6c38ce/jetified-facebook-android-sdk-4.18.0/res/drawable-hdpi-v4/com_facebook_button_send_icon_blue.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/facebook-android-sdk-4.18.0/build/.transforms/48e354be05a1fa7754c6e8ea6b6c38ce/jetified-facebook-android-sdk-4.18.0/res/drawable-hdpi-v4/com_facebook_button_send_icon_white.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/facebook-android-sdk-4.18.0/build/.transforms/48e354be05a1fa7754c6e8ea6b6c38ce/jetified-facebook-android-sdk-4.18.0/res/drawable-hdpi-v4/com_facebook_close.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/facebook-android-sdk-4.18.0/build/.transforms/48e354be05a1fa7754c6e8ea6b6c38ce/jetified-facebook-android-sdk-4.18.0/res/drawable-hdpi-v4/com_facebook_tooltip_black_background.9.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/facebook-android-sdk-4.18.0/build/.transforms/48e354be05a1fa7754c6e8ea6b6c38ce/jetified-facebook-android-sdk-4.18.0/res/drawable-hdpi-v4/com_facebook_tooltip_black_bottomnub.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/facebook-android-sdk-4.18.0/build/.transforms/48e354be05a1fa7754c6e8ea6b6c38ce/jetified-facebook-android-sdk-4.18.0/res/drawable-hdpi-v4/com_facebook_tooltip_black_topnub.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/facebook-android-sdk-4.18.0/build/.transforms/48e354be05a1fa7754c6e8ea6b6c38ce/jetified-facebook-android-sdk-4.18.0/res/drawable-hdpi-v4/com_facebook_tooltip_black_xout.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/facebook-android-sdk-4.18.0/build/.transforms/48e354be05a1fa7754c6e8ea6b6c38ce/jetified-facebook-android-sdk-4.18.0/res/drawable-hdpi-v4/com_facebook_tooltip_blue_background.9.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/facebook-android-sdk-4.18.0/build/.transforms/48e354be05a1fa7754c6e8ea6b6c38ce/jetified-facebook-android-sdk-4.18.0/res/drawable-hdpi-v4/com_facebook_tooltip_blue_bottomnub.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/facebook-android-sdk-4.18.0/build/.transforms/48e354be05a1fa7754c6e8ea6b6c38ce/jetified-facebook-android-sdk-4.18.0/res/drawable-hdpi-v4/com_facebook_tooltip_blue_topnub.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/facebook-android-sdk-4.18.0/build/.transforms/48e354be05a1fa7754c6e8ea6b6c38ce/jetified-facebook-android-sdk-4.18.0/res/drawable-hdpi-v4/com_facebook_tooltip_blue_xout.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/facebook-android-sdk-4.18.0/build/.transforms/48e354be05a1fa7754c6e8ea6b6c38ce/jetified-facebook-android-sdk-4.18.0/res/drawable-hdpi-v4/messenger_bubble_large_blue.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/facebook-android-sdk-4.18.0/build/.transforms/48e354be05a1fa7754c6e8ea6b6c38ce/jetified-facebook-android-sdk-4.18.0/res/drawable-hdpi-v4/messenger_bubble_large_white.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/facebook-android-sdk-4.18.0/build/.transforms/48e354be05a1fa7754c6e8ea6b6c38ce/jetified-facebook-android-sdk-4.18.0/res/drawable-hdpi-v4/messenger_bubble_small_blue.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/facebook-android-sdk-4.18.0/build/.transforms/48e354be05a1fa7754c6e8ea6b6c38ce/jetified-facebook-android-sdk-4.18.0/res/drawable-hdpi-v4/messenger_bubble_small_white.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/facebook-android-sdk-4.18.0/build/.transforms/48e354be05a1fa7754c6e8ea6b6c38ce/jetified-facebook-android-sdk-4.18.0/res/drawable-hdpi-v4/messenger_button_send_round_shadow.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/facebook-android-sdk-4.18.0/build/.transforms/48e354be05a1fa7754c6e8ea6b6c38ce/jetified-facebook-android-sdk-4.18.0/res/drawable-mdpi-v4/com_facebook_button_icon_blue.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/facebook-android-sdk-4.18.0/build/.transforms/48e354be05a1fa7754c6e8ea6b6c38ce/jetified-facebook-android-sdk-4.18.0/res/drawable-mdpi-v4/com_facebook_button_icon_white.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/facebook-android-sdk-4.18.0/build/.transforms/48e354be05a1fa7754c6e8ea6b6c38ce/jetified-facebook-android-sdk-4.18.0/res/drawable-mdpi-v4/com_facebook_button_like_icon_selected.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/facebook-android-sdk-4.18.0/build/.transforms/48e354be05a1fa7754c6e8ea6b6c38ce/jetified-facebook-android-sdk-4.18.0/res/drawable-mdpi-v4/com_facebook_button_send_icon_blue.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/facebook-android-sdk-4.18.0/build/.transforms/48e354be05a1fa7754c6e8ea6b6c38ce/jetified-facebook-android-sdk-4.18.0/res/drawable-mdpi-v4/com_facebook_button_send_icon_white.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/facebook-android-sdk-4.18.0/build/.transforms/48e354be05a1fa7754c6e8ea6b6c38ce/jetified-facebook-android-sdk-4.18.0/res/drawable-mdpi-v4/com_facebook_close.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/facebook-android-sdk-4.18.0/build/.transforms/48e354be05a1fa7754c6e8ea6b6c38ce/jetified-facebook-android-sdk-4.18.0/res/drawable-mdpi-v4/com_facebook_profile_picture_blank_portrait.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/facebook-android-sdk-4.18.0/build/.transforms/48e354be05a1fa7754c6e8ea6b6c38ce/jetified-facebook-android-sdk-4.18.0/res/drawable-mdpi-v4/com_facebook_profile_picture_blank_square.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/facebook-android-sdk-4.18.0/build/.transforms/48e354be05a1fa7754c6e8ea6b6c38ce/jetified-facebook-android-sdk-4.18.0/res/drawable-mdpi-v4/com_facebook_tooltip_black_background.9.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/facebook-android-sdk-4.18.0/build/.transforms/48e354be05a1fa7754c6e8ea6b6c38ce/jetified-facebook-android-sdk-4.18.0/res/drawable-mdpi-v4/com_facebook_tooltip_black_bottomnub.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/facebook-android-sdk-4.18.0/build/.transforms/48e354be05a1fa7754c6e8ea6b6c38ce/jetified-facebook-android-sdk-4.18.0/res/drawable-mdpi-v4/com_facebook_tooltip_black_topnub.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/facebook-android-sdk-4.18.0/build/.transforms/48e354be05a1fa7754c6e8ea6b6c38ce/jetified-facebook-android-sdk-4.18.0/res/drawable-mdpi-v4/com_facebook_tooltip_black_xout.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/facebook-android-sdk-4.18.0/build/.transforms/48e354be05a1fa7754c6e8ea6b6c38ce/jetified-facebook-android-sdk-4.18.0/res/drawable-mdpi-v4/com_facebook_tooltip_blue_background.9.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/facebook-android-sdk-4.18.0/build/.transforms/48e354be05a1fa7754c6e8ea6b6c38ce/jetified-facebook-android-sdk-4.18.0/res/drawable-mdpi-v4/com_facebook_tooltip_blue_bottomnub.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/facebook-android-sdk-4.18.0/build/.transforms/48e354be05a1fa7754c6e8ea6b6c38ce/jetified-facebook-android-sdk-4.18.0/res/drawable-mdpi-v4/com_facebook_tooltip_blue_topnub.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/facebook-android-sdk-4.18.0/build/.transforms/48e354be05a1fa7754c6e8ea6b6c38ce/jetified-facebook-android-sdk-4.18.0/res/drawable-mdpi-v4/com_facebook_tooltip_blue_xout.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/facebook-android-sdk-4.18.0/build/.transforms/48e354be05a1fa7754c6e8ea6b6c38ce/jetified-facebook-android-sdk-4.18.0/res/drawable-mdpi-v4/messenger_bubble_large_blue.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/facebook-android-sdk-4.18.0/build/.transforms/48e354be05a1fa7754c6e8ea6b6c38ce/jetified-facebook-android-sdk-4.18.0/res/drawable-mdpi-v4/messenger_bubble_large_white.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/facebook-android-sdk-4.18.0/build/.transforms/48e354be05a1fa7754c6e8ea6b6c38ce/jetified-facebook-android-sdk-4.18.0/res/drawable-mdpi-v4/messenger_bubble_small_blue.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/facebook-android-sdk-4.18.0/build/.transforms/48e354be05a1fa7754c6e8ea6b6c38ce/jetified-facebook-android-sdk-4.18.0/res/drawable-mdpi-v4/messenger_bubble_small_white.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/facebook-android-sdk-4.18.0/build/.transforms/48e354be05a1fa7754c6e8ea6b6c38ce/jetified-facebook-android-sdk-4.18.0/res/drawable-mdpi-v4/messenger_button_send_round_shadow.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/facebook-android-sdk-4.18.0/build/.transforms/48e354be05a1fa7754c6e8ea6b6c38ce/jetified-facebook-android-sdk-4.18.0/res/drawable-xhdpi-v4/com_facebook_button_icon_blue.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/facebook-android-sdk-4.18.0/build/.transforms/48e354be05a1fa7754c6e8ea6b6c38ce/jetified-facebook-android-sdk-4.18.0/res/drawable-xhdpi-v4/com_facebook_button_icon_white.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/facebook-android-sdk-4.18.0/build/.transforms/48e354be05a1fa7754c6e8ea6b6c38ce/jetified-facebook-android-sdk-4.18.0/res/drawable-xhdpi-v4/com_facebook_button_like_icon_selected.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/facebook-android-sdk-4.18.0/build/.transforms/48e354be05a1fa7754c6e8ea6b6c38ce/jetified-facebook-android-sdk-4.18.0/res/drawable-xhdpi-v4/com_facebook_button_send_icon_blue.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/facebook-android-sdk-4.18.0/build/.transforms/48e354be05a1fa7754c6e8ea6b6c38ce/jetified-facebook-android-sdk-4.18.0/res/drawable-xhdpi-v4/com_facebook_button_send_icon_white.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/facebook-android-sdk-4.18.0/build/.transforms/48e354be05a1fa7754c6e8ea6b6c38ce/jetified-facebook-android-sdk-4.18.0/res/drawable-xhdpi-v4/com_facebook_close.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/facebook-android-sdk-4.18.0/build/.transforms/48e354be05a1fa7754c6e8ea6b6c38ce/jetified-facebook-android-sdk-4.18.0/res/drawable-xhdpi-v4/com_facebook_tooltip_black_background.9.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/facebook-android-sdk-4.18.0/build/.transforms/48e354be05a1fa7754c6e8ea6b6c38ce/jetified-facebook-android-sdk-4.18.0/res/drawable-xhdpi-v4/com_facebook_tooltip_black_bottomnub.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/facebook-android-sdk-4.18.0/build/.transforms/48e354be05a1fa7754c6e8ea6b6c38ce/jetified-facebook-android-sdk-4.18.0/res/drawable-xhdpi-v4/com_facebook_tooltip_black_topnub.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/facebook-android-sdk-4.18.0/build/.transforms/48e354be05a1fa7754c6e8ea6b6c38ce/jetified-facebook-android-sdk-4.18.0/res/drawable-xhdpi-v4/com_facebook_tooltip_black_xout.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/facebook-android-sdk-4.18.0/build/.transforms/48e354be05a1fa7754c6e8ea6b6c38ce/jetified-facebook-android-sdk-4.18.0/res/drawable-xhdpi-v4/com_facebook_tooltip_blue_background.9.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/facebook-android-sdk-4.18.0/build/.transforms/48e354be05a1fa7754c6e8ea6b6c38ce/jetified-facebook-android-sdk-4.18.0/res/drawable-xhdpi-v4/com_facebook_tooltip_blue_bottomnub.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/facebook-android-sdk-4.18.0/build/.transforms/48e354be05a1fa7754c6e8ea6b6c38ce/jetified-facebook-android-sdk-4.18.0/res/drawable-xhdpi-v4/com_facebook_tooltip_blue_topnub.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/facebook-android-sdk-4.18.0/build/.transforms/48e354be05a1fa7754c6e8ea6b6c38ce/jetified-facebook-android-sdk-4.18.0/res/drawable-xhdpi-v4/com_facebook_tooltip_blue_xout.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/facebook-android-sdk-4.18.0/build/.transforms/48e354be05a1fa7754c6e8ea6b6c38ce/jetified-facebook-android-sdk-4.18.0/res/drawable-xhdpi-v4/messenger_bubble_large_blue.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/facebook-android-sdk-4.18.0/build/.transforms/48e354be05a1fa7754c6e8ea6b6c38ce/jetified-facebook-android-sdk-4.18.0/res/drawable-xhdpi-v4/messenger_bubble_large_white.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/facebook-android-sdk-4.18.0/build/.transforms/48e354be05a1fa7754c6e8ea6b6c38ce/jetified-facebook-android-sdk-4.18.0/res/drawable-xhdpi-v4/messenger_bubble_small_blue.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/facebook-android-sdk-4.18.0/build/.transforms/48e354be05a1fa7754c6e8ea6b6c38ce/jetified-facebook-android-sdk-4.18.0/res/drawable-xhdpi-v4/messenger_bubble_small_white.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/facebook-android-sdk-4.18.0/build/.transforms/48e354be05a1fa7754c6e8ea6b6c38ce/jetified-facebook-android-sdk-4.18.0/res/drawable-xhdpi-v4/messenger_button_send_round_shadow.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/facebook-android-sdk-4.18.0/build/.transforms/48e354be05a1fa7754c6e8ea6b6c38ce/jetified-facebook-android-sdk-4.18.0/res/drawable-xxhdpi-v4/com_facebook_button_icon_blue.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/facebook-android-sdk-4.18.0/build/.transforms/48e354be05a1fa7754c6e8ea6b6c38ce/jetified-facebook-android-sdk-4.18.0/res/drawable-xxhdpi-v4/com_facebook_button_icon_white.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/facebook-android-sdk-4.18.0/build/.transforms/48e354be05a1fa7754c6e8ea6b6c38ce/jetified-facebook-android-sdk-4.18.0/res/drawable-xxhdpi-v4/com_facebook_button_like_icon_selected.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/facebook-android-sdk-4.18.0/build/.transforms/48e354be05a1fa7754c6e8ea6b6c38ce/jetified-facebook-android-sdk-4.18.0/res/drawable-xxhdpi-v4/com_facebook_button_send_icon_white.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/facebook-android-sdk-4.18.0/build/.transforms/48e354be05a1fa7754c6e8ea6b6c38ce/jetified-facebook-android-sdk-4.18.0/res/drawable-xxhdpi-v4/messenger_bubble_large_blue.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/facebook-android-sdk-4.18.0/build/.transforms/48e354be05a1fa7754c6e8ea6b6c38ce/jetified-facebook-android-sdk-4.18.0/res/drawable-xxhdpi-v4/messenger_bubble_large_white.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/facebook-android-sdk-4.18.0/build/.transforms/48e354be05a1fa7754c6e8ea6b6c38ce/jetified-facebook-android-sdk-4.18.0/res/drawable-xxhdpi-v4/messenger_bubble_small_blue.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/facebook-android-sdk-4.18.0/build/.transforms/48e354be05a1fa7754c6e8ea6b6c38ce/jetified-facebook-android-sdk-4.18.0/res/drawable-xxhdpi-v4/messenger_bubble_small_white.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/facebook-android-sdk-4.18.0/build/.transforms/48e354be05a1fa7754c6e8ea6b6c38ce/jetified-facebook-android-sdk-4.18.0/res/drawable-xxhdpi-v4/messenger_button_send_round_shadow.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/facebook-android-sdk-4.18.0/build/.transforms/48e354be05a1fa7754c6e8ea6b6c38ce/jetified-facebook-android-sdk-4.18.0/res/drawable/com_facebook_auth_dialog_background.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/facebook-android-sdk-4.18.0/build/.transforms/48e354be05a1fa7754c6e8ea6b6c38ce/jetified-facebook-android-sdk-4.18.0/res/drawable/com_facebook_auth_dialog_cancel_background.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/facebook-android-sdk-4.18.0/build/.transforms/48e354be05a1fa7754c6e8ea6b6c38ce/jetified-facebook-android-sdk-4.18.0/res/drawable/com_facebook_auth_dialog_header_background.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/facebook-android-sdk-4.18.0/build/.transforms/48e354be05a1fa7754c6e8ea6b6c38ce/jetified-facebook-android-sdk-4.18.0/res/drawable/com_facebook_button_background.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/facebook-android-sdk-4.18.0/build/.transforms/48e354be05a1fa7754c6e8ea6b6c38ce/jetified-facebook-android-sdk-4.18.0/res/drawable/com_facebook_button_icon.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/facebook-android-sdk-4.18.0/build/.transforms/48e354be05a1fa7754c6e8ea6b6c38ce/jetified-facebook-android-sdk-4.18.0/res/drawable/com_facebook_button_like_background.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/facebook-android-sdk-4.18.0/build/.transforms/48e354be05a1fa7754c6e8ea6b6c38ce/jetified-facebook-android-sdk-4.18.0/res/drawable/com_facebook_button_login_silver_background.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/facebook-android-sdk-4.18.0/build/.transforms/48e354be05a1fa7754c6e8ea6b6c38ce/jetified-facebook-android-sdk-4.18.0/res/drawable/com_facebook_button_send_background.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/facebook-android-sdk-4.18.0/build/.transforms/48e354be05a1fa7754c6e8ea6b6c38ce/jetified-facebook-android-sdk-4.18.0/res/drawable/com_facebook_favicon_blue.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/facebook-android-sdk-4.18.0/build/.transforms/48e354be05a1fa7754c6e8ea6b6c38ce/jetified-facebook-android-sdk-4.18.0/res/drawable/com_facebook_send_button_icon.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/facebook-android-sdk-4.18.0/build/.transforms/48e354be05a1fa7754c6e8ea6b6c38ce/jetified-facebook-android-sdk-4.18.0/res/drawable/messenger_button_blue_bg_round.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/facebook-android-sdk-4.18.0/build/.transforms/48e354be05a1fa7754c6e8ea6b6c38ce/jetified-facebook-android-sdk-4.18.0/res/drawable/messenger_button_blue_bg_selector.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/facebook-android-sdk-4.18.0/build/.transforms/48e354be05a1fa7754c6e8ea6b6c38ce/jetified-facebook-android-sdk-4.18.0/res/drawable/messenger_button_white_bg_round.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/facebook-android-sdk-4.18.0/build/.transforms/48e354be05a1fa7754c6e8ea6b6c38ce/jetified-facebook-android-sdk-4.18.0/res/drawable/messenger_button_white_bg_selector.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/facebook-android-sdk-4.18.0/build/.transforms/48e354be05a1fa7754c6e8ea6b6c38ce/jetified-facebook-android-sdk-4.18.0/res/layout/com_facebook_activity_layout.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/facebook-android-sdk-4.18.0/build/.transforms/48e354be05a1fa7754c6e8ea6b6c38ce/jetified-facebook-android-sdk-4.18.0/res/layout/com_facebook_device_auth_dialog_fragment.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/facebook-android-sdk-4.18.0/build/.transforms/48e354be05a1fa7754c6e8ea6b6c38ce/jetified-facebook-android-sdk-4.18.0/res/layout/com_facebook_login_fragment.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/facebook-android-sdk-4.18.0/build/.transforms/48e354be05a1fa7754c6e8ea6b6c38ce/jetified-facebook-android-sdk-4.18.0/res/layout/com_facebook_smart_device_dialog_fragment.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/facebook-android-sdk-4.18.0/build/.transforms/48e354be05a1fa7754c6e8ea6b6c38ce/jetified-facebook-android-sdk-4.18.0/res/layout/com_facebook_tooltip_bubble.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/facebook-android-sdk-4.18.0/build/.transforms/48e354be05a1fa7754c6e8ea6b6c38ce/jetified-facebook-android-sdk-4.18.0/res/layout/messenger_button_send_blue_large.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/facebook-android-sdk-4.18.0/build/.transforms/48e354be05a1fa7754c6e8ea6b6c38ce/jetified-facebook-android-sdk-4.18.0/res/layout/messenger_button_send_blue_round.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/facebook-android-sdk-4.18.0/build/.transforms/48e354be05a1fa7754c6e8ea6b6c38ce/jetified-facebook-android-sdk-4.18.0/res/layout/messenger_button_send_blue_small.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/facebook-android-sdk-4.18.0/build/.transforms/48e354be05a1fa7754c6e8ea6b6c38ce/jetified-facebook-android-sdk-4.18.0/res/layout/messenger_button_send_white_large.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/facebook-android-sdk-4.18.0/build/.transforms/48e354be05a1fa7754c6e8ea6b6c38ce/jetified-facebook-android-sdk-4.18.0/res/layout/messenger_button_send_white_round.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/facebook-android-sdk-4.18.0/build/.transforms/48e354be05a1fa7754c6e8ea6b6c38ce/jetified-facebook-android-sdk-4.18.0/res/layout/messenger_button_send_white_small.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/facebook-android-sdk-4.18.0/build/.transforms/48e354be05a1fa7754c6e8ea6b6c38ce/jetified-facebook-android-sdk-4.18.0/res/values-af/values-af.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/facebook-android-sdk-4.18.0/build/.transforms/48e354be05a1fa7754c6e8ea6b6c38ce/jetified-facebook-android-sdk-4.18.0/res/values-ar/values-ar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/facebook-android-sdk-4.18.0/build/.transforms/48e354be05a1fa7754c6e8ea6b6c38ce/jetified-facebook-android-sdk-4.18.0/res/values-bn/values-bn.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/facebook-android-sdk-4.18.0/build/.transforms/48e354be05a1fa7754c6e8ea6b6c38ce/jetified-facebook-android-sdk-4.18.0/res/values-cs/values-cs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/facebook-android-sdk-4.18.0/build/.transforms/48e354be05a1fa7754c6e8ea6b6c38ce/jetified-facebook-android-sdk-4.18.0/res/values-da/values-da.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/facebook-android-sdk-4.18.0/build/.transforms/48e354be05a1fa7754c6e8ea6b6c38ce/jetified-facebook-android-sdk-4.18.0/res/values-de/values-de.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/facebook-android-sdk-4.18.0/build/.transforms/48e354be05a1fa7754c6e8ea6b6c38ce/jetified-facebook-android-sdk-4.18.0/res/values-el/values-el.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/facebook-android-sdk-4.18.0/build/.transforms/48e354be05a1fa7754c6e8ea6b6c38ce/jetified-facebook-android-sdk-4.18.0/res/values-es-rES/values-es-rES.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/facebook-android-sdk-4.18.0/build/.transforms/48e354be05a1fa7754c6e8ea6b6c38ce/jetified-facebook-android-sdk-4.18.0/res/values-es/values-es.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/facebook-android-sdk-4.18.0/build/.transforms/48e354be05a1fa7754c6e8ea6b6c38ce/jetified-facebook-android-sdk-4.18.0/res/values-fi/values-fi.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/facebook-android-sdk-4.18.0/build/.transforms/48e354be05a1fa7754c6e8ea6b6c38ce/jetified-facebook-android-sdk-4.18.0/res/values-fr/values-fr.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/facebook-android-sdk-4.18.0/build/.transforms/48e354be05a1fa7754c6e8ea6b6c38ce/jetified-facebook-android-sdk-4.18.0/res/values-gu/values-gu.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/facebook-android-sdk-4.18.0/build/.transforms/48e354be05a1fa7754c6e8ea6b6c38ce/jetified-facebook-android-sdk-4.18.0/res/values-hi/values-hi.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/facebook-android-sdk-4.18.0/build/.transforms/48e354be05a1fa7754c6e8ea6b6c38ce/jetified-facebook-android-sdk-4.18.0/res/values-hr/values-hr.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/facebook-android-sdk-4.18.0/build/.transforms/48e354be05a1fa7754c6e8ea6b6c38ce/jetified-facebook-android-sdk-4.18.0/res/values-hu/values-hu.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/facebook-android-sdk-4.18.0/build/.transforms/48e354be05a1fa7754c6e8ea6b6c38ce/jetified-facebook-android-sdk-4.18.0/res/values-id/values-id.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/facebook-android-sdk-4.18.0/build/.transforms/48e354be05a1fa7754c6e8ea6b6c38ce/jetified-facebook-android-sdk-4.18.0/res/values-in/values-in.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/facebook-android-sdk-4.18.0/build/.transforms/48e354be05a1fa7754c6e8ea6b6c38ce/jetified-facebook-android-sdk-4.18.0/res/values-it/values-it.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/facebook-android-sdk-4.18.0/build/.transforms/48e354be05a1fa7754c6e8ea6b6c38ce/jetified-facebook-android-sdk-4.18.0/res/values-ja/values-ja.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/facebook-android-sdk-4.18.0/build/.transforms/48e354be05a1fa7754c6e8ea6b6c38ce/jetified-facebook-android-sdk-4.18.0/res/values-kn/values-kn.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/facebook-android-sdk-4.18.0/build/.transforms/48e354be05a1fa7754c6e8ea6b6c38ce/jetified-facebook-android-sdk-4.18.0/res/values-ko/values-ko.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/facebook-android-sdk-4.18.0/build/.transforms/48e354be05a1fa7754c6e8ea6b6c38ce/jetified-facebook-android-sdk-4.18.0/res/values-ml/values-ml.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/facebook-android-sdk-4.18.0/build/.transforms/48e354be05a1fa7754c6e8ea6b6c38ce/jetified-facebook-android-sdk-4.18.0/res/values-mr/values-mr.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/facebook-android-sdk-4.18.0/build/.transforms/48e354be05a1fa7754c6e8ea6b6c38ce/jetified-facebook-android-sdk-4.18.0/res/values-ms/values-ms.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/facebook-android-sdk-4.18.0/build/.transforms/48e354be05a1fa7754c6e8ea6b6c38ce/jetified-facebook-android-sdk-4.18.0/res/values-nb/values-nb.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/facebook-android-sdk-4.18.0/build/.transforms/48e354be05a1fa7754c6e8ea6b6c38ce/jetified-facebook-android-sdk-4.18.0/res/values-nl/values-nl.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/facebook-android-sdk-4.18.0/build/.transforms/48e354be05a1fa7754c6e8ea6b6c38ce/jetified-facebook-android-sdk-4.18.0/res/values-pa/values-pa.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/facebook-android-sdk-4.18.0/build/.transforms/48e354be05a1fa7754c6e8ea6b6c38ce/jetified-facebook-android-sdk-4.18.0/res/values-pl/values-pl.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/facebook-android-sdk-4.18.0/build/.transforms/48e354be05a1fa7754c6e8ea6b6c38ce/jetified-facebook-android-sdk-4.18.0/res/values-pt-rPT/values-pt-rPT.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/facebook-android-sdk-4.18.0/build/.transforms/48e354be05a1fa7754c6e8ea6b6c38ce/jetified-facebook-android-sdk-4.18.0/res/values-pt/values-pt.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/facebook-android-sdk-4.18.0/build/.transforms/48e354be05a1fa7754c6e8ea6b6c38ce/jetified-facebook-android-sdk-4.18.0/res/values-ru/values-ru.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/facebook-android-sdk-4.18.0/build/.transforms/48e354be05a1fa7754c6e8ea6b6c38ce/jetified-facebook-android-sdk-4.18.0/res/values-sk/values-sk.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/facebook-android-sdk-4.18.0/build/.transforms/48e354be05a1fa7754c6e8ea6b6c38ce/jetified-facebook-android-sdk-4.18.0/res/values-sv/values-sv.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/facebook-android-sdk-4.18.0/build/.transforms/48e354be05a1fa7754c6e8ea6b6c38ce/jetified-facebook-android-sdk-4.18.0/res/values-ta/values-ta.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/facebook-android-sdk-4.18.0/build/.transforms/48e354be05a1fa7754c6e8ea6b6c38ce/jetified-facebook-android-sdk-4.18.0/res/values-te/values-te.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/facebook-android-sdk-4.18.0/build/.transforms/48e354be05a1fa7754c6e8ea6b6c38ce/jetified-facebook-android-sdk-4.18.0/res/values-th/values-th.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/facebook-android-sdk-4.18.0/build/.transforms/48e354be05a1fa7754c6e8ea6b6c38ce/jetified-facebook-android-sdk-4.18.0/res/values-tl/values-tl.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/facebook-android-sdk-4.18.0/build/.transforms/48e354be05a1fa7754c6e8ea6b6c38ce/jetified-facebook-android-sdk-4.18.0/res/values-tr/values-tr.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/facebook-android-sdk-4.18.0/build/.transforms/48e354be05a1fa7754c6e8ea6b6c38ce/jetified-facebook-android-sdk-4.18.0/res/values-vi/values-vi.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/facebook-android-sdk-4.18.0/build/.transforms/48e354be05a1fa7754c6e8ea6b6c38ce/jetified-facebook-android-sdk-4.18.0/res/values-zh-rCN/values-zh-rCN.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/facebook-android-sdk-4.18.0/build/.transforms/48e354be05a1fa7754c6e8ea6b6c38ce/jetified-facebook-android-sdk-4.18.0/res/values-zh-rHK/values-zh-rHK.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/facebook-android-sdk-4.18.0/build/.transforms/48e354be05a1fa7754c6e8ea6b6c38ce/jetified-facebook-android-sdk-4.18.0/res/values-zh-rTW/values-zh-rTW.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/facebook-android-sdk-4.18.0/build/.transforms/48e354be05a1fa7754c6e8ea6b6c38ce/jetified-facebook-android-sdk-4.18.0/res/values/values.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/facebook-android-sdk-4.18.0/build/.transforms/4ba6b0d0f9184cd602e2683cced69b24.bin" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/facebook-android-sdk-4.18.0/build/.transforms/4ba6b0d0f9184cd602e2683cced69b24/com.facebook-r.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/facebook-android-sdk-4.18.0/build/.transforms/7099e6d26cd561636c14dcf8406a1a71.bin" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/facebook-android-sdk-4.18.0/build/.transforms/7099e6d26cd561636c14dcf8406a1a71/jetified-facebook-android-sdk-4.18.0-runtime/classes.dex" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/facebook-android-sdk-4.18.0/build/.transforms/79bd2364845163894b945709152e08e8.bin" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/facebook-android-sdk-4.18.0/build/.transforms/79bd2364845163894b945709152e08e8/jetified-facebook-android-sdk-4.18.0.aar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/facebook-android-sdk-4.18.0/build/.transforms/7ee3a582ef54325be0a5bf4b188905cb.bin" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/facebook-android-sdk-4.18.0/build/.transforms/8c9dea4fb0b59d6978a7c365f5307c7f.bin" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/facebook-android-sdk-4.18.0/build/.transforms/9f5a4b61206022332ba0266d3ce49e41.bin" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/facebook-android-sdk-4.18.0/build/.transforms/9fc23c0b763b9a1f89da6f3473b4ad0d.bin" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/facebook-android-sdk-4.18.0/build/.transforms/9fc23c0b763b9a1f89da6f3473b4ad0d/com.facebook/color_com_facebook_button_text_color.xml.flat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/facebook-android-sdk-4.18.0/build/.transforms/9fc23c0b763b9a1f89da6f3473b4ad0d/com.facebook/color_com_facebook_send_button_text_color.xml.flat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/facebook-android-sdk-4.18.0/build/.transforms/9fc23c0b763b9a1f89da6f3473b4ad0d/com.facebook/drawable-hdpi-v4_com_facebook_button_icon_blue.png.flat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/facebook-android-sdk-4.18.0/build/.transforms/9fc23c0b763b9a1f89da6f3473b4ad0d/com.facebook/drawable-hdpi-v4_com_facebook_button_icon_white.png.flat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/facebook-android-sdk-4.18.0/build/.transforms/9fc23c0b763b9a1f89da6f3473b4ad0d/com.facebook/drawable-hdpi-v4_com_facebook_button_like_icon_selected.png.flat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/facebook-android-sdk-4.18.0/build/.transforms/9fc23c0b763b9a1f89da6f3473b4ad0d/com.facebook/drawable-hdpi-v4_com_facebook_button_send_icon_blue.png.flat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/facebook-android-sdk-4.18.0/build/.transforms/9fc23c0b763b9a1f89da6f3473b4ad0d/com.facebook/drawable-hdpi-v4_com_facebook_button_send_icon_white.png.flat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/facebook-android-sdk-4.18.0/build/.transforms/9fc23c0b763b9a1f89da6f3473b4ad0d/com.facebook/drawable-hdpi-v4_com_facebook_close.png.flat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/facebook-android-sdk-4.18.0/build/.transforms/9fc23c0b763b9a1f89da6f3473b4ad0d/com.facebook/drawable-hdpi-v4_com_facebook_tooltip_black_background.9.png.flat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/facebook-android-sdk-4.18.0/build/.transforms/9fc23c0b763b9a1f89da6f3473b4ad0d/com.facebook/drawable-hdpi-v4_com_facebook_tooltip_black_bottomnub.png.flat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/facebook-android-sdk-4.18.0/build/.transforms/9fc23c0b763b9a1f89da6f3473b4ad0d/com.facebook/drawable-hdpi-v4_com_facebook_tooltip_black_topnub.png.flat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/facebook-android-sdk-4.18.0/build/.transforms/9fc23c0b763b9a1f89da6f3473b4ad0d/com.facebook/drawable-hdpi-v4_com_facebook_tooltip_black_xout.png.flat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/facebook-android-sdk-4.18.0/build/.transforms/9fc23c0b763b9a1f89da6f3473b4ad0d/com.facebook/drawable-hdpi-v4_com_facebook_tooltip_blue_background.9.png.flat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/facebook-android-sdk-4.18.0/build/.transforms/9fc23c0b763b9a1f89da6f3473b4ad0d/com.facebook/drawable-hdpi-v4_com_facebook_tooltip_blue_bottomnub.png.flat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/facebook-android-sdk-4.18.0/build/.transforms/9fc23c0b763b9a1f89da6f3473b4ad0d/com.facebook/drawable-hdpi-v4_com_facebook_tooltip_blue_topnub.png.flat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/facebook-android-sdk-4.18.0/build/.transforms/9fc23c0b763b9a1f89da6f3473b4ad0d/com.facebook/drawable-hdpi-v4_com_facebook_tooltip_blue_xout.png.flat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/facebook-android-sdk-4.18.0/build/.transforms/9fc23c0b763b9a1f89da6f3473b4ad0d/com.facebook/drawable-hdpi-v4_messenger_bubble_large_blue.png.flat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/facebook-android-sdk-4.18.0/build/.transforms/9fc23c0b763b9a1f89da6f3473b4ad0d/com.facebook/drawable-hdpi-v4_messenger_bubble_large_white.png.flat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/facebook-android-sdk-4.18.0/build/.transforms/9fc23c0b763b9a1f89da6f3473b4ad0d/com.facebook/drawable-hdpi-v4_messenger_bubble_small_blue.png.flat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/facebook-android-sdk-4.18.0/build/.transforms/9fc23c0b763b9a1f89da6f3473b4ad0d/com.facebook/drawable-hdpi-v4_messenger_bubble_small_white.png.flat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/facebook-android-sdk-4.18.0/build/.transforms/9fc23c0b763b9a1f89da6f3473b4ad0d/com.facebook/drawable-hdpi-v4_messenger_button_send_round_shadow.png.flat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/facebook-android-sdk-4.18.0/build/.transforms/9fc23c0b763b9a1f89da6f3473b4ad0d/com.facebook/drawable-mdpi-v4_com_facebook_button_icon_blue.png.flat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/facebook-android-sdk-4.18.0/build/.transforms/9fc23c0b763b9a1f89da6f3473b4ad0d/com.facebook/drawable-mdpi-v4_com_facebook_button_icon_white.png.flat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/facebook-android-sdk-4.18.0/build/.transforms/9fc23c0b763b9a1f89da6f3473b4ad0d/com.facebook/drawable-mdpi-v4_com_facebook_button_like_icon_selected.png.flat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/facebook-android-sdk-4.18.0/build/.transforms/9fc23c0b763b9a1f89da6f3473b4ad0d/com.facebook/drawable-mdpi-v4_com_facebook_button_send_icon_blue.png.flat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/facebook-android-sdk-4.18.0/build/.transforms/9fc23c0b763b9a1f89da6f3473b4ad0d/com.facebook/drawable-mdpi-v4_com_facebook_button_send_icon_white.png.flat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/facebook-android-sdk-4.18.0/build/.transforms/9fc23c0b763b9a1f89da6f3473b4ad0d/com.facebook/drawable-mdpi-v4_com_facebook_close.png.flat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/facebook-android-sdk-4.18.0/build/.transforms/9fc23c0b763b9a1f89da6f3473b4ad0d/com.facebook/drawable-mdpi-v4_com_facebook_profile_picture_blank_portrait.png.flat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/facebook-android-sdk-4.18.0/build/.transforms/9fc23c0b763b9a1f89da6f3473b4ad0d/com.facebook/drawable-mdpi-v4_com_facebook_profile_picture_blank_square.png.flat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/facebook-android-sdk-4.18.0/build/.transforms/9fc23c0b763b9a1f89da6f3473b4ad0d/com.facebook/drawable-mdpi-v4_com_facebook_tooltip_black_background.9.png.flat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/facebook-android-sdk-4.18.0/build/.transforms/9fc23c0b763b9a1f89da6f3473b4ad0d/com.facebook/drawable-mdpi-v4_com_facebook_tooltip_black_bottomnub.png.flat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/facebook-android-sdk-4.18.0/build/.transforms/9fc23c0b763b9a1f89da6f3473b4ad0d/com.facebook/drawable-mdpi-v4_com_facebook_tooltip_black_topnub.png.flat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/facebook-android-sdk-4.18.0/build/.transforms/9fc23c0b763b9a1f89da6f3473b4ad0d/com.facebook/drawable-mdpi-v4_com_facebook_tooltip_black_xout.png.flat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/facebook-android-sdk-4.18.0/build/.transforms/9fc23c0b763b9a1f89da6f3473b4ad0d/com.facebook/drawable-mdpi-v4_com_facebook_tooltip_blue_background.9.png.flat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/facebook-android-sdk-4.18.0/build/.transforms/9fc23c0b763b9a1f89da6f3473b4ad0d/com.facebook/drawable-mdpi-v4_com_facebook_tooltip_blue_bottomnub.png.flat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/facebook-android-sdk-4.18.0/build/.transforms/9fc23c0b763b9a1f89da6f3473b4ad0d/com.facebook/drawable-mdpi-v4_com_facebook_tooltip_blue_topnub.png.flat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/facebook-android-sdk-4.18.0/build/.transforms/9fc23c0b763b9a1f89da6f3473b4ad0d/com.facebook/drawable-mdpi-v4_com_facebook_tooltip_blue_xout.png.flat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/facebook-android-sdk-4.18.0/build/.transforms/9fc23c0b763b9a1f89da6f3473b4ad0d/com.facebook/drawable-mdpi-v4_messenger_bubble_large_blue.png.flat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/facebook-android-sdk-4.18.0/build/.transforms/9fc23c0b763b9a1f89da6f3473b4ad0d/com.facebook/drawable-mdpi-v4_messenger_bubble_large_white.png.flat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/facebook-android-sdk-4.18.0/build/.transforms/9fc23c0b763b9a1f89da6f3473b4ad0d/com.facebook/drawable-mdpi-v4_messenger_bubble_small_blue.png.flat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/facebook-android-sdk-4.18.0/build/.transforms/9fc23c0b763b9a1f89da6f3473b4ad0d/com.facebook/drawable-mdpi-v4_messenger_bubble_small_white.png.flat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/facebook-android-sdk-4.18.0/build/.transforms/9fc23c0b763b9a1f89da6f3473b4ad0d/com.facebook/drawable-mdpi-v4_messenger_button_send_round_shadow.png.flat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/facebook-android-sdk-4.18.0/build/.transforms/9fc23c0b763b9a1f89da6f3473b4ad0d/com.facebook/drawable-xhdpi-v4_com_facebook_button_icon_blue.png.flat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/facebook-android-sdk-4.18.0/build/.transforms/9fc23c0b763b9a1f89da6f3473b4ad0d/com.facebook/drawable-xhdpi-v4_com_facebook_button_icon_white.png.flat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/facebook-android-sdk-4.18.0/build/.transforms/9fc23c0b763b9a1f89da6f3473b4ad0d/com.facebook/drawable-xhdpi-v4_com_facebook_button_like_icon_selected.png.flat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/facebook-android-sdk-4.18.0/build/.transforms/9fc23c0b763b9a1f89da6f3473b4ad0d/com.facebook/drawable-xhdpi-v4_com_facebook_button_send_icon_blue.png.flat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/facebook-android-sdk-4.18.0/build/.transforms/9fc23c0b763b9a1f89da6f3473b4ad0d/com.facebook/drawable-xhdpi-v4_com_facebook_button_send_icon_white.png.flat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/facebook-android-sdk-4.18.0/build/.transforms/9fc23c0b763b9a1f89da6f3473b4ad0d/com.facebook/drawable-xhdpi-v4_com_facebook_close.png.flat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/facebook-android-sdk-4.18.0/build/.transforms/9fc23c0b763b9a1f89da6f3473b4ad0d/com.facebook/drawable-xhdpi-v4_com_facebook_tooltip_black_background.9.png.flat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/facebook-android-sdk-4.18.0/build/.transforms/9fc23c0b763b9a1f89da6f3473b4ad0d/com.facebook/drawable-xhdpi-v4_com_facebook_tooltip_black_bottomnub.png.flat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/facebook-android-sdk-4.18.0/build/.transforms/9fc23c0b763b9a1f89da6f3473b4ad0d/com.facebook/drawable-xhdpi-v4_com_facebook_tooltip_black_topnub.png.flat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/facebook-android-sdk-4.18.0/build/.transforms/9fc23c0b763b9a1f89da6f3473b4ad0d/com.facebook/drawable-xhdpi-v4_com_facebook_tooltip_black_xout.png.flat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/facebook-android-sdk-4.18.0/build/.transforms/9fc23c0b763b9a1f89da6f3473b4ad0d/com.facebook/drawable-xhdpi-v4_com_facebook_tooltip_blue_background.9.png.flat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/facebook-android-sdk-4.18.0/build/.transforms/9fc23c0b763b9a1f89da6f3473b4ad0d/com.facebook/drawable-xhdpi-v4_com_facebook_tooltip_blue_bottomnub.png.flat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/facebook-android-sdk-4.18.0/build/.transforms/9fc23c0b763b9a1f89da6f3473b4ad0d/com.facebook/drawable-xhdpi-v4_com_facebook_tooltip_blue_topnub.png.flat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/facebook-android-sdk-4.18.0/build/.transforms/9fc23c0b763b9a1f89da6f3473b4ad0d/com.facebook/drawable-xhdpi-v4_com_facebook_tooltip_blue_xout.png.flat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/facebook-android-sdk-4.18.0/build/.transforms/9fc23c0b763b9a1f89da6f3473b4ad0d/com.facebook/drawable-xhdpi-v4_messenger_bubble_large_blue.png.flat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/facebook-android-sdk-4.18.0/build/.transforms/9fc23c0b763b9a1f89da6f3473b4ad0d/com.facebook/drawable-xhdpi-v4_messenger_bubble_large_white.png.flat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/facebook-android-sdk-4.18.0/build/.transforms/9fc23c0b763b9a1f89da6f3473b4ad0d/com.facebook/drawable-xhdpi-v4_messenger_bubble_small_blue.png.flat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/facebook-android-sdk-4.18.0/build/.transforms/9fc23c0b763b9a1f89da6f3473b4ad0d/com.facebook/drawable-xhdpi-v4_messenger_bubble_small_white.png.flat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/facebook-android-sdk-4.18.0/build/.transforms/9fc23c0b763b9a1f89da6f3473b4ad0d/com.facebook/drawable-xhdpi-v4_messenger_button_send_round_shadow.png.flat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/facebook-android-sdk-4.18.0/build/.transforms/9fc23c0b763b9a1f89da6f3473b4ad0d/com.facebook/drawable-xxhdpi-v4_com_facebook_button_icon_blue.png.flat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/facebook-android-sdk-4.18.0/build/.transforms/9fc23c0b763b9a1f89da6f3473b4ad0d/com.facebook/drawable-xxhdpi-v4_com_facebook_button_icon_white.png.flat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/facebook-android-sdk-4.18.0/build/.transforms/9fc23c0b763b9a1f89da6f3473b4ad0d/com.facebook/drawable-xxhdpi-v4_com_facebook_button_like_icon_selected.png.flat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/facebook-android-sdk-4.18.0/build/.transforms/9fc23c0b763b9a1f89da6f3473b4ad0d/com.facebook/drawable-xxhdpi-v4_com_facebook_button_send_icon_white.png.flat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/facebook-android-sdk-4.18.0/build/.transforms/9fc23c0b763b9a1f89da6f3473b4ad0d/com.facebook/drawable-xxhdpi-v4_messenger_bubble_large_blue.png.flat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/facebook-android-sdk-4.18.0/build/.transforms/9fc23c0b763b9a1f89da6f3473b4ad0d/com.facebook/drawable-xxhdpi-v4_messenger_bubble_large_white.png.flat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/facebook-android-sdk-4.18.0/build/.transforms/9fc23c0b763b9a1f89da6f3473b4ad0d/com.facebook/drawable-xxhdpi-v4_messenger_bubble_small_blue.png.flat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/facebook-android-sdk-4.18.0/build/.transforms/9fc23c0b763b9a1f89da6f3473b4ad0d/com.facebook/drawable-xxhdpi-v4_messenger_bubble_small_white.png.flat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/facebook-android-sdk-4.18.0/build/.transforms/9fc23c0b763b9a1f89da6f3473b4ad0d/com.facebook/drawable-xxhdpi-v4_messenger_button_send_round_shadow.png.flat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/facebook-android-sdk-4.18.0/build/.transforms/9fc23c0b763b9a1f89da6f3473b4ad0d/com.facebook/drawable_com_facebook_auth_dialog_background.xml.flat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/facebook-android-sdk-4.18.0/build/.transforms/9fc23c0b763b9a1f89da6f3473b4ad0d/com.facebook/drawable_com_facebook_auth_dialog_cancel_background.xml.flat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/facebook-android-sdk-4.18.0/build/.transforms/9fc23c0b763b9a1f89da6f3473b4ad0d/com.facebook/drawable_com_facebook_auth_dialog_header_background.xml.flat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/facebook-android-sdk-4.18.0/build/.transforms/9fc23c0b763b9a1f89da6f3473b4ad0d/com.facebook/drawable_com_facebook_button_background.xml.flat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/facebook-android-sdk-4.18.0/build/.transforms/9fc23c0b763b9a1f89da6f3473b4ad0d/com.facebook/drawable_com_facebook_button_icon.xml.flat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/facebook-android-sdk-4.18.0/build/.transforms/9fc23c0b763b9a1f89da6f3473b4ad0d/com.facebook/drawable_com_facebook_button_like_background.xml.flat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/facebook-android-sdk-4.18.0/build/.transforms/9fc23c0b763b9a1f89da6f3473b4ad0d/com.facebook/drawable_com_facebook_button_login_silver_background.xml.flat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/facebook-android-sdk-4.18.0/build/.transforms/9fc23c0b763b9a1f89da6f3473b4ad0d/com.facebook/drawable_com_facebook_button_send_background.xml.flat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/facebook-android-sdk-4.18.0/build/.transforms/9fc23c0b763b9a1f89da6f3473b4ad0d/com.facebook/drawable_com_facebook_favicon_blue.xml.flat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/facebook-android-sdk-4.18.0/build/.transforms/9fc23c0b763b9a1f89da6f3473b4ad0d/com.facebook/drawable_com_facebook_send_button_icon.xml.flat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/facebook-android-sdk-4.18.0/build/.transforms/9fc23c0b763b9a1f89da6f3473b4ad0d/com.facebook/drawable_messenger_button_blue_bg_round.xml.flat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/facebook-android-sdk-4.18.0/build/.transforms/9fc23c0b763b9a1f89da6f3473b4ad0d/com.facebook/drawable_messenger_button_blue_bg_selector.xml.flat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/facebook-android-sdk-4.18.0/build/.transforms/9fc23c0b763b9a1f89da6f3473b4ad0d/com.facebook/drawable_messenger_button_white_bg_round.xml.flat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/facebook-android-sdk-4.18.0/build/.transforms/9fc23c0b763b9a1f89da6f3473b4ad0d/com.facebook/drawable_messenger_button_white_bg_selector.xml.flat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/facebook-android-sdk-4.18.0/build/.transforms/9fc23c0b763b9a1f89da6f3473b4ad0d/com.facebook/layout_com_facebook_activity_layout.xml.flat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/facebook-android-sdk-4.18.0/build/.transforms/9fc23c0b763b9a1f89da6f3473b4ad0d/com.facebook/layout_com_facebook_device_auth_dialog_fragment.xml.flat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/facebook-android-sdk-4.18.0/build/.transforms/9fc23c0b763b9a1f89da6f3473b4ad0d/com.facebook/layout_com_facebook_login_fragment.xml.flat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/facebook-android-sdk-4.18.0/build/.transforms/9fc23c0b763b9a1f89da6f3473b4ad0d/com.facebook/layout_com_facebook_smart_device_dialog_fragment.xml.flat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/facebook-android-sdk-4.18.0/build/.transforms/9fc23c0b763b9a1f89da6f3473b4ad0d/com.facebook/layout_com_facebook_tooltip_bubble.xml.flat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/facebook-android-sdk-4.18.0/build/.transforms/9fc23c0b763b9a1f89da6f3473b4ad0d/com.facebook/layout_messenger_button_send_blue_large.xml.flat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/facebook-android-sdk-4.18.0/build/.transforms/9fc23c0b763b9a1f89da6f3473b4ad0d/com.facebook/layout_messenger_button_send_blue_round.xml.flat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/facebook-android-sdk-4.18.0/build/.transforms/9fc23c0b763b9a1f89da6f3473b4ad0d/com.facebook/layout_messenger_button_send_blue_small.xml.flat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/facebook-android-sdk-4.18.0/build/.transforms/9fc23c0b763b9a1f89da6f3473b4ad0d/com.facebook/layout_messenger_button_send_white_large.xml.flat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/facebook-android-sdk-4.18.0/build/.transforms/9fc23c0b763b9a1f89da6f3473b4ad0d/com.facebook/layout_messenger_button_send_white_round.xml.flat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/facebook-android-sdk-4.18.0/build/.transforms/9fc23c0b763b9a1f89da6f3473b4ad0d/com.facebook/layout_messenger_button_send_white_small.xml.flat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/facebook-android-sdk-4.18.0/build/.transforms/b04536bc7067eeda4a7a86b2cec8a4d6.bin" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/facebook-android-sdk-4.18.0/build/.transforms/b04536bc7067eeda4a7a86b2cec8a4d6/jetified-facebook-android-sdk-4.18.0-runtime.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/facebook-android-sdk-4.18.0/build/.transforms/b88e41f3e70a21f4f3a60410f599f7da.bin" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/facebook-android-sdk-4.18.0/build/.transforms/b88e41f3e70a21f4f3a60410f599f7da/jetified-facebook-android-sdk-4.18.0-runtime/classes.dex" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/facebook-android-sdk-4.18.0/build/.transforms/c5c948c3af4e90c69b4a2fb94ef3f772.bin" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/facebook-android-sdk-4.18.0/build/.transforms/c5c948c3af4e90c69b4a2fb94ef3f772/jetified-facebook-android-sdk-4.18.0-api.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/facebook-android-sdk-4.18.0/build/.transforms/e836c2c62430f3d679a8c19640ad2638.bin" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/facebook-android-sdk-4.18.0/build/.transforms/e836c2c62430f3d679a8c19640ad2638/jetified-facebook-android-sdk-4.18.0-runtime/classes.dex" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/facebook-android-sdk-4.18.0/facebook-android-sdk-4.18.0.aar" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/facebook-core/build.gradle" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/facebook-core/build/.transforms/025e95bbe11609377045142909ad93f1.bin" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/facebook-core/build/.transforms/27e6aae5989137c84c245fbe3631dd7d.bin" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/facebook-core/build/.transforms/3489d7044975e361e7df7126d7cfaf6b.bin" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/facebook-core/build/.transforms/4ac40c6856901a9a7c16f58da3cb9901.bin" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/facebook-core/build/.transforms/4ac40c6856901a9a7c16f58da3cb9901/jetified-facebook-core.aar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/facebook-core/build/.transforms/540f1488f8833368bcb3cb4927227fde.bin" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/facebook-core/build/.transforms/540f1488f8833368bcb3cb4927227fde/jetified-facebook-core-runtime.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/facebook-core/build/.transforms/55a32e87eb318b0dd4ecc6b716729812.bin" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/facebook-core/build/.transforms/64d21bb339ad1a72ebcb2d74c5f6dcd7.bin" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/facebook-core/build/.transforms/64d21bb339ad1a72ebcb2d74c5f6dcd7/com.facebook.core-r.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/facebook-core/build/.transforms/6d42a5ea511d0714a0898da0115dc4a1.bin" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/facebook-core/build/.transforms/90891f4c3c7c60eea48b48c9c76084a7.bin" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/facebook-core/build/.transforms/92c42721690493136d03a62972044855.bin" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/facebook-core/build/.transforms/92c42721690493136d03a62972044855/jetified-facebook-core-runtime/classes.dex" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/facebook-core/build/.transforms/931bda9c729363f5861d612824d9cbf6.bin" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/facebook-core/build/.transforms/94241d80dedc916a40e40ad8d925753d.bin" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/facebook-core/build/.transforms/94241d80dedc916a40e40ad8d925753d/jetified-facebook-core-api.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/facebook-core/build/.transforms/ac1da71f5e060f4a9c7ccac887cca2b6.bin" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/facebook-core/build/.transforms/ac1da71f5e060f4a9c7ccac887cca2b6/jetified-facebook-core-runtime/classes.dex" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/facebook-core/build/.transforms/b12a7214b15f54bb6122ba3ae97b4a6f.bin" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/facebook-core/build/.transforms/b12a7214b15f54bb6122ba3ae97b4a6f/jetified-facebook-core/AndroidManifest.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/facebook-core/build/.transforms/b12a7214b15f54bb6122ba3ae97b4a6f/jetified-facebook-core/R.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/facebook-core/build/.transforms/b12a7214b15f54bb6122ba3ae97b4a6f/jetified-facebook-core/jars/classes.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/facebook-core/build/.transforms/b12a7214b15f54bb6122ba3ae97b4a6f/jetified-facebook-core/proguard.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/facebook-core/build/.transforms/b5db63b76c20668d3f17751d2f601576.bin" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/facebook-core/facebook-core.aar" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/facebook/build.gradle" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/facebook/build/.transforms/00e98a7f9f2ab9b07a210d5cbac53daf.bin" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/facebook/build/.transforms/00e98a7f9f2ab9b07a210d5cbac53daf/jetified-facebook-runtime.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/facebook/build/.transforms/16826804f75f726230655c2a0a6350ab.bin" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/facebook/build/.transforms/16826804f75f726230655c2a0a6350ab/jetified-facebook-api.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/facebook/build/.transforms/3282dbe814306ef811a5a7a79307c5b3.bin" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/facebook/build/.transforms/3b4f2837c8074c7ef46e6ae7ce9ce6e4.bin" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/facebook/build/.transforms/420a90c2e9c92ea711f90df51760b8e9.bin" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/facebook/build/.transforms/420a90c2e9c92ea711f90df51760b8e9/jetified-facebook.aar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/facebook/build/.transforms/574d4fee3d40ba7251316849151847ef.bin" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/facebook/build/.transforms/574d4fee3d40ba7251316849151847ef/jetified-facebook-runtime/classes.dex" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/facebook/build/.transforms/5ae61c537475c1f31f2b7f77a12e1fee.bin" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/facebook/build/.transforms/5d69382131e7ee86c1bf662e31519fb2.bin" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/facebook/build/.transforms/93b139b0717828d02bc704b86b2c54a9.bin" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/facebook/build/.transforms/93b139b0717828d02bc704b86b2c54a9/com.facebook-r.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/facebook/build/.transforms/c8cb67bd2971b71995c7252281e8aaec.bin" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/facebook/build/.transforms/cb41f9ec64aec3908b5592ae6f5f1751.bin" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/facebook/build/.transforms/d3850d2966fa33929279a0b701d625d7.bin" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/facebook/build/.transforms/edb2ebed7be38bc7a84820a9ec324a9f.bin" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/facebook/build/.transforms/edb2ebed7be38bc7a84820a9ec324a9f/jetified-facebook/AndroidManifest.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/facebook/build/.transforms/edb2ebed7be38bc7a84820a9ec324a9f/jetified-facebook/R.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/facebook/build/.transforms/edb2ebed7be38bc7a84820a9ec324a9f/jetified-facebook/jars/classes.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/facebook/build/.transforms/edb2ebed7be38bc7a84820a9ec324a9f/jetified-facebook/proguard.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/facebook/build/.transforms/f281a0e5cede295cb2acae64bc0f5707.bin" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/facebook/build/.transforms/f281a0e5cede295cb2acae64bc0f5707/jetified-facebook-runtime/classes.dex" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/facebook/build/.transforms/f5fc5453ed0f904f8e63763d5a4c4c89.bin" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/facebook/facebook.aar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/6.1.1/executionHistory/executionHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.1.1/executionHistory/executionHistory.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/6.1.1/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.1.1/executionHistory/executionHistory.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/6.1.1/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.1.1/fileHashes/fileHashes.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/6.1.1/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.1.1/fileHashes/fileHashes.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/6.1.1/fileHashes/resourceHashesCache.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.1.1/fileHashes/resourceHashesCache.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/6.1.1/javaCompile/classAnalysis.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.1.1/javaCompile/classAnalysis.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/6.1.1/javaCompile/jarAnalysis.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.1.1/javaCompile/jarAnalysis.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/6.1.1/javaCompile/javaCompile.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.1.1/javaCompile/javaCompile.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/6.1.1/javaCompile/taskHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.1.1/javaCompile/taskHistory.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/6.1.1/executionHistory/executionHistory.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/6.1.1/executionHistory/executionHistory.lock" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/6.1.1/fileChanges/last-build.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/6.1.1/fileContent/fileContent.lock" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/6.1.1/fileHashes/fileHashes.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/6.1.1/fileHashes/fileHashes.lock" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/6.1.1/fileHashes/resourceHashesCache.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/6.1.1/gc.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/6.1.1/javaCompile/classAnalysis.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/6.1.1/javaCompile/jarAnalysis.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/6.1.1/javaCompile/javaCompile.lock" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/6.1.1/javaCompile/taskHistory.bin" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/cache.properties" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/cache.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/checksums/checksums.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/checksums/checksums.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/checksums/md5-checksums.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/checksums/md5-checksums.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/checksums/sha1-checksums.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/checksums/sha1-checksums.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/caches/build_file_checksums.ser" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/caches/build_file_checksums.ser" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules/WhatsappMessengerView/WhatsappMessengerView.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules/WhatsappMessengerView/WhatsappMessengerView.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules/app/app.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules/app/app.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/codeStyles/Project.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/codeStyles/Project.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_activity_activity_1_0_0_aar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_activity_activity_1_0_0_aar.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_activity_activity_1_1_0_aar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_activity_activity_1_1_0_aar.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_annotation_annotation_1_1_0_jar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_annotation_annotation_1_1_0.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_annotation_annotation_experimental_1_0_0_aar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_annotation_annotation_experimental_1_0_0_aar.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_appcompat_appcompat_1_1_0_aar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_appcompat_appcompat_1_1_0_aar.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_appcompat_appcompat_resources_1_1_0_aar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_appcompat_appcompat_resources_1_1_0_aar.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_arch_core_core_common_2_1_0_jar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_arch_core_core_common_2_1_0.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_arch_core_core_runtime_2_0_0_aar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_arch_core_core_runtime_2_0_0_aar.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_arch_core_core_runtime_2_1_0_aar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_arch_core_core_runtime_2_1_0_aar.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_asynclayoutinflater_asynclayoutinflater_1_0_0_aar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_asynclayoutinflater_asynclayoutinflater_1_0_0_aar.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_browser_browser_1_0_0_aar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_browser_browser_1_0_0_aar.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_cardview_cardview_1_0_0_aar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_cardview_cardview_1_0_0_aar.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_collection_collection_1_1_0_jar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_collection_collection_1_1_0.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_constraintlayout_constraintlayout_2_0_0_beta4_aar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_constraintlayout_constraintlayout_2_0_0_beta4_aar.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_constraintlayout_constraintlayout_solver_2_0_0_beta4_jar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_constraintlayout_constraintlayout_solver_2_0_0_beta4.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_coordinatorlayout_coordinatorlayout_1_1_0_aar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_coordinatorlayout_coordinatorlayout_1_1_0_aar.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_core_core_1_1_0_aar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_core_core_1_1_0_aar.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_core_core_1_3_0_alpha01_aar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_core_core_1_3_0_alpha01_aar.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_core_core_ktx_1_3_0_alpha01_aar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_core_core_ktx_1_3_0_alpha01_aar.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_cursoradapter_cursoradapter_1_0_0_aar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_cursoradapter_cursoradapter_1_0_0_aar.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_customview_customview_1_0_0_aar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_customview_customview_1_0_0_aar.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_documentfile_documentfile_1_0_0_aar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_documentfile_documentfile_1_0_0_aar.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_drawerlayout_drawerlayout_1_0_0_aar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_drawerlayout_drawerlayout_1_0_0_aar.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_exifinterface_exifinterface_1_0_0_aar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_exifinterface_exifinterface_1_0_0_aar.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_fragment_fragment_1_1_0_aar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_fragment_fragment_1_1_0_aar.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_fragment_fragment_1_2_0_aar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_fragment_fragment_1_2_0_aar.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_interpolator_interpolator_1_0_0_aar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_interpolator_interpolator_1_0_0_aar.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_legacy_legacy_support_core_ui_1_0_0_aar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_legacy_legacy_support_core_ui_1_0_0_aar.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_legacy_legacy_support_core_utils_1_0_0_aar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_legacy_legacy_support_core_utils_1_0_0_aar.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_legacy_legacy_support_v4_1_0_0_aar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_legacy_legacy_support_v4_1_0_0_aar.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_lifecycle_lifecycle_common_2_1_0_jar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_lifecycle_lifecycle_common_2_1_0.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_lifecycle_lifecycle_common_2_2_0_jar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_lifecycle_lifecycle_common_2_2_0.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_lifecycle_lifecycle_extensions_2_2_0_aar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_lifecycle_lifecycle_extensions_2_2_0_aar.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_lifecycle_lifecycle_livedata_2_0_0_aar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_lifecycle_lifecycle_livedata_2_0_0_aar.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_lifecycle_lifecycle_livedata_2_2_0_aar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_lifecycle_lifecycle_livedata_2_2_0_aar.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_lifecycle_lifecycle_livedata_core_2_0_0_aar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_lifecycle_lifecycle_livedata_core_2_0_0_aar.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_lifecycle_lifecycle_livedata_core_2_2_0_aar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_lifecycle_lifecycle_livedata_core_2_2_0_aar.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_lifecycle_lifecycle_process_2_2_0_aar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_lifecycle_lifecycle_process_2_2_0_aar.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_lifecycle_lifecycle_runtime_2_1_0_aar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_lifecycle_lifecycle_runtime_2_1_0_aar.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_lifecycle_lifecycle_runtime_2_2_0_aar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_lifecycle_lifecycle_runtime_2_2_0_aar.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_lifecycle_lifecycle_service_2_2_0_aar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_lifecycle_lifecycle_service_2_2_0_aar.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_lifecycle_lifecycle_viewmodel_2_1_0_aar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_lifecycle_lifecycle_viewmodel_2_1_0_aar.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_lifecycle_lifecycle_viewmodel_2_2_0_aar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_lifecycle_lifecycle_viewmodel_2_2_0_aar.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_lifecycle_lifecycle_viewmodel_savedstate_1_0_0_aar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_lifecycle_lifecycle_viewmodel_savedstate_1_0_0_aar.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_loader_loader_1_0_0_aar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_loader_loader_1_0_0_aar.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_localbroadcastmanager_localbroadcastmanager_1_0_0_aar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_localbroadcastmanager_localbroadcastmanager_1_0_0_aar.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_media_media_1_0_0_aar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_media_media_1_0_0_aar.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_print_print_1_0_0_aar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_print_print_1_0_0_aar.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_recyclerview_recyclerview_1_1_0_aar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_recyclerview_recyclerview_1_1_0_aar.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_savedstate_savedstate_1_0_0_aar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_savedstate_savedstate_1_0_0_aar.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_slidingpanelayout_slidingpanelayout_1_0_0_aar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_slidingpanelayout_slidingpanelayout_1_0_0_aar.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_swiperefreshlayout_swiperefreshlayout_1_0_0_aar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_swiperefreshlayout_swiperefreshlayout_1_0_0_aar.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_test_core_1_2_0_aar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_test_core_1_2_0_aar.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_test_espresso_espresso_core_3_2_0_aar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_test_espresso_espresso_core_3_2_0_aar.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_test_espresso_espresso_idling_resource_3_2_0_aar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_test_espresso_espresso_idling_resource_3_2_0_aar.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_test_ext_junit_1_1_1_aar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_test_ext_junit_1_1_1_aar.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_test_monitor_1_2_0_aar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_test_monitor_1_2_0_aar.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_test_runner_1_2_0_aar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_test_runner_1_2_0_aar.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_transition_transition_1_2_0_aar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_transition_transition_1_2_0_aar.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_vectordrawable_vectordrawable_1_1_0_aar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_vectordrawable_vectordrawable_1_1_0_aar.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_vectordrawable_vectordrawable_animated_1_1_0_aar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_vectordrawable_vectordrawable_animated_1_1_0_aar.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_versionedparcelable_versionedparcelable_1_1_0_aar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_versionedparcelable_versionedparcelable_1_1_0_aar.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_viewpager2_viewpager2_1_0_0_aar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_viewpager2_viewpager2_1_0_0_aar.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_viewpager_viewpager_1_0_0_aar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_viewpager_viewpager_1_0_0_aar.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__artifacts_FawrySDK_1_0_28_21042020_unspecified_jar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__artifacts_FawrySDK_1_0_28_21042020_unspecified.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_amitshekhar_android_android_networking_1_0_2_aar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_amitshekhar_android_android_networking_1_0_2_aar.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_android_installreferrer_installreferrer_1_0_aar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_android_installreferrer_installreferrer_1_0_aar.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_android_volley_volley_1_1_1_aar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_android_volley_volley_1_1_1_aar.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_apkfuns_xprogressdialog_xprogressdialog_1_2_0_aar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_apkfuns_xprogressdialog_xprogressdialog_1_2_0_aar.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_camnter_easyarcloading_easyarcloading_1_0_aar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_camnter_easyarcloading_easyarcloading_1_0_aar.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_facebook_android_facebook_android_sdk_5_15_3_aar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_facebook_android_facebook_android_sdk_5_15_3_aar.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_facebook_android_facebook_applinks_5_15_3_aar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_facebook_android_facebook_applinks_5_15_3_aar.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_facebook_android_facebook_common_5_15_3_aar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_facebook_android_facebook_common_5_15_3_aar.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_facebook_android_facebook_core_5_15_3_aar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_facebook_android_facebook_core_5_15_3_aar.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_facebook_android_facebook_login_5_15_3_aar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_facebook_android_facebook_login_5_15_3_aar.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_facebook_android_facebook_messenger_5_15_3_aar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_facebook_android_facebook_messenger_5_15_3_aar.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_facebook_android_facebook_places_5_15_3_aar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_facebook_android_facebook_places_5_15_3_aar.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_facebook_android_facebook_share_5_15_3_aar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_facebook_android_facebook_share_5_15_3_aar.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_firebaseui_firebase_ui_auth_4_3_1_aar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_firebaseui_firebase_ui_auth_4_3_1_aar.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_firebaseui_firebase_ui_common_4_3_1_aar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_firebaseui_firebase_ui_common_4_3_1_aar.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_firebaseui_firebase_ui_database_4_3_1_aar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_firebaseui_firebase_ui_database_4_3_1_aar.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_github_GrenderG_Toasty_1_4_2_aar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_github_GrenderG_Toasty_1_4_2_aar.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_github_bumptech_glide_annotations_4_11_0_jar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_github_bumptech_glide_annotations_4_11_0.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_github_bumptech_glide_disklrucache_4_11_0_jar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_github_bumptech_glide_disklrucache_4_11_0.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_github_bumptech_glide_gifdecoder_4_11_0_aar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_github_bumptech_glide_gifdecoder_4_11_0_aar.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_github_bumptech_glide_glide_4_11_0_aar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_github_bumptech_glide_glide_4_11_0_aar.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_github_checkout_frames_android_v2_1_1_aar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_github_checkout_frames_android_v2_1_1_aar.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_github_devlight_infinitecycleviewpager_1_0_2_aar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_github_devlight_infinitecycleviewpager_1_0_2_aar.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_github_ihimanshurawat_Hasher_1_2_aar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_github_ihimanshurawat_Hasher_1_2_aar.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_github_ome450901_SimpleRatingBar_1_5_0_aar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_github_ome450901_SimpleRatingBar_1_5_0_aar.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_github_rtchagas_pingplacepicker_2_0_6_aar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_github_rtchagas_pingplacepicker_2_0_6_aar.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_github_rygelouv_android_audio_sensei_0_1_2_aar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_github_rygelouv_android_audio_sensei_0_1_2_aar.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_github_sharish_ShimmerRecyclerView_v1_3_aar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_github_sharish_ShimmerRecyclerView_v1_3_aar.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_github_siyamed_android_shape_imageview_0_9_3_aar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_github_siyamed_android_shape_imageview_0_9_3_aar.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_github_ybq_Android_SpinKit_1_4_0_aar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_github_ybq_Android_SpinKit_1_4_0_aar.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_google_android_datatransport_transport_api_2_2_1_aar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_google_android_datatransport_transport_api_2_2_1_aar.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_google_android_datatransport_transport_backend_cct_2_3_1_aar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_google_android_datatransport_transport_backend_cct_2_3_1_aar.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_google_android_datatransport_transport_runtime_2_2_4_aar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_google_android_datatransport_transport_runtime_2_2_4_aar.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_google_android_flexbox_2_0_1_aar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_google_android_flexbox_2_0_1_aar.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_google_android_gms_play_services_ads_identifier_17_0_0_aar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_google_android_gms_play_services_ads_identifier_17_0_0_aar.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_google_android_gms_play_services_auth_16_0_1_aar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_google_android_gms_play_services_auth_16_0_1_aar.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_google_android_gms_play_services_auth_api_phone_16_0_0_aar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_google_android_gms_play_services_auth_api_phone_16_0_0_aar.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_google_android_gms_play_services_auth_base_16_0_0_aar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_google_android_gms_play_services_auth_base_16_0_0_aar.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_google_android_gms_play_services_base_17_1_0_aar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_google_android_gms_play_services_base_17_1_0_aar.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_google_android_gms_play_services_basement_17_0_0_aar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_google_android_gms_play_services_basement_17_0_0_aar.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_google_android_gms_play_services_location_17_0_0_aar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_google_android_gms_play_services_location_17_0_0_aar.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_google_android_gms_play_services_maps_17_0_0_aar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_google_android_gms_play_services_maps_17_0_0_aar.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_google_android_gms_play_services_measurement_17_5_0_aar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_google_android_gms_play_services_measurement_17_5_0_aar.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_google_android_gms_play_services_measurement_api_17_5_0_aar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_google_android_gms_play_services_measurement_api_17_5_0_aar.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_google_android_gms_play_services_measurement_base_17_5_0_aar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_google_android_gms_play_services_measurement_base_17_5_0_aar.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_google_android_gms_play_services_measurement_impl_17_5_0_aar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_google_android_gms_play_services_measurement_impl_17_5_0_aar.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_google_android_gms_play_services_measurement_sdk_17_5_0_aar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_google_android_gms_play_services_measurement_sdk_17_5_0_aar.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_google_android_gms_play_services_measurement_sdk_api_17_5_0_aar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_google_android_gms_play_services_measurement_sdk_api_17_5_0_aar.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_google_android_gms_play_services_places_17_0_0_aar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_google_android_gms_play_services_places_17_0_0_aar.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_google_android_gms_play_services_places_placereport_17_0_0_aar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_google_android_gms_play_services_places_placereport_17_0_0_aar.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_google_android_gms_play_services_stats_17_0_0_aar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_google_android_gms_play_services_stats_17_0_0_aar.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_google_android_gms_play_services_tasks_17_0_0_aar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_google_android_gms_play_services_tasks_17_0_0_aar.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_google_android_libraries_places_places_2_3_0_aar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_google_android_libraries_places_places_2_3_0_aar.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_google_android_material_material_1_2_0_alpha05_aar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_google_android_material_material_1_2_0_alpha05_aar.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_google_auto_value_auto_value_annotations_1_6_2_jar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_google_auto_value_auto_value_annotations_1_6_2.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_google_code_findbugs_jsr305_2_0_1_jar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_google_code_findbugs_jsr305_2_0_1.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_google_code_gson_gson_2_8_6_jar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_google_code_gson_gson_2_8_6.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_google_dagger_dagger_2_27_jar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_google_dagger_dagger_2_27.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_google_firebase_firebase_analytics_17_5_0_aar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_google_firebase_firebase_analytics_17_5_0_aar.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_google_firebase_firebase_auth_19_3_2_aar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_google_firebase_firebase_auth_19_3_2_aar.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_google_firebase_firebase_auth_interop_19_0_0_aar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_google_firebase_firebase_auth_interop_19_0_0_aar.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_google_firebase_firebase_common_19_3_1_aar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_google_firebase_firebase_common_19_3_1_aar.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_google_firebase_firebase_components_16_0_0_aar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_google_firebase_firebase_components_16_0_0_aar.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_google_firebase_firebase_core_17_4_4_aar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_google_firebase_firebase_core_17_4_4_aar.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_google_firebase_firebase_crashlytics_17_2_1_aar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_google_firebase_firebase_crashlytics_17_2_1_aar.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_google_firebase_firebase_database_19_3_1_aar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_google_firebase_firebase_database_19_3_1_aar.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_google_firebase_firebase_database_collection_17_0_1_aar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_google_firebase_firebase_database_collection_17_0_1_aar.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_google_firebase_firebase_encoders_json_16_1_0_aar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_google_firebase_firebase_encoders_json_16_1_0_aar.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_google_firebase_firebase_iid_16_0_0_aar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_google_firebase_firebase_iid_16_0_0_aar.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_google_firebase_firebase_iid_interop_16_0_0_aar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_google_firebase_firebase_iid_interop_16_0_0_aar.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_google_firebase_firebase_installations_16_3_3_aar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_google_firebase_firebase_installations_16_3_3_aar.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_google_firebase_firebase_installations_interop_16_0_0_aar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_google_firebase_firebase_installations_interop_16_0_0_aar.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_google_firebase_firebase_measurement_connector_18_0_0_aar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_google_firebase_firebase_measurement_connector_18_0_0_aar.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_google_firebase_firebase_messaging_17_0_0_aar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_google_firebase_firebase_messaging_17_0_0_aar.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_google_firebase_firebase_storage_19_1_1_aar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_google_firebase_firebase_storage_19_1_1_aar.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_google_zxing_core_3_3_3_jar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_google_zxing_core_3_3_3.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_iceteck_silicompressorr_silicompressor_2_2_3_aar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_iceteck_silicompressorr_silicompressor_2_2_3_aar.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_intuit_sdp_sdp_android_1_0_6_aar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_intuit_sdp_sdp_android_1_0_6_aar.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_intuit_ssp_ssp_android_1_0_6_aar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_intuit_ssp_ssp_android_1_0_6_aar.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_karumi_dexter_6_2_1_aar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_karumi_dexter_6_2_1_aar.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_makeramen_roundedimageview_2_3_0_aar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_makeramen_roundedimageview_2_3_0_aar.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_mikhaellopez_circularimageview_4_2_0_aar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_mikhaellopez_circularimageview_4_2_0_aar.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_nineoldandroids_library_2_4_0_jar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_nineoldandroids_library_2_4_0.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_parse_bolts_bolts_android_1_4_0_jar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_parse_bolts_bolts_android_1_4_0.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_parse_bolts_bolts_applinks_1_4_0_jar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_parse_bolts_bolts_applinks_1_4_0.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_parse_bolts_bolts_tasks_1_4_0_jar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_parse_bolts_bolts_tasks_1_4_0.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_pnikosis_materialish_progress_1_7_aar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_pnikosis_materialish_progress_1_7_aar.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_rengwuxian_materialedittext_library_2_1_4_aar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_rengwuxian_materialedittext_library_2_1_4_aar.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_squareup_javawriter_2_1_1_jar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_squareup_javawriter_2_1_1.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_squareup_okhttp3_logging_interceptor_4_8_0_jar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_squareup_okhttp3_logging_interceptor_4_8_0.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_squareup_okhttp3_okhttp_4_8_0_jar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_squareup_okhttp3_okhttp_4_8_0.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_squareup_okio_okio_2_7_0_jar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_squareup_okio_okio_2_7_0.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_squareup_picasso_picasso_2_71828_aar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_squareup_picasso_picasso_2_71828_aar.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_squareup_retrofit2_converter_gson_2_9_0_jar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_squareup_retrofit2_converter_gson_2_9_0.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_squareup_retrofit2_converter_scalars_2_9_0_jar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_squareup_retrofit2_converter_scalars_2_9_0.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_squareup_retrofit2_retrofit_2_9_0_jar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_squareup_retrofit2_retrofit_2_9_0.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__de_hdodenhof_circleimageview_3_1_0_aar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__de_hdodenhof_circleimageview_3_1_0_aar.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__javax_inject_javax_inject_1_jar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__javax_inject_javax_inject_1.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__junit_junit_4_12_jar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__junit_junit_4_12.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__me_himanshusoni_chatmessageview_chat_message_view_1_0_7_aar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__me_himanshusoni_chatmessageview_chat_message_view_1_0_7_aar.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__net_sf_kxml_kxml2_2_3_0_jar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__net_sf_kxml_kxml2_2_3_0.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__nl_joery_animatedbottombar_library_1_0_8_aar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__nl_joery_animatedbottombar_library_1_0_8_aar.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_hamcrest_hamcrest_core_1_3_jar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__org_hamcrest_hamcrest_core_1_3.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_hamcrest_hamcrest_integration_1_3_jar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__org_hamcrest_hamcrest_integration_1_3.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_hamcrest_hamcrest_library_1_3_jar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__org_hamcrest_hamcrest_library_1_3.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_jetbrains_annotations_13_0_jar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__org_jetbrains_annotations_13_0.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_jetbrains_kotlin_kotlin_android_extensions_runtime_1_3_61_jar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__org_jetbrains_kotlin_kotlin_android_extensions_runtime_1_3_61.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_jetbrains_kotlin_kotlin_stdlib_1_3_72_jar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__org_jetbrains_kotlin_kotlin_stdlib_1_3_72.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_jetbrains_kotlin_kotlin_stdlib_common_1_3_72_jar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__org_jetbrains_kotlin_kotlin_stdlib_common_1_3_72.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_jetbrains_kotlin_kotlin_stdlib_jdk7_1_3_61_jar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__org_jetbrains_kotlin_kotlin_stdlib_jdk7_1_3_61.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/Chattla_Project.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules/Chattla_Project.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/FawrySDK_1.0.28_21042020/FawrySDK_1.0.28_21042020.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/WhatsappMessengerView/WhatsappMessengerView.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/app/app.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/runConfigurations.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WhatsappMessengerView/build/.transforms/5476fc10735514418c393d71d0b263f0.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WhatsappMessengerView/build/.transforms/5476fc10735514418c393d71d0b263f0/classes/classes.dex" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WhatsappMessengerView/build/.transforms/e2144f8a46d397d05708244568cfe4ec.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WhatsappMessengerView/build/generated/source/buildConfig/debug/com/varunjohn1990/audio_record_view/BuildConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/WhatsappMessengerView/build/generated/source/buildConfig/debug/com/varunjohn1990/audio_record_view/BuildConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WhatsappMessengerView/build/generated/source/buildConfig/release/com/varunjohn1990/audio_record_view/BuildConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/WhatsappMessengerView/build/generated/source/buildConfig/release/com/varunjohn1990/audio_record_view/BuildConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WhatsappMessengerView/build/intermediates/aapt_friendly_merged_manifests/debug/aapt/output.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WhatsappMessengerView/build/intermediates/aapt_friendly_merged_manifests/release/aapt/output.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WhatsappMessengerView/build/intermediates/aar_main_jar/debug/classes.jar" beforeDir="false" afterPath="$PROJECT_DIR$/WhatsappMessengerView/build/intermediates/aar_main_jar/debug/classes.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WhatsappMessengerView/build/intermediates/compile_library_classes_jar/debug/classes.jar" beforeDir="false" afterPath="$PROJECT_DIR$/WhatsappMessengerView/build/intermediates/compile_library_classes_jar/debug/classes.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WhatsappMessengerView/build/intermediates/compile_library_classes_jar/release/classes.jar" beforeDir="false" afterPath="$PROJECT_DIR$/WhatsappMessengerView/build/intermediates/compile_library_classes_jar/release/classes.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WhatsappMessengerView/build/intermediates/compile_only_not_namespaced_r_class_jar/debug/R.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WhatsappMessengerView/build/intermediates/compile_only_not_namespaced_r_class_jar/release/R.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WhatsappMessengerView/build/intermediates/incremental/debug-mergeNativeLibs/merge-state" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WhatsappMessengerView/build/intermediates/incremental/packageDebugResources/compile-file-map.properties" beforeDir="false" afterPath="$PROJECT_DIR$/WhatsappMessengerView/build/intermediates/incremental/packageDebugResources/compile-file-map.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WhatsappMessengerView/build/intermediates/incremental/packageReleaseResources/compile-file-map.properties" beforeDir="false" afterPath="$PROJECT_DIR$/WhatsappMessengerView/build/intermediates/incremental/packageReleaseResources/compile-file-map.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WhatsappMessengerView/build/intermediates/incremental/release-mergeNativeLibs/merge-state" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WhatsappMessengerView/build/intermediates/javac/debug/classes/com/varunjohn1990/audio_record_view/BuildConfig.class" beforeDir="false" afterPath="$PROJECT_DIR$/WhatsappMessengerView/build/intermediates/javac/debug/classes/com/varunjohn1990/audio_record_view/BuildConfig.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WhatsappMessengerView/build/intermediates/javac/release/classes/com/varunjohn1990/audio_record_view/BuildConfig.class" beforeDir="false" afterPath="$PROJECT_DIR$/WhatsappMessengerView/build/intermediates/javac/release/classes/com/varunjohn1990/audio_record_view/BuildConfig.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WhatsappMessengerView/build/intermediates/merged_manifests/debug/output.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WhatsappMessengerView/build/intermediates/merged_manifests/release/output.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WhatsappMessengerView/build/intermediates/runtime_library_classes_jar/debug/classes.jar" beforeDir="false" afterPath="$PROJECT_DIR$/WhatsappMessengerView/build/intermediates/runtime_library_classes_jar/debug/classes.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WhatsappMessengerView/build/intermediates/runtime_library_classes_jar/release/classes.jar" beforeDir="false" afterPath="$PROJECT_DIR$/WhatsappMessengerView/build/intermediates/runtime_library_classes_jar/release/classes.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WhatsappMessengerView/build/outputs/aar/WhatsappMessengerView-debug.aar" beforeDir="false" afterPath="$PROJECT_DIR$/WhatsappMessengerView/build/outputs/aar/WhatsappMessengerView-debug.aar" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/app/build.gradle" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/agri/chattla/model/Consult.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/agri/chattla/model/Consult.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/agri/chattla/model/Discount.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/agri/chattla/model/Discount.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/agri/chattla/ui/Payment/PaymentActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/agri/chattla/ui/Payment/PaymentActivity.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/java/com/agri/chattla/ui/addConsult/AddConsultActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/agri/chattla/ui/addConsult/AddConsultActivity.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/java/com/agri/chattla/ui/addConsult/MyLocationService.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/agri/chattla/ui/addConsult/MyLocationService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/agri/chattla/ui/chat/ChatActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/agri/chattla/ui/chat/ChatActivity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/agri/chattla/ui/chat/ChatAdapter.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/agri/chattla/ui/chat/ChatAdapter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/agri/chattla/ui/farmerMain/FarmerMainActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/agri/chattla/ui/farmerMain/FarmerMainActivity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/agri/chattla/ui/farmerMain/MyConsultsAdapter.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/agri/chattla/ui/farmerMain/MyConsultsAdapter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/agri/chattla/ui/login/LoginActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/agri/chattla/ui/login/LoginActivity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/agri/chattla/ui/register/RegisterActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/agri/chattla/ui/register/RegisterActivity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/agri/chattla/ui/splash/SplashScreen.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/agri/chattla/ui/splash/SplashScreen.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/agri/chattla/ui/welcome/WelcomeActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/agri/chattla/ui/welcome/WelcomeActivity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_main.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_main.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/item_my_consult.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/item_my_consult.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/layout_add_consult.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/layout_add_consult.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/layout_chatting.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/layout_chatting.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/splash_screen.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/splash_screen.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/values/strings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/values/strings.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/values/styles.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/values/styles.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.properties" beforeDir="false" afterPath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/local.properties" beforeDir="false" afterPath="$PROJECT_DIR$/local.properties" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="ExecutionTargetManager" SELECTED_TARGET="API_29_3" />
+  <component name="ExecutionTargetManager" SELECTED_TARGET="device_and_snapshot_combo_box_target[C:\Users\asd\.android\avd\Pixel_3a_API_30_x86.avd]" />
   <component name="ExternalProjectsData">
     <projectState path="$PROJECT_DIR$">
       <ProjectState />
@@ -135,25 +623,25 @@
     <ConfirmationsSetting value="2" id="Add" />
   </component>
   <component name="ProjectViewState">
-    <option name="showExcludedFiles" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
     <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
-    <property name="ApkExportedModule" value="app" />
-    <property name="BundleExportedModule" value="app" />
-    <property name="DeviceAndSnapshotComboBoxAction.selectedDevice" value="API_29_3" />
-    <property name="DeviceAndSnapshotComboBoxAction.selectionTime" value="2020-10-26T23:28:53.557Z" />
+    <property name="ApkExportedModule" value="Chattla_Project.app" />
+    <property name="BundleExportedModule" value="Chattla_Project.app" />
+    <property name="DeviceAndSnapshotComboBoxAction.selectedDevice" value="API_29" />
+    <property name="DeviceAndSnapshotComboBoxAction.selectionTime" value="2020-11-17T15:55:59.887Z" />
     <property name="ExportApk.ApkPath" value="D:\Chattla\ChattlaFarmerAPK\AAP" />
     <property name="ExportApk.BuildVariants" value="release" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="android.sdk.path" value="$USER_HOME$/AppData/Local/Android/Sdk" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../ChattlaExpert_Project" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="project.structure.last.edited" value="Dependencies" />
     <property name="project.structure.proportion" value="0.17" />
     <property name="project.structure.side.proportion" value="0.2" />
-    <property name="settings.editor.selected.configurable" value="AndroidSdkUpdater" />
+    <property name="settings.editor.selected.configurable" value="preferences.externalDependencies" />
   </component>
   <component name="PsdUISettings">
     <option name="RESOLVED_DEPENDENCIES_MINIMIZE" value="true" />
@@ -173,12 +661,14 @@
       </method>
     </configuration>
     <configuration name="SplashScreen" type="AndroidRunConfigurationType" factoryName="Android App" activateToolWindowBeforeRun="false" temporary="true">
-      <module name="app" />
+      <module name="Chattla_Project.app" />
       <option name="DEPLOY" value="true" />
       <option name="DEPLOY_APK_FROM_BUNDLE" value="false" />
       <option name="DEPLOY_AS_INSTANT" value="false" />
       <option name="ARTIFACT_NAME" value="" />
       <option name="PM_INSTALL_OPTIONS" value="" />
+      <option name="ALL_USERS" value="false" />
+      <option name="ALWAYS_INSTALL_WITH_PM" value="false" />
       <option name="DYNAMIC_FEATURES_DISABLED_LIST" value="" />
       <option name="ACTIVITY_EXTRA_FLAGS" value="" />
       <option name="MODE" value="specific_activity" />
@@ -214,22 +704,29 @@
       </Native>
       <Profilers>
         <option name="ADVANCED_PROFILING_ENABLED" value="false" />
+        <option name="STARTUP_PROFILING_ENABLED" value="false" />
         <option name="STARTUP_CPU_PROFILING_ENABLED" value="false" />
         <option name="STARTUP_CPU_PROFILING_CONFIGURATION_NAME" value="Sample Java Methods" />
+        <option name="STARTUP_NATIVE_MEMORY_PROFILING_ENABLED" value="false" />
+        <option name="NATIVE_MEMORY_SAMPLE_RATE_BYTES" value="2048" />
       </Profilers>
       <option name="DEEP_LINK" value="" />
       <option name="ACTIVITY_CLASS" value="com.agri.chattla.ui.splash.SplashScreen" />
+      <option name="SEARCH_ACTIVITY_IN_GLOBAL_SCOPE" value="false" />
+      <option name="SKIP_ACTIVITY_VALIDATION" value="false" />
       <method v="2">
         <option name="Android.Gradle.BeforeRunTask" enabled="true" />
       </method>
     </configuration>
     <configuration name="app" type="AndroidRunConfigurationType" factoryName="Android App">
-      <module name="app" />
+      <module name="Chattla_Project.app" />
       <option name="DEPLOY" value="true" />
       <option name="DEPLOY_APK_FROM_BUNDLE" value="false" />
       <option name="DEPLOY_AS_INSTANT" value="false" />
       <option name="ARTIFACT_NAME" value="" />
       <option name="PM_INSTALL_OPTIONS" value="" />
+      <option name="ALL_USERS" value="false" />
+      <option name="ALWAYS_INSTALL_WITH_PM" value="false" />
       <option name="DYNAMIC_FEATURES_DISABLED_LIST" value="" />
       <option name="ACTIVITY_EXTRA_FLAGS" value="" />
       <option name="MODE" value="default_activity" />
@@ -265,11 +762,16 @@
       </Native>
       <Profilers>
         <option name="ADVANCED_PROFILING_ENABLED" value="false" />
+        <option name="STARTUP_PROFILING_ENABLED" value="false" />
         <option name="STARTUP_CPU_PROFILING_ENABLED" value="false" />
         <option name="STARTUP_CPU_PROFILING_CONFIGURATION_NAME" value="Sample Java Methods" />
+        <option name="STARTUP_NATIVE_MEMORY_PROFILING_ENABLED" value="false" />
+        <option name="NATIVE_MEMORY_SAMPLE_RATE_BYTES" value="2048" />
       </Profilers>
       <option name="DEEP_LINK" value="" />
       <option name="ACTIVITY_CLASS" value="" />
+      <option name="SEARCH_ACTIVITY_IN_GLOBAL_SCOPE" value="false" />
+      <option name="SKIP_ACTIVITY_VALIDATION" value="false" />
       <method v="2">
         <option name="Android.Gradle.BeforeRunTask" enabled="true" />
       </method>
@@ -280,6 +782,7 @@
       </list>
     </recent_temporary>
   </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="SvnConfiguration">
     <configuration />
   </component>
@@ -305,115 +808,32 @@
       <option name="project" value="LOCAL" />
       <updated>1598857045141</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="04/11/2020">
+      <created>1604506516470</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1604506516470</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="Add Consultation with new Data" />
     <MESSAGE value="Promo Code For Experts" />
-    <option name="LAST_COMMIT_MESSAGE" value="Promo Code For Experts" />
-  </component>
-  <component name="WindowStateProjectService">
-    <state x="552" y="238" key="#Notifications" timestamp="1598348506853">
-      <screen x="0" y="0" width="1920" height="1160" />
-    </state>
-    <state x="552" y="238" key="#Notifications/0.0.1920.1160@0.0.1920.1160" timestamp="1598348506853" />
-    <state x="594" y="217" key="#PSD" timestamp="1603751387051">
-      <screen x="0" y="0" width="1920" height="1160" />
-    </state>
-    <state x="594" y="217" key="#PSD/0.0.1920.1160@0.0.1920.1160" timestamp="1603751387051" />
-    <state x="414" y="235" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1603277599066">
-      <screen x="0" y="0" width="1920" height="1160" />
-    </state>
-    <state x="414" y="235" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1160@0.0.1920.1160" timestamp="1603277599066" />
-    <state x="765" y="296" key="#com.intellij.ide.util.MemberChooser" timestamp="1601786251368">
-      <screen x="0" y="0" width="1920" height="1160" />
-    </state>
-    <state x="765" y="296" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1160@0.0.1920.1160" timestamp="1601786251368" />
-    <state x="533" y="432" key="AndroidCreateResourceDirectoryDialog" timestamp="1597249062149">
-      <screen x="0" y="0" width="1920" height="1160" />
-    </state>
-    <state x="533" y="432" key="AndroidCreateResourceDirectoryDialog/0.0.1920.1160@0.0.1920.1160" timestamp="1597249062149" />
-    <state x="540" y="335" key="AndroidCreateResourceFileDialog" timestamp="1602034013386">
-      <screen x="0" y="0" width="1920" height="1160" />
-    </state>
-    <state x="540" y="335" key="AndroidCreateResourceFileDialog/0.0.1920.1160@0.0.1920.1160" timestamp="1602034013386" />
-    <state x="499" y="174" width="1421" height="939" key="CommitChangelistDialog2" timestamp="1604506449603">
-      <screen x="0" y="0" width="1920" height="1160" />
-    </state>
-    <state x="499" y="174" width="1421" height="939" key="CommitChangelistDialog2/0.0.1920.1160@0.0.1920.1160" timestamp="1604506449603" />
-    <state x="92" y="92" width="1736" height="976" key="DiffContextDialog" timestamp="1602121223828">
-      <screen x="0" y="0" width="1920" height="1160" />
-    </state>
-    <state x="92" y="92" width="1736" height="976" key="DiffContextDialog/0.0.1920.1160@0.0.1920.1160" timestamp="1602121223828" />
-    <state x="740" y="335" key="FileChooserDialogImpl" timestamp="1604505378958">
-      <screen x="0" y="0" width="1920" height="1160" />
-    </state>
-    <state x="740" y="335" key="FileChooserDialogImpl/0.0.1920.1160@0.0.1920.1160" timestamp="1604505378958" />
-    <state width="1877" height="283" key="GridCell.Tab.0.bottom" timestamp="1603752806941">
-      <screen x="0" y="0" width="1920" height="1160" />
-    </state>
-    <state width="1877" height="283" key="GridCell.Tab.0.bottom/0.0.1920.1160@0.0.1920.1160" timestamp="1603752806941" />
-    <state width="1877" height="283" key="GridCell.Tab.0.center" timestamp="1603752806941">
-      <screen x="0" y="0" width="1920" height="1160" />
-    </state>
-    <state width="1877" height="283" key="GridCell.Tab.0.center/0.0.1920.1160@0.0.1920.1160" timestamp="1603752806941" />
-    <state width="1877" height="283" key="GridCell.Tab.0.left" timestamp="1603752806941">
-      <screen x="0" y="0" width="1920" height="1160" />
-    </state>
-    <state width="1877" height="283" key="GridCell.Tab.0.left/0.0.1920.1160@0.0.1920.1160" timestamp="1603752806941" />
-    <state width="1877" height="283" key="GridCell.Tab.0.right" timestamp="1603752806941">
-      <screen x="0" y="0" width="1920" height="1160" />
-    </state>
-    <state width="1877" height="283" key="GridCell.Tab.0.right/0.0.1920.1160@0.0.1920.1160" timestamp="1603752806941" />
-    <state x="461" y="222" key="SettingsEditor" timestamp="1598854841389">
-      <screen x="0" y="0" width="1920" height="1160" />
-    </state>
-    <state x="461" y="222" key="SettingsEditor/0.0.1920.1160@0.0.1920.1160" timestamp="1598854841389" />
-    <state x="552" y="313" key="Vcs.Push.Dialog.v2" timestamp="1597865767909">
-      <screen x="0" y="0" width="1920" height="1160" />
-    </state>
-    <state x="552" y="313" key="Vcs.Push.Dialog.v2/0.0.1920.1160@0.0.1920.1160" timestamp="1597865767909" />
-    <state x="776" y="358" key="chooseDestDirectoryDialog" timestamp="1597166246557">
-      <screen x="0" y="0" width="1920" height="1160" />
-    </state>
-    <state x="776" y="358" key="chooseDestDirectoryDialog/0.0.1920.1160@0.0.1920.1160" timestamp="1597166246557" />
-    <state x="92" y="92" width="1736" height="976" key="com.android.tools.idea.avdmanager.AvdListDialog" timestamp="1603744086721">
-      <screen x="0" y="0" width="1920" height="1160" />
-    </state>
-    <state x="92" y="92" width="1736" height="976" key="com.android.tools.idea.avdmanager.AvdListDialog/0.0.1920.1160@0.0.1920.1160" timestamp="1603744086721" />
-    <state x="92" y="92" width="1736" height="976" key="com.intellij.history.integration.ui.views.DirectoryHistoryDialog" timestamp="1602121223828">
-      <screen x="0" y="0" width="1920" height="1160" />
-    </state>
-    <state x="92" y="92" width="1736" height="976" key="com.intellij.history.integration.ui.views.DirectoryHistoryDialog/0.0.1920.1160@0.0.1920.1160" timestamp="1602121223828" />
-    <state x="656" y="404" key="com.intellij.ide.util.TipDialog" timestamp="1597200670844">
-      <screen x="0" y="0" width="1920" height="1160" />
-    </state>
-    <state x="656" y="404" key="com.intellij.ide.util.TipDialog/0.0.1920.1160@0.0.1920.1160" timestamp="1597200670844" />
-    <state x="769" y="497" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1597181270939">
-      <screen x="0" y="0" width="1920" height="1160" />
-    </state>
-    <state x="769" y="497" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1920.1160@0.0.1920.1160" timestamp="1597181270939" />
-    <state x="666" y="228" key="psd.add.library.dependency.panel.dimension" timestamp="1603357601943">
-      <screen x="0" y="0" width="1920" height="1160" />
-    </state>
-    <state x="666" y="228" key="psd.add.library.dependency.panel.dimension/0.0.1920.1160@0.0.1920.1160" timestamp="1603357601943" />
-    <state x="812" y="131" key="psd.add.module.dependency.panel.dimension" timestamp="1603410752260">
-      <screen x="0" y="0" width="1920" height="1160" />
-    </state>
-    <state x="812" y="131" key="psd.add.module.dependency.panel.dimension/0.0.1920.1160@0.0.1920.1160" timestamp="1603410752260" />
-    <state x="666" y="208" key="refactoring.ChangeSignatureDialog" timestamp="1598768307565">
-      <screen x="0" y="0" width="1920" height="1160" />
-    </state>
-    <state x="666" y="208" key="refactoring.ChangeSignatureDialog/0.0.1920.1160@0.0.1920.1160" timestamp="1598768307565" />
-    <state x="616" y="270" key="run.anything.popup" timestamp="1597469820217">
-      <screen x="0" y="0" width="1920" height="1160" />
-    </state>
-    <state x="616" y="270" key="run.anything.popup/0.0.1920.1160@0.0.1920.1160" timestamp="1597469820217" />
-    <state x="623" y="255" width="672" height="160" key="search.everywhere.popup" timestamp="1597914072263">
-      <screen x="0" y="0" width="1920" height="1160" />
-    </state>
-    <state x="623" y="255" width="672" height="160" key="search.everywhere.popup/0.0.1920.1160@0.0.1920.1160" timestamp="1597914072263" />
+    <MESSAGE value="04/11/2020" />
+    <option name="LAST_COMMIT_MESSAGE" value="04/11/2020" />
   </component>
 </project>

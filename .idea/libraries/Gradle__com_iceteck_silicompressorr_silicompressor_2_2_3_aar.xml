@@ -1,10 +1,14 @@
 <component name="libraryTable">
   <library name="Gradle: com.iceteck.silicompressorr:silicompressor:2.2.3@aar">
     <CLASSES>
-      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/9b6ae2513bdd6f010892557b44816196/jetified-silicompressor-2.2.3/AndroidManifest.xml" />
-      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/9b6ae2513bdd6f010892557b44816196/jetified-silicompressor-2.2.3/jars/classes.jar!/" />
-      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/9b6ae2513bdd6f010892557b44816196/jetified-silicompressor-2.2.3/res" />
-      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/9b6ae2513bdd6f010892557b44816196/jetified-silicompressor-2.2.3/jars/libs/aspectjrt-1.7.3.jar!/" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/791951526310752ef4dd1fda1845fa94/jetified-silicompressor-2.2.3/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/791951526310752ef4dd1fda1845fa94/jetified-silicompressor-2.2.3/res" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/791951526310752ef4dd1fda1845fa94/jetified-silicompressor-2.2.3/AndroidManifest.xml" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/791951526310752ef4dd1fda1845fa94/jetified-silicompressor-2.2.3/jars/libs/aspectjrt-1.7.3.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/d0eebce2a767c4fc9cef32d68c12d2cb/jetified-silicompressor-2.2.3/AndroidManifest.xml" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/d0eebce2a767c4fc9cef32d68c12d2cb/jetified-silicompressor-2.2.3/jars/classes.jar!/" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/d0eebce2a767c4fc9cef32d68c12d2cb/jetified-silicompressor-2.2.3/jars/libs/aspectjrt-1.7.3.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/d0eebce2a767c4fc9cef32d68c12d2cb/jetified-silicompressor-2.2.3/res" />
     </CLASSES>
     <JAVADOC>
       <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.iceteck.silicompressorr/silicompressor/2.2.3/7b178d9fd76af7d02e4823e2173cbc64bd026dbd/silicompressor-2.2.3-javadoc.jar!/" />

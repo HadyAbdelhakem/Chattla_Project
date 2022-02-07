@@ -2,10 +2,10 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/Chattla_Project.iml" filepath="$PROJECT_DIR$/.idea/modules/Chattla_Project.iml" group="Chattla_Project" />
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/FawrySDK_1.0.28_21042020/FawrySDK_1.0.28_21042020.iml" filepath="$PROJECT_DIR$/.idea/modules/FawrySDK_1.0.28_21042020/FawrySDK_1.0.28_21042020.iml" group="Chattla_Project/FawrySDK_1.0.28_21042020" />
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/WhatsappMessengerView/WhatsappMessengerView.iml" filepath="$PROJECT_DIR$/.idea/modules/WhatsappMessengerView/WhatsappMessengerView.iml" group="Chattla_Project/WhatsappMessengerView" />
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/app.iml" filepath="$PROJECT_DIR$/.idea/modules/app/app.iml" group="Chattla_Project/app" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/Chattla_Project.iml" filepath="$PROJECT_DIR$/.idea/modules/Chattla_Project.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/FawrySDK_1.0.28_21042020/Chattla_Project.FawrySDK_1.0.28_21042020.iml" filepath="$PROJECT_DIR$/.idea/modules/FawrySDK_1.0.28_21042020/Chattla_Project.FawrySDK_1.0.28_21042020.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/WhatsappMessengerView/Chattla_Project.WhatsappMessengerView.iml" filepath="$PROJECT_DIR$/.idea/modules/WhatsappMessengerView/Chattla_Project.WhatsappMessengerView.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/Chattla_Project.app.iml" filepath="$PROJECT_DIR$/.idea/modules/app/Chattla_Project.app.iml" />
     </modules>
   </component>
 </project>

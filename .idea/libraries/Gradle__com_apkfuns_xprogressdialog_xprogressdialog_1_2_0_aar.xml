@@ -1,9 +1,9 @@
 <component name="libraryTable">
   <library name="Gradle: com.apkfuns.xprogressdialog:xprogressdialog:1.2.0@aar">
     <CLASSES>
-      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/650a5fa4afadaf618e777ef72758c9a9/jetified-xprogressdialog-1.2.0/AndroidManifest.xml" />
-      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/650a5fa4afadaf618e777ef72758c9a9/jetified-xprogressdialog-1.2.0/jars/classes.jar!/" />
-      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/650a5fa4afadaf618e777ef72758c9a9/jetified-xprogressdialog-1.2.0/res" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/af92293dc7752d355b20bf72eae5c88a/jetified-xprogressdialog-1.2.0/res" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/af92293dc7752d355b20bf72eae5c88a/jetified-xprogressdialog-1.2.0/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/af92293dc7752d355b20bf72eae5c88a/jetified-xprogressdialog-1.2.0/AndroidManifest.xml" />
     </CLASSES>
     <JAVADOC>
       <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.apkfuns.xprogressdialog/xprogressdialog/1.2.0/169f7cb5c4e3a712113dfe4c17101c9f904a97cd/xprogressdialog-1.2.0-javadoc.jar!/" />

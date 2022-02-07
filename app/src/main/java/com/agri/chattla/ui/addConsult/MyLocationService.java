@@ -1,3 +1,4 @@
+/*
 package com.agri.chattla.ui.addConsult;
 
 import android.content.BroadcastReceiver;
@@ -33,3 +34,4 @@ public class MyLocationService extends BroadcastReceiver {
 
     }
 }
+*/
